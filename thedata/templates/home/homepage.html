@@ -4,12 +4,22 @@
 {{ block.super }}
 {% endblock %}
 
+{% block extra_js %}
+<!-- highcharts libs -->
+<script src="{{ STATIC_URL }}highcharts/js/highcharts.js"></script>
+<script src="{{ STATIC_URL }}highcharts/js/modules/exporting.js"></script>
+<script>
+    {% include "home/by-the-numbers-example.js" %}
+   
+</script>
+{% endblock %}
+
 {% block main_content %}
 
 <!-- Jumbotron Header -->
 <header class="jumbotron hero-spacer">
     <h3>Dataverse: Publish, Find and Cite Everybody's Research Data</h3>
-    <p>A repository for research data that takes care of long term preservation and good archival practices, while researchers can share, keep control of and get recognition for their data. Supports the sharing of research data with a persistent data citation, and enables reproducible research.</p>
+    <p>A repository for research data that takes care of <b>long term preservation</b> and <b>good archival practices</b>, while researchers can <b>share, keep control</b> of and get <b>recognition</b> for their data. Supports the sharing of research data with a persistent data citation, and enables reproducible research.</p>
     <p><a class="btn btn-primary btn-large">Learn more &nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
     </p> 
 {#    <img src="{{ STATIC_URL }}images/dataverse_project_logo.png" alt="The Dataverse Project" /> #}
@@ -20,46 +30,34 @@
 <!-- row: Tweets, Blogs, By the Numbers -->
 <div class="row text-center"> 
 
-       <div class="col-md-4">
-
-           <h3>Tweets</h3>
-           <a class="twitter-timeline"
-             width="300"
-             height="500"
-             href="https://twitter.com/twitterdev"
-             data-widget-id="YOUR-WIDGET-ID-HERE">
-           Tweets by @twitterdev
-           </a>
-           <ul>
-              <li>Login issues</li>
-               <li>Deactivated account</li>
-               <li>Changing Institutions</li>
-           </ul>
-       </div>
+        {% include "home/tweet_block.html" %}
+       
+        <!-- start: blog -->    
        <div class="col-md-4">
            <h3>Blogs</h3>
-           <ul>
-               <li>Sharing a Dataset</li>
-               <li>Sharing a Dataverse</li>
-               <li>Notifications</li>
-               <li>Emails</li>
-               <li>Profile/settings</li>
-           </ul>
+           <div class="well">
+               
+               <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations">Widgets & Downloading Data Citations</a>
+               <br /><small><em>September 18, 2014</em></small>
+              <p class="text-left">In previous versions of Dataverse, users were able to embed their dataverse within their own website. With Dataverse 4.0, we have changed this functionality to work more like what you are used to seeing with Twitter, Facebook, and other social media websites. 
+               <p class="text-left">You can still embed your dataverses and datasets on your website
+                  <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations" class="btn btn-primary btn-xs">more</a> </p>
+           </div>
        </div>
+       <!-- end: blog -->    
+       
+       <!-- start: by the numbers -->
        <div class="col-md-4">
-
-           <h3>By the Numbers</h3>
-           <ul>
-              <li>API documentation</li>
-              <li>Obtaining an API key</li>
-              <li>Harvesting protocol</li>
-           </ul>
+           <h3>By the Numbers</h3>           
+           <div id="container" style="xmin-width: 310px; height: 300px; margin: 0 auto"></div>
        </div>
+       <!-- end: by the numbers -->
       
    </div><!-- end: row -->
    <!-- END row: Tweets, Blogs, By the Numbers -->
 
    <!-- Title -->
+   <hr />
    <div class="row">
        <div class="col-lg-12">
            <h3>Federated Dataverses</h3>
@@ -73,4 +71,5 @@
     {% endfor %}
 </div>
 <!-- /.row -->
+
 {% endblock %}
