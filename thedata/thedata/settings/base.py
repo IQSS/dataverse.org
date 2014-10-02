@@ -197,6 +197,7 @@ DJANGO_APPS = (
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
+    'apps.federated_dataverses',
     'apps.basic_pages',
     'apps.search',
     #'apps.milestones',

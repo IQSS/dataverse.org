@@ -1,0 +1,62 @@
+[
+{
+    "pk": 1, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Odum Institute", 
+        "created": "2014-10-02T19:01:49.082Z", 
+        "modified": "2014-10-02T19:13:48.383Z", 
+        "logo_image": "federated_logos/odum_institute_logo.png", 
+        "visible": true, 
+        "sort_order": 10, 
+        "homepage": "http://arc.irss.unc.edu/dvn/", 
+        "slug": "odum-institute", 
+        "description": "The University of North Carolina at Chapel Hill proudly hosts the Odum Institute Dataverse which provides access to data collections curated by the Odum Institute as well as collections owned by other institutions and individual scholars. You can search across or browse any of these dataverses listed below. You may also create your own branded dataverse to manage and provide access to your data. Learn more about the Dataverse Network Project at http://www.thedata.org or view our video tutorials."
+    }
+},
+{
+    "pk": 2, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Harvard Dataverse", 
+        "created": "2014-10-02T19:10:28.184Z", 
+        "modified": "2014-10-02T19:11:35.947Z", 
+        "logo_image": "federated_logos/dataverse_project_logo_1.png", 
+        "visible": true, 
+        "sort_order": 20, 
+        "homepage": "http://dataverse-demo.iq.harvard.edu/", 
+        "slug": "harvard-dataverse", 
+        "description": "A repository for research data that takes care of long term preservation and good archival practices, while researchers can share, keep control of and get recognition for their data. Supports the sharing of research data with a persistent data citation, and enables reproducible research."
+    }
+},
+{
+    "pk": 3, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Peking University", 
+        "created": "2014-10-02T19:15:07.707Z", 
+        "modified": "2014-10-02T19:25:46.625Z", 
+        "logo_image": "federated_logos/peking_university_logo2.png", 
+        "visible": true, 
+        "sort_order": 40, 
+        "homepage": "http://english.pku.edu.cn/", 
+        "slug": "peking-university", 
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+},
+{
+    "pk": 4, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "DANS", 
+        "created": "2014-10-02T19:29:57.478Z", 
+        "modified": "2014-10-02T19:31:32.733Z", 
+        "logo_image": "federated_logos/dans_logo.png", 
+        "visible": true, 
+        "sort_order": 40, 
+        "homepage": "https://dataverse.nl/dvn/", 
+        "slug": "dans", 
+        "description": "DANS - Dutch Data Archiving and Networked Services Dataverse"
+    }
+}
+]
