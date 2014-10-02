@@ -1,0 +1,73 @@
+<html>
+<body>
+<form method="POST" action="{% url 'view_basic_search' %}">
+        {% csrf_token %}
+    {% for hidden in search_form.hidden_fields %}
+        {{ hidden }}
+    {% endfor %}
+    <table>
+        {% for field in search_form.visible_fields %}
+            <tr>
+                <th>{{ field.label_tag }}</th>
+                <td> {{ field.errors }}
+                     {{ field }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td><a href="{% url 'view_basic_search' %}">reset</a></td>
+            <td><input type="submit" value="search" /></td>
+        </tr>
+    </table>
+
+
+</form>
+{% if ERR_FOUND %}
+    Sorry! The search service was not available.  Please try again.
+    {% if ERR_Msg %}
+    <p>{{ ERR_Msg }}</p>
+    {% endif %}
+{% endif %}
+{% if search_results %}
+
+    <p>
+        <b>{{ search_results.hit_count }}</b> result{{ search_results.hit_count|pluralize }} 
+    found for <b>{{ display_search_term }}</b>.
+    {% if search_results.get_num_display_docs > 0 %}
+        &nbsp; Displaying: <b>{{ search_results.get_num_display_docs }} result{{ search_results.get_num_display_docs|pluralize }}</b>
+    {% endif %}
+    </p>
+
+    {% if display_pager and display_pager.show_pager %}
+    <div style="border:1px solid #ccc; padding:10px;">
+         {% if display_pager.first_page %}
+            (first page {{ display_pager.first_page }}) &nbsp;|&nbsp;
+         {% endif %}
+         {% if display_pager.previous_page %}
+           (previous page {{ display_pager.previous_page }}) &nbsp;|&nbsp;
+         {% endif %}
+                
+        {% for pg_num in display_pager.page_menu_range %}
+            {% if pg_num == display_pager.current_page %}
+                <b>{{ pg_num }}</b>
+            {% else %}
+                {{ pg_num }}
+            {% endif %}
+            {% if not forloop.last %} &nbsp;|&nbsp; {% endif %}
+        {% endfor %}
+        
+        {% if display_pager.next_page %}
+          &nbsp;|&nbsp; (next page {{ display_pager.next_page }})
+        {% endif %}
+        {% if display_pager.last_page %}
+          &nbsp;|&nbsp; (last page {{ display_pager.last_page }}) 
+        {% endif %}
+        
+    </div>
+    {% endif %}
+
+    {% for doc in search_results.docs %}
+       {% include "search/vcard.html" %}
+    {% endfor %}
+{% endif %}
+</body>
+</html>

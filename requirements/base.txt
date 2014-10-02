@@ -1,0 +1,9 @@
+Django==1.6.5
+pysolr==3.2.0
+requests==2.3.0
+Pillow==2.4.0
+xlrd==0.9.3	# excel read
+#xlwt
+django-model-utils==2.0.3
+logutils==0.3.3
+South==0.8.4

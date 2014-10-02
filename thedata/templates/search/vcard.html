@@ -1,0 +1,3 @@
+<br />({{ forloop.counter }}) {{ doc.title }}
+    | {% for a in doc.authorName %}{{ a }}{% if not forloop.last %}, {% endif %}{% endfor %}
+    <br />{% for cite in doc.publicationCitation %}{{ cite }}{% if not forloop.last %}, {% endif %}{% endfor %}<br />

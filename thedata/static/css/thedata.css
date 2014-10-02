@@ -1,0 +1,20 @@
+body {
+padding-top: 32px; /* 60px to make the container go all the way to the bottom of the topbar */
+
+}
+img{border:none;border-style: none;}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc ;
+    margin: 1em 0; padding: 0; }
+
+#mstone_table .ms_td {width:17%;}
+
+#title-link{color:#000; 
+    text-decoration:none;}
+#title-link:hover{color:#3a8acc;}
+div.panel-heading{padding:8px;}
+div.panel-body{padding:10px;}
+.popover-title{ color: #333;}
+.popover-content{ color: #333; font-weight:normal; font-size:110%; line-height:150%;}
+.navbar-brand{height:15px;}

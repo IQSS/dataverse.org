@@ -1,3 +1,9 @@
+thedata/thedata/settings/p*
+thedata/thedata/settings/*.json
+test_setup/*
+test_setup/*
+*.idea
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
