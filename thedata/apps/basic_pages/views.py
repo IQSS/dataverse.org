@@ -10,23 +10,23 @@ def view_homepage(request):
     #d['page_title'] = 'Phthisis Ravens: TB Project'
     d['home_page'] = True
 
-    return render_to_response('base.html'\
+    return render_to_response('homepage.html'\
                               , d\
                               , context_instance=RequestContext(request))
 
 
-def view_about_page(request):
+def view_support_page(request):
     d = {}
-    d['about_page'] = True
-    return render_to_response('about.html'\
+    d['support_page'] = True
+    return render_to_response('support.html'\
                               , d\
                               , context_instance=RequestContext(request))
 
 
-def view_predict_page(request):
+def view_best_practices_page(request):
   d = {}
-  d['predict_page'] = True
-  return render_to_response('predict.html'\
+  d['best_practices_page'] = True
+  return render_to_response('best_practices.html'\
                             , d\
                             , context_instance=RequestContext(request))
 
