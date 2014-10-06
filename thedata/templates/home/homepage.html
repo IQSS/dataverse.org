@@ -18,9 +18,9 @@
 
 <!-- Jumbotron Header -->
 <header class="jumbotron hero-spacer">
-    <h3>Dataverse: Publish, Find and Cite Everybody's Research Data</h3>
+    <h2 style="color:#c55b28;">Dataverse: Publish, Find and Cite Everybody's Research Data</h2 >
     <p>A repository for research data that takes care of <b>long term preservation</b> and <b>good archival practices</b>, while researchers can <b>share, keep control</b> of and get <b>recognition</b> for their data. Supports the sharing of research data with a persistent data citation, and enables reproducible research.</p>
-    <p><a class="btn btn-primary btn-large">Learn more &nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+    <p><a class="btn btn-primary btn-large">Learn More &nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
     </p> 
 {#    <img src="{{ STATIC_URL }}images/dataverse_project_logo.png" alt="The Dataverse Project" /> #}
     
@@ -34,22 +34,40 @@
        
         <!-- start: blog -->    
        <div class="col-md-4">
-           <h3>Blogs</h3>
-           <div class="well">
-               
-               <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations">Widgets & Downloading Data Citations</a>
-               <br /><small><em>September 18, 2014</em></small>
-              <p class="text-left">In previous versions of Dataverse, users were able to embed their dataverse within their own website. With Dataverse 4.0, we have changed this functionality to work more like what you are used to seeing with Twitter, Facebook, and other social media websites. 
-               <p class="text-left">You can still embed your dataverses and datasets on your website
-                  <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations" class="btn btn-primary btn-xs">more</a> </p>
+           <div class="panel panel-default" style="border-color:#ccc;">
+            <div class="panel-heading" style="background:white;padding:11.5px;border-color:#ccc;">
+              <h4 class="panel-title text-left" style="font-weight:bold;font-size:18px;">Blogs</h4>
+            </div>
+            <div class="panel-body" style="background:#f5f5f5;min-height:302px;">
+              <!-- <p class="h4 text-left" style="margin-top:0;font-weight:bold;">Blogs</p> -->
+              <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations">Widgets & Downloading Data Citations</a>
+              <br />
+              <small><em>September 18, 2014</em></small>
+              <p class="text-left">
+                In previous versions of Dataverse, users were able to embed their dataverse within their own website. With Dataverse 4.0, we have changed this functionality to work more like what you are used to seeing with Twitter, Facebook, and other social media websites. 
+              </p>
+              <p class="text-left">
+                You can still embed your dataverses and datasets on your website.
+              </p>
+              <div>
+                <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations" class="btn btn-primary btn-xs">More</a>
+              </div>
+            </div>
            </div>
        </div>
        <!-- end: blog -->    
        
        <!-- start: by the numbers -->
        <div class="col-md-4">
-           <h3>By the Numbers</h3>           
-           <div id="container" style="xmin-width: 310px; height: 300px; margin: 0 auto"></div>
+          <div class="panel panel-default" style="border-color:#ccc;">
+            <div class="panel-heading" style="background:white;padding:11.5px;border-color:#ccc;">
+              <h3 class="panel-title text-left" style="font-weight:bold;font-size:18px;">By The Numbers</h3>
+            </div>
+            <div class="panel-body" style="padding:0;height:302px;">
+              <!-- <p class="h4 text-left" style="margin-top:0;font-weight:bold;"></p> -->
+              <div id="container" style="xmin-width: 310px; height: 300px; margin: 0 auto"></div>
+            </div>
+          </div>
        </div>
        <!-- end: by the numbers -->
       
@@ -60,25 +78,24 @@
    <hr />
    <div class="row">
        <div class="col-lg-12">
-           <h3>Federated Dataverses</h3>
+           <h3 style="margin-top:0;">Federated Dataverses</h3>
        </div>
    </div>
    <!-- /.row -->
-<!-- Page Features -->
-<div class="row text-center"> 
-    {% for dverse in federated_dataverses %}
-        {% include "home/dataverse_block.html" %}
-    {% endfor %}
-</div>
-<!-- /.row -->
-
-
-
- <div class="row">
-          <div class="col-lg-12">
-              <h3>Search</h3>
-          </div>
-      </div>        
+   <!-- Page Features -->
+   <div class="row text-center"> 
+        {% for dverse in federated_dataverses %}
+            {% include "home/dataverse_block.html" %}
+        {% endfor %}
+   </div>
+   <!-- /.row -->
+   
+   <hr />
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 style="margin-top:0;">Search</h3>
+      </div>
+    </div>        
       
     <div class="well">
     <script src="http://dataverse-demo.hmdc.harvard.edu/resources/js/widgets.js?id=1&amp;dvUrl=http://dataverse-demo.hmdc.harvard.edu&amp;widget=search"></script>

@@ -21,3 +21,7 @@ footer {
     margin: 30px 0;
     /* margin: 50px 0;*/
 }
+
+iframe {
+	border:0;
+}
