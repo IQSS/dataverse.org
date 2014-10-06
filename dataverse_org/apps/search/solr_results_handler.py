@@ -1,4 +1,4 @@
-from thedata.utils.msg_util import *
+from dataverse_org.utils.msg_util import *
 
 from solr_facet_field_list import facet_field_list, facet_field_dict
 from solr_highlight_field_list import highlight_field_list

@@ -25,8 +25,8 @@ from os.path import join, normpath, dirname
 import os
 
 
-STATIC_ROOT = '/var/www/thedata/static'
-MEDIA_ROOT = '/var/www/thedata/media'
+STATIC_ROOT = '/var/www/dataverse_org/static'
+MEDIA_ROOT = '/var/www/dataverse_org/media'
 ROOT_URLCONF = '%s.urls_prod' % SITE_NAME
 
 ########## HOST CONFIGURATION

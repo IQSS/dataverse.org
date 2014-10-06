@@ -1,4 +1,4 @@
-dataverse-dot-org
+dataverse.org
 =================
 
 Publish, Find, and Cite Everybody's Research Data

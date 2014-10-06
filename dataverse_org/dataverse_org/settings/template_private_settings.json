@@ -2,7 +2,7 @@
     "SECRET_KEY" : " my-secret-key",
     "DATABASE_SETTINGS" : {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "/some-dir/thedata.db3",
+        "NAME": "/some-dir/dataverse_org.db3",
         "USER": "",
         "PASSWORD": "",
         "HOST": "",

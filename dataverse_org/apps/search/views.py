@@ -8,7 +8,7 @@ from django.template import RequestContext
 
 from django.db.models import Q
 
-from thedata.utils.msg_util import *
+from dataverse_org.utils.msg_util import *
 
 from apps.search.forms import BasicSearchForm
 from apps.search.solr_searcher import SolrSearcher

@@ -12,7 +12,7 @@
 sudo pip install virtualenvwrapper
 ```
 
-### Pull down the [dataverse-dot-org repository](https://github.com/IQSS/dataverse-dot-org)
+### Pull down the [dataverse.org repository](https://github.com/IQSS/dataverse.org)
 
 * Use the [mac client](https://mac.github.com/) if desired
 
@@ -21,7 +21,7 @@ sudo pip install virtualenvwrapper
 #### cd into the repository
 
 ```
-cd ~\dataverse-dot-org
+cd ~\dataverse.org
 ```
 
 #### Install the virtualenv and the requirements
@@ -29,11 +29,11 @@ cd ~\dataverse-dot-org
 This may take a minute or two.  (Xcode needs to be installed)
     
 ```
-mkvirtualenv thedata
+mkvirtualenv dataverse_org
 pip install -r requirements/local.txt
 ```
 
-#### Configure settings (still in ~\dataverse-dot-org)
+#### Configure settings (still in ~\dataverse.org)
 
 * Edit a file
 
@@ -45,28 +45,28 @@ vim $VIRTUAL_ENV/bin/postactivate
 
 ```
 export DJANGO_DEBUG=True
-export DJANGO_SETTINGS_MODULE=thedata.settings.local
+export DJANGO_SETTINGS_MODULE=dataverse_org.settings.local
 ```
 
 * Test it from command line
 
 ```
 deactivate
-workon thedata
+workon dataverse_org
 echo $DJANGO_SETTINGS_MODULE
 ```
 
-You should see ```thedata.settings.local```
+You should see ```dataverse_org.settings.local```
 
-#### Install (still in ~\dataverse-dot-org)
+#### Install (still in ~\dataverse.org)
 
 ```
-cd thedata
+cd dataverse_org
 python manage.py syncdb
 python manage.py loaddata apps/federated_dataverses/fixtures/test-data.json 
 ```
 
-#### Run (still in ~\dataverse-dot-org\thedata)
+#### Run (still in ~\dataverse.org\dataverse_org)
 
 ```
 python manage.py runserver
@@ -76,7 +76,7 @@ python manage.py runserver
 
 #### Edit the files template files
 
-* Location ```~\dataverse-dot-org\thedata\templates```
+* Location ```~\dataverse.org\dataverse_org\templates```
 
 * ```base.html``` is the over-arching template
 
@@ -84,8 +84,8 @@ python manage.py runserver
 ## Working post installation
 
 ```
-cd ~\dataverse-dot-org\thedata
-workon thedata
+cd ~\dataverse.org\dataverse_org
+workon dataverse_org
 python manage.py runserver
 ```
 

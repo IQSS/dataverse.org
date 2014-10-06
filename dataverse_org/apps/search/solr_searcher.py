@@ -3,14 +3,14 @@ if __name__=='__main__':
     from os.path import dirname, abspath, join
     d1 = dirname(dirname(dirname(abspath(__file__))))
     sys.path.append(d1)
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "thedata.settings.local")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dataverse_org.settings.local")
 
 import pysolr
 from  pysolr import Results as PySolrResults
 
 from django.conf import settings
 
-from thedata.utils.msg_util import *
+from dataverse_org.utils.msg_util import *
 
 from apps.search.solr_search_formatter import SolrSearchFormatter, DEFAULT_NUM_DISPLAY_ROWS
 from apps.search.solr_results_handler import SolrResultsHandler

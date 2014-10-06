@@ -1,7 +1,7 @@
 from django.test import TestCase
 
 from apps.dvcards.display_pager import DisplayPager
-from thedata.utils.msg_util import *
+from dataverse_org.utils.msg_util import *
 
 class DisplayPagerTests(TestCase):
 

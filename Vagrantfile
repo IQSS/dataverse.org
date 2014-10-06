@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-65-x64-virtualbox-puppet.box"
 
   # the git repo is available within the VM at /webapps/code/PhthisisRavens
-  config.vm.synced_folder ".", "/webapps/code/dataverse-dot-org"
+  config.vm.synced_folder ".", "/webapps/code/dataverse.org"
 
   # installs Django and sets up website
   config.vm.provision "shell", path: "scripts/setup.sh"
