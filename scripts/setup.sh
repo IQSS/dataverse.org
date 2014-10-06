@@ -74,6 +74,11 @@ mkdir /var/www/dataverse_org/dataverse_org # wsgi.py
 echo "Run collectatic to copy files to the static www directory"
 #
 python manage.py collectstatic --noinput --settings=dataverse_org.settings.production
+echo "Create directory for federated dataverses logos"
+mkdir -p /var/www/dataverse_org/media/federated_logos
+cp /webapps/code/dataverse.org/dataverse_org/media/federated_logos/* /var/www/dataverse_org/media/federated_logos
+python manage.py loaddata apps/federated_dataverses/fixtures/test-data.json --settings=dataverse_org.settings.production
+echo "Apache config"
 cp /webapps/code/dataverse.org/dataverse_org/dataverse_org/vagrant-centos-wsgi.py /var/www/dataverse_org/dataverse_org/wsgi.py
 cp /webapps/code/dataverse.org/deploy/vagrant-centos-dataverse_org.conf /etc/httpd/conf.d/dataverse_org.conf
 service httpd start
