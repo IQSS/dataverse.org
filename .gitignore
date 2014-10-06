@@ -1,4 +1,4 @@
-
+dataverse_org/dataverse_org/settings/secret*
 thedata/thedata/settings/private*.json
 test_setup/*.db3
 *.idea

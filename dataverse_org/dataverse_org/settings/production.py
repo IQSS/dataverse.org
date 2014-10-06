@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ['dataverse.org', 'www.dataverse.org' ]
 
 ########## CONFIGURATION FROM JSON FILE
 
-json_secrets_fname = join( dirname(abspath(__file__)), "private_settings_prod.json")
+json_secrets_fname = join( dirname(abspath(__file__)), "secret_settings_prod.json")
 if not isfile(json_secrets_fname):
     raise ValueError('JSON file in settings does not exist: %s' % json_secrets_fname)
 try:
