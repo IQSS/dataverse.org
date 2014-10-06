@@ -9,7 +9,7 @@ useradd plaid
 # EPEL already enabled on HMDC VM
 rpm -Uvh http://dl.fedoraproject.org/pub/epel/6Server/x86_64/epel-release-6-8.noarch.rpm
 # on HMDC VM, httpd is already installed
-yum install -y python-pip python-devel httpd mod_wsgi ack elinks
+yum install -y python-pip python-devel httpd mod_wsgi ack elinks libjpeg-turbo-devel
 #
 # Install virtualenvwrapper
 #
