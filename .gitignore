@@ -3,6 +3,7 @@ thedata/thedata/settings/private*.json
 test_setup/*.db3
 *.idea
 
+*.zip
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
