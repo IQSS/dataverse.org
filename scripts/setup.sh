@@ -1,5 +1,11 @@
 #!/bin/sh
 echo "Setting up dataverse.org"
+# Platform for
+# Lightweight
+# Applications from
+# IQSS
+# Data Science
+useradd plaid
 # EPEL already enabled on HMDC VM
 rpm -Uvh http://dl.fedoraproject.org/pub/epel/6Server/x86_64/epel-release-6-8.noarch.rpm
 # on HMDC VM, httpd is already installed
