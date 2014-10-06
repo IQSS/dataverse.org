@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     #url(r'^$', TemplateView.as_view(template_name='base.html')),
 
     # Examples:
-    # url(r'^$', 'milestone_reader.views.home', name='home'),
+    # url(r'^$', 'thedata.views.home', name='home'),
     url(r'^search/', include('apps.search.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -25,7 +25,6 @@ urlpatterns = patterns('',
     
     url(r'^', include('apps.basic_pages.urls')),
     
-    #url(r'^$', include('apps.milestones.urls')),
     
 )
 

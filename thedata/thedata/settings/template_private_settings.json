@@ -1,0 +1,20 @@
+{ 
+    "SECRET_KEY" : " my-secret-key",
+    "DATABASE_SETTINGS" : {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "/some-dir/thedata.db3",
+        "USER": "",
+        "PASSWORD": "",
+        "HOST": "",
+        "PORT": ""
+    },
+    "SOLR_SERVER_URL" : "http://localhost:8983/solr/",
+    "ADMINS": [["--admin name--", "--admin email--"],["--admin name--", "--admin email--"]],
+    "EMAIL_SETTINGS" : {
+        "EMAIL_HOST": "my-mail-server.edu",
+        "EMAIL_HOST_USER": "",
+        "EMAIL_HOST_PASSWORD": "",
+        "EMAIL_PORT": "587"
+    }
+}
+ 

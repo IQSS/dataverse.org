@@ -199,8 +199,7 @@ DJANGO_APPS = (
 LOCAL_APPS = (
     'apps.federated_dataverses',
     'apps.basic_pages',
-    'apps.search',
-    #'apps.milestones',
+    #'apps.search',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -265,22 +264,3 @@ SOLR_SERVER_TIMEOUT_SECONDS = 10 # seconds
 
 ########## END SOLR SERVER
 
-"""
-########## GITHUB API KEY CONFIGURATION
-#
-#  See "github_api_secrets_template.json" for an example
-#
-#  dict of { 'repository-name' : 'github-api-personal-access-token' 
-#               , 'repository-name 2' : 'github-api-personal-access-token (same or different)' 
-#               }
-#
-github_secrets_fname = join( dirname(abspath(__file__)), "github_api_secrets.json")
-if not isfile(github_secrets_fname):
-    raise ValueError('JSON file in settings does not exist: %s' % github_secrets_fname)
-try:
-    github_secrets_fnames_json = json.loads(open(github_secrets_fname, 'r').read())
-except:
-    raise ValueError("Failed to open JSON file for settings: %s" % github_secrets_fname)
-GITHUB_REPOSITORY_PASSWORD_DICT = github_secrets_json['GITHUB_API_ACCESS_TOKEN_INFO']
-########## END GITHUB API KEY CONFIGURATION
-"""

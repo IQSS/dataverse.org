@@ -52,39 +52,4 @@ class BasicSearchForm(forms.Form):
         pass
 
 
-        
-    @staticmethod
-    def get_test_milestone():
-        return json.loads('''{
-    "url": "https://api.github.com/repos/IQSS/dataverse/milestones/2",
-    "labels_url": "https://api.github.com/repos/IQSS/dataverse/milestones/2/labels",
-    "id": 715294,
-    "number": 2,
-    "title": "Beta 1 - Dataverse 4.0",
-    "description": "http://datascience.iq.harvard.edu/blog/dataset-versioning-dataverse-40-beta",
-    "creator": {
-      "login": "eaquigley",
-      "id": 5922904,
-      "avatar_url": "https://avatars.githubusercontent.com/u/5922904?v=2",
-      "gravatar_id": "f47faf108157e51232d48097a2d9790f",
-      "url": "https://api.github.com/users/eaquigley",
-      "html_url": "https://github.com/eaquigley",
-      "followers_url": "https://api.github.com/users/eaquigley/followers",
-      "following_url": "https://api.github.com/users/eaquigley/following{/other_user}",
-      "gists_url": "https://api.github.com/users/eaquigley/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/eaquigley/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/eaquigley/subscriptions",
-      "organizations_url": "https://api.github.com/users/eaquigley/orgs",
-      "repos_url": "https://api.github.com/users/eaquigley/repos",
-      "events_url": "https://api.github.com/users/eaquigley/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/eaquigley/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "open_issues": 0,
-    "closed_issues": 412,
-    "state": "closed",
-    "created_at": "2014-07-09T15:34:37Z",
-    "updated_at": "2014-08-15T18:18:04Z",
-    "due_on": "2014-06-18T07:00:00Z"
-  }''')
+  

@@ -1,5 +1,5 @@
-thedata/thedata/settings/p*
-thedata/thedata/settings/*.json
+
+thedata/thedata/settings/private*.json
 test_setup/*.db3
 *.idea
 

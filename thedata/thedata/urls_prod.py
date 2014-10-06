@@ -8,11 +8,6 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    #url(r'^$', TemplateView.as_view(template_name='base.html')),
-
-    # Examples:
-    # url(r'^$', 'milestone_reader.views.home', name='home'),
-    url(r'^search/', include('apps.search.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -20,7 +15,10 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^thedata-admin/', include(admin.site.urls)),
 
-    #url(r'^$', include('apps.milestones.urls')),
+    #url(r'^search/', include('apps.search.urls')),
+    
+    url(r'^', include('apps.basic_pages.urls')),
+  
     
 )
 

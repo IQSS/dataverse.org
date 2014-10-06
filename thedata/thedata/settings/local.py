@@ -37,7 +37,6 @@ DATABASES = {
         'HOST': '',
         'PORT': '',
     },
-   
 }
 ########## END DATABASE CONFIGURATION
 
