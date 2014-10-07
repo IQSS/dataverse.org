@@ -32,6 +32,9 @@ ROOT_URLCONF = '%s.urls_prod' % SITE_NAME
 
 ########## HOST CONFIGURATION
 # See: https://docs.djangoproject.com/en/1.5/releases/1.5/#allowed-hosts-required-in-production
+# Add 'localhost' or '*.pagekite.me' to avoid "Bad Request (400)" while DEBUG is False.
+# 'Finally, if DEBUG is False, you also need to properly set the ALLOWED_HOSTS setting. Failing to do so will result in all requests being returned as "Bad Request (400)".' https://docs.djangoproject.com/en/1.6/ref/settings/#debug
+#ALLOWED_HOSTS = ['localhost', '*.pagekite.me', 'dataverse.org', 'www.dataverse.org' ]
 ALLOWED_HOSTS = ['dataverse.org', 'www.dataverse.org' ]
 ########## END HOST CONFIGURATION
 
