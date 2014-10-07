@@ -23,7 +23,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-{#    <link href="{{ STATIC_URL }}js/jquery-1.11.1.min.js" rel="stylesheet">#}
+
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     
     {% block extra_css %}
@@ -50,11 +50,41 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="{% url 'view_support_page' %}"{% if support_page %} class="active"{% endif %}>Support</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Team &amp; Community</a></li>
+                            <li><a href="#">History &amp; Name</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">Presentations</a></li>
+                            <li><a href="#">Blogs</a></li>
+                          </ul>
                     </li>
                     <li>
-                        <a href="{% url 'view_best_practices_page' %}"{% if best_practices_page %} class="active"{% endif %}>Best Practices</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Best Practices <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="{% url 'view_best_practices_page' %}">Data Citation</a></li>
+                            <li><a href="{% url 'view_best_practices_page' %}">Data Management</a></li>
+                            <li><a href="{% url 'view_best_practices_page' %}">Replication</a></li>
+                            <li><a href="{% url 'view_best_practices_page' %}">Getting Started</a></li>
+                          </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Journals</a></li>
+                            <li><a href="#">Organizations</a></li>
+                            <li><a href="#">Researchers</a></li>
+                            <li><a href="#">Research Groups</a></li>
+                            <li><a href="#">Teaching</a></li>
+                          </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="{% url 'view_support_page' %}">Guides</a></li>
+                            <li><a href="{% url 'view_support_page' %}">Community &amp; Support</a></li>
+                          </ul>
                     </li>
                     <li>
                         <a href="http://roadmap.iq.harvard.edu/milestones/milestone-roadmap/dataverse/" target="_blank">Roadmap</a>
@@ -88,11 +118,11 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
+    <!-- jQuery Version 1.11.1 -->
+    <!-- <script src="{{ STATIC_URL }}js/jquery-1.11.1.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
 
 </body>
 
