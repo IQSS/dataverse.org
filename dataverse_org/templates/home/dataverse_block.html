@@ -1,15 +1,10 @@
 <div class="col-md-3 col-sm-6 hero-feature" style="margin-bottom:0;">
-     <div class="thumbnail" style="margin-bottom:20px;min-height:160px;">
+     <div class="thumbnail" style="margin-bottom:20px;">
          <a href="{{ dverse.homepage }}"><img src="{{ dverse.logo_image.url }}" alt="{{ dverse.slug }}" style="height:70px;" /></a>
          <div class="caption">
-           {#  <h3>{{ dverse.name }}</h3> #}
-             <p>
-                {{ dverse.description|safe|truncatewords:14 }}
-             </p>
-             <p>
-                <a href="{{ dverse.homepage }}" class="btn btn-primary btn-xs">Visit</a>
+             <p style="margin-bottom:0;">
+                <a href="{{ dverse.homepage }}">{{ dverse.name }}</a>
              </p>
          </div>
-        {# <img src="{{ STATIC_URL }}images/partners/odum_institute_logo.png" alt="odum" /> #}
      </div>
 </div>

@@ -18,14 +18,107 @@
 
 <!-- Jumbotron Header -->
 <header class="jumbotron hero-spacer">
-    <h2 style="color:#c55b28;">Dataverse: Publish, Find and Cite Everybody's Research Data</h2 >
-    <p>A repository for research data that takes care of <b>long term preservation</b> and <b>good archival practices</b>, while researchers can <b>share, keep control</b> of and get <b>recognition</b> for their data. Supports the sharing of research data with a persistent data citation, and enables reproducible research.</p>
-    <p><a class="btn btn-primary btn-large">Learn More &nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
-    </p> 
-{#    <img src="{{ STATIC_URL }}images/dataverse_project_logo.png" alt="The Dataverse Project" /> #}
+  <h2 style="color:#c55b28;">Dataverse: Publish, Find and Cite Your Research Data</h2 >
+  <div class="row" style="margin:0;">
     
-    
+    <div class="col-md-7" style="padding-left:0;">
+      
+      <!-- <p>A repository framework for research data that takes care of <b>long term preservation</b> and <b>good archival practices</b>, while researchers can <b>share, keep control</b> of and get <b>recognition</b> for their data. Supports the sharing of research data with a persistent data citation, and enables reproducible research.</p> -->
+
+      <p>Repository framework for research data that provides <b>long term preservation</b> and <b>good archival practices</b>. Researchers can <b>share, keep control</b> of and get <b>recognition</b> for their data with a persistent data citation, to enable reproducible research.</p>
+    </div>
+
+    <div class="col-md-5">
+      <img class="img-responsive" src="{{ STATIC_URL }}images/dataverse_project_logo.png" alt="The Dataverse Project" />
+    </div>
+  </div>   
 </header>
+
+<div class="row text-center" style="margin-bottom:2em;"> 
+       
+       <!-- start: block -->    
+       <div class="col-md-4">
+           <div class="">
+            <div class="bg-primary" style="background-color:#76a690;">
+              <div class="text-left" style="padding:12px; font-size:21px;">Add</div>
+            </div>
+            <div class="bg-info" style="padding:12px;background-color:#C1D7CA;">
+              <p class="text-left" style="font-size: 18px; font-weight: 200;">Preserve, publish, share your data when you upload it to Dataverse.</p>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <small class="glyphicon glyphicon-plus"></small> Getting Started <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu text-left" role="menu">
+                  <li><a href="#">Journals</a></li>
+                  <li><a href="#">Organizations</a></li>
+                  <li><a href="#">Researchers</a></li>
+                  <li><a href="#">Research Groups</a></li>
+                  <li><a href="#">Teaching</a></li>
+                </ul>
+              </div>
+            </div>
+           </div>
+       </div>
+       <!-- end: block -->
+
+       <!-- start: block -->    
+       <div class="col-md-4">
+           <div class="">
+            <div class="bg-primary" style="background-color:#a34e25;">
+              <div class="text-left" style="padding:12px; font-size:21px;">Find</div>
+            </div>
+            <div class="bg-info" style="padding:12px;background-color:#ECC1AC;">
+              <p class="text-left" style="font-size: 18px; font-weight: 200;">Search data across multiple domains in Dataverse through the Harvard Dataverse.</p>
+              <ul class="list-group">
+                <li class="list-group-item text-left">
+                  <span class="badge">14,126</span>
+                  Dataverses
+                </li>
+                <li class="list-group-item text-left">
+                  <span class="badge">56,108</span>
+                  Datasets
+                </li>
+                <li class="list-group-item text-left">
+                  <span class="badge">80,617</span>
+                  Data Files
+                </li>
+              </ul>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <input type="search" class="form-control" id="searchInput" placeholder="Search Dataverse...">
+                </div>
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Find</button>
+              </form>
+            </div>
+           </div>
+       </div>
+       <!-- end: block -->
+
+       <!-- start: block -->    
+       <div class="col-md-4">
+           <div class="">
+            <div class="bg-primary" style="background-color:#eb7d24;">
+              <div class="text-left" style="padding:12px; font-size:21px;">Learn</div>
+            </div>
+            <div class="bg-info" style="padding:12px;background-color:#F6C8A2;">
+              <p class="text-left" style="font-size: 18px; font-weight: 200;">Learn about best practices, the community, software or the Dataverse Project.</p>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <small class="glyphicon glyphicon-book"></small> Learn More <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu text-left" role="menu">
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">Software</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Best Practices</a></li>
+                </ul>
+              </div>
+            </div>
+           </div>
+       </div>
+       <!-- end: block -->
+       
+</div>
 
 <!-- row: Tweets, Blogs, By the Numbers -->
 <div class="row text-center"> 
@@ -50,7 +143,7 @@
                 You can still embed your dataverses and datasets on your website.
               </p>
               <div>
-                <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations" class="btn btn-primary btn-xs">More</a>
+                <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations" class="btn btn-primary btn-xs">Read More</a>
               </div>
             </div>
            </div>
@@ -75,13 +168,15 @@
    <!-- END row: Tweets, Blogs, By the Numbers -->
 
    <!-- Title -->
-   <hr />
+   <hr/>
+
    <div class="row">
        <div class="col-lg-12">
-           <h3 style="margin-top:0;">Data Preservation Guaranteed By</h3>
+           <h3 style="margin-top:0;">Dataverse Repositories <small>Long-term preservation by</small></h3>
        </div>
    </div>
    <!-- /.row -->
+
    <!-- Page Features -->
    <div class="row text-center"> 
         {% for dverse in federated_dataverses %}
@@ -90,21 +185,12 @@
    </div>
    <!-- /.row -->
    
-   <hr />
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 style="margin-top:0;">Search</h3>
-      </div>
-    </div>        
-      
-    <div class="well">
-    <script src="http://dataverse-demo.hmdc.harvard.edu/resources/js/widgets.js?id=1&amp;dvUrl=http://dataverse-demo.hmdc.harvard.edu&amp;widget=search"></script>
-    </div>
+   <hr/>
     
-    <div class="well">
-    <script src="http://dataverse-demo.hmdc.harvard.edu/resources/js/widgets.js?id=1&amp;dvUrl=http://dataverse-demo.hmdc.harvard.edu&amp;widget=iframe"></script>
-    </div>
+   <div class="well">
+    <script src="https://dataverse-demo.hmdc.harvard.edu/resources/js/widgets.js?id=1&amp;dvUrl=https://dataverse-demo.hmdc.harvard.edu&amp;widget=iframe"></script>
+   </div>
 
-    <hr>
+   <hr/>
 
 {% endblock %}
