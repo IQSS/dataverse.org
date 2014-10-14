@@ -3,14 +3,14 @@
     "pk": 1, 
     "model": "federated_dataverses.federateddataverseinfo", 
     "fields": {
-        "name": "Odum Institute", 
+        "name": "Odum Institute Dataverse", 
         "created": "2014-10-02T19:01:49.082Z", 
-        "modified": "2014-10-07T16:48:16.911Z", 
+        "modified": "2014-10-14T18:15:15.930Z", 
         "logo_image": "federated_logos/odum_institute_logo.png", 
         "visible": true, 
         "sort_order": 20, 
         "homepage": "http://arc.irss.unc.edu/dvn/", 
-        "slug": "odum-institute", 
+        "slug": "odum-institute-dataverse", 
         "description": "Open to All Data Depositors"
     }
 },
@@ -33,14 +33,14 @@
     "pk": 3, 
     "model": "federated_dataverses.federateddataverseinfo", 
     "fields": {
-        "name": "Fudan University", 
+        "name": "Fudan University Dataverse", 
         "created": "2014-10-02T19:15:07.707Z", 
-        "modified": "2014-10-07T16:48:53.129Z", 
-        "logo_image": "federated_logos/fudan.png", 
+        "modified": "2014-10-14T18:22:10.891Z", 
+        "logo_image": "federated_logos/fudan.gif", 
         "visible": true, 
         "sort_order": 40, 
         "homepage": "http://www.fdsm.fudan.edu.cn/en/", 
-        "slug": "fudan-university", 
+        "slug": "fudan-university-dataverse", 
         "description": "Open to Lorem Ipsum"
     }
 },
@@ -48,14 +48,14 @@
     "pk": 4, 
     "model": "federated_dataverses.federateddataverseinfo", 
     "fields": {
-        "name": "DANS", 
+        "name": "DANS - Dutch Dataverse", 
         "created": "2014-10-02T19:29:57.478Z", 
-        "modified": "2014-10-07T16:48:33.699Z", 
+        "modified": "2014-10-14T18:16:16.559Z", 
         "logo_image": "federated_logos/dans_logo.png", 
         "visible": true, 
         "sort_order": 30, 
         "homepage": "https://dataverse.nl/dvn/", 
-        "slug": "dans", 
+        "slug": "dans-dutch-dataverse", 
         "description": "Open to DANS Members"
     }
 }
