@@ -22,7 +22,7 @@ def get_env_setting(setting):
         error_msg = "Set the %s env variable" % setting
         raise ImproperlyConfigured(error_msg)
 
-from os.path import join, normpath, dirname
+from os.path import join, normpath, dirname, isfile
 import os
 
 
