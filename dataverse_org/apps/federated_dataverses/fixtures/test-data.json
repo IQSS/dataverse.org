@@ -63,14 +63,14 @@
     "pk": 5, 
     "model": "federated_dataverses.federateddataverseinfo", 
     "fields": {
-        "name": "University of Alberta Libraries", 
+        "name": "University of Alberta Libraries Dataverse", 
         "created": "2014-10-15T14:25:49.282Z", 
-        "modified": "2014-10-15T14:28:33.315Z", 
+        "modified": "2014-10-15T14:47:17.366Z", 
         "logo_image": "federated_logos/alberta.gif", 
         "visible": true, 
         "sort_order": 50, 
         "homepage": "http://www.library.ualberta.ca/", 
-        "slug": "university-of-alberta-libraries", 
+        "slug": "university-of-alberta-libraries-dataverse", 
         "description": ""
     }
 },
@@ -78,14 +78,14 @@
     "pk": 6, 
     "model": "federated_dataverses.federateddataverseinfo", 
     "fields": {
-        "name": "Ontario Council of University Libraries", 
+        "name": "Scholars Portal Dataverse", 
         "created": "2014-10-15T14:26:15.934Z", 
-        "modified": "2014-10-15T14:29:06.459Z", 
-        "logo_image": "federated_logos/ocul.gif", 
+        "modified": "2014-10-15T14:53:54.572Z", 
+        "logo_image": "federated_logos/scholarsportal.gif", 
         "visible": true, 
         "sort_order": 60, 
-        "homepage": "http://www.ocul.on.ca/", 
-        "slug": "ontario-council-of-university-libraries", 
+        "homepage": "http://guides.scholarsportal.info/dataverse", 
+        "slug": "scholars-portal-dataverse", 
         "description": ""
     }
 }
