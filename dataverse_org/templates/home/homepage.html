@@ -68,24 +68,24 @@
               <div class="text-left" style="padding:12px; font-size:21px;">Find</div>
             </div>
             <div class="bg-info" style="padding:12px;background-color:#ECC1AC;">
-              <p class="text-left" style="font-size: 18px; font-weight: 200;">Search data across multiple domains in Dataverse through the Harvard Dataverse.</p>
-              <ul class="list-group">
+              <p class="text-left" style="font-size: 18px; font-weight: 200;">Search data across Dataverse Repositories through Harvard Dataverse.</p>
+              <ul class="list-group" style="opacity:0.65;">
                 <li class="list-group-item text-left">
-                  <span class="badge">14,126</span>
+                  <span class="badge">800</span>
                   Dataverses
                 </li>
                 <li class="list-group-item text-left">
-                  <span class="badge">56,108</span>
+                  <span class="badge">55,025</span>
                   Datasets
                 </li>
                 <li class="list-group-item text-left">
-                  <span class="badge">80,617</span>
+                  <span class="badge">750,783</span>
                   Data Files
                 </li>
               </ul>
               <form class="form-inline" role="form">
                 <div class="form-group">
-                  <input type="search" class="form-control" id="searchInput" placeholder="Search Dataverse...">
+                  <input type="search" class="form-control" id="searchInput" placeholder="Search Data...">
                 </div>
                 <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Find</button>
               </form>
@@ -101,7 +101,7 @@
               <div class="text-left" style="padding:12px; font-size:21px;">Learn</div>
             </div>
             <div class="bg-info" style="padding:12px;background-color:#F6C8A2;">
-              <p class="text-left" style="font-size: 18px; font-weight: 200;">Learn about best practices, the community, software or the Dataverse Project.</p>
+              <p class="text-left" style="font-size: 18px; font-weight: 200;">Learn about best practices, software, the community and the project.</p>
               <div class="btn-group">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                   <small class="glyphicon glyphicon-book"></small> Learn More <span class="caret"></span>
@@ -109,8 +109,8 @@
                 <ul class="dropdown-menu text-left" role="menu">
                   <li><a href="#">Project</a></li>
                   <li><a href="#">Software</a></li>
-                  <li><a href="#">Community</a></li>
                   <li><a href="#">Best Practices</a></li>
+                  <li><a href="#">Community</a></li>
                 </ul>
               </div>
             </div>
@@ -119,6 +119,25 @@
        <!-- end: block -->
        
 </div>
+
+   <hr/>
+
+   <div class="row">
+       <div class="col-lg-12">
+           <h3 style="margin-top:0;">Dataverse Repositories <small>Long-term preservation by</small></h3>
+       </div>
+   </div>
+   <!-- /.row -->
+
+   <!-- Page Features -->
+   <div class="row text-center"> 
+        {% for dverse in federated_dataverses %}
+            {% include "home/dataverse_block.html" %}
+        {% endfor %}
+   </div>
+   <!-- /.row -->
+
+   <hr/>
 
 <!-- row: Tweets, Blogs, By the Numbers -->
 <div class="row text-center"> 
@@ -166,30 +185,6 @@
       
    </div><!-- end: row -->
    <!-- END row: Tweets, Blogs, By the Numbers -->
-
-   <!-- Title -->
-   <hr/>
-
-   <div class="row">
-       <div class="col-lg-12">
-           <h3 style="margin-top:0;">Dataverse Repositories <small>Long-term preservation by</small></h3>
-       </div>
-   </div>
-   <!-- /.row -->
-
-   <!-- Page Features -->
-   <div class="row text-center"> 
-        {% for dverse in federated_dataverses %}
-            {% include "home/dataverse_block.html" %}
-        {% endfor %}
-   </div>
-   <!-- /.row -->
-   
-   <hr/>
-    
-   <div class="well">
-    <script src="https://dataverse-demo.iq.harvard.edu/resources/js/widgets.js?id=1&amp;dvUrl=https://dataverse-demo.iq.harvard.edu&amp;widget=iframe"></script>
-   </div>
 
    <hr/>
 
