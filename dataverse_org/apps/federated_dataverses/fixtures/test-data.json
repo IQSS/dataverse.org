@@ -5,8 +5,8 @@
     "fields": {
         "name": "Odum Institute Dataverse", 
         "created": "2014-10-02T19:01:49.082Z", 
-        "modified": "2014-10-14T18:15:15.930Z", 
-        "logo_image": "federated_logos/odum_institute_logo.png", 
+        "modified": "2014-10-15T14:23:28.459Z", 
+        "logo_image": "federated_logos/odum.png", 
         "visible": true, 
         "sort_order": 20, 
         "homepage": "http://arc.irss.unc.edu/dvn/", 
@@ -20,8 +20,8 @@
     "fields": {
         "name": "Harvard Dataverse", 
         "created": "2014-10-02T19:10:28.184Z", 
-        "modified": "2014-10-07T16:48:05.148Z", 
-        "logo_image": "federated_logos/harvard.gif", 
+        "modified": "2014-10-15T14:23:20.215Z", 
+        "logo_image": "federated_logos/harvard_1.png", 
         "visible": true, 
         "sort_order": 10, 
         "homepage": "http://dataverse-demo.iq.harvard.edu/", 
@@ -35,8 +35,8 @@
     "fields": {
         "name": "Fudan University Dataverse", 
         "created": "2014-10-02T19:15:07.707Z", 
-        "modified": "2014-10-14T18:22:10.891Z", 
-        "logo_image": "federated_logos/fudan.gif", 
+        "modified": "2014-10-15T14:23:50.812Z", 
+        "logo_image": "federated_logos/Fudan_University.png", 
         "visible": true, 
         "sort_order": 40, 
         "homepage": "http://www.fdsm.fudan.edu.cn/en/", 
@@ -50,13 +50,43 @@
     "fields": {
         "name": "DANS - Dutch Dataverse", 
         "created": "2014-10-02T19:29:57.478Z", 
-        "modified": "2014-10-14T18:16:16.559Z", 
-        "logo_image": "federated_logos/dans_logo.png", 
+        "modified": "2014-10-15T14:23:40.053Z", 
+        "logo_image": "federated_logos/dans.gif", 
         "visible": true, 
         "sort_order": 30, 
         "homepage": "https://dataverse.nl/dvn/", 
         "slug": "dans-dutch-dataverse", 
         "description": "Open to DANS Members"
+    }
+},
+{
+    "pk": 5, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "University of Alberta Libraries", 
+        "created": "2014-10-15T14:25:49.282Z", 
+        "modified": "2014-10-15T14:28:33.315Z", 
+        "logo_image": "federated_logos/alberta.gif", 
+        "visible": true, 
+        "sort_order": 50, 
+        "homepage": "http://www.library.ualberta.ca/", 
+        "slug": "university-of-alberta-libraries", 
+        "description": ""
+    }
+},
+{
+    "pk": 6, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Ontario Council of University Libraries", 
+        "created": "2014-10-15T14:26:15.934Z", 
+        "modified": "2014-10-15T14:29:06.459Z", 
+        "logo_image": "federated_logos/ocul.gif", 
+        "visible": true, 
+        "sort_order": 60, 
+        "homepage": "http://www.ocul.on.ca/", 
+        "slug": "ontario-council-of-university-libraries", 
+        "description": ""
     }
 }
 ]
