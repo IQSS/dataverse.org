@@ -42,7 +42,8 @@
             <div class="bg-primary" style="background-color:#76a690;">
               <div class="text-left" style="padding:12px; font-size:21px;">Add</div>
             </div>
-            <div class="bg-info" style="padding:12px;background-color:#C1D7CA;">
+            <div class="bg-info" style="padding:12px;background-color:#C1D7CA;min-height:268px;">
+              <img src="{{ STATIC_URL }}images/dataverse40.png" alt="Dataverse" width="336" />
               <p class="text-left" style="font-size: 18px; font-weight: 200;">Preserve, publish, share your data when you upload it to Dataverse.</p>
               <div class="btn-group">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -67,27 +68,27 @@
             <div class="bg-primary" style="background-color:#a34e25;">
               <div class="text-left" style="padding:12px; font-size:21px;">Find</div>
             </div>
-            <div class="bg-info" style="padding:12px;background-color:#ECC1AC;">
-              <p class="text-left" style="font-size: 18px; font-weight: 200;">Search data across Dataverse Repositories through Harvard Dataverse.</p>
-              <ul class="list-group" style="opacity:0.65;">
+            <div class="bg-info" style="padding:12px;background-color:#ECC1AC;min-height:268px;">
+              <ul class="list-group" style="opacity:0.65;margin-bottom:0;">
                 <li class="list-group-item text-left">
                   <span class="badge">800</span>
-                  Dataverses
+                  <span class="glyphicon glyphicon-record"></span> Dataverses
                 </li>
                 <li class="list-group-item text-left">
                   <span class="badge">55,025</span>
-                  Datasets
+                  <span class="glyphicon glyphicon-file"></span> Datasets
                 </li>
                 <li class="list-group-item text-left">
                   <span class="badge">750,783</span>
-                  Data Files
+                  <span class="glyphicon glyphicon-picture"></span> Data Files
                 </li>
               </ul>
+              <p class="text-left" style="font-size: 18px; font-weight: 200;">Search data across Dataverse Repositories through Harvard Dataverse.</p>
               <form class="form-inline" role="form">
                 <div class="form-group">
                   <input type="search" class="form-control" id="searchInput" placeholder="Search Data...">
                 </div>
-                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Find</button>
+                <button type="submit" class="btn btn-primary" onclick="window.open('https://dataverse-demo.hmdc.harvard.edu/dataverse.xhtml?id=1&amp;q=' + document.getElementById('searchInput').value + '', '_blank');"><span class="glyphicon glyphicon-search"></span> Find</button>
               </form>
             </div>
            </div>
@@ -100,7 +101,8 @@
             <div class="bg-primary" style="background-color:#eb7d24;">
               <div class="text-left" style="padding:12px; font-size:21px;">Learn</div>
             </div>
-            <div class="bg-info" style="padding:12px;background-color:#F6C8A2;">
+            <div class="bg-info" style="padding:12px;background-color:#F6C8A2;min-height:268px;">
+              <img src="{{ STATIC_URL }}images/dataversecommunity.jpg" alt="Dataverse" width="336" />
               <p class="text-left" style="font-size: 18px; font-weight: 200;">Learn about best practices, software, the community and the project.</p>
               <div class="btn-group">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -152,7 +154,7 @@
             </div>
             <div class="panel-body" style="background:#f5f5f5;min-height:302px;">
               <!-- <p class="h4 text-left" style="margin-top:0;font-weight:bold;">Blogs</p> -->
-              <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations">Widgets & Downloading Data Citations</a>
+              <a href="http://datascience.iq.harvard.edu/blog/dataverse-40-widgets-downloading-data-citations" class="h4">Widgets &amp; Downloading Data Citations</a>
               <br />
               <small><em>September 18, 2014</em></small>
               <p class="text-left">
