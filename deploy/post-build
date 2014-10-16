@@ -1,0 +1,7 @@
+#!/bin/sh
+cd /webapps/code/dataverse.org
+git status
+git pull
+git status
+scl enable python27 '/webapps/code/dataverse.org/deploy/post-build2'
+echo "Done."
