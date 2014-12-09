@@ -20,11 +20,11 @@
     "fields": {
         "name": "Harvard Dataverse", 
         "created": "2014-10-02T19:10:28.184Z", 
-        "modified": "2014-10-15T14:23:20.215Z", 
+        "modified": "2014-12-09T17:17:18.508Z", 
         "logo_image": "federated_logos/harvard_1.png", 
         "visible": true, 
         "sort_order": 10, 
-        "homepage": "http://dataverse-demo.iq.harvard.edu/", 
+        "homepage": "http://thedata.harvard.edu/dvn/", 
         "slug": "harvard-dataverse", 
         "description": "Open to All Data Depositors"
     }
