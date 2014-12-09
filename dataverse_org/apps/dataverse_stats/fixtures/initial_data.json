@@ -1,0 +1,16 @@
+[
+{
+    "pk": 1, 
+    "model": "dataverse_stats.dataversestatssnapshot", 
+    "fields": {
+        "description": "", 
+        "created": "2014-12-09T18:26:36.451Z", 
+        "dataverse_count": 833, 
+        "modified": "2014-12-09T18:26:36.535Z", 
+        "dataset_count": 55161, 
+        "file_count": 752276, 
+        "download_count": 1148135, 
+        "retrieval_datetime": "2014-12-09T18:26:36.447Z"
+    }
+}
+]

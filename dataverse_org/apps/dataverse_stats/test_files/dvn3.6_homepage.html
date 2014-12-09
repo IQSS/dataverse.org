@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        
+        <title>Harvard Dataverse Network</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta content="en" http-equiv="Content-Language" />
+        <meta content="no" http-equiv="imagetoolbar" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+            <script type="text/javascript">
+                // <![CDATA[
+                // check to see if page is loaded in an iframe; if so, and "pop" out to top level
+                if(self != top){
+                    top.location.replace(self.location.href);
+                }
+                // ]]>
+            </script>
+        <link href="/dvn/resources/images/favicondataverse.png" rel="icon" type="image/png" />
+        <link href="/dvn/resources/icefaces/dvn_rime/dvn_rime.css?v=3.6.2" rel="stylesheet" type="text/css" />
+        <link href="/dvn/resources/css/dvngeneral.css?v=3.6.2" rel="stylesheet" type="text/css" />
+        <link href="/dvn/resources/css/dvnspecific.css?v=3.6.2" rel="stylesheet" type="text/css" />
+        <link href="/dvn/resources/css/dvnhome.css?v=3.6.2" rel="stylesheet" type="text/css" />
+        <link href="/dvn/resources/css/dvnstudy.css?v=3.6.2" rel="stylesheet" type="text/css" />
+        <link href="/dvn/resources/css/orbit.css?v=3.6.2" rel="stylesheet" type="text/css" /><!--[if lte IE 8]>                         <link rel="stylesheet" type="text/css" href="/dvn/resources/css/iefix.css?v=3.6.2"/>                         <![endif]--><!--[if IE 8]>                         <link rel="stylesheet" type="text/css" href="/dvn/resources/css/ie8fix.css?v=3.6.2"/>                         <![endif]-->
+        
+        <script type="text/javascript">
+          // <![CDATA[
+          if (window != top)
+          {
+            document.write ('<link rel="stylesheet" type="text/css" href="/dvn/resources/css/dvnframes.css?v=3.6.2"/>');
+          }
+          // ]]>
+        </script>
+        <script src="/dvn/resources/javascript/EventCapture.js?v=3.6.2" type="text/javascript"></script>
+        <script src="/dvn/resources/javascript/jquery.js?v=3.6.2" type="text/javascript"></script>
+        <script src="/dvn/resources/javascript/jquery.truncator.js?v=3.6.2" type="text/javascript"></script>
+        <script src="/dvn/resources/javascript/jquery.dimensions.js?v=3.6.2" type="text/javascript"></script>
+        <script src="/dvn/resources/javascript/jquery.orbit.min.js?v=3.6.2" type="text/javascript"></script>
+        <script src="/dvn/resources/javascript/jquery.tooltip.min.js?v=3.6.2" type="text/javascript"></script>
+        <script src="/dvn/resources/javascript/jquery.cookie.js?v=3.6.2" type="text/javascript"></script>
+        <script src="/dvn/resources/javascript/jcap.js?v=3.6.2" type="text/javascript"></script>
+        <script src="/dvn/resources/javascript/md5.js?v=3.6.2" type="text/javascript"></script>
+        <script type="text/javascript">
+            // <![CDATA[
+            jQuery.noConflict();
+            jQuery(document).ready(function(){
+                  initInlineHelpTip();
+                  jQuery(".dvnstudystatusversionnote, .dvnCollectionDescription").truncate({max_length: 250});
+            });
+            function initInlineHelpTip(){
+                jQuery('.dvnInlineHelpTip').tooltip({
+                    showURL: false,
+                    showBody: " - "
+                });
+                jQuery('.dvnInlineHmpgWidgetInfo').tooltip({
+                    showURL: false,
+                    showBody: " *!* "
+                });
+                
+                // Now remove the class, so when this method gets called again we don't include them
+                // (since calling .tooltip more than once seems to break the tooltips)
+                jQuery('.dvnInlineHelpTip').removeClass("dvnInlineHelpTip");
+                
+            };
+            // ]]>
+        </script>         <script type="text/javascript">
+
+         // <![CDATA[  
+
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+            //  ]]>
+
+            </script>
+
+<script src="/dvn/faces/javax.faces.resource/jsf.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=javax.faces" type="text/javascript"></script><script src="/dvn/faces/javax.faces.resource/icepush.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?rand=1299009702" type="text/javascript"></script><script src="/dvn/faces/javax.faces.resource/bridge.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?rand=1299009702" type="text/javascript"></script><script src="/dvn/faces/javax.faces.resource/yui/yui-min.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=yui/3_1_1" type="text/javascript"></script><script src="/dvn/faces/javax.faces.resource/loader/loader-min.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=yui/3_1_1" type="text/javascript"></script><script src="/dvn/faces/javax.faces.resource/combined.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=org.icefaces.component.util" type="text/javascript"></script><link href="/dvn/faces/javax.faces.resource/yui2-skin-sam-button/assets/button-core.css;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=yui/2in3" rel="stylesheet" type="text/css" /><link href="/dvn/faces/javax.faces.resource/combined.css;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=org.icefaces.component.util" rel="stylesheet" type="text/css" /><script src="/dvn/faces/javax.faces.resource/fileEntry.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=org.icefaces.component.fileentry" type="text/javascript"></script><link href="/dvn/faces/javax.faces.resource/slider/assets/slider-core.css;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=yui/3_1_1" rel="stylesheet" type="text/css" /><link href="/dvn/faces/javax.faces.resource/yui2-skin-sam-tabview/assets/tabview-core.css;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?ln=yui/2in3" rel="stylesheet" type="text/css" /><script src="/dvn/faces/javax.faces.resource/compat.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" type="text/javascript"></script><script src="/dvn/faces/javax.faces.resource/icefaces-compat.js;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" type="text/javascript"></script></head><body><style type="text/css">
+<!--
+body {
+    background: url("/images/bg.gif") repeat scroll 0 0 transparent;
+    font-family: Arial,Helvetica,sans-serif;
+	margin: 0;
+}
+a img {
+	border: 0;
+}
+.wrapper {
+    background: #FFFFFF;
+    margin: 0 auto;
+    width: 1160px;
+}
+.myacctellusholder {
+    background: #000000;
+    height: 30px;
+    margin: 0;
+    padding: 9px 0 0;
+    width: 1160px;
+}
+.header {
+    margin-bottom: 0;
+    padding: 16px 0 16px 21px;
+    position: relative;
+	overflow: hidden;
+    z-index: 90;
+}
+.logo {
+	padding-top: 18px;
+	padding-right:24px;
+	overflow: hidden;
+	float: left;
+}
+.logo .pane-content {
+	float: left;
+	margin-left: 24px;
+}
+.logo .pane-content:first-child {
+	margin-left: 0px;
+}
+.title {
+	margin-top: 24px;
+}
+.title .sitename {
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: #A51C30;
+}
+.title span {
+	font-size: 68px !important;
+}
+.title .tagline {
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-size: 21px;
+}
+#main-content {
+	background: url("/images/dividerblackbg.gif") repeat-x scroll 20px 0 transparent;
+    margin: 5px 20px 0;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.copyrightsline {
+    background: #333333;
+}
+.copyrightsline .copyrightsline-box {
+    margin: 0 auto;
+    width: 1160px;
+}
+.copyrightsline ul {
+    margin: 0;
+    padding: 5px 0 0;
+}
+.copyrightsline ul li {
+    float: left;
+    line-height: 2;
+    list-style: none outside none;
+    margin-right: 15px;
+    padding-left: 15px;
+}
+.copyrightsline ul li.first {
+    padding-left: 0;
+}
+.copyrightsline ul li a {
+    color: #CCCCCC;
+    font-size: 10px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.copyrightsline ul li a:hover {
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: normal;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.copyrightsline p {
+    clear: both;
+	display: block;
+    color: #999999;
+    font-size: 11px;
+	font-family: Arial,Helvetica,sans-serif;
+    margin-top: 0;
+    padding: 4px 0 10px;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    clear: both;
+    float: none;
+}
+-->
+</style>
+
+<div class="layout-frontpage clearfix">
+  <div class="outerwrapper">
+    <div class="wrapper">
+      <div id="header-Box">
+        <div class="column column-main column-alpha myacctellusholder">
+          
+        </div>
+        <div class="header">
+          <div class="column logo column-first column-alpha">
+            <div class="panel-pane pane-page-logo">
+              <div class="pane-content"> <a href="http://www.iq.harvard.edu/" id="logoIQSS" title="The Institute for Quantitative Social Science"><img style="width:150px;" src="/images/iqsslogo.png" alt="The Institute for Quantitative Social Science" /></a> </div>
+              <div class="pane-content" style="padding-top:12px;"> <a href="http://library.harvard.edu/" id="logoHarvardLibrary" title="Harvard Library"><img src="/images/harvardlibrarylogo.png" alt="Harvard Library" /></a> </div>
+            </div>
+          </div>
+          <div class="column title column-second column-alpha">
+            <div class="tagline">
+            	<em>Share, Cite, Reuse, Archive Research Data</em><br />
+                Scientific data for reproducible research
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homecontentarea" id="main-content">
+         
+        <div class="dvn_wrapper" id="dvn_wrapper">
+            <div class="dvn_content" id="content-frame"><div class="iceOutConStat" id="j_idt21"><div class="iceOutConStatInactv" id="j_idt21:connection-idle"></div><div class="iceOutConStatActv" id="j_idt21:connection-working" style="visibility: hidden;"></div><div class="iceOutConStatCaution" id="j_idt21:connection-trouble" style="visibility: hidden;"></div><div class="iceOutConStatDisconnect" id="j_idt21:connection-lost" style="visibility: hidden;"></div><script id="j_idt21script" type="text/javascript">ice.onLoad(function(){ice.ComponentIndicators('j_idt21:connection-working', 'j_idt21:connection-idle', 'j_idt21:connection-trouble', 'j_idt21:connection-lost', false, false);});</script></div><div class="dvn_sectionHeader"><div class="icePnlGrp dvn_navblock dvn_navblockNetwork" id="navblockDiv">
+        <div class="dvn_navblockLinks">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top">
+                        </td>
+                        <td align="right" rowspan="2" valign="bottom">
+                            <div class="dvn_navblockWrap">
+                                <div class="dvn_headerTitleR">
+                                    <a href="http://thedata.org" target="_blank" title="Link to the Dataverse Network Project">
+                                        <img alt="Powered by the Dataverse Network Project" src="/dvn/resources/images/dvnPoweredByLogo.gif" />
+                                    </a>
+                                    <div class="dvn_headerVersion"><span class="iceOutTxt" id="j_idt35">v. 3.6.2</span></div>
+                                </div>
+                                <ul>
+                                    <li><a class="iceOutLnk navicon naviconsearch" href="/dvn/faces/AdvSearchPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="j_idt39" title="Basic or Advanced Search of Harvard Dataverse Network"><span class="iceOutTxt" id="j_idt40">Search</span></a>
+                                    </li>
+                                    <li><a class="iceOutLnk navicon naviconguides" href="/guides" id="j_idt46" target="_blank" title="Go to User Guides"><span class="iceOutTxt" id="j_idt47">User Guides</span></a>
+                                    </li>
+                                    <li><a class="iceOutLnk navicon naviconcontact" href="/dvn/faces/ContactUsPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="j_idt49" title="Contact Harvard Dataverse Network Help"><span class="iceOutTxt" id="j_idt50">Report Issue</span></a>
+                                    </li>
+                                        <li class="dvn_navUserName"><form action="/dvn/faces/HomePage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" class="iceFrm" enctype="application/x-www-form-urlencoded" id="j_idt66" method="post" onsubmit="return false;"><input name="j_idt66" type="hidden" value="j_idt66" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="7549076329442951115:187558587146244457" autocomplete="off" /><input name="ice.window" type="hidden" value="h9i3himvv9" /><input name="ice.view" type="hidden" value="vlheaau6sd" /><script id="j_idt66:_t66_captureSubmit" type="text/javascript">ice.captureSubmit('j_idt66',false);ice.captureEnterKey('j_idt66');</script><a class="iceCmdLnk" href="javascript:;" id="j_idt66:j_idt67" onblur="setFocus('');" onclick="var form=formOf(this);form['j_idt66:j_idcl'].value='j_idt66:j_idt67';iceSubmit(form,this,event);form['j_idt66:j_idcl'].value='';return false;" onfocus="setFocus(this.id);" title="Create Account"><span class="iceOutTxt" id="j_idt66:j_idt68">Create Account</span></a><span id="j_idt66hdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value="" /><input name="j_idt66:j_idcl" type="hidden" /></span></form>
+                                        </li>
+                                        <li><a class="iceOutLnk" href="/dvn/faces/login/LoginPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?clearWorkflow=true" id="j_idt75" title="Log In"><span class="iceOutTxt" id="j_idt76">Log In</span></a>
+                                        </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="bottom">
+                            <div class="dvn_headerTitleLarge"><a class="iceOutLnk dvn_headerTitleLrgNetwork" href="/dvn;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="j_idt87" title="Harvard Dataverse Network Homepage">Harvard Dataverse Network</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div></div>
+</div><form action="/dvn/faces/HomePage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" class="iceFrm" enctype="application/x-www-form-urlencoded" id="form1" method="post" onsubmit="return false;"><input name="form1" type="hidden" value="form1" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="7549076329442951115:187558587146244457" autocomplete="off" /><input name="ice.window" type="hidden" value="h9i3himvv9" /><input name="ice.view" type="hidden" value="vlheaau6sd" /><script id="form1:form1_captureSubmit" type="text/javascript">ice.captureSubmit('form1',false);ice.captureEnterKey('form1');</script><input id="form1:vdcId" name="form1:vdcId" type="hidden" value="" />
+                    
+                    <div id="dvnHomePgSearch">
+                        <div class="dvnSearchBlock"><div xmlns:jsp="http://java.sun.com/JSP/Page">
+    <script type="text/javascript">
+        function clickclear(thisfield, defaulttext) {
+            if (thisfield.value == defaulttext) {
+                thisfield.value = "";
+            }
+        }
+    </script>
+    <fieldset>
+        <label for="search"><input class="iceInpTxt" id="form1:simpleSearch" name="form1:simpleSearch" onblur="setFocus('');" onclick="clickclear(this, 'Search this Dataverse Network')" onfocus="setFocus(this.id);" onkeypress="if (window.event) return processEvent('', 'form1:search'); else return processEvent(event, 'form1:search');iceSubmit(form,this,event);" onmousedown="this.focus();" type="text" value="Search this Dataverse Network" />
+        </label>
+        <label for="button"><input class="iceCmdBtn dvnSearchButton" id="form1:search" name="form1:search" onblur="setFocus('');" onclick="iceSubmit(form,this,event);return false;" onfocus="setFocus(this.id);" type="submit" value="Search" />
+        </label>
+    </fieldset>
+</div>
+
+                            <div class="dvn_searchlinks"><a class="iceOutLnk" href="/dvn/faces/AdvSearchPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt119"><span class="iceOutTxt" id="form1:j_idt120">Advanced Search</span></a><a class="iceOutLnk" href="/guides/dataverse-user-main.html#search" id="form1:j_idt121" target="_blank"><span class="iceOutTxt" id="form1:j_idt122">Tips</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div id="dvn_mainSection"><div class="icePnlGrp dvn_hmpgMainMessage" id="form1:networkAnnouncementsHeaderPanel"><span class="iceOutTxt" id="form1:networkAnnouncementsMessages"><p>
+We're redesigning Dataverse and want your feedback! Please check out our <a href="http://dataverse-demo.iq.harvard.edu">Beta Site</a>
+</p>
+The Harvard Dataverse Network is open to all scientific data from all disciplines worldwide. It includes the world's largest collection of social science research data.  Learn more about the <a href="http://www.thedata.org/" title="Dataverse Network Project" target="_blank">Dataverse  Network</a>.</span></div>
+                    </div>
+                    
+                    <div id="hiddenDiv"><span class="iceOutTxt" id="form1:j_idt125"></span>
+                    </div><div class="icePnlGrp dvnHmpgColumnBlock" id="form1:j_idt169">
+                        
+                            <div class="dvnHmpgColumnDataverses">
+                                
+                                <div class="dvnHmpgColumnHeaderBlock">
+                                    <h1 class="dvnHmpgColumnHeader">Dataverses</h1><div class="icePnlGrp dvnCreateActionBox dvnCreateDataverse" id="form1:createDataverse"><a class="iceOutLnk" href="/dvn/faces/login/CreatorRequestInfoPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt171"><span class="iceOutTxt" id="form1:j_idt172">Create Dataverse</span></a></div>
+                                    <div class="dvnHmpgColumnTotals"><span class="iceOutTxt dvn_totalsValue" id="form1:j_idt174">833</span><span class="iceOutTxt" id="form1:j_idt175"> Dataverses</span>
+                                    </div>
+                                </div>
+                                <div class="dvnHmpgColumnDefinition"><img alt="" class="iceGphImg dvn_icon" id="form1:j_idt177" src="/dvn/resources/images/icon_information.18.png" /><span class="iceOutTxt vdcHelpText" id="form1:j_idt178">A <a target="_blank" href="http://thedata.org/book/features">Dataverse</a> is a container for research data studies, customized and managed by its owner.</span>
+                                </div><div class="icePnlGrp dvnHmpgColumnWidget" id="form1:j_idt212">
+                                    <div class="dvnHmpgColumnWidgetHeader">Recently Released Dataverses</div><table cellspacing="0" class="iceDatTbl dvnHmpgDataverseWidgetTable" id="form1:recentDataverseList" width="100%"><tbody id="form1:recentDataverseList:tbody"><tr class="iceDatTblRow1 dvnHmpgDataverseWidgetTableRow1" id="form1:recentDataverseList:0"><td class="iceDatTblCol1 dvnHmpgDataverseWidgetTableCol1">
+                                            <div><a class="iceOutLnk dvnHmpgDvNameLink dvnInlineHelpTip" href="/dvn/dv/csr;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:recentDataverseList:0:dataverse_linkSub" title="Center for Survey Research Dataverse - Released: Dec 9, 2014                                                                         &lt;br/&gt;Affilitation:   University of Virginia                                                                         &lt;br/&gt;Description:  Studies and data sets produced by The Center for Survey Research at the University of Virginia"><span class="iceOutTxt" id="form1:recentDataverseList:0:j_idt216">Center for Survey Research</span></a><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:recentDataverseList:0:j_idt217">Dec 9, 2014</span>
+                                            </div></td></tr><tr class="iceDatTblRow2 dvnHmpgDataverseWidgetTableRow2" id="form1:recentDataverseList:1"><td class="iceDatTblCol1 dvnHmpgDataverseWidgetTableCol1">
+                                            <div><a class="iceOutLnk dvnHmpgDvNameLink dvnInlineHelpTip" href="/dvn/dv/elastographyusingmultistreamgpu;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:recentDataverseList:1:dataverse_linkSub" title="Elastography using multistream GPU Dataverse - Released: Dec 7, 2014                                                                         &lt;br/&gt;Affilitation:   The Johns Hopkins University                                                                         &lt;br/&gt;Description:  Ultrasound research data for multistream elastography "><span class="iceOutTxt" id="form1:recentDataverseList:1:j_idt216">Elastography using multistream GPU</span></a><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:recentDataverseList:1:j_idt217">Dec 7, 2014</span>
+                                            </div></td></tr><tr class="iceDatTblRow1 dvnHmpgDataverseWidgetTableRow1" id="form1:recentDataverseList:2"><td class="iceDatTblCol1 dvnHmpgDataverseWidgetTableCol1">
+                                            <div><a class="iceOutLnk dvnHmpgDvNameLink dvnInlineHelpTip" href="/dvn/dv/JacobyData;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:recentDataverseList:2:dataverse_linkSub" title="William G. Jacoby, Research Data and Replication Materials Dataverse - Released: Dec 7, 2014                                                                         &lt;br/&gt;Affilitation:   Michigan State University                                                                         &lt;br/&gt;Description:  Data and replication materials for publications and research projects."><span class="iceOutTxt" id="form1:recentDataverseList:2:j_idt216">William G. Jacoby, Research Data and Replication Materials</span></a><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:recentDataverseList:2:j_idt217">Dec 7, 2014</span>
+                                            </div></td></tr><tr class="iceDatTblRow2 dvnHmpgDataverseWidgetTableRow2" id="form1:recentDataverseList:3"><td class="iceDatTblCol1 dvnHmpgDataverseWidgetTableCol1">
+                                            <div><a class="iceOutLnk dvnHmpgDvNameLink dvnInlineHelpTip" href="/dvn/dv/mperea;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:recentDataverseList:3:dataverse_linkSub" title="Manuel Perea Dataverse - Released: Dec 4, 2014                                                                         &lt;br/&gt;Affilitation:   Universitat de Valencia                                                                         &lt;br/&gt;Description:  Materials of the paper &quot;In defense of position uncertainty: a repply to Dunabeitia et al&quot;"><span class="iceOutTxt" id="form1:recentDataverseList:3:j_idt216">Manuel Perea</span></a><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:recentDataverseList:3:j_idt217">Dec 4, 2014</span>
+                                            </div></td></tr><tr class="iceDatTblRow1 dvnHmpgDataverseWidgetTableRow1" id="form1:recentDataverseList:4"><td class="iceDatTblCol1 dvnHmpgDataverseWidgetTableCol1">
+                                            <div><a class="iceOutLnk dvnHmpgDvNameLink dvnInlineHelpTip" href="/dvn/dv/Light_adapted_melanopsin_responses_in_mouse_dLGN;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:recentDataverseList:4:dataverse_linkSub" title="Melanopsin-derived visual responses under light adapted conditions in the mouse dLGN Dataverse - Released: Dec 4, 2014                                                                         &lt;br/&gt;Affilitation:   University of Manchester                                                                         &lt;br/&gt;Description:  Raw data files plus key for interpretation for all experiments contained within this paper"><span class="iceOutTxt" id="form1:recentDataverseList:4:j_idt216">Melanopsin-derived visual responses under light adapted conditions in the mouse dLGN</span></a><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:recentDataverseList:4:j_idt217">Dec 4, 2014</span>
+                                            </div></td></tr></tbody></table>
+                                    <div class="dvnHmpgColumnWidgetViewMoreBlock"><a class="iceOutLnk" href="/dvn/faces/site/BrowseDataversesPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?initialSort=Released" id="form1:j_idt220"><span class="iceOutTxt" id="form1:j_idt221">View More &gt;</span></a>
+                                    </div></div><div class="icePnlGrp dvnHmpgColumnWidget dvnHmpgWidgetSlider" id="form1:j_idt223">
+                                    
+                                    
+                                    <div id="dvnHmpgSubnetworkWidget">
+                                        <div class="content"><div class="icePnlGrp dvnHmpgSubnetworkLogo" id="form1:j_idt225:0:j_idt227"><a class="iceOutLnk" href="/dvn/dataverses/cfa;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:0:subnetwork_imglink" title="View CfA Dataverses within Harvard Dataverse Network"><img alt="CfA Dataverses" class="iceGphImg" id="form1:j_idt225:0:j_idt228" src="http://thedata.harvard.edu/images/cfa-logo.gif" /></a></div>
+                                            <div class="dvnHmpgSubnetworkInfo"><a class="iceOutLnk dvnHmpgSubnetworkNameLink" href="/dvn/dataverses/cfa;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:0:subnetwork_textlink" title="View CfA Dataverses within Harvard Dataverse Network"><span class="iceOutTxt" id="form1:j_idt225:0:j_idt230">CfA Dataverses</span></a><span class="iceOutTxt" id="form1:j_idt225:0:j_idt231">Harvard-Smithsonian Center for Astrophysics (CfA) and affiliated Dataverses</span>
+                                            </div>
+                                        </div>
+                                        <div class="content"><div class="icePnlGrp dvnHmpgSubnetworkLogo" id="form1:j_idt225:1:j_idt227"><a class="iceOutLnk" href="/dvn/dataverses/Federated;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:1:subnetwork_imglink" title="View Federated Dataverses within Harvard Dataverse Network"><img alt="Federated Dataverses" class="iceGphImg" id="form1:j_idt225:1:j_idt228" src="http://thedata.harvard.edu/images/Federated-Logos.gif" /></a></div>
+                                            <div class="dvnHmpgSubnetworkInfo"><a class="iceOutLnk dvnHmpgSubnetworkNameLink" href="/dvn/dataverses/Federated;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:1:subnetwork_textlink" title="View Federated Dataverses within Harvard Dataverse Network"><span class="iceOutTxt" id="form1:j_idt225:1:j_idt230">Federated Dataverses</span></a><span class="iceOutTxt" id="form1:j_idt225:1:j_idt231">Subnetwork for all Harvested Dataverses in the Harvard Dataverse Network</span>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="dvnHmpgSubnetworkInfo"><a class="iceOutLnk dvnHmpgSubnetworkNameLink" href="/dvn/dataverses/GSD;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:2:subnetwork_textlink" title="View Harvard University Graduate School of Design Dataverses within Harvard Dataverse Network"><span class="iceOutTxt" id="form1:j_idt225:2:j_idt230">Harvard University Graduate School of Design Dataverses</span></a><span class="iceOutTxt" id="form1:j_idt225:2:j_idt231">Subnetwork for Harvard Graduate School of Design</span>
+                                            </div>
+                                        </div>
+                                        <div class="content"><div class="icePnlGrp dvnHmpgSubnetworkLogo" id="form1:j_idt225:3:j_idt227"><a class="iceOutLnk" href="/dvn/dataverses/PSI;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:3:subnetwork_imglink" title="View Population Services International (PSI) Dataverses within Harvard Dataverse Network"><img alt="Population Services International (PSI) Dataverses" class="iceGphImg" id="form1:j_idt225:3:j_idt228" src="http://thedata.harvard.edu/images/PSI_small.gif" /></a></div>
+                                            <div class="dvnHmpgSubnetworkInfo"><a class="iceOutLnk dvnHmpgSubnetworkNameLink" href="/dvn/dataverses/PSI;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:3:subnetwork_textlink" title="View Population Services International (PSI) Dataverses within Harvard Dataverse Network"><span class="iceOutTxt" id="form1:j_idt225:3:j_idt230">Population Services International (PSI) Dataverses</span></a><span class="iceOutTxt" id="form1:j_idt225:3:j_idt231">A global health organization that focuses on serious challenges such as a lack of family planning, HIV and AIDS, barriers to maternal health, and the greatest threats to children under five, including malaria, diarrhea, pneumonia and malnutrition.</span>
+                                            </div>
+                                        </div>
+                                        <div class="content"><div class="icePnlGrp dvnHmpgSubnetworkLogo" id="form1:j_idt225:4:j_idt227"><a class="iceOutLnk" href="/dvn/dataverses/ubiquity-press;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:4:subnetwork_imglink" title="View Ubiquity Press Dataverses within Harvard Dataverse Network"><img alt="Ubiquity Press Dataverses" class="iceGphImg" id="form1:j_idt225:4:j_idt228" src="http://thedata.harvard.edu/images/up_opendata.png" /></a></div>
+                                            <div class="dvnHmpgSubnetworkInfo"><a class="iceOutLnk dvnHmpgSubnetworkNameLink" href="/dvn/dataverses/ubiquity-press;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="form1:j_idt225:4:subnetwork_textlink" title="View Ubiquity Press Dataverses within Harvard Dataverse Network"><span class="iceOutTxt" id="form1:j_idt225:4:j_idt230">Ubiquity Press Dataverses</span></a><span class="iceOutTxt" id="form1:j_idt225:4:j_idt231">Ubiquity Press is an open access publisher of peer-reviewed, academic journals. </span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div></div>
+                                
+                            </div>
+                            
+                            
+                            
+                            <div class="dvnHmpgColumnStudies">
+                                
+                                <div class="dvnHmpgColumnHeaderBlock">
+                                    <h1 class="dvnHmpgColumnHeader">Studies</h1>
+                                    <div class="dvnHmpgColumnTotals"><span class="iceOutTxt dvn_totalsValue" id="form1:j_idt240">55,161</span><span class="iceOutTxt" id="form1:j_idt241"> Studies, </span><span class="iceOutTxt dvn_totalsValue" id="form1:j_idt242">752,276</span><span class="iceOutTxt" id="form1:j_idt243"> Files, </span><span class="iceOutTxt dvn_totalsValue" id="form1:j_idt244">1,148,135</span><span class="iceOutTxt" id="form1:j_idt245"> Downloads</span>
+                                    </div>
+                                </div>
+                                <div class="dvnHmpgColumnDefinition"><img alt="" class="iceGphImg dvn_icon" id="form1:j_idt247" src="/dvn/resources/images/icon_information.18.png" /><span class="iceOutTxt vdcHelpText" id="form1:j_idt248">A <a target="_blank" href="http://thedata.org/book/features">study</a> is a container for a research data set. It includes cataloging information, data files and complementary files.</span>
+                                </div>
+
+                                <div class="dvnHmpgColumnWidget">
+                                    <div class="dvnHmpgColumnWidgetHeader">Recently Released Studies</div><table cellspacing="0" class="iceDatTbl dvnHmpgStudyWidgetTable" id="form1:studyListTable1" width="100%"><tbody id="form1:studyListTable1:tbody"><tr class="iceDatTblRow1 dvnHmpgStudyWidgetTableRow1" id="form1:studyListTable1:0"><td class="iceDatTblCol1 dvnHmpgStudyWidgetTableCol1"><div class="icePnlGrp dvn_nostyle" id="form1:studyListTable1:0:groupPanel1"><a class="iceOutLnk dvnInlineHmpgWidgetInfo" href="/dvn/faces/study/StudyPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?globalId=doi:10.7910/DVN/28094" id="form1:studyListTable1:0:hyperlink3" title="Environmental response and genomic regions correlated with rice root growth and yield under drought in the OryzaSNP panel across multiple study systems *!* Release Date: Dec 9, 2014 &lt;br/&gt; Number of Files: 22 &lt;br/&gt; Number of Downloads: 0 &lt;br/&gt; Original Dataverse: IRRI   Dataverse"><img alt="" class="iceGphImg dvnHmpgStudyFileIcon" id="form1:studyListTable1:0:j_idt251" src="/dvn/resources/images/icon_files.gif" title="View study files" /><span class="iceOutTxt" id="form1:studyListTable1:0:hyperlink3aText">Environmental response and genomic regions correlated with rice root growth and yield under drought in the OryzaSNP panel across multiple study systems</span></a><span class="iceOutTxt dvnStudyListStudyAuthor" id="form1:studyListTable1:0:hyperlink3bText"> by Henry, Amelia</span><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:studyListTable1:0:j_idt252">Dec 9, 2014</span></div></td></tr><tr class="iceDatTblRow2 dvnHmpgStudyWidgetTableRow2" id="form1:studyListTable1:1"><td class="iceDatTblCol1 dvnHmpgStudyWidgetTableCol1"><div class="icePnlGrp dvn_nostyle" id="form1:studyListTable1:1:groupPanel1"><a class="iceOutLnk dvnInlineHmpgWidgetInfo" href="/dvn/faces/study/StudyPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?globalId=doi:10.7910/DVN/28043" id="form1:studyListTable1:1:hyperlink3" title="Inferential Selection Bias in a Study of Racial Bias:  Revisiting &quot;Working Twice as Hard to Get Half as Far&quot; *!* Release Date: Dec 8, 2014 &lt;br/&gt; Number of Files: 6 &lt;br/&gt; Number of Downloads: 0 &lt;br/&gt; Original Dataverse: L.J Zigerell Dataverse"><img alt="" class="iceGphImg dvnHmpgStudyFileIcon" id="form1:studyListTable1:1:j_idt251" src="/dvn/resources/images/icon_files.gif" title="View study files" /><span class="iceOutTxt" id="form1:studyListTable1:1:hyperlink3aText">Inferential Selection Bias in a Study of Racial Bias:  Revisiting &#34;Working Twice as Hard to Get Half as Far&#34;</span></a><span class="iceOutTxt dvnStudyListStudyAuthor" id="form1:studyListTable1:1:hyperlink3bText"> by Zigerell, L.J</span><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:studyListTable1:1:j_idt252">Dec 8, 2014</span></div></td></tr><tr class="iceDatTblRow1 dvnHmpgStudyWidgetTableRow1" id="form1:studyListTable1:2"><td class="iceDatTblCol1 dvnHmpgStudyWidgetTableCol1"><div class="icePnlGrp dvn_nostyle" id="form1:studyListTable1:2:groupPanel1"><a class="iceOutLnk dvnInlineHmpgWidgetInfo" href="/dvn/faces/study/StudyPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?globalId=doi:10.7910/DVN/27893" id="form1:studyListTable1:2:hyperlink3" title="Replication data for: Contrast Effects in Sequential Decisions: Evidence from Speed Dating *!* Release Date: Dec 8, 2014 &lt;br/&gt; Number of Files: 2 &lt;br/&gt; Number of Downloads: 0 &lt;br/&gt; Original Dataverse: Review of Economics and Statistics Dataverse"><img alt="" class="iceGphImg dvnHmpgStudyFileIcon" id="form1:studyListTable1:2:j_idt250" src="/dvn/resources/images/icon_analyze.gif" title="View and Analyze study files" /><span class="iceOutTxt" id="form1:studyListTable1:2:hyperlink3aText">Replication data for: Contrast Effects in Sequential Decisions: Evidence from Speed Dating</span></a><span class="iceOutTxt dvnStudyListStudyAuthor" id="form1:studyListTable1:2:hyperlink3bText"> by Bhargava, Saurabh; Fisman, Ray</span><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:studyListTable1:2:j_idt252">Dec 8, 2014</span></div></td></tr></tbody></table>
+                                    <div class="dvnHmpgColumnWidgetViewMoreBlock"><a class="iceOutLnk" href="/dvn/faces/StudyListingPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?mode=100&amp;sort=releaseTime" id="form1:hyperlinkBrowseStudiesReleased"><span class="iceOutTxt" id="form1:j_idt254">View More &gt;</span></a>
+                                    </div>
+                                </div>
+                                <div class="dvnHmpgColumnWidget">
+                                    <div class="dvnHmpgColumnWidgetHeader">Most Downloaded Studies</div><table cellspacing="0" class="iceDatTbl dvnHmpgStudyWidgetTable" id="form1:studyListTable2" width="100%"><tbody id="form1:studyListTable2:tbody"><tr class="iceDatTblRow1 dvnHmpgStudyWidgetTableRow1" id="form1:studyListTable2:0"><td class="iceDatTblCol1 dvnHmpgStudyWidgetTableCol1"><div class="icePnlGrp dvn_nostyle" id="form1:studyListTable2:0:groupPanel1"><a class="iceOutLnk dvnInlineHmpgWidgetInfo" href="/dvn/faces/study/StudyPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?globalId=hdl:1902.1/21919" id="form1:studyListTable2:0:hyperlink3" title="Precinct-Level Election Data *!* Release Date: Jan 23, 2014 &lt;br/&gt; Number of Files: 274 &lt;br/&gt; Number of Downloads: 26279 &lt;br/&gt; Original Dataverse: Election Data Archive Dataverse"><img alt="" class="iceGphImg dvnHmpgStudyFileIcon" id="form1:studyListTable2:0:j_idt256" src="/dvn/resources/images/icon_analyze.gif" title="View and Analyze study files" /><span class="iceOutTxt" id="form1:studyListTable2:0:hyperlink3aText">Precinct-Level Election Data</span></a><span class="iceOutTxt dvnStudyListStudyAuthor" id="form1:studyListTable2:0:hyperlink3bText"> by Ansolabehere, Stephen; Palmer, Maxwell; Lee, Amanda</span><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:studyListTable2:0:j_idt258">26279</span></div></td></tr><tr class="iceDatTblRow2 dvnHmpgStudyWidgetTableRow2" id="form1:studyListTable2:1"><td class="iceDatTblCol1 dvnHmpgStudyWidgetTableCol1"><div class="icePnlGrp dvn_nostyle" id="form1:studyListTable2:1:groupPanel1"><a class="iceOutLnk dvnInlineHmpgWidgetInfo" href="/dvn/faces/study/StudyPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?globalId=hdl:1902.1/11992" id="form1:studyListTable2:1:hyperlink3" title="The Standardized World Income Inequality Database *!* Release Date: Oct 8, 2014 &lt;br/&gt; Number of Files: 11 &lt;br/&gt; Number of Downloads: 24220 &lt;br/&gt; Original Dataverse: Frederick Solt Dataverse"><img alt="" class="iceGphImg dvnHmpgStudyFileIcon" id="form1:studyListTable2:1:j_idt257" src="/dvn/resources/images/icon_files.gif" title="View study files" /><span class="iceOutTxt" id="form1:studyListTable2:1:hyperlink3aText">The Standardized World Income Inequality Database</span></a><span class="iceOutTxt dvnStudyListStudyAuthor" id="form1:studyListTable2:1:hyperlink3bText"> by Frederick Solt</span><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:studyListTable2:1:j_idt258">24220</span></div></td></tr><tr class="iceDatTblRow1 dvnHmpgStudyWidgetTableRow1" id="form1:studyListTable2:2"><td class="iceDatTblCol1 dvnHmpgStudyWidgetTableCol1"><div class="icePnlGrp dvn_nostyle" id="form1:studyListTable2:2:groupPanel1"><a class="iceOutLnk dvnInlineHmpgWidgetInfo" href="/dvn/faces/study/StudyPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?globalId=hdl:1902.1/QBXRSFLBQJ" id="form1:studyListTable2:2:hyperlink3" title="Replication data for: A Multivariate Model of Strategic Asset Allocation *!* Release Date: Oct 3, 2013 &lt;br/&gt; Number of Files: 59 &lt;br/&gt; Number of Downloads: 20644 &lt;br/&gt; Original Dataverse: John Y. Campbell Dataverse"><img alt="" class="iceGphImg dvnHmpgStudyFileIcon" id="form1:studyListTable2:2:j_idt256" src="/dvn/resources/images/icon_analyze.gif" title="View and Analyze study files" /><span class="iceOutTxt" id="form1:studyListTable2:2:hyperlink3aText">Replication data for: A Multivariate Model of Strategic Asset Allocation</span></a><span class="iceOutTxt dvnStudyListStudyAuthor" id="form1:studyListTable2:2:hyperlink3bText"> by John Y. Campbell; Yeung L. Chan; and Luis Viceira</span><span class="iceOutTxt dvnHmpgWidgetFloat" id="form1:studyListTable2:2:j_idt258">20644</span></div></td></tr></tbody></table>
+                                    <div class="dvnHmpgColumnWidgetViewMoreBlock"><a class="iceOutLnk" href="/dvn/faces/StudyListingPage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c?mode=100&amp;sort=downloadCount" id="form1:hyperlinkBrowseStudiesDownloaded"><span class="iceOutTxt" id="form1:j_idt260">View More &gt;</span></a>
+                                    </div>
+                                </div>
+                                
+                            </div></div>
+                    
+
+                    <script type="text/javascript">
+                        // <![CDATA[
+                        jQuery(document).ready(function(){
+                            // accordion
+                            jQuery('.xtraMenu ul ul').hide();
+                            // classifications
+                            classificationsMenu();
+                            // subnetworks slider
+                            subnetworksSlider();
+                        });
+                        function classificationsMenu() {
+                            jQuery('.xtraMenu h4.head').bind('click', function(e){
+                                if(e.target != this) return;
+                                jQuery(this).next().toggle();
+                            })
+                        };
+                        function subnetworksSlider() {
+                            
+                            var dvColumnWidgetWidth = jQuery('.dvnHmpgWidgetSlider').width();
+                            jQuery('#dvnHmpgSubnetworkWidget, #dvnHmpgSubnetworkWidget > div').css('width', dvColumnWidgetWidth);
+                            
+                            jQuery('#dvnHmpgSubnetworkWidget').orbit({
+                                bullets: true,
+                                pauseOnHover: true,
+                                startClockOnMouseOut: true,
+                                advanceSpeed: 5000
+                            });
+                            
+                            var dvnSubnetworksCount = jQuery('#dvnHmpgSubnetworkWidget div.content').length;
+                            var orbitBulletsWidth = 12;
+                            var orbitBulletsMargin = orbitBulletsWidth * dvnSubnetworksCount;
+                            jQuery('ul.orbit-bullets').css('margin-left', '-' + orbitBulletsMargin + 'px');
+                        }
+                        // ]]>
+                    </script><span id="form1hdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value="" /></span></form>
+                <div class="dvn_clear"></div>
+            </div>
+        </div>      </div>
+      
+    </div>
+    <div id="lower-footer-Box">
+      <div class="column copyrightsline column-main column-gamma2">
+        <div class="copyrightsline-box">
+          <div class="panel-pane pane-custom pane-12" >
+            <div class="pane-content">
+              <div class="copyrightsline">
+                <ul class="clearfix">
+                  <li class="first"> <a href="http://thedata.org/pages/privacy-policy">Privacy Policy</a></li>
+                </ul>
+                <p>Copyright 1997-2013 The President and Fellows of Harvard College</p>
+              </div>
+              <p>&#160;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div xmlns:jsp="http://java.sun.com/JSP/Page"><form action="/dvn/faces/HomePage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" class="iceFrm" enctype="application/x-www-form-urlencoded" id="StudyVersionNotesPopup" method="post" onsubmit="return false;"><input name="StudyVersionNotesPopup" type="hidden" value="StudyVersionNotesPopup" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="7549076329442951115:187558587146244457" autocomplete="off" /><input name="ice.window" type="hidden" value="h9i3himvv9" /><input name="ice.view" type="hidden" value="vlheaau6sd" /><script id="StudyVersionNotesPopup:StudyVersionNotesPopup_captureSubmit" type="text/javascript">ice.captureSubmit('StudyVersionNotesPopup',false);ice.captureEnterKey('StudyVersionNotesPopup');</script><input id="StudyVersionNotesPopup:vdcId" name="StudyVersionNotesPopup:vdcId" type="hidden" value="" /><span id="StudyVersionNotesPopuphdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value="" /></span></form>
+</div><div xmlns:jsp="http://java.sun.com/JSP/Page">
+</div>            <script type="text/javascript">
+
+                // <![CDATA[  
+
+            var pageTracker = _gat._getTracker("UA-3745567-2");
+
+            pageTracker._initData();
+
+            pageTracker._trackPageview();
+
+            //  ]]>
+
+            </script>
+
+<span id="vlheaau6sd_icefaces_config"><script>ice.setupBridge('vlheaau6sd_icefaces_config', 'vlheaau6sd', 'h9i3himvv9', {deltaSubmit: false,disableDefaultErrorPopups: false,standardFormSerialization: false,sendDisposeWindow: true,blockUIOnSubmit: false});</script></span>
+<form action="/dvn/faces/HomePage.xhtml;jsessionid=00030b74fd5b353c2ce7ed7cbd9c" id="vlheaau6sd" method="post" name="vlheaau6sd">
+<input name="vlheaau6sd" type="hidden" value="vlheaau6sd" />
+<span id="vlheaau6sdhdnFldsDiv"><input name="icefacesCssUpdates" type="hidden" value="" /></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="7549076329442951115:187558587146244457" autocomplete="off" />
+</form><span id="vlheaau6sd_icepush"><script type="text/javascript">ice.push.configuration.contextPath="/dvn";ice.push.configuration.uriPattern="/dvn/faces/javax.faces.resource/{{command}}";</script></span><span id="vlheaau6sd_icefaces_compat_config"><script type="text/javascript">ice.DefaultIndicators({connectionLostRedirectURI: null,sessionExpiredRedirectURI: null,connection: { context: '/dvn/'},messages: {sessionExpired: 'User Session Expired',connectionLost: 'Network Connection Interrupted',serverError: 'Server Internal Error',description: 'To reconnect click the Reload button on the browser or click the button below',buttonText: 'Reload'}},'vlheaau6sd_icefaces_compat_config');</script></span><span id="dynamic-code-compat"><script type="text/javascript">initListingPanelRemoveHeights();initListingPanelHeights();initListingPanelRemoveHeights();initListingPanelHeights();Ice.modal.stop('StudyVersionNotesPopup:versionNotesPopup');//249197260</script></span></body>
+    <script type="text/javascript">
+        // <![CDATA[
+        // TODO: remove this when we upgrade to Icefaces 3; this is a workaround to solve an issue where a request is being submitted when the page is unloaded
+        window.onbeforeunload = null;
+        // ]]>
+    </script>    
+</html>

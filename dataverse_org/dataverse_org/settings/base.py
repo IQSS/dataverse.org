@@ -187,7 +187,7 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
 
     # Useful template tags:
-    # 'django.contrib.humanize',
+    'django.contrib.humanize',
 
     # Admin panel and documentation:
     'django.contrib.admin',
@@ -199,6 +199,7 @@ DJANGO_APPS = (
 LOCAL_APPS = (
     'apps.federated_dataverses',
     'apps.basic_pages',
+    'apps.dataverse_stats',
     #'apps.search',
 )
 
