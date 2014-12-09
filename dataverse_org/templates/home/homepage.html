@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-
 {% block head_title_block %}
 {{ block.super }}
 {% endblock %}
+{% load humanize %}
 
 {% block extra_js %}
 <!-- highcharts libs -->
@@ -79,18 +79,18 @@
             <div class="bg-info" style="padding:12px;background-color:#ECC1AC;min-height:268px;">
               <ul class="list-group" style="opacity:0.65;margin-bottom:0;">
                 <li class="list-group-item text-left">
-                  <span class="badge">800</span>
-                  <span class="glyphicon glyphicon-record"></span> Dataverses
-                </li>
-                <li class="list-group-item text-left">
-                  <span class="badge">55,025</span>
-                  <span class="glyphicon glyphicon-file"></span> Datasets
-                </li>
-                <li class="list-group-item text-left">
-                  <span class="badge">750,783</span>
-                  <span class="glyphicon glyphicon-picture"></span> Data Files
-                </li>
-              </ul>
+                    <span class="badge">{% if basic_stats %}{{ basic_stats.dataverse_count|intcomma}}{% else %}800{% endif %}</span>
+                    <span class="glyphicon glyphicon-record"></span> Dataverses
+                  </li>
+                  <li class="list-group-item text-left">
+                    <span class="badge">{% if basic_stats %}{{ basic_stats.dataset_count|intcomma}}{% else %}55,025{% endif %}</span>
+                    <span class="glyphicon glyphicon-file"></span> Datasets
+                  </li>
+                  <li class="list-group-item text-left">
+                    <span class="badge">{% if basic_stats %}{{ basic_stats.file_count|intcomma}}{% else %}750,783{% endif %}</span>
+                    <span class="glyphicon glyphicon-picture"></span> Data Files
+                  </li>
+                </ul>
               <p class="text-left" style="font-size: 18px; font-weight: 200;">Search data across Dataverse Repositories through Harvard Dataverse.</p>
               <form class="form-inline" role="form">
                 <div class="form-group">
