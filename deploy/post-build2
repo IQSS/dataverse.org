@@ -29,5 +29,10 @@ echo "Run collectstatic to copy files to the static www directory"
 #
 python manage.py collectstatic --noinput --settings=dataverse_org.settings.production
 
+#
+echo "Load federated dataverses from fixtures"
+#
+python manage.py loaddata apps/federated_dataverses/fixtures/initial_data.json --settings=dataverse_org.settings.production
+
 # FIXME touch to restart Apache (WSGIScriptReloading On)
 sudo /sbin/service httpd restart
