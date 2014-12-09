@@ -14,6 +14,10 @@ if __name__=='__main__':
 
 import re
 import requests
+
+from django.core.mail import send_mail
+from django.conf import settings
+
 from datetime import datetime
 from dataverse_org.utils.msg_util import *
 from apps.dataverse_stats.forms import StatsSnapshotValidationForm
@@ -23,14 +27,13 @@ class StatsRetriever:
     
     def __init__(self, dv_url='http://thedata.harvard.edu/dvn/'):
         self.dv_url = dv_url
-
+        self.snapshot_time = datetime.now()
+        
         self.stats_snapshot = None  # Will be a DataverseStatsSnapshot object
         self.page_source = None
         
         self.err_found = False
         self.err_msg = None
-
-
     
     def add_error(self, msg):
         self.err_msg = msg
@@ -48,7 +51,35 @@ class StatsRetriever:
         if self.err_found:
             return False
             
+    def send_email_report(self):
+        assert len(settings.ADMINS) > 0, "There must be at least 1 ADMIN contact in the settings file."
         
+        if self.err_found:            
+            subject = "(ERROR) Dataverse.org stats update: %s" \
+                    % (self.snapshot_time.strftime('%a, %b %d, %Y at %I:%M:%S'))
+        
+            msg = """An error occurred when scraping the Dataverse 3.6 homepage for stats.
+-------------------
+page scraped: %s
+-------------------
+error message: %s            
+-------------------
+(end of email)
+            """ % (self.dv_url, self.err_msg)
+        else: 
+            subject = "(ok) Dataverse.org stats update: %s" \
+                    % (self.snapshot_time.strftime('%a, %b %d, %Y at %I:%M:%S'))
+            msg = "Everything went well:)"
+        
+        
+        to_addresses = [x[1] for x in settings.ADMINS]
+        if len(to_addresses) == 0:
+            raise exception("No admins found in settings.ADMINS")
+
+        send_mail(subject, msg, to_addresses[0],
+                to_addresses, fail_silently=False)
+
+
     def retrieve_stats_page(self):
 
         try:
@@ -90,7 +121,7 @@ class StatsRetriever:
 
         # Start storing values to create a DataverseStatsSnapshot object
         #
-        stats_dict = dict(retrieval_datetime=datetime.now())
+        stats_dict = dict(retrieval_datetime=self.snapshot_time)
 
         data_divs = soup.find_all('div', { 'class':'dvnHmpgColumnTotals'})
         for idx, data_div in enumerate(data_divs):
