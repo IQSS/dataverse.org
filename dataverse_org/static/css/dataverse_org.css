@@ -26,6 +26,10 @@ iframe {
 	border:0;
 }
 
+.navbar-default a.navbar-brand {
+    color: #C55B28;
+}
+
 /* Multi-level Navbar Menu */
 /* http://bootsnipp.com/snippets/featured/multi-level-navbar-menu */
 .dropdown-submenu {
