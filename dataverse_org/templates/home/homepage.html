@@ -148,7 +148,15 @@
 
         <div id="cardClone">
             <div id="cloneFront" class="thumbnail cards">cardclone front</div>
-            <div id="cloneBack">cardclone back</div>
+            <div id="cloneBack" style="text-align:center;">
+              {% for dverse in federated_dataverses %}
+                <p id="card-{{ dverse.slug }}" class="hidden">
+                  <a href="{{ dverse.homepage }}"><img src="{{ dverse.logo_image.url }}" alt="{{ dverse.slug }}" style="height:170px;margin-top:4px;" /></a><br/>
+                  <a href="{{ dverse.homepage }}">{{ dverse.name }}</a><br/>
+                  {{ dverse.description }}<br/>
+                </p>
+              {% endfor %}
+            </div>
         </div>
 
    </div>

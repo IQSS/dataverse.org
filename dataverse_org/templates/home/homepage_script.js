@@ -50,6 +50,8 @@ function flipCards() {
             //Cache clicked card
             $lastelement = $(this);
 
+            var lastelementID = $lastelement.attr("id");
+
             //Store position of this element for the return trip
             //[hack: subtract 30 due to the margin of .cards in this demo]
             var offset = $lastelement.offset();
@@ -76,13 +78,16 @@ function flipCards() {
             //[hack: using opacity for hiding here, visibility:hidden has a weird lag in win chrome]
             $clone.css({
                 'display': 'block',
-                    'top': lastelement.top,
-                    'left': lastelement.left
+                    'top': lastelement.top - 8 + 'px',
+                    'left': lastelement.left - 82 + 'px'
             });
             $lastelement.css('opacity', 0);
 
             //Need to dynamically alter contents of the clone rear BEFORE it animates? Do it here
             //$('#cloneBack').html('hi');
+
+            // Show hidden description for clicked card
+            $('#cloneBack').find('#card-' + lastelementID).removeClass('hidden');
 
             //Flip the card while centering it in the screen
             //[hack: we have to wait for the clone to finish drawing before calling the transform so we put it in a 100 millisecond settimeout callback]
@@ -114,7 +119,7 @@ function flipCards() {
                 //Reverse the animation
                 $clone.css({
                     'top': lastelement.top + 'px',
-                        'left': lastelement.left - 130 + 'px',
+                        'left': lastelement.left - 80 + 'px',
                         'height': lastelement.height + 'px',
                         'width': lastelement.width + 'px'
                 });
@@ -124,6 +129,12 @@ function flipCards() {
                 $clone.find('#cloneBack').css({
                     'transform': 'rotateY(-180deg)'
                 });
+
+                // Set timeout to hide visible description
+                setTimeout(function () {
+                    $clone.find('#cloneBack').find('p:visible').addClass('hidden');
+                }, 100);
+                
             }
         }
     });
