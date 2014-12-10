@@ -22,7 +22,8 @@ lib/
 lib64/
 parts/
 sdist/
-var/
+# commented out to commit plaid cron job
+#var/
 *.egg-info/
 .installed.cfg
 *.egg
