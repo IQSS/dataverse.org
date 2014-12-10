@@ -46,12 +46,12 @@ function load_chart(){
                   }
               },
             series: [
-                {
+                /*{
                     name: 'Total Downloaded Data Files',
                     data: [{% for stat in download_stats %}{{ stat.cumulative_count }}{% if not forloop.last %},{% endif %}{% endfor %}]
                 //    data: [100, 250, 1000, 3240, 5600, 7900, 11000]
                 },
-             
+             */
                 {
                     name: 'Monthly Downloads',
                     data: [{% for stat in download_stats %}{{ stat.month_count }}{% if not forloop.last %},{% endif %}{% endfor %}],
