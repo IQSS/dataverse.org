@@ -1,2 +1,2 @@
 MAILTO=raman_prasad@harvard.edu
-2 * * * * scl enable python27 /webapps/code/dataverse.org/deploy/retrieve_dv3dot6_stats.sh
+0 10 * * * scl enable python27 /webapps/code/dataverse.org/deploy/retrieve_dv3dot6_stats.sh
