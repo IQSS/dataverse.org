@@ -26,4 +26,18 @@ class DataverseStatsSnapshot(TimeStampedModel):
         
     class Meta:
         ordering = ( '-retrieval_datetime', )
-   
+ 
+ 
+class MonthlyDownloadStats(TimeStampedModel):
+    retrieval_date = models.DateField()
+    
+    month_count = models.IntegerField()
+    cumulative_count = models.IntegerField()
+    
+    def __unicode__(self):
+        return '%s' % self.retrieval_date.strftime('%a, %b %d, %Y at %I:%M:%S')
+        
+    class Meta:
+        ordering = ( '-retrieval_date', )
+        verbose_name_plural = 'Monthly download stats'
+    
