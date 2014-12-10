@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^dataverse_org-admin/', include(admin.site.urls)),
+    url(r'^dataverse-org-admin/', include(admin.site.urls)),
 
     url(r'^search/', include('apps.search.urls')),
     
