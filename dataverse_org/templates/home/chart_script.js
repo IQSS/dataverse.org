@@ -5,7 +5,7 @@ function load_chart(){
                 type: 'area'
             },
             title: {
-                text: 'data file downloads'
+                text: 'Data File Downloads'
             },
             subtitle: {
                 text: 'Source: <a href="http://www.iq.harvard.edu/about-us">' +
