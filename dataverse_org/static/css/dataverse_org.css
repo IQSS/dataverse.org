@@ -30,6 +30,8 @@ iframe {
     color: #C55B28;
 }
 
+/*.thumbnail .caption p {color:red;}*/
+
 /* Multi-level Navbar Menu */
 /* http://bootsnipp.com/snippets/featured/multi-level-navbar-menu */
 .dropdown-submenu {
@@ -78,4 +80,69 @@ iframe {
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
+}
+
+/* Flip-box */
+/* http://stackoverflow.com/questions/24503882/the-google-cards-flip-and-grow-effect ,  */
+
+.cards {
+    /* margin:30px;
+    width:200px;
+    height:200px;
+    background-color:#59A3FF; */
+    cursor:pointer;
+    display:inline-block;
+    overflow:hidden;
+}
+/* img {
+    display:block;
+    width:80%;
+    height:auto;
+    margin:0 auto
+} */
+#cardClone {
+    position:fixed;
+    display:none;
+    /*margin:30px;*/
+    width:174px;
+    height:146px;
+    line-height: 1.42857;
+    -webkit-transition:.6s;
+    transition:.6s;
+    -webkit-transform-style::preserve-3d;
+    transform-style:preserve-3d;
+    z-index:99;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+}
+#cloneFront, #cloneBack {
+    backface-visibility: hidden;
+    width:100%;
+    height:100%;
+    position:absolute;
+    -webkit-transition:.6s;
+    transition:.6s;
+    overflow:hidden;
+}
+#cloneFront {
+    z-index:100;
+    background-color:#FFF;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    line-height: 1.42857;
+    transform: translatez(0);
+}
+#cloneBack {
+    transform:rotateY(-180deg);
+    z-index:101;
+    background-color:#f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    line-height: 1.42857;
+}
+#closeClone {
+    color:white;
+    background-color:black;
+    cursor:pointer;
+    float:right;
 }

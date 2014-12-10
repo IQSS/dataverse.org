@@ -17,7 +17,6 @@
     
     {% endcomment %}
     {% include "home/homepage_script.js" %}
-    
    
 </script>
 {% endblock %}
@@ -144,6 +143,12 @@
         {% for dverse in federated_dataverses %}
             {% include "home/dataverse_block.html" %}
         {% endfor %}
+
+        <div id="cardClone">
+            <div id="cloneFront" class="thumbnail cards">cardclone front</div>
+            <div id="cloneBack">cardclone back</div>
+        </div>
+
    </div>
    <!-- /.row -->
 
