@@ -24,3 +24,14 @@ def scrape_latest_stats():
     
 if __name__=='__main__':
     scrape_latest_stats()
+    
+    
+"""
+su plaid
+source /opt/rh/python27/root/usr/bin/virtualenvwrapper.sh
+export WORKON_HOME=/webapps/virtualenvs
+workon dataverse_org
+/webapps/code/dataverse.org/dataverse_org 
+/webapps/virtualenvs/dataverse_org/bin/python2.7 /webapps/code/dataverse.org/dataverse_org/scripts/retrieve_dv3dot6_stats.py
+
+"""
