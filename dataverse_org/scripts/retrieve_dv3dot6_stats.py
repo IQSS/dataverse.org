@@ -20,7 +20,7 @@ from apps.dataverse_stats.stats_retriever import StatsRetriever
 def scrape_latest_stats():
     sr = StatsRetriever()
     sr.retrieve_stats()
-    sr.send_email_report()
+    #sr.send_email_report()
     
 if __name__=='__main__':
     scrape_latest_stats()
