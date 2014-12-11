@@ -1,1 +1,2 @@
 plaid ALL=(root) NOPASSWD: /sbin/service httpd restart
+plaid ALL=(datascience) NOPASSWD: /webapps/code/dataverse.org/deploy/backup

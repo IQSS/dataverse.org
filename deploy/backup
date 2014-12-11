@@ -1,0 +1,2 @@
+#!/bin/sh
+cp /webapps/data/dataverse_org/backups/flatpages.json /nfs/backups/dsbackup/hosts/dataverse.org/webapps/data/dataverse_org/backups

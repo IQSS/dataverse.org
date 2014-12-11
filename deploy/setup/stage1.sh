@@ -46,6 +46,10 @@ mkdir -p /webapps/data/dataverse_org/sqlite
 chown plaid:apache /webapps/data/dataverse_org/sqlite
 chmod 775 /webapps/data/dataverse_org/sqlite
 #
+echo "Create data directory for backups"
+mkdir /webapps/data/dataverse_org/backups
+chown plaid:plaid /webapps/data/dataverse_org/backups
+#
 # configure apache
 #
 echo "Configure Apache"
