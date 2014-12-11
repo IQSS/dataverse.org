@@ -10,8 +10,8 @@
 - Add/edit/delete
 - *Remember the url* that you enter.
     - Example ```/history-and-name/```
-- [screenshot](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_edit.png)
-- [screenshot](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_view.png)
+- [screenshot: edit page](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_edit.png)
+- [screenshot: view page](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_view.png)
 
 ### Link your page to the menu
 
@@ -22,7 +22,7 @@
 <li><a href="/history-and-name/">History &amp; Name</a></li>
 ```
 - To have this template show up on the live site, run the jenkins build (about 10-20 seconds)
-- [screenshot](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_navbar.png)
+- [screenshot: nav bar, highlight active link](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_navbar.png)
 
 ### Add an image to the repository ("static/images")
 
