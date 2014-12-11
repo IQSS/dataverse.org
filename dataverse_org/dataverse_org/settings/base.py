@@ -170,6 +170,9 @@ MIDDLEWARE_CLASSES = (
 ########## END MIDDLEWARE CONFIGURATION
 
 
+# Remove append slash - initially done for flatpages
+APPEND_SLASH = False
+
 ########## URL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#root-urlconf
 ROOT_URLCONF = '%s.urls' % SITE_NAME

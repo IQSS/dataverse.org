@@ -11,7 +11,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     #url(r'^$', TemplateView.as_view(template_name='base.html')),
 
-    # Examples:
+    # Home page
     url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
     #url(r'^search/', include('apps.search.urls')),
 
@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^dataverse-org-admin/', include(admin.site.urls)),
+    url(r'^dataverse-org-admin', include(admin.site.urls)),
 
 
     #url(r'^', include('apps.basic_pages.urls')),
@@ -27,7 +27,7 @@ urlpatterns = patterns('',
 )
 
 urlpatterns += patterns('django.contrib.flatpages.views',
-    url(r'^(?P<url>.*/)$', 'flatpage', name='view_flatpage'),
+    url(r'^(?P<url>.*)$', 'flatpage', name='view_flatpage'),
 )
 #url(r'^best-practices/$', 'view_best_practices_page', name="view_best_practices_page"),
 
