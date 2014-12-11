@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{% if page_title %}{{ page_title }}{% else %}Dataverse.org{% endif %}</title>
+    <title>{% if flatpage %}{{ flatpage.title }}
+        {% else %}{% if page_title %}{{ page_title }}
+        {% else %}Dataverse.org{% endif %}{% endif %}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
