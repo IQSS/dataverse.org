@@ -16,7 +16,7 @@ urlpatterns = patterns('',
     url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
 
     # Uncomment the next line to enable the admin:
-    url(r'^dataverse-org-admin', include(admin.site.urls)),
+    url(r'^dataverse-org-admin/', include(admin.site.urls)),
 
     #url(r'^search/', include('apps.search.urls')),
     
@@ -26,6 +26,6 @@ urlpatterns = patterns('',
 )
 
 urlpatterns += patterns('django.contrib.flatpages.views',
-    url(r'^(?P<url>.*)$', 'flatpage', name='view_flatpage'),
+    url(r'^(?P<url>.*/)$', 'flatpage', name='view_flatpage'),
 )
 
