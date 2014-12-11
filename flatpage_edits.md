@@ -22,7 +22,7 @@
 <li><a href="/history-and-name/">History &amp; Name</a></li>
 ```
 - To have this template show up on the live site, run the jenkins build (about 10-20 seconds)
-
+- [screenshot](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_navbar.png)
 
 ### Add an image to the repository ("static/images")
 
