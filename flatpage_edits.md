@@ -26,7 +26,7 @@
 
 - On your local machine, place your image in the ["static/images"](https://github.com/IQSS/dataverse.org/tree/master/dataverse_org/static/images) directory
 - Sync github (to upload to github)
-- To have this image show up on the live site, run the jenkins build (about 10-20 seconds)
+- To have this image available on the live site, run the jenkins build (about 10-20 seconds)
 
 ### Link your image in a flatpage ("static/images")
 
