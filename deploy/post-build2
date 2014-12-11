@@ -34,5 +34,11 @@ echo "Load federated dataverses from fixtures"
 #
 python manage.py loaddata apps/federated_dataverses/fixtures/initial_data.json --settings=dataverse_org.settings.production
 
+#
+echo "Save flatpages to back up directory"
+#
+python manage.py dumpdata flatpages --indent=4 > /tmp/dataverse.org-flatpages-backup.json
+
+
 # FIXME touch to restart Apache (WSGIScriptReloading On)
 sudo /sbin/service httpd restart
