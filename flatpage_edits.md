@@ -10,6 +10,8 @@
 - Add/edit/delete
 - *Remember the url* that you enter.
     - Example ```/history-and-name/```
+- [screenshot](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_edit.png)
+- [screenshot](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/static/images/user_notes/flatpage_view.png)
 
 ### Link your page to the menu
 
