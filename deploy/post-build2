@@ -37,7 +37,7 @@ python manage.py loaddata apps/federated_dataverses/fixtures/initial_data.json -
 #
 echo "Save flatpages to back up directory"
 #
-python manage.py dumpdata flatpages --indent=4 > /tmp/dataverse.org-flatpages-backup.json
+python manage.py dumpdata flatpages --indent=4 --settings=dataverse_org.settings.production > /tmp/dataverse.org-flatpages-backup.json
 
 
 # FIXME touch to restart Apache (WSGIScriptReloading On)
