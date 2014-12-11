@@ -12,8 +12,8 @@ urlpatterns = patterns('',
     #url(r'^$', TemplateView.as_view(template_name='base.html')),
 
     # Examples:
-    # url(r'^$', 'dataverse_org.views.home', name='home'),
-    url(r'^search/', include('apps.search.urls')),
+    url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
+    #url(r'^search/', include('apps.search.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -21,12 +21,16 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^dataverse-org-admin/', include(admin.site.urls)),
 
-    url(r'^search/', include('apps.search.urls')),
-    
-    url(r'^', include('apps.basic_pages.urls')),
-    
-    
+
+    #url(r'^', include('apps.basic_pages.urls')),
+    #(r'^(?P<url>.*)$', 'django.contrib.flatpages.views.flatpage'),
 )
+
+urlpatterns += patterns('django.contrib.flatpages.views',
+    url(r'^(?P<url>.*/)$', 'flatpage', name='view_flatpage'),
+)
+#url(r'^best-practices/$', 'view_best_practices_page', name="view_best_practices_page"),
+
 
 # Uncomment the next line to serve media files in dev.
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
