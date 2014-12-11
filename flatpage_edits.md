@@ -30,7 +30,7 @@
 
 ### Link your image in a flatpage ("static/images")
 
-- Assuming your image is checked into the repository under "static/images" (described above)
+- Assumption: your image is checked into the repository under "static/images" (described above)
 - In the flat page content box, use this syntax:
 
 ```
