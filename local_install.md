@@ -63,7 +63,7 @@ You should see ```dataverse_org.settings.local```
 ```
 cd dataverse_org
 python manage.py syncdb
-python manage.py loaddata apps/federated_dataverses/fixtures/test-data.json 
+python manage.py loaddata apps/federated_dataverses/fixtures/initial_data.json 
 ```
 
 #### Run (still in ~\dataverse.org\dataverse_org)
