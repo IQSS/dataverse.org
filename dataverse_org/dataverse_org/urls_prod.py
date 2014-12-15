@@ -15,6 +15,10 @@ urlpatterns = patterns('',
     # Homepage
     url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
 
+    url(r'^nav-only/$', 'apps.basic_pages.views.view_nav_only', name='view_nav_only'),
+
+    url(r'^nav-only-json/$', 'apps.basic_pages.views.view_nav_only_as_json', name='view_nav_only_as_json'),
+
     # Uncomment the next line to enable the admin:
     url(r'^dataverse-org-admin/', include(admin.site.urls)),
 

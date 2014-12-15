@@ -1,5 +1,7 @@
 from __future__ import print_function
 
+import json
+
 from django.shortcuts import render_to_response
 from django.template.loader import render_to_string
 from django.http import HttpResponseRedirect, HttpResponse, Http404
@@ -33,14 +35,43 @@ def view_homepage(request):
                               , context_instance=RequestContext(request))
 
 
-def view_nav_only(request):
-    d = {}
+def get_navbar_as_string(request):
 
-    menu_string = render_to_string('base_menu.html'\
-                              , d\
-                              , context_instance=RequestContext(request))
+    return render_to_string('base_menu.html'\
+                            , {}\
+                            , context_instance=RequestContext(request))
+
+def view_nav_only(request):
+    """
+    Return the navbar HTML
+    """
+    return HttpResponse(get_navbar_as_string(request))
+
+
+def view_nav_only_as_json(request):
+    """
+    Return the navbar HTML as JSON
+    """
+    menu_string = get_navbar_as_string(request)
+
+    navbar_data = { 'navbar_html' : menu_string }
+
+    #if 'callback' in request.REQUEST:
+
+
+    return HttpResponse(json.dumps(navbar_data), mimetype="application/json")
+"""
+     data = simplejson.dumps(objects)
+            if 'callback' in request.REQUEST:
+                # a jsonp response!
+                data = '%s(%s);' % (request.REQUEST['callback'], data)
+                return HttpResponse(data, "text/javascript")
+        except:
+            data = simplejson.dumps(str(objects))
+        return HttpResponse(data, "application/json")
 
     return HttpResponse(menu_string)
+"""
 
 def view_support_page(request):
     d = {}
