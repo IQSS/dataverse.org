@@ -32,7 +32,10 @@ python manage.py collectstatic --noinput --settings=dataverse_org.settings.produ
 #
 echo "Load federated dataverses from fixtures"
 #
+echo "Copy federated dataverse logo files to web path"
 cp /webapps/code/dataverse.org/dataverse_org/media/federated_logos/* /var/www/dataverse_org/media/federated_logos
+
+echo "Load federated dataverses from fixtures"
 python manage.py loaddata apps/federated_dataverses/fixtures/initial_data.json --settings=dataverse_org.settings.production
 
 #
