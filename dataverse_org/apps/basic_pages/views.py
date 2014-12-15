@@ -6,6 +6,7 @@ from django.shortcuts import render_to_response
 from django.template.loader import render_to_string
 from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.template import RequestContext
+from django.views.decorators.cache import cache_page
 
 from apps.federated_dataverses.models import FederatedDataverseInfo
 from apps.dataverse_stats.models import DataverseStatsSnapshot, MonthlyDownloadStats
@@ -41,6 +42,8 @@ def get_navbar_as_string(request):
                             , {}\
                             , context_instance=RequestContext(request))
 
+
+@cache_page(60 * 15)    # 15 minutes (900 seconds)
 def view_nav_only(request):
     """
     Return the navbar HTML
@@ -48,6 +51,7 @@ def view_nav_only(request):
     return HttpResponse(get_navbar_as_string(request))
 
 
+@cache_page(60 * 15)    # 15 minutes (900 seconds)
 def view_nav_only_as_json(request):
     """
     Return the navbar HTML as JSON
