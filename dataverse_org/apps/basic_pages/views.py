@@ -1,6 +1,7 @@
 from __future__ import print_function
 
 from django.shortcuts import render_to_response
+from django.template.loader import render_to_string
 from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.template import RequestContext
 
@@ -34,10 +35,12 @@ def view_homepage(request):
 
 def view_nav_only(request):
     d = {}
-    return render_to_response('base_menu.html'\
+
+    menu_string = render_to_string('base_menu.html'\
                               , d\
                               , context_instance=RequestContext(request))
 
+    return HttpResponse(menu_string)
 
 def view_support_page(request):
     d = {}
