@@ -6,6 +6,9 @@ from django.shortcuts import render_to_response
 from django.template.loader import render_to_string
 from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.template import RequestContext
+
+# cache related
+from django.core.cache import cache
 from django.views.decorators.cache import cache_page
 
 from apps.federated_dataverses.models import FederatedDataverseInfo
@@ -51,19 +54,41 @@ def view_nav_only(request):
     return HttpResponse(get_navbar_as_string(request))
 
 
-@cache_page(60 * 15)    # 15 minutes (900 seconds)
+#@cache_page(60 * 15)    # 15 minutes (900 seconds)
+CACHE_TIMEOUT = 60 * 15   # 15 minutes (900 seconds)
+# 
 def view_nav_only_as_json(request):
     """
     Return the navbar HTML as JSON
     """
-    menu_string = get_navbar_as_string(request)
+    CACHE_KEY_FOR_NAVBAR = 'NAVBAR_JSON_DATA_RENDERED'
+    
+    # Is the navbar cached?
+    navbar_data_json = cache.get(CACHE_KEY_FOR_NAVBAR)
+    
+    # No, create navbar
+    #
+    if navbar_data_json is None:
+        
+        # Render navbar as string
+        #
+        menu_string = get_navbar_as_string(request)
 
-    navbar_data = { 'navbar_html' : menu_string }
+        # Add navbar to dict
+        #
+        navbar_data = { 'navbar_html' : menu_string }
 
-    try:
-        navbar_data_json = json.dumps(navbar_data)
-    except:
-        raise ValueError("Failed to convert navbar to JSON")
+        # Convert dict to JSON string
+        #
+        try:
+            navbar_data_json = json.dumps(navbar_data)
+        except:
+            raise ValueError("Failed to convert navbar to JSON")
+        
+        # Save navbar JSON in cache
+        #
+        cache.set(CACHE_KEY_FOR_NAVBAR, navbar_data_json, CACHE_TIMEOUT)
+
 
     # Is this a JSON response?
     #
