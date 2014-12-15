@@ -113,7 +113,7 @@ function flipCards() {
 
 
     //If user clicks outside of the flipped card, return to default state
-    $('body').click(function (e) {
+    $('body, body > div.container').click(function (e) {
         if (cloneflipped) {
             if (e.target === e.currentTarget) {
                 //Reverse the animation

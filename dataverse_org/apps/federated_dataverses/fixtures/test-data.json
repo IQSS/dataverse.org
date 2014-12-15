@@ -1,0 +1,152 @@
+[
+{
+    "pk": 1, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Odum Institute Dataverse", 
+        "created": "2014-10-02T19:01:49.082Z", 
+        "modified": "2014-12-15T21:21:41.422Z", 
+        "logo_image": "federated_logos/odum_1.png", 
+        "visible": true, 
+        "sort_order": 20, 
+        "homepage": "http://arc.irss.unc.edu/dvn/", 
+        "slug": "odum-institute-dataverse", 
+        "description": "Open for all researchers worldwide from all disciplines to deposit data."
+    }
+},
+{
+    "pk": 2, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Harvard Dataverse", 
+        "created": "2014-10-02T19:10:28.184Z", 
+        "modified": "2014-12-10T22:09:45.469Z", 
+        "logo_image": "federated_logos/harvard_1.png", 
+        "visible": true, 
+        "sort_order": 10, 
+        "homepage": "http://thedata.harvard.edu/dvn/", 
+        "slug": "harvard-dataverse", 
+        "description": "Open for all researchers worldwide from all disciplines to deposit data."
+    }
+},
+{
+    "pk": 3, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Fudan University Dataverse", 
+        "created": "2014-10-02T19:15:07.707Z", 
+        "modified": "2014-12-10T22:10:35.389Z", 
+        "logo_image": "federated_logos/Fudan_University.png", 
+        "visible": true, 
+        "sort_order": 40, 
+        "homepage": "http://www.fdsm.fudan.edu.cn/en/", 
+        "slug": "fudan-university-dataverse", 
+        "description": "Open for Fudan University affiliated researchers to deposit data."
+    }
+},
+{
+    "pk": 4, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "DANS - Dutch Dataverse", 
+        "created": "2014-10-02T19:29:57.478Z", 
+        "modified": "2014-12-10T22:10:20.711Z", 
+        "logo_image": "federated_logos/dans.gif", 
+        "visible": true, 
+        "sort_order": 30, 
+        "homepage": "https://dataverse.nl/dvn/", 
+        "slug": "dans-dutch-dataverse", 
+        "description": "Open for researchers and organizations associated with Dutch universities to deposit data."
+    }
+},
+{
+    "pk": 5, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "University of Alberta Libraries Dataverse", 
+        "created": "2014-10-15T14:25:49.282Z", 
+        "modified": "2014-12-10T22:10:45.428Z", 
+        "logo_image": "federated_logos/alberta.gif", 
+        "visible": true, 
+        "sort_order": 50, 
+        "homepage": "http://www.library.ualberta.ca/", 
+        "slug": "university-of-alberta-libraries-dataverse", 
+        "description": "Open for University of Alberta affiliated researchers to deposit data."
+    }
+},
+{
+    "pk": 6, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Scholars Portal Dataverse", 
+        "created": "2014-10-15T14:26:15.934Z", 
+        "modified": "2014-12-10T22:10:58.941Z", 
+        "logo_image": "federated_logos/scholarsportal.gif", 
+        "visible": true, 
+        "sort_order": 60, 
+        "homepage": "http://guides.scholarsportal.info/dataverse", 
+        "slug": "scholars-portal-dataverse", 
+        "description": "Open for researchers and organizations associated with Ontario universities to deposit data."
+    }
+},
+{
+    "pk": 7, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Abacus (British Columbia Research Libraries' Data Services) Dataverse", 
+        "created": "2014-12-15T21:12:50.707Z", 
+        "modified": "2014-12-15T21:12:50.721Z", 
+        "logo_image": "federated_logos/AbacusLogoDVN.png", 
+        "visible": false, 
+        "sort_order": 70, 
+        "homepage": "http://dvn.library.ubc.ca/dvn/", 
+        "slug": "abacus-british-columbia-research-libraries-data-services-dataverse", 
+        "description": "Open for researchers associated with British Columbia universities to deposit data."
+    }
+},
+{
+    "pk": 8, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "Heidelberg University HeiDATA Dataverse", 
+        "created": "2014-12-15T21:14:35.849Z", 
+        "modified": "2014-12-15T21:14:35.851Z", 
+        "logo_image": "federated_logos/uni-heidelberg_logo.jpg", 
+        "visible": false, 
+        "sort_order": 80, 
+        "homepage": "https://heidata.uni-heidelberg.de/dvn/", 
+        "slug": "heidelberg-university-heidata-dataverse", 
+        "description": "Open for Heidelberg University affiliated researchers to deposit data."
+    }
+},
+{
+    "pk": 9, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "UnBraL Fronteiras (Brazil)", 
+        "created": "2014-12-15T21:17:24.394Z", 
+        "modified": "2014-12-15T21:17:24.396Z", 
+        "logo_image": "federated_logos/unbral-fronteiras.png", 
+        "visible": false, 
+        "sort_order": 90, 
+        "homepage": "http://unbral.nuvem.ufrgs.br/dvn/", 
+        "slug": "unbral-fronteiras-brazil", 
+        "description": "For researchers working in Brazilian Border Studies."
+    }
+},
+{
+    "pk": 10, 
+    "model": "federated_dataverses.federateddataverseinfo", 
+    "fields": {
+        "name": "UiT (The Arctic University of Norway) Dataverse", 
+        "created": "2014-12-15T21:20:32.488Z", 
+        "modified": "2014-12-15T21:20:32.490Z", 
+        "logo_image": "federated_logos/uit-logo.jpg", 
+        "visible": false, 
+        "sort_order": 100, 
+        "homepage": "http://opendata.uit.no/dvn/", 
+        "slug": "uit-the-arctic-university-of-norway-dataverse", 
+        "description": "Open for UiT affiliated researchers to deposit data."
+    }
+}
+]
