@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Test JSON</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ STATIC_URL }}css/dataverse_org.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+
+        function load_navbar(){
+            /*
+                Grab the HTML for the Dataverse.org navbar 
+            */
+            //var navbar_url = 'http://beta.dataverse.org/nav-only-json/?callback=?';
+            var navbar_url = 'http://127.0.0.1:8000/nav-only-json/?callback=?';
+            
+            var jqxhr = $.getJSON( navbar_url, function(data) {
+                console.log( "success" );
+            })
+            .done(function(data) {
+                console.log( "second success" );
+                $('#navbar_from_dataverse_org').html(data.navbar_html);
+            })
+            .fail(function() {
+                $('#navbar_from_dataverse_org').html('failed, show a default header?');
+                console.log( "error" );
+            })
+            .always(function() {
+                console.log( "complete" );
+            });
+        }
+
+        $(document).ready(function () {
+            load_navbar();
+        });
+
+    </script>
+</head>
+<body>
+<div id="navbar_from_dataverse_org">Navbar ready?</div>
+</body>
+</html>
