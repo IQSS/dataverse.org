@@ -56,22 +56,19 @@ def view_nav_only_as_json(request):
 
     navbar_data = { 'navbar_html' : menu_string }
 
-    #if 'callback' in request.REQUEST:
+    try:
+        navbar_data_json = json.dumps(navbar_data)
+    except:
+        raise ValueError("Failed to convert navbar to JSON")
 
+    # Is this a JSON response?
+    #
+    if 'callback' in request.REQUEST:
+        data = '%s(%s);' % (request.REQUEST['callback'], navbar_data_json)
+        return HttpResponse(data, "text/javascript")
 
-    return HttpResponse(json.dumps(navbar_data), mimetype="application/json")
-"""
-     data = simplejson.dumps(objects)
-            if 'callback' in request.REQUEST:
-                # a jsonp response!
-                data = '%s(%s);' % (request.REQUEST['callback'], data)
-                return HttpResponse(data, "text/javascript")
-        except:
-            data = simplejson.dumps(str(objects))
-        return HttpResponse(data, "application/json")
+    return HttpResponse(navbar_data_json, mimetype="application/json")
 
-    return HttpResponse(menu_string)
-"""
 
 def view_support_page(request):
     d = {}
