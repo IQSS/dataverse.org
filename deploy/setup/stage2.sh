@@ -42,4 +42,4 @@ python manage.py collectstatic --noinput --settings=dataverse_org.settings.produ
 echo "Create directory for federated dataverses logos"
 mkdir -p /var/www/dataverse_org/media/federated_logos
 cp /webapps/code/dataverse.org/dataverse_org/media/federated_logos/* /var/www/dataverse_org/media/federated_logos
-python manage.py loaddata apps/federated_dataverses/fixtures/test-data.json --settings=dataverse_org.settings.production
+python manage.py loaddata apps/federated_dataverses/fixtures/initial_data.json --settings=dataverse_org.settings.production

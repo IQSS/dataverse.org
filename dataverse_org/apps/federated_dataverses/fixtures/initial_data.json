@@ -95,12 +95,12 @@
     "fields": {
         "name": "Abacus (British Columbia Research Libraries' Data Services) Dataverse", 
         "created": "2014-12-15T21:12:50.707Z", 
-        "modified": "2014-12-15T21:12:50.721Z", 
+        "modified": "2014-12-15T22:38:25.135Z", 
         "logo_image": "federated_logos/AbacusLogoDVN.png", 
-        "visible": false, 
+        "visible": true, 
         "sort_order": 70, 
         "homepage": "http://dvn.library.ubc.ca/dvn/", 
-        "slug": "abacus-british-columbia-research-libraries-data-services-dataverse", 
+        "slug": "abacus-british-columbia-research-libraries-data-se", 
         "description": "Open for researchers associated with British Columbia universities to deposit data."
     }
 },
@@ -110,9 +110,9 @@
     "fields": {
         "name": "Heidelberg University HeiDATA Dataverse", 
         "created": "2014-12-15T21:14:35.849Z", 
-        "modified": "2014-12-15T21:14:35.851Z", 
+        "modified": "2014-12-15T22:38:32.827Z", 
         "logo_image": "federated_logos/uni-heidelberg_logo.jpg", 
-        "visible": false, 
+        "visible": true, 
         "sort_order": 80, 
         "homepage": "https://heidata.uni-heidelberg.de/dvn/", 
         "slug": "heidelberg-university-heidata-dataverse", 
@@ -125,9 +125,9 @@
     "fields": {
         "name": "UnBraL Fronteiras (Brazil)", 
         "created": "2014-12-15T21:17:24.394Z", 
-        "modified": "2014-12-15T21:17:24.396Z", 
+        "modified": "2014-12-15T22:38:40.376Z", 
         "logo_image": "federated_logos/unbral-fronteiras.png", 
-        "visible": false, 
+        "visible": true, 
         "sort_order": 90, 
         "homepage": "http://unbral.nuvem.ufrgs.br/dvn/", 
         "slug": "unbral-fronteiras-brazil", 
@@ -140,9 +140,9 @@
     "fields": {
         "name": "UiT (The Arctic University of Norway) Dataverse", 
         "created": "2014-12-15T21:20:32.488Z", 
-        "modified": "2014-12-15T21:20:32.490Z", 
+        "modified": "2014-12-15T22:38:46.814Z", 
         "logo_image": "federated_logos/uit-logo.jpg", 
-        "visible": false, 
+        "visible": true, 
         "sort_order": 100, 
         "homepage": "http://opendata.uit.no/dvn/", 
         "slug": "uit-the-arctic-university-of-norway-dataverse", 

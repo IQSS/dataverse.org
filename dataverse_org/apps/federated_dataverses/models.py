@@ -30,7 +30,7 @@ class FederatedDataverseInfo(TimeStampedModel):
 
     
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.name)
+        self.slug = slugify(self.name)[:50]
         super(FederatedDataverseInfo, self).save(*args, **kwargs)
         
     def __unicode__(self):
