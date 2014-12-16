@@ -127,7 +127,7 @@
       {%- if hasdoc('copyright') %}
         {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }} {% endtrans %}<br/>
       {%- else %}
-        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }} {% endtrans %}<br/>
+        {% trans copyright=copyright|e %}Copyright &copy; {{ copyright }} {% endtrans %}<br/>
       {%- endif %}
     {%- endif %}
     {%- if last_updated %}
@@ -140,21 +140,4 @@
   </div>
 </footer>
 
-<div id="surveyTab">
-    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#surveyTabBody">
-        <span class="glyphicon glyphicon-comment"></span>&#160; Feedback
-    </button>
-    <div id="surveyTabBody" class="collapse">
-        <div class="panel panel-default">
-            <div class="panel-body text-center">
-              <p class="text-left">
-                  Please fill out this quick survey to help us improve Zelig!
-              </p>
-              <a class="btn btn-danger" href="https://harvard.az1.qualtrics.com/SE/?SID=SV_1GOeI70t4GbNyyp" role="button" target="_blank">
-                  Start Now
-              </a>
-            </div>
-        </div>
-    </div>
-</div>
 {%- endblock %}
