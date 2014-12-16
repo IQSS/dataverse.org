@@ -40,10 +40,10 @@ def view_homepage(request):
 
 
 
-def view_support_page(request):
+def view_about_page(request):
     d = {}
-    d['support_page'] = True
-    return render_to_response('support.html'\
+    d['about_page'] = True
+    return render_to_response('about.html'\
                               , d\
                               , context_instance=RequestContext(request))
 

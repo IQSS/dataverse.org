@@ -15,8 +15,11 @@ urlpatterns = patterns('',
     # Homepage
     url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
 
-    url(r'^nav-only/$', 'apps.navbar.views.view_nav_only', name='view_nav_only'),
+    # about page
+    url(r'^about/$', 'apps.basic_pages.views.view_about_page', name='view_about'),
 
+    # nav bars for sphinx
+    url(r'^nav-only/$', 'apps.navbar.views.view_nav_only', name='view_nav_only'),
     url(r'^nav-only-json/$', 'apps.navbar.views.view_nav_only_as_json', name='view_nav_only_as_json'),
 
     # Uncomment the next line to enable the admin:
@@ -29,7 +32,7 @@ urlpatterns = patterns('',
     
 )
 
-urlpatterns += patterns('django.contrib.flatpages.views',
-    url(r'^(?P<url>.*/)$', 'flatpage', name='view_flatpage'),
-)
+#urlpatterns += patterns('django.contrib.flatpages.views',
+#    url(r'^(?P<url>.*/)$', 'flatpage', name='view_flatpage'),
+#)
 

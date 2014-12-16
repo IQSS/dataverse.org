@@ -13,10 +13,12 @@ urlpatterns = patterns('',
 
     # Home page
     url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
-    #url(r'^search/', include('apps.search.urls')),
 
+    # about page
+    url(r'^about/$', 'apps.basic_pages.views.view_about_page', name='view_about'),
+
+    # nav bars for sphinx
     url(r'^nav-only/$', 'apps.navbar.views.view_nav_only', name='view_nav_only'),
-
     url(r'^nav-only-json/$', 'apps.navbar.views.view_nav_only_as_json', name='view_nav_only_as_json'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -30,9 +32,9 @@ urlpatterns = patterns('',
     #(r'^(?P<url>.*)$', 'django.contrib.flatpages.views.flatpage'),
 )
 
-urlpatterns += patterns('django.contrib.flatpages.views',
-    url(r'^(?P<url>.*/)$', 'flatpage', name='view_flatpage'),
-)
+#urlpatterns += patterns('django.contrib.flatpages.views',
+#    url(r'^(?P<url>.*/)$', 'flatpage', name='view_flatpage'),
+#)
 #url(r'^best-practices/$', 'view_best_practices_page', name="view_best_practices_page"),
 
 
