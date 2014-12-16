@@ -1,8 +1,8 @@
-{#      For dataverse.org SPHINX projects                                                               #}
-{#      Instructions:                                                                                   #}
-{#          (1) For a Sphinx project, copy the **contents** of this file into **navbar.html**           #}
-{#          (2) Location of **navbar.html** within a SPHINX project:                                    #}
-{#              - /source/_templates/**navbar.html**                                                    #}
+{#      For dataverse.org SPHINX projects                                                   #}
+{#      Instructions:                                                                       #}
+{#          (1) In Sphinx, copy the **contents** of this file into **navbar.html**          #}
+{#          (2) Location of **navbar.html** within a SPHINX project:                        #}
+{#              - /source/_templates/**navbar.html**                                        #}
 
 <!-- Navigation -->
 <!-- uncomment next line to test as standalone file -->
@@ -31,8 +31,8 @@
 <script>
     function load_navbar(){
         /*  Grab the HTML for the Dataverse.org navbar */
-        //var navbar_url = 'http://127.0.0.1:8000/nav-only-json/?callback=?';    
-        var navbar_url = 'http://beta.dataverse.org/nav-only-json/?callback=?';    
+        var navbar_url = 'http://127.0.0.1:8000/nav-only-json/?callback=?';    
+        //var navbar_url = 'http://beta.dataverse.org/nav-only-json/?callback=?';    
         //var navbar_url = 'http://dataverse.org/nav-only-json/?callback=?';    
         
         var jqxhr = $.getJSON( navbar_url, function(data) {

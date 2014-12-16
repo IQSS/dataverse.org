@@ -6,12 +6,13 @@ from django.shortcuts import render_to_response
 from django.template.loader import render_to_string
 from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.template import RequestContext
+from django.core.urlresolvers import reverse
 
 # cache related
 from django.core.cache import cache
 from django.views.decorators.cache import cache_page
 
-
+from dataverse_org.context_processors import baseurl
 
 
 def get_navbar_as_string(request):
@@ -51,7 +52,10 @@ def view_nav_only_as_json(request):
 
         # Add navbar to dict
         #
-        navbar_data = { 'navbar_html' : menu_string }
+        dataverse_dot_org_homepage_url = baseurl(request).get('BASE_URL','') + reverse('view_homepage', kwargs={})
+        navbar_data = { 'navbar_html' : menu_string\
+                    , 'dataverse_dot_org_homepage_url': dataverse_dot_org_homepage_url
+         }
 
         # Convert dict to JSON string
         #
