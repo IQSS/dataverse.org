@@ -8,6 +8,6 @@ Contents:
    :maxdepth: 2
 
   advisory-team
-  community-groups
+  community-groups/index
   community-meeting-2015
 
