@@ -142,7 +142,7 @@
    <div id="dataverse-repositories-row" class="row text-center">
         <div class="col-md-4">
              <div id="dataverse-repositories-title" class="thumbnail" style="margin-bottom:1em;padding:0;width:361px;height:146px;background:#eee;">
-                 <h3 style="margin-top:1.5em;color:#c55b28;">Dataverse Repositories<br/><small>Long-term preservation by<br/>(Click cards for more information.)</small></h3>
+                 <h3 style="margin-top:1.5em;color:#c55b28;">Dataverse Repositories<br/><small>Long-term preservation by<br/>(Click cards for more information)</small></h3>
              </div>
         </div>
         {% for dverse in federated_dataverses %}
@@ -170,14 +170,12 @@
 <!-- row: Tweets, Blogs, By the Numbers -->
 <div class="row text-center"> 
 
-        {% include "home/tweet_block.html" %}
+      {% include "home/tweet_block.html" %}
+     
+      {% include "home/blog_block.html" %}
        
-         {% include "home/blog_block.html" %}
-       
-       
-       
-       <!-- start: by the numbers -->
-       <div class="col-md-4">
+      <!-- start: by the numbers -->
+      <div class="col-md-4">
           <div class="panel panel-default" style="border-color:#ccc;">
             <div class="panel-heading" style="background:white;padding:11.5px;border-color:#ccc;">
               <h3 class="panel-title text-left" style="font-weight:bold;font-size:18px;">Metrics</h3>
@@ -187,8 +185,8 @@
               <div id="container" style="xmin-width: 310px; height: 300px; margin: 0 auto"></div>
             </div>
           </div>
-       </div>
-       <!-- end: by the numbers -->
+      </div>
+      <!-- end: by the numbers -->
       
    </div><!-- end: row -->
    <!-- END row: Tweets, Blogs, By the Numbers -->
