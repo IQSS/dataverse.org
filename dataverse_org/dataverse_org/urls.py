@@ -15,9 +15,9 @@ urlpatterns = patterns('',
     url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
     #url(r'^search/', include('apps.search.urls')),
 
-    url(r'^nav-only/$', 'apps.basic_pages.views.view_nav_only', name='view_nav_only'),
+    url(r'^nav-only/$', 'apps.navbar.views.view_nav_only', name='view_nav_only'),
 
-    url(r'^nav-only-json/$', 'apps.basic_pages.views.view_nav_only_as_json', name='view_nav_only_as_json'),
+    url(r'^nav-only-json/$', 'apps.navbar.views.view_nav_only_as_json', name='view_nav_only_as_json'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
