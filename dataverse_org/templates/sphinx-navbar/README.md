@@ -8,13 +8,14 @@ The placement of the following files into a Sphinx project will result in a dyna
 Instructions:                                                                       
 
 1. Create a blank Sphinx ```navbar.html``` file
-    - file location: ```{{ your sphinx project }}/source/_templates/**navbar.html**```
-    - example: ```best_practices/source/_templates/**navbar.html**```
+    - file location: ```{{ your sphinx project }}/source/_templates/navbar.html```
+    - example: ```best_practices/source/_templates/navbar.html```
 
-1. Copy the **contents** of ```sphinx-navbar.html``` file into ```navbar.html```         
+1. Copy the contents of ```sphinx-navbar.html``` file into ```navbar.html```         
     - content source: ```sphinx-navbar.html```
-    - content target: ```{{ your sphinx project }}/source/_templates/**navbar.html**```
-        - example: ```best_practices/source/_templates/**navbar.html**```
-2. Copy the file ```navbar_from_dataverse_org.js``` to Sphinx
-    - target location: ```{{ your sphinx project }}/source/_tatic/**navbar_from_dataverse_org.js**```
-        - example: ```best_practices/source/_templates/**navbar_from_dataverse_org.js**```
+    - content target: ```{{ your sphinx project }}/source/_templates/navbar.html```
+        - example: ```best_practices/source/_templates/navbar.html```
+1. Copy the file ```navbar_from_dataverse_org.js``` to Sphinx
+    - target location: ```{{ your sphinx project }}/source/_tatic/navbar_from_dataverse_org.js```
+        - example: ```best_practices/source/_templates/navbar_from_dataverse_org.js```
+1. Run a build!  (take a break)
