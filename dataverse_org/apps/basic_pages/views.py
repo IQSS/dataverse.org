@@ -48,6 +48,16 @@ def view_about_page(request):
                               , context_instance=RequestContext(request))
 
 
+
+def view_contact_page(request):
+  d = {}
+  d['contact_page'] = True
+  return render_to_response('contact.html'\
+                            , d\
+                            , context_instance=RequestContext(request))
+
+
+
 def view_best_practices_page(request):
   d = {}
   d['best_practices_page'] = True

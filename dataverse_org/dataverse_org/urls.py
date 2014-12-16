@@ -17,6 +17,9 @@ urlpatterns = patterns('',
     # about page
     url(r'^about/$', 'apps.basic_pages.views.view_about_page', name='view_about'),
 
+    # contact page
+    url(r'^contact/$', 'apps.basic_pages.views.view_contact_page', name='view_contact_page'),
+
     # nav bars for sphinx
     url(r'^nav-only/$', 'apps.navbar.views.view_nav_only', name='view_nav_only'),
     url(r'^nav-only-json/$', 'apps.navbar.views.view_nav_only_as_json', name='view_nav_only_as_json'),
