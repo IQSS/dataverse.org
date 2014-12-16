@@ -1,73 +1,43 @@
 <ul class="nav navbar-nav">
-     <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
-           <ul class="dropdown-menu" role="menu">
-             <li><a href="http://datascience.iq.harvard.edu/team" target="_blank">Team</a></li>
-             <li><a href="{{ BASE_URL }}/about/">History &amp; Name</a></li>
-
-             <li><a href="http://datascience.iq.harvard.edu/publications/filter/dataverse" target="_blank">Publications</a></li>
-             <li><a href="http://datascience.iq.harvard.edu/presentations/filter/dataverse"  target="_blank">Presentations</a></li>
-             <li><a href="http://datascience.iq.harvard.edu/blog/filter/dataverse"  target="_blank">Blogs</a></li>
-           </ul>
-     </li>
-     <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <span class="caret"></span></a>
-           <ul class="dropdown-menu" role="menu">
-             <li><a href="/community/advisory-team/">Advisory Team</a></li>
-             <li class="dropdown-submenu">
-                 <a href="/community/groups/">Community Groups</a>
-                 <ul class="dropdown-menu">
-                     <li><a href="/community/groups/api/">API</a></li>
-                     <li><a href="/community/groups/auth/">Authentication and Authorization</a></li>
-                     <!--
-                     <li><a href="/community/groups/internationalization/">Internationalization</a></li>
-                     <li><a href="/community/groups/metadata/">Metadata</a></li>
-                     <li><a href="/community/groups/storage/">Storage</a></li>
-                     -->
-                 </ul>
-             </li>
-             <li><a href="/community/meeting/">2015 Dataverse Community Meeting</a></li>
-           </ul>
+    <li><a href="/about">About</a></li>
+    <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+               <li><a href="http://community.dataverse.org/advisory-team.html">Advisory Team</a></li>
+               <li><a href="http://community.dataverse.org/community-groups/">Community Groups</a></li>
+               <li><a href="http://community.dataverse.org/community-meetings/2015/index.html">2015 Dataverse Community Meeting</a></li>
+             </ul>
+       </li>
+    <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Best Practices <span class="caret"></span></a>
+             <ul class="dropdown-menu" role="menu">
+                  <li><a href="http://best-practices.dataverse.org/data-citation/">Data Citation</a></li>
+                  <li><a href="http://best-practices.dataverse.org/data-management/index.html">Data Management</a></li>
+                  <li><a href="http://best-practices.dataverse.org/replication.html">Replication Guidelines</a></li>
+            </ul>
      </li>
      <li>
          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <span class="caret"></span></a>
            <ul class="dropdown-menu" role="menu">
-             <li><a href="http://docs.dataverse.org/en/latest/Installers" target="_blank">Installers</a></li>
-             <li><a href="https://github.com/IQSS/dataverse/blob/master/CONTRIBUTING.md" target="_blank">Developers</a></li>
-             <li><a href="http://roadmap.datascience.iq.harvard.edu/" target="_blank">Roadmap</a></li>
-             <li><a href="https://github.com/IQSS/dataverse" target="_blank">Source Code</a></li>
+               <li><a href="http://roadmap.datascience.iq.harvard.edu/" target="_blank">Roadmap</a></li>
+               <li><a href="https://github.com/IQSS/dataverse" target="_blank">Source Code</a></li>
            </ul>
-     </li>
-     <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Best Practices <span class="caret"></span></a>
-           <ul class="dropdown-menu" role="menu">
-             <li class="dropdown-submenu">
-                 <a href="/best-practices/data-citation/">Data
-             Citation</a>
-	         <!--
-                 <ul class="dropdown-menu">
-                     <li><a href="/best-practices/data-citation/unf">Universal Numerical Fingerprint (UNF)</a></li>
-                 </ul>
-	         -->	 
-             </li>
-             <li><a href="/best-practices/data-management/">Data Management</a></li>
-             <li><a href="/best-practices/data-preparation/">Data Preparation</a></li>
-             <li><a href="/best-practices/replication/">Replication</a></li>
-             <li><a href="http://projects.iq.harvard.edu/odap/home"  target="_blank">Open Data Assistance Program</a></li>
-           </ul>
-     </li>
+     </li>     
      <li>
          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
            <ul class="dropdown-menu" role="menu">
-             <li><a href="/getting-started/">Getting Started</a></li>
-             <li class="dropdown-submenu">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation</a>
-                 <ul class="dropdown-menu">
-                     <li><a href="http://docs.dataverse.org/en/3.6.2/"  target="_blank">3.6</a></li>
-                     <li><a href="http://docs.dataverse.org/en/4.0/"  target="_blank">4.0</a></li>
-                 </ul>
-             </li>
-             <li><a href="/support/">Get Support</a></li>
+               <li><a href="/contact/">Contact</a></li>
+               <li><a href="http://guides.dataverse.org/en/latest/getting-started/index.html">Getting Started</a></li>
+               <li class="dropdown-submenu">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides</a>
+                     <ul class="dropdown-menu">
+                         <li><a href="http://guides.dataverse.org/en/latest/user/index.html">User Guide</a></li>
+                         <li><a href="http://guides.dataverse.org/en/latest/developers/index.html">Developers Guide</a></li>
+                         <li><a href="http://guides.dataverse.org/en/latest/installation/index.html">Installation Guide</a></li>
+                         <li><a href="http://guides.dataverse.org/en/latest/api/index.html">API Guide</a></li>
+                     </ul>
+                </li>
+                <li><a href="http://projects.iq.harvard.edu/odap">Open Data Assistance Program</a></li>    
            </ul>
      </li>
  </ul>
