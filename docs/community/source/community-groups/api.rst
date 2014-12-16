@@ -1,3 +1,5 @@
+.. _api:
+
 Dataverse API Community Group
 +++++++++++++++++++++++++++++
 

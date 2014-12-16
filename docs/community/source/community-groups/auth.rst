@@ -1,3 +1,5 @@
+.. _auth:
+
 Dataverse Authentication and Authorization Community Group
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
