@@ -1,3 +1,4 @@
+sphinx-output/*
 dataverse_org/dataverse_org/settings/secret*
 test_setup/*.db3
 *.idea
