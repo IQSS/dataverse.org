@@ -9,5 +9,5 @@ Contents:
 
   advisory-team
   community-groups/index
-  community-meetings/index
+  community-meetings/2015/index
 
