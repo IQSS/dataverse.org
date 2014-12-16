@@ -115,7 +115,7 @@
             </div>
             <div class="bg-info" style="padding:12px;background-color:#F6C8A2;min-height:268px;">
               <img class="img-responsive" src="{{ STATIC_URL }}images/dataversecitation.jpg" alt="Get Recognition - Dataverse" width="336" />
-              <p class="text-left" style="font-size: 18px; font-weight: 200;">Researchers can brand their Dataverse, share, keep control of and get recognition for their data with a persistent data citation to enable reproducible and reusable research.</p>
+              <p class="text-left" style="font-size: 18px; font-weight: 200;">Researchers get recognition for their data with branding and a persistent data citation.</p>
               <div class="btn-group">
                 <a href="/best-practices/data-citation/"><button type="button" class="btn btn-primary"><small class="glyphicon glyphicon-book"></small> Learn More</button></a>
                 <!--
@@ -139,26 +139,24 @@
 
    <hr/>
 
-   <div class="row">
-       <div class="col-lg-12">
-           <h3 style="margin-top:0;">Dataverse Repositories <small>Long-term preservation by</small></h3>
-       </div>
-   </div>
-   <!-- /.row -->
-
    <!-- Page Features -->
-   <div class="row text-center"> 
+   <div id="dataverse-repositories-row" class="row text-center">
+        <div class="col-md-4">
+             <div id="dataverse-repositories-title" class="thumbnail" style="margin-bottom:1em;padding:0;width:361px;height:146px;background:#eee;">
+                 <h3 style="margin-top:1.5em;color:#c55b28;">Dataverse Repositories<br/><small>Long-term preservation by<br/>(Click cards for more information.)</small></h3>
+             </div>
+        </div>
         {% for dverse in federated_dataverses %}
             {% include "home/dataverse_block.html" %}
         {% endfor %}
 
         <div id="cardClone">
             <div id="cloneFront" class="thumbnail cards">cardclone front</div>
-            <div id="cloneBack" style="text-align:center;">
+            <div id="cloneBack" style="text-align:center;padding:24px 12px;">
               {% for dverse in federated_dataverses %}
                 <p id="card-{{ dverse.slug }}" class="hidden">
-                  <a href="{{ dverse.homepage }}"><img src="{{ dverse.logo_image.url }}" alt="{{ dverse.slug }}" style="height:170px;margin-top:4px;" /></a><br/>
-                  <a href="{{ dverse.homepage }}">{{ dverse.name }}</a><br/>
+                  <a href="{{ dverse.homepage }}"><img src="{{ dverse.logo_image.url }}" alt="{{ dverse.slug }}" style="max-width:300px;max-height:180px;margin-top:4px;" /></a>
+                  <span class="h3 center-block"><a href="{{ dverse.homepage }}">{{ dverse.name }}</a></span>
                   {{ dverse.description }}<br/>
                 </p>
               {% endfor %}
@@ -168,7 +166,7 @@
    </div>
    <!-- /.row -->
 
-   <hr/>
+   <hr style="margin-top:0;"/>
 
 <!-- row: Tweets, Blogs, By the Numbers -->
 <div class="row text-center"> 

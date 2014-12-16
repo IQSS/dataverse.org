@@ -80,8 +80,8 @@
     "fields": {
         "name": "Scholars Portal Dataverse", 
         "created": "2014-10-15T14:26:15.934Z", 
-        "modified": "2014-12-10T22:10:58.941Z", 
-        "logo_image": "federated_logos/scholarsportal.gif", 
+        "modified": "2014-12-16T17:50:35.900Z", 
+        "logo_image": "federated_logos/scholarsportal.jpg", 
         "visible": true, 
         "sort_order": 60, 
         "homepage": "http://guides.scholarsportal.info/dataverse", 
@@ -93,15 +93,15 @@
     "pk": 7, 
     "model": "federated_dataverses.federateddataverseinfo", 
     "fields": {
-        "name": "Abacus (British Columbia Research Libraries' Data Services) Dataverse", 
+        "name": "Abacus Dataverse", 
         "created": "2014-12-15T21:12:50.707Z", 
-        "modified": "2014-12-15T22:38:25.135Z", 
+        "modified": "2014-12-16T16:52:49.020Z", 
         "logo_image": "federated_logos/AbacusLogoDVN.png", 
         "visible": true, 
         "sort_order": 70, 
         "homepage": "http://dvn.library.ubc.ca/dvn/", 
-        "slug": "abacus-british-columbia-research-libraries-data-se", 
-        "description": "Open for researchers associated with British Columbia universities to deposit data."
+        "slug": "abacus-dataverse", 
+        "description": "Open for researchers associated with British Columbia Research Libraries' Data Services to deposit data."
     }
 },
 {
@@ -110,7 +110,7 @@
     "fields": {
         "name": "Heidelberg University HeiDATA Dataverse", 
         "created": "2014-12-15T21:14:35.849Z", 
-        "modified": "2014-12-15T22:38:32.827Z", 
+        "modified": "2014-12-16T16:34:53.987Z", 
         "logo_image": "federated_logos/uni-heidelberg_logo.jpg", 
         "visible": true, 
         "sort_order": 80, 
@@ -123,14 +123,14 @@
     "pk": 9, 
     "model": "federated_dataverses.federateddataverseinfo", 
     "fields": {
-        "name": "UnBraL Fronteiras (Brazil)", 
+        "name": "UnBraL Fronteiras (Brazil) Dataverse", 
         "created": "2014-12-15T21:17:24.394Z", 
-        "modified": "2014-12-15T22:38:40.376Z", 
+        "modified": "2014-12-16T16:37:35.202Z", 
         "logo_image": "federated_logos/unbral-fronteiras.png", 
         "visible": true, 
         "sort_order": 90, 
         "homepage": "http://unbral.nuvem.ufrgs.br/dvn/", 
-        "slug": "unbral-fronteiras-brazil", 
+        "slug": "unbral-fronteiras-brazil-dataverse", 
         "description": "For researchers working in Brazilian Border Studies."
     }
 },
@@ -140,7 +140,7 @@
     "fields": {
         "name": "UiT (The Arctic University of Norway) Dataverse", 
         "created": "2014-12-15T21:20:32.488Z", 
-        "modified": "2014-12-15T22:38:46.814Z", 
+        "modified": "2014-12-16T16:35:07.625Z", 
         "logo_image": "federated_logos/uit-logo.jpg", 
         "visible": true, 
         "sort_order": 100, 

@@ -78,8 +78,8 @@ function flipCards() {
             //[hack: using opacity for hiding here, visibility:hidden has a weird lag in win chrome]
             $clone.css({
                 'display': 'block',
-                    'top': lastelement.top - 8 + 'px',
-                    'left': lastelement.left - 82 + 'px'
+                    'top': lastelement.top + 4 + 'px',
+                    'left': lastelement.left - 79 + 'px'
             });
             $lastelement.css('opacity', 0);
 
@@ -93,10 +93,10 @@ function flipCards() {
             //[hack: we have to wait for the clone to finish drawing before calling the transform so we put it in a 100 millisecond settimeout callback]
             setTimeout(function () {
                 $clone.css({
-                    'top': '75px',
-                        'left': 'calc(50% - 200px)',
-                        'height': '400px',
-                        'width': '400px'
+                    'top': 'calc(50% - 184px)',
+                        'left': 'calc(50% - 180px)',
+                        'height': '360px',
+                        'width': '360px'
                         //'width': $(document).width() - 140 + 'px'
                 });
                 $clone.find('#cloneFront').css({
@@ -113,13 +113,13 @@ function flipCards() {
 
 
     //If user clicks outside of the flipped card, return to default state
-    $('body, body > div.container').click(function (e) {
+    $('body, body *:not(a)').click(function (e) {
         if (cloneflipped) {
             if (e.target === e.currentTarget) {
                 //Reverse the animation
                 $clone.css({
-                    'top': lastelement.top + 'px',
-                        'left': lastelement.left - 80 + 'px',
+                    'top': lastelement.top + 6 + 'px',
+                        'left': lastelement.left - 76 + 'px',
                         'height': lastelement.height + 'px',
                         'width': lastelement.width + 'px'
                 });
