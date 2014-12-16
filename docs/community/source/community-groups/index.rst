@@ -1,7 +1,7 @@
 .. _community-groups:
 
-Community Groups
-++++++++++++++++
+Dataverse Community Groups
+++++++++++++++++++++++++++
 
 .. toctree::
    :titlesonly:
