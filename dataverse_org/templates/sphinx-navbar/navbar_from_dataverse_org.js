@@ -1,5 +1,8 @@
+/*  
+    Use the HTML from the Dataverse.org navbar 
+    See:  https://github.com/IQSS/dataverse.org/tree/master/dataverse_org/templates/sphinx-navbar    
+*/
 function load_navbar(){
-    /*  Grab the HTML for the Dataverse.org navbar */
     //var navbar_url = 'http://127.0.0.1:8000/nav-only-json/?callback=?';    
     var navbar_url = 'http://beta.dataverse.org/nav-only-json/?callback=?';    
     //var navbar_url = 'http://dataverse.org/nav-only-json/?callback=?';    

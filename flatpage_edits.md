@@ -1,5 +1,9 @@
 ## Flat page edits
 
+### Sphinx Navbar
+
+- See https://github.com/IQSS/dataverse.org/tree/master/dataverse_org/templates/sphinx-navbar
+
 ### Log into the admin
 
 - http://beta.dataverse.org/dataverse-org-admin/

@@ -1,53 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Test JSON</title>
+    <title>Dataverse.org - Grap Navbar via JSONP</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{{ STATIC_URL }}css/dataverse_org.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
 <body>
      <a class="navbar-brand" href="http://dataverse.org" id="dataverse-org-homepage-url">Dataverse Project</a>
-    </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
 
    <div class="collapse navbar-collapse" id="dv-bs-navbar-details"></div><!-- /.navbar-collapse -->
-   <script>
-       function load_navbar(){
-           /*  Grab the HTML for the Dataverse.org navbar */
-           //var navbar_url = 'http://127.0.0.1:8000/nav-only-json/?callback=?';    
-           var navbar_url = 'http://beta.dataverse.org/nav-only-json/?callback=?';    
-           //var navbar_url = 'http://dataverse.org/nav-only-json/?callback=?';    
-
-           var jqxhr = $.getJSON( navbar_url, function(data) {
-               console.log( "success" );
-               $('#dv-bs-navbar-details').html(data.navbar_html);
-               $("#dataverse-org-homepage-url").attr("href", data.dataverse_dot_org_homepage_url)
-           })
-           .fail(function() {
-               console.log( "error" );
-               $('#dv-bs-navbar-details').html('<!-- failed to retrieve navbar -->');
-           })
-       }
+	<script type="text/javascript" src="navbar_from_dataverse_org.js"></script>
+   <script>  
        $(document).ready(function () {
            load_navbar();
        });
