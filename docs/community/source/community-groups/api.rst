@@ -1,7 +1,7 @@
 Dataverse API Community Group
 +++++++++++++++++++++++++++++
 
-The Dataverse API Community Group reports back to the `Dataverse Advisory Team <../advisory-team.html>`__ about Dataverse APIs and integrations made possible by them. It is coordinated by `Philip Durbin <http://www.iq.harvard.edu/people/philip-durbin>`__.
+The Dataverse API Community Group reports back to the :ref:`Dataverse Advisory Team <advisory-team>` about Dataverse APIs and integrations made possible by them. It is coordinated by `Philip Durbin <http://www.iq.harvard.edu/people/philip-durbin>`__.
 
 There are no formal meetings. Communication happens primarily in the publicly logged `#dataverse <http://webchat.freenode.net/?channels=dataverse>`__ channel on the freenode IRC network. The coordinator will review the logs at http://irclog.iq.harvard.edu/dataverse or (if available) will discuss with members in real time.
 

@@ -1,5 +1,7 @@
-Community
-=======================================================
+.. _community:
+
+Dataverse Community
+===================
 
 Contents:
 

@@ -15,7 +15,7 @@
 
 ### Link your page to the menu
 
-- Edit the [base_menu.html](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/templates/base_menu.html) file
+- Edit the [navbar.html](https://github.com/IQSS/dataverse.org/blob/master/dataverse_org/templates/navbar.html) file
 - Add the your url to the appropriate place. Example:
 
 ```

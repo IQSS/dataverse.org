@@ -1,2 +1,4 @@
-Advisory Team
-++++++++++++++++++++++++++++++++++
+.. _advisory-team:
+
+Dataverse Advisory Team
++++++++++++++++++++++++
