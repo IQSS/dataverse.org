@@ -1,3 +1,5 @@
+.. _community-meeting-2015:
+
 Dataverse Community Meeting 2015
 ++++++++++++++++++++++++++++++++++
 

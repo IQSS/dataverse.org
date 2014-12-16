@@ -1,3 +1,5 @@
+.. _community-groups:
+
 Community Groups
 ++++++++++++++++
 

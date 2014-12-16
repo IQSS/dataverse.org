@@ -1,3 +1,5 @@
+.. _community-meetings:
+
 Dataverse Community Meetings
 ++++++++++++++++++++++++++++
 
