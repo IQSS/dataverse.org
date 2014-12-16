@@ -54,7 +54,7 @@
               <img class="img-responsive" src="{{ STATIC_URL }}images/dataverse40.png" alt="Add Data - Dataverse" width="336" />
               <p class="text-left" style="font-size: 18px; font-weight: 200;">Share, publish and preserve your data when you upload it to Dataverse.</p>
               <div class="btn-group">
-                <a href="/getting-started/"><button type="button" class="btn btn-primary"><small class="glyphicon glyphicon-plus"></small> Getting Started</button></a>
+                <a href="http://guides.dataverse.org/en/latest/getting-started/"><button type="button" class="btn btn-primary"><small class="glyphicon glyphicon-plus"></small> Getting Started</button></a>
                 <!--
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                   <small class="glyphicon glyphicon-plus"></small> Getting Started <span class="caret"></span>
@@ -83,15 +83,15 @@
               <ul class="list-group" style="opacity:0.65;margin-bottom:0;">
                 <li class="list-group-item text-left">
                     <span class="badge">{% if basic_stats %}{{ basic_stats.dataverse_count|intcomma}}{% else %}800{% endif %}</span>
-                    <span class="glyphicon glyphicon-record"></span> Dataverses
+                    <!--<span class="glyphicon glyphicon-record"></span> -->Dataverses
                   </li>
                   <li class="list-group-item text-left">
                     <span class="badge">{% if basic_stats %}{{ basic_stats.dataset_count|intcomma}}{% else %}55,025{% endif %}</span>
-                    <span class="glyphicon glyphicon-file"></span> Datasets
+                    <!--<span class="glyphicon glyphicon-file"></span> -->Datasets
                   </li>
                   <li class="list-group-item text-left">
                     <span class="badge">{% if basic_stats %}{{ basic_stats.file_count|intcomma}}{% else %}750,783{% endif %}</span>
-                    <span class="glyphicon glyphicon-picture"></span> Data Files
+                    <!--<span class="glyphicon glyphicon-picture"></span> -->Data Files
                   </li>
                 </ul>
               <p class="text-left" style="font-size: 18px; font-weight: 200;">Search data across Dataverse Repositories through Harvard Dataverse.</p>
@@ -116,7 +116,7 @@
               <img class="img-responsive" src="{{ STATIC_URL }}images/dataversecitation.jpg" alt="Get Recognition - Dataverse" width="336" />
               <p class="text-left" style="font-size: 18px; font-weight: 200;">Researchers get recognition for their data with branding and a persistent data citation.</p>
               <div class="btn-group">
-                <a href="/best-practices/data-citation/"><button type="button" class="btn btn-primary"><small class="glyphicon glyphicon-book"></small> Learn More</button></a>
+                <a href="http://best-practices.dataverse.org/data-citation/"><button type="button" class="btn btn-primary"><small class="glyphicon glyphicon-book"></small> Learn More</button></a>
                 <!--
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                   <small class="glyphicon glyphicon-book"></small> Learn More <span class="caret"></span>
