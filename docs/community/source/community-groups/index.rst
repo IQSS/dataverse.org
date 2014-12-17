@@ -14,7 +14,7 @@ Annual Dataverse Community Meeting (June 9-11) <community-meeting-2015>` and wil
 :ref:`Dataverse Advisory Team <advisory-team>`. 
 
 * :ref:`Authentication and Authorization <auth>`
-* :ref:`Dataverse APIs <auth>`
+* :ref:`Dataverse APIs <api>`
 * Metadata & File Formats 
 * Storage options
 * Internationalization
