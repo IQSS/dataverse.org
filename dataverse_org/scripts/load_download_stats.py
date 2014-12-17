@@ -60,7 +60,7 @@ def format_date(dt_str):
     """
     return datetime.strptime(dt_str, '%m/%d/%Y').date()
     
-
+baseline = 661627
 def load_initial_stats():
     global stat_data    
     stat_data_fmt = [x.strip() for x in stat_data if len(x.strip()) > 0]
@@ -73,7 +73,7 @@ def load_initial_stats():
         print ('%s %s %s' % (info))   
         mds = MonthlyDownloadStats(retrieval_date=info[0]\
                             , month_count=info[1]\
-                            , cumulative_count=info[2]\
+                            , cumulative_count=info[2]+661627 \
                     )
         mds.save()
 

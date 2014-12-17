@@ -1,0 +1,354 @@
+[
+{
+    "pk": 1, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2010-04-01", 
+        "month_count": 1, 
+        "modified": "2014-12-17T15:00:50.038Z", 
+        "cumulative_count": 661627, 
+        "created": "2014-12-17T15:00:50.036Z"
+    }
+},
+{
+    "pk": 2, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2012-06-01", 
+        "month_count": 41, 
+        "modified": "2014-12-17T15:00:50.039Z", 
+        "cumulative_count": 661668, 
+        "created": "2014-12-17T15:00:50.039Z"
+    }
+},
+{
+    "pk": 3, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2012-07-01", 
+        "month_count": 182, 
+        "modified": "2014-12-17T15:00:50.040Z", 
+        "cumulative_count": 661850, 
+        "created": "2014-12-17T15:00:50.040Z"
+    }
+},
+{
+    "pk": 4, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2012-08-01", 
+        "month_count": 7023, 
+        "modified": "2014-12-17T15:00:50.041Z", 
+        "cumulative_count": 668873, 
+        "created": "2014-12-17T15:00:50.041Z"
+    }
+},
+{
+    "pk": 5, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2012-09-01", 
+        "month_count": 11753, 
+        "modified": "2014-12-17T15:00:50.043Z", 
+        "cumulative_count": 680626, 
+        "created": "2014-12-17T15:00:50.042Z"
+    }
+},
+{
+    "pk": 6, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2012-10-01", 
+        "month_count": 15192, 
+        "modified": "2014-12-17T15:00:50.044Z", 
+        "cumulative_count": 695818, 
+        "created": "2014-12-17T15:00:50.043Z"
+    }
+},
+{
+    "pk": 7, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2012-11-01", 
+        "month_count": 17389, 
+        "modified": "2014-12-17T15:00:50.045Z", 
+        "cumulative_count": 713207, 
+        "created": "2014-12-17T15:00:50.044Z"
+    }
+},
+{
+    "pk": 8, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2012-12-01", 
+        "month_count": 11962, 
+        "modified": "2014-12-17T15:00:50.046Z", 
+        "cumulative_count": 725169, 
+        "created": "2014-12-17T15:00:50.046Z"
+    }
+},
+{
+    "pk": 9, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-01-01", 
+        "month_count": 13238, 
+        "modified": "2014-12-17T15:00:50.047Z", 
+        "cumulative_count": 738407, 
+        "created": "2014-12-17T15:00:50.047Z"
+    }
+},
+{
+    "pk": 10, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-02-01", 
+        "month_count": 14853, 
+        "modified": "2014-12-17T15:00:50.048Z", 
+        "cumulative_count": 753260, 
+        "created": "2014-12-17T15:00:50.048Z"
+    }
+},
+{
+    "pk": 11, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-03-01", 
+        "month_count": 19852, 
+        "modified": "2014-12-17T15:00:50.049Z", 
+        "cumulative_count": 773112, 
+        "created": "2014-12-17T15:00:50.048Z"
+    }
+},
+{
+    "pk": 12, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-04-01", 
+        "month_count": 13634, 
+        "modified": "2014-12-17T15:00:50.050Z", 
+        "cumulative_count": 786746, 
+        "created": "2014-12-17T15:00:50.050Z"
+    }
+},
+{
+    "pk": 13, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-05-01", 
+        "month_count": 12784, 
+        "modified": "2014-12-17T15:00:50.051Z", 
+        "cumulative_count": 799530, 
+        "created": "2014-12-17T15:00:50.051Z"
+    }
+},
+{
+    "pk": 14, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-06-01", 
+        "month_count": 12971, 
+        "modified": "2014-12-17T15:00:50.052Z", 
+        "cumulative_count": 812501, 
+        "created": "2014-12-17T15:00:50.052Z"
+    }
+},
+{
+    "pk": 15, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-07-01", 
+        "month_count": 11780, 
+        "modified": "2014-12-17T15:00:50.053Z", 
+        "cumulative_count": 824281, 
+        "created": "2014-12-17T15:00:50.052Z"
+    }
+},
+{
+    "pk": 16, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-08-01", 
+        "month_count": 10561, 
+        "modified": "2014-12-17T15:00:50.053Z", 
+        "cumulative_count": 834842, 
+        "created": "2014-12-17T15:00:50.053Z"
+    }
+},
+{
+    "pk": 17, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-09-01", 
+        "month_count": 15064, 
+        "modified": "2014-12-17T15:00:50.054Z", 
+        "cumulative_count": 849906, 
+        "created": "2014-12-17T15:00:50.054Z"
+    }
+},
+{
+    "pk": 18, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-10-01", 
+        "month_count": 16251, 
+        "modified": "2014-12-17T15:00:50.055Z", 
+        "cumulative_count": 866157, 
+        "created": "2014-12-17T15:00:50.055Z"
+    }
+},
+{
+    "pk": 19, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-11-01", 
+        "month_count": 19316, 
+        "modified": "2014-12-17T15:00:50.056Z", 
+        "cumulative_count": 885473, 
+        "created": "2014-12-17T15:00:50.056Z"
+    }
+},
+{
+    "pk": 20, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2013-12-01", 
+        "month_count": 12701, 
+        "modified": "2014-12-17T15:00:50.057Z", 
+        "cumulative_count": 898174, 
+        "created": "2014-12-17T15:00:50.057Z"
+    }
+},
+{
+    "pk": 21, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-01-01", 
+        "month_count": 18082, 
+        "modified": "2014-12-17T15:00:50.058Z", 
+        "cumulative_count": 916256, 
+        "created": "2014-12-17T15:00:50.058Z"
+    }
+},
+{
+    "pk": 22, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-02-01", 
+        "month_count": 25363, 
+        "modified": "2014-12-17T15:00:50.059Z", 
+        "cumulative_count": 941619, 
+        "created": "2014-12-17T15:00:50.059Z"
+    }
+},
+{
+    "pk": 23, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-03-01", 
+        "month_count": 23314, 
+        "modified": "2014-12-17T15:00:50.060Z", 
+        "cumulative_count": 964933, 
+        "created": "2014-12-17T15:00:50.060Z"
+    }
+},
+{
+    "pk": 24, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-04-01", 
+        "month_count": 21630, 
+        "modified": "2014-12-17T15:00:50.063Z", 
+        "cumulative_count": 986563, 
+        "created": "2014-12-17T15:00:50.063Z"
+    }
+},
+{
+    "pk": 25, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-05-01", 
+        "month_count": 21498, 
+        "modified": "2014-12-17T15:00:50.064Z", 
+        "cumulative_count": 1008061, 
+        "created": "2014-12-17T15:00:50.064Z"
+    }
+},
+{
+    "pk": 26, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-06-01", 
+        "month_count": 23422, 
+        "modified": "2014-12-17T15:00:50.065Z", 
+        "cumulative_count": 1031483, 
+        "created": "2014-12-17T15:00:50.064Z"
+    }
+},
+{
+    "pk": 27, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-07-01", 
+        "month_count": 14925, 
+        "modified": "2014-12-17T15:00:50.065Z", 
+        "cumulative_count": 1046408, 
+        "created": "2014-12-17T15:00:50.065Z"
+    }
+},
+{
+    "pk": 28, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-08-01", 
+        "month_count": 15169, 
+        "modified": "2014-12-17T15:00:50.066Z", 
+        "cumulative_count": 1061577, 
+        "created": "2014-12-17T15:00:50.066Z"
+    }
+},
+{
+    "pk": 29, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-09-01", 
+        "month_count": 22484, 
+        "modified": "2014-12-17T15:00:50.067Z", 
+        "cumulative_count": 1084061, 
+        "created": "2014-12-17T15:00:50.067Z"
+    }
+},
+{
+    "pk": 30, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-10-01", 
+        "month_count": 28856, 
+        "modified": "2014-12-17T15:00:50.068Z", 
+        "cumulative_count": 1112917, 
+        "created": "2014-12-17T15:00:50.068Z"
+    }
+},
+{
+    "pk": 31, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-11-01", 
+        "month_count": 28807, 
+        "modified": "2014-12-17T15:00:50.069Z", 
+        "cumulative_count": 1141724, 
+        "created": "2014-12-17T15:00:50.069Z"
+    }
+},
+{
+    "pk": 32, 
+    "model": "dataverse_stats.monthlydownloadstats", 
+    "fields": {
+        "retrieval_date": "2014-12-01", 
+        "month_count": 6411, 
+        "modified": "2014-12-17T15:00:50.070Z", 
+        "cumulative_count": 1148135, 
+        "created": "2014-12-17T15:00:50.069Z"
+    }
+}
+]

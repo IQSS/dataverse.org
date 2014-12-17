@@ -57,7 +57,7 @@ function load_chart(){
                     data: [{% for stat in download_stats %}{{ stat.month_count }}{% if not forloop.last %},{% endif %}{% endfor %}],
                     marker: {
                            //         symbol: 'triangle',
-                                    fillColor: '#FFFFFF'                                    
+                                    fillColor: '#FFFFFF'
                                 },
             }*/
             ]
