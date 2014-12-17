@@ -22,7 +22,7 @@ function load_chart(){
                     },
             yAxis: {
                 title: {
-                    text: 'Downloads (in thousands)'
+                    text: '(in thousands)'
                 },
                 labels: {
                     formatter: function () {
