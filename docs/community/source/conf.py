@@ -282,7 +282,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Dataverse-Community.tex', u'Dataverse Community Guide',
+  ('index', 'Dataverse-Community.tex', u'Dataverse Community',
    u'Dataverse Team', 'manual'),
 ]
 
@@ -313,7 +313,7 @@ latex_logo = "_static/logo.png"
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-             ('index', 'dataverse-community', u'Dataverse Community Guide',
+             ('index', 'dataverse-community', u'Dataverse Community',
               [u'Dataverse Team'], 1)
              ]
 
@@ -327,7 +327,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-                     ('index', 'Dataverse-Community', u'Dataverse Community Guide',
+                     ('index', 'Dataverse-Community', u'Dataverse Community',
                       u'Dataverse Team', 'Dataverse', 'One line description of project.',
                       'Miscellaneous'),
                      ]
@@ -348,7 +348,7 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'Dataverse Community Guide'
+epub_title = u'Dataverse Community'
 epub_author = u'Dataverse Team'
 epub_publisher = u'Dataverse Team'
 epub_copyright = u'2014, Dataverse Team'

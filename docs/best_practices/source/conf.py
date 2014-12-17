@@ -282,7 +282,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Dataverse-Best-Practices.tex', u'Dataverse Best Practice Guide',
+  ('index', 'Dataverse-Best-Practices.tex', u'Dataverse Best Practice',
    u'Dataverse Team', 'manual'),
 ]
 
@@ -313,7 +313,7 @@ latex_logo = "_static/logo.png"
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-             ('index', 'dataverse-best-practices', u'Dataverse Best Practices Guide',
+             ('index', 'dataverse-best-practices', u'Dataverse Best Practices',
               [u'Dataverse Team'], 1)
              ]
 
@@ -327,7 +327,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-                     ('index', 'Dataverse-Best-Practices', u'Dataverse Best Practices Guide',
+                     ('index', 'Dataverse-Best-Practices', u'Dataverse Best Practices',
                       u'Dataverse Team', 'Dataverse', 'One line description of project.',
                       'Miscellaneous'),
                      ]
