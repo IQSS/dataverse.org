@@ -43,3 +43,6 @@ The placement of the following files into a Sphinx project will result in a dyna
 1.   Guides
     - http://guides.dataverse.org
     - https://github.com/IQSS/dataverse/tree/master/doc/sphinx-guides/source
+    - ** In navbar.html, the call to load "navbar_from_dataverse_org.js"  is different
+        - Usual call: ```<script type="text/javascript" src="/_static/navbar_from_dataverse_org.js"></script>```
+        - For the guides: ```<script type="text/javascript" src="/en/4.0/_static/navbar_from_dataverse_org.js"></script>```
