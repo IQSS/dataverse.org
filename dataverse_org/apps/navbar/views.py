@@ -22,7 +22,7 @@ def get_navbar_as_string(request):
                             , context_instance=RequestContext(request))
 
 
-@cache_page(60 * 15)    # 15 minutes (900 seconds)
+@cache_page(60 * 60 * 6)    # 6 hours
 def view_nav_only(request):
     """
     Return the navbar HTML
@@ -30,9 +30,8 @@ def view_nav_only(request):
     return HttpResponse(get_navbar_as_string(request))
 
 
-#@cache_page(60 * 15)    # 15 minutes (900 seconds)
-CACHE_TIMEOUT = 60 * 15   # 15 minutes (900 seconds)
-# 
+CACHE_TIMEOUT = 60 * 60 * 6   # 6 hours
+
 def view_nav_only_as_json(request):
     """
     Return the navbar HTML as JSON
