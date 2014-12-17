@@ -16,14 +16,14 @@ urlpatterns = patterns('',
     url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
 
     # about page
-    url(r'^about$', 'apps.basic_pages.views.view_about_page', name='view_about_page'),
+    url(r'^about/$', 'apps.basic_pages.views.view_about_page', name='view_about_page'),
 
     # nav bars for sphinx
     url(r'^nav-only/$', 'apps.navbar.views.view_nav_only', name='view_nav_only'),
     url(r'^nav-only-json/$', 'apps.navbar.views.view_nav_only_as_json', name='view_nav_only_as_json'),
 
     # contact page
-    url(r'^contact$', 'apps.basic_pages.views.view_contact_page', name='view_contact_page'),
+    url(r'^contact/$', 'apps.basic_pages.views.view_contact_page', name='view_contact_page'),
 
     # Uncomment the next line to enable the admin:
     url(r'^dataverse-org-admin/', include(admin.site.urls)),
