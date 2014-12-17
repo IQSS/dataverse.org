@@ -23,9 +23,9 @@ synthesis of all previously existing principles and initiatives on
 data citation..
 
 |image2|
-Fig. 1 Example of a Data Citation based on the the `Joint
-Declaration of Data Citation Principles (2014)
-<https://www.force11.org/datacitation>`_.
+
+Fig. 1 Example of a Data Citation based on the the `Joint Declaration
+of Data Citation Principles (2014) <https://www.force11.org/datacitation>`_.
 
 In addition to getting recognition with a citation you can also make
 your particular Dataverse recognizable by setting up your own branding
