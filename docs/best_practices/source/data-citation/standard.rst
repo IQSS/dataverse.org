@@ -23,7 +23,10 @@ This citation has seven components. Five are human readable: the author(s), titl
 
 #. The universal numerical fingerprint begins with "UNF". Four features make the UNF especially useful: The UNF algorithm's cryptographic technology ensures that the alphanumeric identifier will change when any portion of the data set changes. Not only does this assure future researchers that they can use the same data set referenced in a years-old journal article, it enables the data set's owner to track each iteration of the owner's research. When an original data set is updated or incorporated into a new, related data set, the algorithm generates a unique UNF each time. The UNF is determined by the content of the data, not the format in which it is stored. For example, you create a data set in SPSS, Stata or R, and five years later, you need to look at your data set again, but the data was converted to the next big thing (NBT). You can use NBT, recompute the UNF, and verify for certain that the data set you're downloading is the same one you created originally. That is, the UNF will not change. Knowing only the UNF, journal editors can be confident that they are referencing a specific data set that never can be changed, even if they do not have permission to see the data. In a sense, the UNF is the ultimate summary statistic. The UNF's noninvertible, cryptographic properties guarantee that acquiring the UNF of a data set conveys no information about the content of the data. Authors can take advantage of this property to distribute the full citation of a data set--including the UNF--even if the data is proprietary or highly confidential, all without the risk of disclosure.
 
-For information on how to implement the Universal Numerical Fingerprint (UNF), see `"A Fingerprint Method for the Verification of Scientific Data" <http://datascience.iq.harvard.edu/publications/fingerprint-method-verification-scientific-data>`_.
+For information on how to implement the Universal Numerical Fingerprint (UNF), see:
+
+* `Technical UNF documentation in our Developers Guide <http://guides.dataverse.org/en/latest/developers/unf/index.html>`_
+*  Dr. Micah Altman's paper `"A Fingerprint Method for the Verification of Scientific Data" <http://datascience.iq.harvard.edu/publications/fingerprint-method-verification-scientific-data>`_.
 
 **Learn more:**
 
