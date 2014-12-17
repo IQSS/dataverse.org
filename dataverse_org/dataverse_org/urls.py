@@ -15,10 +15,10 @@ urlpatterns = patterns('',
     url(r'^$', 'apps.basic_pages.views.view_homepage', name='view_homepage'),
 
     # about page
-    url(r'^about/$', 'apps.basic_pages.views.view_about_page', name='view_about_page'),
+    url(r'^about$', 'apps.basic_pages.views.view_about_page', name='view_about_page'),
 
     # contact page
-    url(r'^contact/$', 'apps.basic_pages.views.view_contact_page', name='view_contact_page'),
+    url(r'^contact$', 'apps.basic_pages.views.view_contact_page', name='view_contact_page'),
 
     # nav bars for sphinx
     url(r'^nav-only/$', 'apps.navbar.views.view_nav_only', name='view_nav_only'),
