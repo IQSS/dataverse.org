@@ -1,5 +1,5 @@
 Template for Data Management Plan
-++++++++++++++++++++++++++++++++++++++
+=====================================================
 
 [TEMPLATE FOR: NSF FUNDED PROJECT/ UNRESTRICTED DATA/ Harvard Dataverse ]
 

@@ -1,5 +1,5 @@
 Checklist for Data Management Plan
-+++++++++++++++++++++++++++++++++++++++
+========================================================
 
 Here is a checklist to consider as you write your NSF Data Management Plan (generic):
 
