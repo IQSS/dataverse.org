@@ -23,7 +23,7 @@ The placement of the following files into a Sphinx project will result in a dyna
 1. Copy the file ```navbar_from_dataverse_org.js``` to Sphinx
     - target location: ```{{ your sphinx project }}/source/_static/navbar_from_dataverse_org.js```
         - example: ```best_practices/source/_static/navbar_from_dataverse_org.js```
-        
+
 1. Run a build!  (take a break)
 
 
