@@ -8,10 +8,10 @@ Best Practices
 Contents:
 
 .. toctree::
-   :titlesonly:
+   :hidden:
    :maxdepth: 2
 
   data-citation/index
   data-management/index
-  replication.rst
+  replication
 

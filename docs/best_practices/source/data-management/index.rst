@@ -1,16 +1,7 @@
-Data Management Guide
+Data Management Plans
 ++++++++++++++++++++++++++++++++++++++++++
 
-Contents:
-
-.. toctree::
-   :titlesonly:
-   :maxdepth: 2
-
-  template
-  checklist
-
-**Data Management Plans -- Background Information**
+**Background Information**
 
 Creation of a data management plan is a “best practice” for research projects that involve the collection or dissemination of data. Data management plans help to insure that data collected by a project have the integrity, quality, and provenance needed to support the proposed research; and that data necessary for external replication of research findings will be available to the research community.
 
@@ -24,3 +15,7 @@ In addition, many organizations sponsoring research, including many federal agen
 Data management plans are not one-size-fits-all. An appropriate data management plan should take into consideration, early on in the data life cycle, the size and complexity of the data to be collected or assembled, the likely audience for reuse of the data, sponsor requirements, and general legal and ethical requirements (e.g. that data be shared in a way that preserves the confidentiality of subject information).
 
 The following pages outline recommended elements for consideration in most data management plans. Also included is a template for a data management plan, which is tailored to NSF requirements, and is appropriate for data that is relatively small in size and complexity (such that a separate budget for data processing is not required) and can be disseminated in a form that is not legally or ethically encumbered. The outline and sample plan are based on a comparison of data management checklists produced by funders, prominent data archives, and library associations; a review of sample data management plans from funders and data archiving organizations; and Library of Congress preservation format recommendations.
+
+.. include:: checklist.rst
+
+.. include:: template.rst

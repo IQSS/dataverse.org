@@ -1,15 +1,7 @@
 .. _data-citation:
 
-Get Recognition: Data Citation in Dataverse
+Get Recognition: Data Citation
 +++++++++++++++++++++++++++++++++++++++
-
-Contents:
-
-.. toctree::
-   :titlesonly:
-   :maxdepth: 2
-
-  standard
 
 |image1|
 
@@ -47,3 +39,5 @@ in `Dataverse Theme + Widgets <http://guides.dataverse.org/en/latest/user/datave
 
 .. |image1| image:: ./img/data-citation.png
 .. |image2| image:: ./img/generic-citation.png
+
+.. include:: standard.rst
