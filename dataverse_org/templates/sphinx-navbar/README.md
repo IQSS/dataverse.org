@@ -18,7 +18,7 @@ The placement of the following files into a Sphinx project will result in a dyna
         - example: ```best_practices/source/_templates/navbar.html```
     - ** In Guides.dataverse.org, the call to load "navbar_from_dataverse_org.js"  is different:
         - Usual call: ```<script type="text/javascript" src="/_static/navbar_from_dataverse_org.js"></script>```
-        - For the guides: ```<script type="text/javascript" src="/en/4.0/_static/navbar_from_dataverse_org.js"></script>```
+        - For the guides: ```<script type="text/javascript" src="/en/latest/_static/navbar_from_dataverse_org.js"></script>```
 
 1. Copy the file ```navbar_from_dataverse_org.js``` to Sphinx
     - target location: ```{{ your sphinx project }}/source/_static/navbar_from_dataverse_org.js```
@@ -50,4 +50,4 @@ The placement of the following files into a Sphinx project will result in a dyna
     - https://github.com/IQSS/dataverse/tree/master/doc/sphinx-guides/source
     - ** In navbar.html, the call to load "navbar_from_dataverse_org.js"  is different
         - Usual call: ```<script type="text/javascript" src="/_static/navbar_from_dataverse_org.js"></script>```
-        - For the guides: ```<script type="text/javascript" src="/en/4.0/_static/navbar_from_dataverse_org.js"></script>```
+        - For the guides: ```<script type="text/javascript" src="/en/latest/_static/navbar_from_dataverse_org.js"></script>```
