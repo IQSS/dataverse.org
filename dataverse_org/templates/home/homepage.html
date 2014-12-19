@@ -61,9 +61,9 @@
         <div class="form-group">
           <p>Search data across Dataverse Repositories through Harvard Dataverse.</p>
           <div class="form-group">
-            <input type="search" class="form-control" id="searchInput" placeholder="Search Data...">
+            <input type="search" class="form-control" id="searchInputPopover" placeholder="Search Data...">
           </div>
-          <button type="submit" class="btn btn-primary" onclick="window.open('http://thedata.harvard.edu/dvn/faces/StudyListingPage.xhtml?mode=2&amp;searchValue=' + document.getElementById('searchInput').value + '', '_blank');"><span class="glyphicon glyphicon-search"></span> Find</button>
+          <button type="submit" class="btn btn-primary" id="popoverSearchButton"><span class="glyphicon glyphicon-search"></span> Find</button>
         </div>
       </form>
     </div>

@@ -140,6 +140,20 @@ function flipCards() {
     });
 }
 
+function bind_popover_search(){
+    console.log('popover showing');
+
+    var elem_find_button = $('.popover-content').find('#popoverSearchButton');
+
+    elem_find_button.click(function(e) {
+         e.preventDefault();
+         var searchVal = $('.popover-content').find('#searchInputPopover').val();
+         console.log('click? ' + searchVal);
+         window.open('http://thedata.harvard.edu/dvn/faces/StudyListingPage.xhtml?mode=2&searchValue=' + searchVal + '', '_blank');
+     });     
+}
+
+
 function findDataPopover() {
     $("#finddata").popover({
         html: true, 
@@ -147,6 +161,10 @@ function findDataPopover() {
               return $('#finddata-popover-content').html();
             }
     });
+    
+    $('#finddata').on('shown.bs.popover', function () {
+          bind_popover_search();
+    })
 }
 
 /* End Flip-cards */
