@@ -140,10 +140,20 @@ function flipCards() {
     });
 }
 
+function findDataPopover() {
+    $("#finddata").popover({
+        html: true, 
+        content: function() {
+              return $('#finddata-popover-content').html();
+            }
+    });
+}
+
 /* End Flip-cards */
 
 $(document).ready(function () {
     load_chart();
     flipCards();
+    findDataPopover();
 });
 

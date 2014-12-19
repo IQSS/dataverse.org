@@ -27,7 +27,7 @@
 
 <div class="text-center">
   <img class="img-responsive" style="margin: 0 auto; width:40%;" src="{{ STATIC_URL }}images/dataverse_project_logo.png" alt="The Dataverse Project" />
-  <p class="lead" style="margin:25px 0;font-size:3em;">Dedicated to share, persist and cite research data.</p>
+  <p class="lead" style="margin:25px 0;font-size:3em;">Dedicated to share, archive and cite research data.</p>
 </div>
 
 <!-- Jumbotron Header -->
@@ -53,8 +53,21 @@
     <span class="h2 center-block" style="color:#76a690;">Add Data</span></a>
   </div>
   <div class="col-sm-4 text-center" style="margin-bottom:40px;">
-    <a href="http://thedata.harvard.edu/dvn/" style="text-decoration:none;"><span class="glyphicon glyphicon-search" style="color:#a34e25;font-size:8em;"></span>
+    <a style="text-decoration:none;" data-placement="bottom" data-toggle="popover" data-trigger="click" data-container="body" type="button" data-html="true" href="javascript:void(0);" id="finddata"><span class="glyphicon glyphicon-search" style="color:#a34e25;font-size:8em;"></span>
     <span class="h2 center-block" style="color:#a34e25;">Find Data</span></a>
+
+    <div id="finddata-popover-content" class="hide">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <p>Search data across Dataverse Repositories through Harvard Dataverse.</p>
+          <div class="form-group">
+            <input type="search" class="form-control" id="searchInput" placeholder="Search Data...">
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="window.open('http://thedata.harvard.edu/dvn/faces/StudyListingPage.xhtml?mode=2&amp;searchValue=' + document.getElementById('searchInput').value + '', '_blank');"><span class="glyphicon glyphicon-search"></span> Find</button>
+        </div>
+      </form>
+    </div>
+
   </div>
   <div class="col-sm-4 text-center" style="margin-bottom:40px;">
     <a href="http://best-practices.dataverse.org/data-citation/" style="text-decoration:none;"><span class="glyphicon glyphicon-list" style="color:#eb7d24;font-size:8em;"></span>
@@ -161,8 +174,9 @@
    <!-- Page Features -->
    <div id="dataverse-repositories-row" class="row text-center">
         <div class="col-md-4">
-             <div id="dataverse-repositories-title" class="thumbnail" style="margin-bottom:1em;padding:0;width:361px;height:146px;background:#eee;">
-                 <h3 style="margin-top:1.5em;color:#c55b28;">Dataverse Repositories<br/><small>Long-term preservation by<br/>(Click cards for more information)</small></h3>
+             <div id="dataverse-repositories-title" class="thumbnail" style="margin-bottom:1em;padding:12px;width:361px;height:146px;background:#eee;">
+                 <h3 style="margin-top:0;color:#c55b28;">Dataverse Repositories</h3>
+                 <p class="help-block">Be a part of the community by publishing your data to one of the Dataverse repositories or by setting up a new repository for your organization.<br/><small>(Click cards for more information)</small></p>
              </div>
         </div>
         {% for dverse in federated_dataverses %}

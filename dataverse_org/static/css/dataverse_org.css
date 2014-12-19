@@ -82,6 +82,10 @@ iframe {
     border-radius: 6px 0 6px 6px;
 }
 
+/* Find Data Popover */
+.popover {max-width:400px;}
+.popover #searchInput {width:292px;}
+
 /* Flip-box */
 /* http://stackoverflow.com/questions/24503882/the-google-cards-flip-and-grow-effect ,  */
 
