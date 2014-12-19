@@ -25,8 +25,13 @@
 
 {% block main_content %}
 
+<div class="text-center">
+  <img class="img-responsive" style="margin: 0 auto; width:40%;" src="{{ STATIC_URL }}images/dataverse_project_logo.png" alt="The Dataverse Project" />
+  <p class="lead" style="margin:25px 0;font-size:3em;">Dedicated to share, persist and cite research data.</p>
+</div>
+
 <!-- Jumbotron Header -->
-<header class="jumbotron hero-spacer">
+<!--<header class="jumbotron hero-spacer">
   <h2><a href="http://community.dataverse.org/" style="color:#c55b28;">Be Part of the Dataverse Community</a></h2 >
       <script type="text/javascript" src="http://datascience.iq.harvard.edu/profiles/openscholar/modules/os/modules/os_boxes/misc/os_boxes.resize_parent.js"></script>
 
@@ -40,9 +45,24 @@
       <img class="img-responsive" src="{{ STATIC_URL }}images/dataverse_project_logo.png" alt="The Dataverse Project" />
     </div>
   </div>   
-</header>
+</header>-->
 
-<div class="row text-center" style="margin-bottom:2em;"> 
+<div class="row" style="margin-top:40px;">
+  <div class="col-sm-4 text-center" style="margin-bottom:40px;">
+    <a href="http://guides.dataverse.org/en/latest/getting-started/" style="text-decoration:none;"><span class="glyphicon glyphicon-plus" style="color:#76a690;font-size:8em;"></span>
+    <span class="h2 center-block" style="color:#76a690;">Add Data</span></a>
+  </div>
+  <div class="col-sm-4 text-center" style="margin-bottom:40px;">
+    <a href="http://thedata.harvard.edu/dvn/" style="text-decoration:none;"><span class="glyphicon glyphicon-search" style="color:#a34e25;font-size:8em;"></span>
+    <span class="h2 center-block" style="color:#a34e25;">Find Data</span></a>
+  </div>
+  <div class="col-sm-4 text-center" style="margin-bottom:40px;">
+    <a href="http://best-practices.dataverse.org/data-citation/" style="text-decoration:none;"><span class="glyphicon glyphicon-list" style="color:#eb7d24;font-size:8em;"></span>
+    <span class="h2 center-block" style="color:#eb7d24;">Get Recognition</span></a>
+  </div>
+</div>
+
+<div class="row text-center" style="margin-bottom:2em; display:none;"> 
        
        <!-- start: block -->    
        <div class="col-md-4">
