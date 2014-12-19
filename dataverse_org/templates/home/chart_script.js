@@ -21,11 +21,12 @@ function load_chart(){
                          tickmarkPlacement: 'on'
                     },
             yAxis: {
+                min: 661627,
                 title: {
                     text: '(in thousands)'
                 },
                 labels: {
-                    formatter: function () {
+                    formatter: function () {                     
                         return this.value / 1000 + 'k';
                     }
                 }
