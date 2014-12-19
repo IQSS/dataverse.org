@@ -1,7 +1,7 @@
 .. _announcement:
 
 Announcement for Dataverse Community Meeting 2015
-++++++++++++++++++++++++++++++++++++++
+============================================
 
 You are cordially invited, as active contributors or interested members of the international Dataverse community, to take part in the 1st Annual Dataverse Community Meeting, which includes a Repository API workshop. The meeting will take place June 9-11, 2015 and will be hosted by the Institute for Quantitative Social Science (IQSS) at Harvard University. 
 
