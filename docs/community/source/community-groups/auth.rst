@@ -1,7 +1,7 @@
 .. _auth:
 
 Dataverse Authentication and Authorization Community Group
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===========================================================
 
 The Dataverse Authentication and Authorization Community Group ("Auth" for short) reports on the state and future of authentication and authorization in installations of Dataverse to the :ref:`Dataverse Advisory Team <advisory-team>`. It is coordinated by `Philip Durbin <http://www.iq.harvard.edu/people/philip-durbin>`__ and Ben Companjen.
 

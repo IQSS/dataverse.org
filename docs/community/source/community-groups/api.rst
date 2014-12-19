@@ -1,7 +1,7 @@
 .. _api:
 
 Dataverse API Community Group
-+++++++++++++++++++++++++++++
+=================================================
 
 The Dataverse API Community Group reports back to the :ref:`Dataverse Advisory Team <advisory-team>` about Dataverse APIs and integrations made possible by them. It is coordinated by `Philip Durbin <http://www.iq.harvard.edu/people/philip-durbin>`__.
 
