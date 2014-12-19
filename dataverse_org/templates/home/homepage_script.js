@@ -140,17 +140,37 @@ function flipCards() {
     });
 }
 
+function search_dataverses(searchVal){
+    window.open('http://thedata.harvard.edu/dvn/faces/StudyListingPage.xhtml?mode=2&searchValue=' + searchVal + '', '_blank');
+}
+
 function bind_popover_search(){
     console.log('popover showing');
 
     var elem_find_button = $('.popover-content').find('#popoverSearchButton');
+    var elem_search_input = $('.popover-content').find('#searchInputPopover');
 
+    // Bind 'Find Button'
+    //
     elem_find_button.click(function(e) {
          e.preventDefault();
-         var searchVal = $('.popover-content').find('#searchInputPopover').val();
+         var searchVal = elem_search_input.val();
          console.log('click? ' + searchVal);
-         window.open('http://thedata.harvard.edu/dvn/faces/StudyListingPage.xhtml?mode=2&searchValue=' + searchVal + '', '_blank');
+         search_dataverses(searchVal);
+         $("#finddata").popover('hide');
      });     
+     
+     // Bind: Pressing "Enter" on search box
+     //
+     elem_search_input.keypress(function (e) {
+       if (e.which == 13) {
+         e.preventDefault();
+         var searchVal = elem_search_input.val();
+         console.log('press return? ' + searchVal);
+         search_dataverses(searchVal);
+         $("#finddata").popover('hide');
+       }
+     });
 }
 
 
