@@ -35,11 +35,10 @@ a.headerlink {
 }
 
 #sidebar.bs-sidenav {
-	background-color: #FAE3D0
+    background-color: #f8d5b8;
 }
-
-.bs-sidenav .nav > li > a:hover, .bs-sidenav .nav > li > a:focus {
-    background-color: #DFEBE4;
+#sidebar.bs-sidenav .nav > li > a:hover, #sidebar.bs-sidenav .nav > li > a:focus {
+    background-color: #fbf4c5;
     border-right: 1px solid #dbd8e0;
     text-decoration: none;
 }
