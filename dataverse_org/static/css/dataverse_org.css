@@ -26,8 +26,17 @@ iframe {
 	border:0;
 }
 
-.navbar-default a.navbar-brand, .navbar-default a.navbar-brand:hover {
+a.navbar-brand-link span.navbar-brand, a.navbar-brand-link:hover span.navbar-brand {
     color: #C55B28;
+}
+.navbar-default .icon-dataverse {
+    color: #c55b28;
+    float: left;
+    font-size: 28px;
+    height: 50px;
+    line-height: 28px;
+    margin-left: -15px;
+    padding: 10px 0;
 }
 
 /*.thumbnail .caption p {color:red;}*/
@@ -138,7 +147,7 @@ iframe {
 }
 #cloneBack {
     transform:rotateY(-180deg);
-    z-index:101;
+    z-index:999;
     background-color:#f8f8f8;
     border: 1px solid #ddd;
     border-radius: 4px;
