@@ -13,16 +13,13 @@ function flipCards() {
     //Set up an object for last clicked element so we know where to return to on collapse
     lastelement = {
         'top': 0,
-            'left': 0,
-            'width': 0,
-            'height': 0
+        'left': 0,
+        'width': 0,
+        'height': 0
     };
 
     //Set a flag to determine the current flip state of our clone
     cloneflipped = false;
-
-
-
 
     //Bind a handler to the clone so we can detect when the transition is done
     $('#cardClone').on("transitionend webkitTransitionEnd oTransitionEnd", function (e) {
@@ -44,7 +41,6 @@ function flipCards() {
         }
     });
 
-
     $(".cards").click(function () {
         if (!cloneflipped) {
             //Cache clicked card
@@ -64,22 +60,20 @@ function flipCards() {
             //This way we can make the animation rotate inwards toward the center, google doesn't do this
             var rotatefront = "rotateY(180deg)";
             var rotateback = "rotateY(0deg)";
-            if ((lastelement.left + lastelement.width / 2) > $(window).width() / 2) {
-                rotatefront = "rotateY(-180deg)";
-                rotateback = "rotateY(-360deg)";
-            }
-
+            // if ((lastelement.left + lastelement.width / 2) > $(window).width() / 2) {
+                // rotatefront = "rotateY(-180deg)";
+                // rotateback = "rotateY(-360deg)";
+            // }
 
             //Copy contents of the clicked card into the clones front card
             $clone.find('#cloneFront').html($lastelement.html());
-
 
             //Show the clone on top of the clicked card and hide the clicked card
             //[hack: using opacity for hiding here, visibility:hidden has a weird lag in win chrome]
             $clone.css({
                 'display': 'block',
-                    'top': lastelement.top + 4 + 'px',
-                    'left': lastelement.left - 79 + 'px'
+                'top': lastelement.top + 4 + 'px',
+                'left': lastelement.left + 2 + 'px'
             });
             $lastelement.css('opacity', 0);
 
@@ -94,10 +88,9 @@ function flipCards() {
             setTimeout(function () {
                 $clone.css({
                     'top': 'calc(50% - 184px)',
-                        'left': 'calc(50% - 180px)',
-                        'height': '360px',
-                        'width': '360px'
-                        //'width': $(document).width() - 140 + 'px'
+                    'left': 'calc(50% - 180px)',
+                    'height': '360px',
+                    'width': '360px'
                 });
                 $clone.find('#cloneFront').css({
                     'transform': rotatefront
@@ -111,7 +104,6 @@ function flipCards() {
         }
     });
 
-
     //If user clicks outside of the flipped card, return to default state
     $('body, body *:not(a)').click(function (e) {
         if (cloneflipped) {
@@ -119,9 +111,9 @@ function flipCards() {
                 //Reverse the animation
                 $clone.css({
                     'top': lastelement.top + 6 + 'px',
-                        'left': lastelement.left - 76 + 'px',
-                        'height': lastelement.height + 'px',
-                        'width': lastelement.width + 'px'
+                    'left': lastelement.left + 2 + 'px',
+                    'height': lastelement.height + 'px',
+                    'width': lastelement.width + 'px'
                 });
                 $clone.find('#cloneFront').css({
                     'transform': 'rotateY(0deg)'

@@ -136,6 +136,8 @@ a.navbar-brand-link span.navbar-brand, a.navbar-brand-link:hover span.navbar-bra
     -webkit-transition:.6s;
     transition:.6s;
     overflow:hidden;
+    top:0;
+    left:0;
 }
 #cloneFront {
     z-index:100;
@@ -147,7 +149,7 @@ a.navbar-brand-link span.navbar-brand, a.navbar-brand-link:hover span.navbar-bra
 }
 #cloneBack {
     transform:rotateY(-180deg);
-    z-index:999;
+    z-index:9999;
     background-color:#f8f8f8;
     border: 1px solid #ddd;
     border-radius: 4px;
