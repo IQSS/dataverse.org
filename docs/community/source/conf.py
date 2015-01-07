@@ -15,7 +15,9 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath('../../'))
+sys.path.insert(0, os.path.abspath('../../sphinxcontrib/'))
 import sphinx_bootstrap_theme
+import httpdomain
 
 
 # Activate the theme.
@@ -39,7 +41,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
     'sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode'
+    'sphinx.ext.viewcode',
+    'httpdomain'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
