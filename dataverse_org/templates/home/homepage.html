@@ -96,7 +96,7 @@
                 <p id="card-{{ dverse.slug }}" class="hidden">
                   <a href="{{ dverse.homepage }}"><img src="{{ dverse.logo_image.url }}" alt="{{ dverse.slug }}" style="max-width:300px;max-height:180px;margin-top:4px;" /></a>
                   <span class="h3 center-block"><a href="{{ dverse.homepage }}">{{ dverse.name }}</a></span>
-                  {{ dverse.description }}<br/>
+                  {{ dverse.description|safe }}<br/>
                 </p>
               {% endfor %}
             </div>
