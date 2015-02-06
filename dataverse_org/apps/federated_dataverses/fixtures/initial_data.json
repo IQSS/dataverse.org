@@ -95,11 +95,11 @@
     "fields": {
         "name": "Abacus Dataverse", 
         "created": "2014-12-15T21:12:50.707Z", 
-        "modified": "2015-01-06T18:17:16.639Z", 
+        "modified": "2015-02-06T21:53:13.291Z", 
         "logo_image": "federated_logos/AbacusLogoDVN.png", 
         "visible": true, 
         "sort_order": 70, 
-        "homepage": "https://dataverse.library.ualberta.ca/dvn/", 
+        "homepage": "http://dvn.library.ubc.ca/dvn/", 
         "slug": "abacus-dataverse", 
         "description": "Open for researchers associated with British Columbia Research Libraries' Data Services to deposit data."
     }
