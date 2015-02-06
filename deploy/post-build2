@@ -11,6 +11,13 @@ source /opt/rh/python27/root/usr/bin/virtualenvwrapper.sh
 echo "Setup virtualenv"
 export WORKON_HOME=/webapps/virtualenvs
 workon dataverse_org
+
+#
+# Copy federated dataverse logo files to web path
+#
+echo "Copy federated dataverse logo files to web path"
+cp /webapps/code/dataverse.org/dataverse_org/media/federated_logos/* /var/www/dataverse_org/media/federated_logos
+
 #
 # Validate settings file
 #
@@ -29,11 +36,6 @@ echo "Run collectstatic to copy files to the static www directory"
 #
 python manage.py collectstatic --noinput --settings=dataverse_org.settings.production
 
-#
-echo "Load federated dataverses from fixtures"
-#
-echo "Copy federated dataverse logo files to web path"
-cp /webapps/code/dataverse.org/dataverse_org/media/federated_logos/* /var/www/dataverse_org/media/federated_logos
 
 echo "Load federated dataverses from fixtures"
 python manage.py loaddata apps/federated_dataverses/fixtures/initial_data.json --settings=dataverse_org.settings.production
