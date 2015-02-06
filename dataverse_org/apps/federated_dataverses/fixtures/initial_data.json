@@ -65,11 +65,11 @@
     "fields": {
         "name": "University of Alberta Libraries Dataverse", 
         "created": "2014-10-15T14:25:49.282Z", 
-        "modified": "2015-02-06T15:38:45.925Z", 
+        "modified": "2015-02-06T20:34:01.817Z", 
         "logo_image": "federated_logos/alberta_2.png", 
         "visible": true, 
         "sort_order": 50, 
-        "homepage": "http://dvn.library.ubc.ca/dvn/", 
+        "homepage": "https://dataverse.library.ualberta.ca/dvn/", 
         "slug": "university-of-alberta-libraries-dataverse", 
         "description": "Open for University of Alberta affiliated researchers to deposit data."
     }
