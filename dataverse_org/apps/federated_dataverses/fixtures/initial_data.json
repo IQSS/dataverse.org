@@ -80,11 +80,11 @@
     "fields": {
         "name": "Scholars Portal Dataverse", 
         "created": "2014-10-15T14:26:15.934Z", 
-        "modified": "2014-12-16T17:50:35.900Z", 
+        "modified": "2015-02-17T15:03:29.953Z", 
         "logo_image": "federated_logos/scholarsportal.jpg", 
         "visible": true, 
         "sort_order": 60, 
-        "homepage": "http://guides.scholarsportal.info/dataverse", 
+        "homepage": "http://dataverse.scholarsportal.info/dvn/", 
         "slug": "scholars-portal-dataverse", 
         "description": "Open for researchers and organizations associated with Ontario universities to deposit data."
     }
