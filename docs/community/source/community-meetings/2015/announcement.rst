@@ -17,6 +17,6 @@ This 3-day event will launch with a Repository API workshop to enhance the integ
 * Preservation tools
 * Data Privacy Tools
 
-We are preparing a preliminary meeting agenda, so please complete this `one question survey <https://harvard.az1.qualtrics.com/SE/?SID=SV_2laJXbcH5KWksQZ>`_, to let us know which topics you are most interested in. Additionally, we have a call for proposals; if you would like present, please `submit your proposals <https://harvard.az1.qualtrics.com/SE/?SID=SV_ea55OIwEEqeKfIN>`_ by Friday, February 27, 2015.
+See the agenda and list of speakers on the `Dataverse Community Meeting 2015 website <http://projects.iq.harvard.edu/dataverse-community-meeting>`_.
 
 This event is free and open to all active contributors or interested members of the international Dataverse community. Space is limited so please `register <https://www.eventbrite.com/e/1st-annual-dataverse-community-meeting-tickets-14888617255>`_ at your earliest convenience
