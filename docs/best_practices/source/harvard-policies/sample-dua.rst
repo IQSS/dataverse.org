@@ -1,7 +1,9 @@
 .. _sample-dua:
 
-Sample Data Usage Agreement (de-identified human subject data)
+Sample Data Usage Agreement 
 ================================================================
+
+*(Note: This is a sample DUA for datasets that have de-identified human subject data)*
 
 This is an agreement (“Agreement”) between you the downloader (“Downloader”) and the owner of the materials (“User”) governing the use of the materials (“Materials”) to be downloaded. 
 
