@@ -2,7 +2,7 @@
    :file: navbar.html
 
 =======================================================
-Best Practices
+Harvard Dataverse Policies
 =======================================================
 
 Contents:
@@ -11,8 +11,8 @@ Contents:
    :hidden:
    :maxdepth: 2
 
-  data-citation/index
-  data-management/index
-  harvard-policies/index
-  replication
+  harvard-terms-of-use
+  harvard-privacy-policy
+  community-norms
+  sample-dua
 
