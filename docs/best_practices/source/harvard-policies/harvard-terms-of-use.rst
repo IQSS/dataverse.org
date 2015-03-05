@@ -3,17 +3,17 @@
 Harvard Dataverse Account Terms of Use
 =============================================
 
-ACCEPTANCE OF TERMS
+Acceptance of Terms
 -----------------------------------
 
 The following terms and conditions govern all use of the Harvard Dataverse application (the **Site**) and the services available on or at the Site (the Site and the services taken together, the Service) by you and any third parties who use your account. Use of the **Service** is offered subject to acceptance of and compliance with all of the terms and conditions contained herein (the General Terms of Use) and all other applicable operating rules, policies and procedures of the Service. By clicking “I accept” and/or by your use of the Service, you agree and accept all the terms in this General Terms of Use document (“Agreement”). 
 
-MODIFICATION OF TERMS
+Modification Of Terms
 -------------------------------------
 
 Harvard Dataverse reserves the right, at its sole discretion, to modify or replace any of the terms in this Agreement at any time without prior notice to Users. It is your responsibility to check the Agreement periodically for changes. Your continued use of the Service following the posting of any changes to the Agreement constitutes acceptance of those changes.
 
-DEFINITIONS
+Definitions
 -------------------------------
 
 **Account** – *A User-controlled means of access to Harvard Dataverse that is protected by a User-created login username and password, with which Users can obtain access to Harvard Dataverse’s uploading and downloading functionalities.*
@@ -66,14 +66,14 @@ User Submissions – Uploaded dataverses and datasets.*
  
 **User Uploads** – *Any uploaded, submitted, disclosed, distributed, or otherwise posted content by a User, including but not limited to new dataverses, new datasets, Metadata information, custom data usage license agreements, descriptive information for dataset download pages, user guides, and other contributions either originating from the User or originating from a third-party author who gave permission to the User to disseminate on the Harvard Dataverse application.*
  
-GENERAL RULES OF CONDUCT
+General Rules Of Conduct
 -----------------------------------------
 
 In using the Service, you represent that:
 
- #. you have read and understood the Site’s Community Guidelines (link);
- #. you have read and understood the Site’s Privacy Policy (link); and
- #. you have read and understood the Site’s Data Use Policy (link).
+ #. you have read and understood the Site’s Community Norms (http://best-practices.dataverse.org/harvard-policies/community-norms.html);
+ #. you have read and understood the Site’s Privacy Policy (http://best-practices.dataverse.org/harvard-policies/harvard-privacy-policy.html); and
+ #. you have read and understood, where applicable, the Site’s Data Use Policy (http://best-practices.dataverse.org/harvard-policies/sample-dua.html).
 
 You shall abide by all applicable local, state, national and international laws and regulations in your Use of the Service, and your Use of Service shall not:
 
@@ -85,17 +85,17 @@ You shall abide by all applicable local, state, national and international laws 
  #. interfere or attempt to interfere with the proper working of the Service or any activities conducted on the Service; or 
  #. bypass any measures Harvard Dataverse may use to prevent or restrict access to the Service (or other accounts, computer systems or networks connected to the Service).
 
-CONDUCT REQUIREMENTS
+Conduct Requirements
 --------------------------------
 
 As both a registered User and an unregistered Guest, you are able to download publicly available Content from Harvard Dataverse. As a condition to your gaining full Use of Service, you are required to register for and be logged into an Account on Harvard Dataverse. You shall provide Harvard Dataverse with accurate and complete Registration Information and regularly update such information to maintain its completeness and accuracy. Failure to do so may result in immediate termination of your Account. Harvard Dataverse reserves the right to refuse registration of or cancel an Account in its sole discretion. 
 
 You are solely responsible for activity that occurs on your Account and shall be responsible for maintaining the confidentiality of your Account password. You shall never use another user’s account without the other user’s express permission. You will immediately notify Harvard Dataverse in writing of any unauthorized use of your account, or other account related security breach of which you are aware.
 
-USER UPLOADS
+User Uploads
 ----------------------
 
-SERVICES
+Services
 *******************
 
 The Service provides you with the ability to post User Uploads and display, organize, accept and distribute User Uploads by creating a dataverse. The Service provides you with the ability to post User Uploads to other dataverses administered by other Users. 
@@ -106,8 +106,8 @@ Harvard Dataverse has no obligation to monitor the Site, Service, Content, or Us
 
 You acknowledge that Harvard Dataverse does not endorse, take responsibility for, or make any representations or warranties for any User Uploads, and will not be liable for 1) User Upload content, format, Metadata, or lack thereof; 2) representations or warranties made by the User about the User Uploads; and 3) any loss of or damage to User Uploads, either in whole or in part, from whatever cause.
 
-RESTRICTIONS
-************
+Restrictions
+******************
 
 In contributing Content to the site, you must ensure that the Content complies with the Terms of Use. If your User Upload does not comply with the Terms of Use, Harvard Dataverse has the right in its sole discretion to take down your User Upload. Harvard Dataverse does not review all User Uploads before they are made available on the Site, or before they are Published. Therefore, you will be held legally and financially responsible for all damages if Content you contribute violates anything in this Agreement. 
 
@@ -126,8 +126,8 @@ By posting User Uploads to your dataverse or other dataverses, or by allowing ot
      d.	all identified subjects have given explicit informed consent allowing the public release of the information in the dataset; or
      e.	all identified subjects are deceased and no federal statute explicitly restricts the release of the data (this exception is only for federal records where data is created by a U.S. federal government agency or under a federal contract).
 
-LICENSES AND PERMISSIONS TO HARVARD DATAVERSE
-*********************************************
+Licenses And Permissions To Harvard Dataverse
+*****************************************************
 
 You grant to Harvard Dataverse all necessary permissions and required licenses to make the Content you submit or deposit available for archiving, preservation and access, within the Site and the Data Preservation Alliance for the Social Sciences (“Data-PASS”) through the Data-PASS terms of use (http://www.murray.harvard.edu/files/murray/datapass-murray.pdf). This includes, without restriction, permission to:
 
@@ -142,7 +142,7 @@ You represent and warrant that you are lawfully entitled and have full authority
 
 None of the above supersedes any prior contractual obligations with third parties that requireany information to be kept confidential. Nothing in this Agreement obligates you to disclose information to Harvard Dataverseif such information is otherwise confidential or proprietary. Harvard Dataverse does not approve User Uploads before they are posted; therefore, you are solely responsible for the User Submissions you post on or through the Service and all possible confidentiality or other privacy issues that may arise from your posting any User Uploads. 
 
-USER SUBMISSION DATA USAGE LICENSE AGREEMENTS
+User Submission Data Usage License Agreements
 **************************************************************
  
 You acknowledge that Harvard Dataverse’s default data usage license agreement for all uploaded materials is a Creative Commons Zero (“CC0”) License. For more information, please visit Creative Commons Zero Full Legal Text (https://creativecommons.org/publicdomain/zero/1.0/legalcode).
@@ -162,7 +162,7 @@ Users also have the option of choosing to use Harvard Dataverse’s restricted d
 
 Users are responsible for establishing, maintaining, and enforcing the license terms they wish to use for access to and use of User Uploads. Harvard Dataverse is not responsible for any inaccuracies, unenforceable terms, or liabilities that may arise from choosing any of the options afforded in this Agreement, and Harvard Dataverse will not be responsible for reviewing or enforcing compliance of any terms the User may choose to employ.
 
-DOWNLOADING USER SUBMISSIONS
+Downloading User Submissions
 ---------------------------------------
 
 The Site represents that it will use all reasonable efforts to maintain open access to datasets for users to download, subject to Depositors’ restrictions and any applicable legal restrictions. The Site collects and stores Download Data from each download for all users (both registered and guest), which can then be downloaded and accessed by the Depositor. 
@@ -171,13 +171,13 @@ Downloaders must be registered Users of the Site or agree to the Guest Terms of 
 
 Downloaders represent that, in downloading any material from the Site, they:
 
- #. have read and understood the Site’s Community Guidelines (link); 
- #. have read and understood the Site’s Data Use Policy (link);  
+ #. have read and understood the Site’s Community Norms (http://best-practices.dataverse.org/harvard-policies/community-norms.html); 
+ #. have read and understood the Site’s Data Use Policy (http://best-practices.dataverse.org/harvard-policies/sample-dua.html);  
  #. will abide by the applicable data usage license agreement attached to the dataset;
  #. acknowledge that their account information (for Users) or temporary site identification information (for Guests) may be recorded upon download, which can then be viewed by the owner of the User Upload; and
  #. have done their due diligence in ensuring that they do not download and use any datasets or other materials where prohibited by applicable law.
 
-TERMINATION
+Termination
 -------------------------
 
 Harvard Dataverse may terminate your access to all or any part of the Service at any time, with or without cause, with or without notice, effective immediately. 
@@ -185,7 +185,7 @@ Harvard Dataverse may terminate your access to all or any part of the Service at
 If you wish to terminate your account, you may notify Harvard Dataverse at support@dataverse.org. 
 All provisions of the Terms of Use which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
 
-WARRANTIES
+Warranties
 ----------------------
 
 THE SERVICE (INCLUDING, WITHOUT LIMITATION, ALL CONTENT AND USER UPLOADS) IS PROVIDED "AS IS" AND "AS AVAILABLE" AND WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, AND ANY WARRANTIES IMPLIED BY ANY COURSE OF PERFORMANCE OR USAGE OF TRADE, ALL OF WHICH ARE EXPRESSLY DISCLAIMED. WITHOUT LIMITING THE FOREGOING, HARVARD DATAVERSE DOES NOT WARRANT THAT: (A) THE CONTENT OR USER UPLOADS ARE TIMELY, ACCURATE, COMPLETE, RELIABLE OR CORRECT IN THEIR POSTED FORMS ON THE SERVICE; (B) THE SERVICE WILL BE SECURE ; (C) THE SERVICE WILL BE AVAILABLE AT ANY PARTICULAR TIME OR LOCATION; (D) ANY DEFECTS OR ERRORS WILL BE CORRECTED; (E) THE SITE, CONTENT OR ANY USER UPLOADS ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; OR (F) THE RESULTS OF USING THE SERVICE WILL MEET YOUR REQUIREMENTS. YOUR USE OF THE SERVICE  AND ANY CONTENT IS SOLELY AT YOUR OWN RISK.
@@ -193,23 +193,23 @@ LIMITATION OF LIABILITY
 
 IN NO EVENT SHALL HARVARD DATAVERSE AND ITS AFFILIATES, OR THEIR DIRECTORS, EMPLOYEES, AGENTS, PARTNERS, OR SUPPLIERS, BE LIABLE UNDER CONTRACT, TORT, STRICT LIABILITY, NEGLIGENCE OR ANY OTHER LEGAL THEORY WITH RESPECT TO THE SERVICE OR ANY CONTENT OR USER SUBMISSIONS (I) FOR ANY DIRECT DAMAGES, OR (II) FOR ANY LOST PROFITS OR SPECIAL, INDIRECT, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES OF ANY KIND WHATSOEVER.  
 
-INDEMNIFICATION
+Indemnification
 ------------------------------
 
 You will indemnify and hold Harvard Dataverse harmless from and against any and all loss, cost, expense, liability, or damage, including, without limitation, all reasonable attorneys’ fees and court costs, arising from i) your use or misuse of the Service; (ii) your access to the Site; (iii) your violation of the Terms of Use; or (iv) infringement by you, or any third party using your account, of any intellectual property or other right of any person or entity, including but not limited to infringements upon any and all representations made by you in this Agreement. Such losses, costs, expenses, damages, or liabilities shall include, without limitation, all actual, general, special, and consequential damages.
 
-DISPUTE RESOLUTION
+Dispute Resolution
 --------------------------
 
 You and Harvard Dataverse agree that any cause of action arising out of or related to the Service must commence within one (1) year after the cause of action arose; otherwise, such cause of action is permanently barred.
 These Terms of Use shall be governed by and interpreted in accordance with the laws of the Commonwealth of Massachusetts (excluding the conflict of laws rules thereof). All disputes under these Terms of Use will be resolved in the applicable state or federal courts of Massachusetts. You consent to the jurisdiction of such courts and waive any jurisdictional or venue defenses otherwise available. 
 
-INTEGRATION AND SEVERABILITY
+Integration And Severability
 ---------------------------------------
 
 This Agreement is the entire agreement between you and Harvard Dataverse with respect to the Service and use of this Site, and supersedes all prior or contemporaneous communications and proposals (whether oral, written or electronic) between you and Harvard Dataverse with respect to this Site (but excluding the use of any third-party software, widgets, and applications that may be subject to a separate end-user license agreement). If any provision of the Terms of Use is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the Terms of Use will otherwise remain in full force and effect and enforceable.
 
-MISCELLANEOUS
+Miscellaneous
 ---------------------------------
 
 Harvard Dataverse may assign, transfer or delegate any of its rights and obligations hereunder without consent. No agency, partnership, joint venture, or employment relationship is created as a result of the Terms of Use and neither party has any authority of any kind to bind the other in any respect outside the specified terms of this Agreement. In any action or proceeding to enforce rights under the Terms of Use, the prevailing party will be entitled to recover costs and attorneys’ fees. 

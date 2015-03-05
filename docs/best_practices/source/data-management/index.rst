@@ -1,3 +1,5 @@
+.. _data-management:
+
 Data Management Plans
 ++++++++++++++++++++++++++++++++++++++++++
 

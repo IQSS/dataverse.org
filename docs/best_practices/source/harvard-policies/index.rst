@@ -1,5 +1,4 @@
-.. raw:: html
-   :file: navbar.html
+.. _harvard-policies:
 
 Harvard Dataverse Policies
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
