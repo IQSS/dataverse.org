@@ -6,7 +6,6 @@ Harvard Dataverse Policies
 Contents:
 
 .. toctree::
-   :hidden:
    :maxdepth: 2
 
   harvard-terms-of-use
