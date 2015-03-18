@@ -18,5 +18,6 @@ Contents:
   harvard-terms-of-use
   harvard-privacy-policy
   community-norms
+  harvard-api-tou
   sample-dua
 
