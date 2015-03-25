@@ -1,6 +1,6 @@
 .. _harvard-terms-of-use:
 
-Harvard Dataverse Account Terms of Use
+Harvard Dataverse General Terms of Use
 =============================================
 
 Acceptance of Terms
