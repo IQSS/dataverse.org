@@ -3,7 +3,13 @@
 Dataverse Community Norms
 =================================
 
-Dataverse asks that all users who download datasets from Dataverse’s services follow the following Community Norms*. 
+CC0 License for Datasets
+---------------------------------------------
+By default, all datasets added into Dataverse are granted the CC0 license. Dataverse uses CC0 as its default license because CC0 has name recognition in the scientific community, making it a familiar option for data (for which copyrights do not apply), and is in use by repositories as well as scientific journals that require the deposit of open data. For more information on CC0, please visit the Creative Commons website (http://creativecommons.org/about/cc0). Data depositors can change this license for their datasets, if needed.
+
+
+*Dataverse asks that all users who download datasets from Dataverse’s services follow the following Community Norms*.* 
+
 
 Crediting any research used with data citations
 ------------------------------------------------
