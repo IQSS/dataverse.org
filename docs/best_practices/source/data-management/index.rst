@@ -9,10 +9,10 @@ Creation of a data management plan is a “best practice” for research project
 
 In addition, many organizations sponsoring research, including many federal agencies and non-profit foundations, require a formal data management plan. For example:
 
-* The February 2013 OSTP Public Access Memo directed funding agencies with annual R&D budgets of over $100 million to develop a public access plan for disseminating the results of their research. See ICPSR's Guidelines for OSTP Data Access Plan.
-* NIH requires a data management plan for all applications requesting $500,000 or more in direct costs per year. See NIH Data Sharing Policy.
-* NSF requires a data management plan for all proposals. See NSF Grant Proposal Guide (2013).
-* In most instances, NIJ requires data sets resulting from funded research to be archived with the National Archive of Criminal Justice Data (NACJD). See NIJ’s Applying for Data Resources Program Funding.
+* The `February 2013 OSTP Public Access Memo <https://www.whitehouse.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf>`_ directed funding agencies with annual R&D budgets of over $100 million to develop a public access plan for disseminating the results of their research. See `ICPSR's Guidelines for OSTP Data Access Plan <http://www.icpsr.umich.edu/icpsrweb/content/datamanagement/ostp.html>`_.
+* NIH requires a data management plan for all applications requesting $500,000 or more in direct costs per year. See `NIH Data Sharing Policy <http://grants.nih.gov/grants/policy/data_sharing/>`_.
+* NSF requires a data management plan for all proposals. See `NSF Grant Proposal Guide (2013) <http://www.nsf.gov/pubs/policydocs/pappguide/nsf13001/gpg_index.jsp>`_ and `NSF's Public Access Plan (2015) <http://www.nsf.gov/pubs/2015/nsf15052/nsf15052.pdf>`_.
+* In most instances, NIJ requires data sets resulting from funded research to be archived with the National Archive of Criminal Justice Data (NACJD). See `NIJ’s Applying for Data Resources Program Funding <http://www.nij.gov/funding/data-resources-program/Pages/applying.aspx>`_.
 
 Data management plans are not one-size-fits-all. An appropriate data management plan should take into consideration, early on in the data life cycle, the size and complexity of the data to be collected or assembled, the likely audience for reuse of the data, sponsor requirements, and general legal and ethical requirements (e.g. that data be shared in a way that preserves the confidentiality of subject information).
 
