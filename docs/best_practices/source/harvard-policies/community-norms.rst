@@ -4,12 +4,11 @@ Dataverse Community Norms
 =================================
 
 CC0 Public Domain Dedication Waiver for Datasets
----------------------------------------------
+---------------------------------------------------
+
 By default, all datasets added into Dataverse are granted the CC0 Public Domain Dedication Waiver. Dataverse uses CC0 by default for all datasets (4.0 and on) because CC0 has name recognition in the scientific community, making it a familiar option for data (for which in general copyright does not apply), and is in use by repositories as well as scientific journals that require the deposit of open data. For more information on CC0, please visit the Creative Commons website (http://creativecommons.org/about/cc0). Data depositors can opt-out of using CC0 for their datasets, if needed.
 
-
 *Dataverse asks that all users who download datasets from Dataverse’s services follow the following Community Norms*.* 
-
 
 Crediting any research used with data citations
 ------------------------------------------------
@@ -26,3 +25,14 @@ Users of the Service should not abuse the available data that relate to human su
 3) obtain (additional) information about or (additional) means of contact for already-identified subjects. 
 
 \* **Legal Disclaimer:** these Community Norms are not a substitute for the CC0 or custom licenses applicable to each dataset. Please be advised that the Community Norms are not a binding contractual agreement, and that downloading datasets from Dataverse does not create a legal obligation to follow these policies.  
+
+
+Third Party API Applications
+-------------------------------
+
+If you are interested in building an API application designed (exclusively or not) to allow and provide access to Harvard Dataverse and its materials and services, please keep in mind that such applications:
+
+1. must ensure that all users of the application read and agree to both the Dataverse API Terms of Use (http://best-practices.dataverse.org/harvard-policies/harvard-api-tou.html) and Harvard Dataverse’s General Terms of Use (http://best-practices.dataverse.org/harvard-policies/harvard-terms-of-use.html); 
+2. must post both the Dataverse API Terms of Use and Harvard Dataverse’s General Terms of Use in an adequately noticeable and conveniently-accessible place so that all users of the application and easily find and view it; 
+3. acknowledge and agree that Harvard Dataverse is not otherwise affiliated with any third-party Dataverse API applications that provide access to Harvard Dataverse, and therefore will not be held responsible or liable (in whole or in part) for any suits or damages incurred by the third-party Dataverse API application owners, administrators, and affiliates; and 
+4. must clearly publish its third-party non-affiliation status in relation to Harvard Dataverse in its application and disclaim any special relationship with Harvard Dataverse outside of the ones arising out of the obligations agreed upon from this Terms of Use and Harvard Dataverse’s General Terms of Use agreements. 
