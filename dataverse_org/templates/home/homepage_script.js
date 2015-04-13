@@ -133,7 +133,7 @@ function flipCards() {
 }
 
 function search_dataverses(searchVal){
-    window.open('http://thedata.harvard.edu/dvn/faces/StudyListingPage.xhtml?mode=2&searchValue=' + searchVal + '', '_blank');
+    window.open('https://dataverse.harvard.edu/dataverse/harvard?q=' + searchVal + '', '_blank');
 }
 
 function bind_popover_search(){
