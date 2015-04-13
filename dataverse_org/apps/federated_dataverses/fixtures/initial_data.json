@@ -24,7 +24,7 @@
         "logo_image": "federated_logos/harvard_1.png", 
         "visible": true, 
         "sort_order": 10, 
-        "homepage": "http://thedata.harvard.edu/dvn/", 
+        "homepage": "http://dataverse.harvard.edu", 
         "slug": "harvard-dataverse", 
         "description": "Open for all researchers worldwide from all disciplines to deposit data."
     }
