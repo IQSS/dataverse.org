@@ -3,10 +3,10 @@
 Dataverse Community Norms
 =================================
 
-CC0 Public Domain Dedication Waiver for Datasets
+CC0 Waiver for Datasets
 ---------------------------------------------------
 
-By default, all datasets added into Dataverse are granted the CC0 Public Domain Dedication Waiver. Dataverse uses CC0 by default for all datasets (4.0 and on) because CC0 has name recognition in the scientific community, making it a familiar option for data (for which in general copyright does not apply), and is in use by repositories as well as scientific journals that require the deposit of open data. For more information on CC0, please visit the Creative Commons website (http://creativecommons.org/about/cc0). Data depositors can opt-out of using CC0 for their datasets, if needed.
+By default, all datasets added into Dataverse are granted the CC0 Public Domain Dedication. Dataverse uses the CC0 waiver by default for all datasets (4.0 and on) because of its name recognition in the scientific community, making it a familiar option for data (for which in general copyright does not apply), and is in use by repositories as well as scientific journals that require the deposit of open data. For more information on the CC0 waiver, please visit the Creative Commons website (http://creativecommons.org/about/cc0). Data depositors can opt-out of using the CC0 waiver for their datasets, if needed.
 
 *Dataverse asks that all users who download datasets from Dataverse’s services follow the following Community Norms*.* 
 
