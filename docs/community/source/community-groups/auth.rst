@@ -9,4 +9,4 @@ The best way to get involved is to subscribe to the "dvn-auth" list at https://l
 
 Joining http://chat.dataverse.org is the best way to reach the coordinators, who go by "pdurbin" and "bencomp".
 
-For now, a Google Doc is being used as a place to centralize lists of auth projects and meeting notes: https://docs.google.com/a/harvard.edu/document/d/1xbWkj_OIk13gKe7jleNXVvakZErvHLA8JRBvLz8Fe8Q/edit?usp=sharing . Comments are welcome! Feel free to request "edit" access!
+For now, the `Dataverse Authentication and Authorization Community Group Google Doc <https://docs.google.com/document/d/1xbWkj_OIk13gKe7jleNXVvakZErvHLA8JRBvLz8Fe8Q/edit?usp=sharing>`__ is being used as a place to centralize lists of auth projects, interests and meeting notes. Comments are welcome! Feel free to request "edit" access!
