@@ -3,74 +3,42 @@
 Harvard Dataverse Preservation Policy
 =================================================
 
-Harvard Dataverse cares about your privacy. This privacy policy explains what information we
-collect through your use of the Harvard Dataverse application and how we treat that information.
-By using the Harvard Dataverse application, you acknowledge and accept that these are the
-privacy practices governing the Harvard Dataverse application. This web site may contain links
-to other web sites and use third-party applications and/or software. We are not responsible for the
-privacy practices of these third parties, and you should read through their practices before
-clicking or using them.
+Data Backup & Preservation Terms
+-------------------------------------
 
-Information Collected
+Harvard University Information Technology (HUIT) in collaboration with Harvard Library, and the Institute for Quantitative Social Science (IQSS) hosts Harvard's Dataverse repository and maintains a full backup of all data and directories. This means that there is always a full, recent off-site copy of the Harvard Dataverse repository.
+
+
+Backup Schedule
 -----------------------------
 
-*Information Voluntarily Provided by You*
+HUIT backs up all of the application/system files and databases nightly.  It is stored off-site in Carlstadt, New Jersey for 45 days.
 
-When you register for an account with Harvard Dataverse, we collect your name, email
-address, (and optionally) institution and position.
+All research data files in the repository are replicated every 4 hours to a second off-site storage array at 1 Summer St, Boston, MA.
+Since March 2013, HUIT incorporated the data content of the Harvard Dataverse repository into the DRS Storage Infrastructure.  This makes use of the storage management software to create a tape copy of the data to be stored for the long-term at the Harvard Depository.
 
-Additionally, if the guestbook feature if activated for a particular dataset, then any
-information filled out in the guestbook is made available to the dataverse administrator, dataset
-manager, and dataset curator.
 
-*Information Collected Through Your Use of the Harvard Dataverse Application*
+Policy and Procedures for Digital Archiving
+----------------------------------------------
 
-When you access this web site, our web server software generates logfiles of the IP
-address of your computer. These web server logs are retained on a temporary basis and then
-deleted completely from our systems. When you download a file from Harvard Dataverse, our
-software collects user account data such as your name, username, email, institution and position
-if provided (or the session ID data for guest users) and accompanying download data such as the
-time of the download. This information is then made available to the dataverse administrator,
-dataset manager, and dataset curator of the file.
+Harvard University's policy for digital archiving is part of the institution's general mission to preserve all of its archival collections and to ensure their availability for current and future use. More specifically, this policy for preserving our digital data collections is meant to ensure continued access to born digital and digitized data, to ensure their authenticity, and to maintain data quality using the best digital archival practices.
+Harvard University (in particular with support from IQSS) commits to best archival practice to ensure that all materials deposited in the archive remain available and usable. This includes: preserving previously deposited versions of materials; deaccessioning (removal) of datasets only when legally compelled; maintaining public access to the materials; regularly reviewing risks to materials; and reformatting materials as necessary and if possible to avoid format obsolescence.
 
-We also use Google Analytics to collect data on how our users are using Harvard
-Dataverse so that we can improve its functionality. Please see the Google Analytics Privacy
-Policy (http://www.google.com/analytics/learn/privacy.html?rd=2) and Terms of Use
-(http://www.google.com/intl/en/policies/terms/) for information on how Google handles these
-data.
+Preservation of Materials Deposited in the Harvard Dataverse
+---------------------------------------------------------------
 
-Use of Information
------------------------------
+Harvard University supports permanent bit-level preservation of all  directly deposited in the Harvard Dataverse.
+In addition all social science data deposited in the Harvard Dataverse that is made publicly available  is replicated by the `Data-PASS partners <http://www.data-pass.org/>`_ for permanent preservation by the partnership.
+On top of Harvard University's commitment to archival and long term access of all data published in the Harvard Dataverse, the Harvard Dataverse takes data publication very seriously (see `Joint Declaration of Data Citation Principles <https://www.force11.org/group/joint-declaration-data-citation-principles-final>`_), encouraging good curation practices through support of standards-based metadata schemas, proper documentation, and automatic extraction of metadata from FITS and tabular files to enable data discovery and reuse. Tabular files deposited in the Harvard Dataverse are reformatted into simple open format text files (.tab format) to ensure long-term preservation of the data. Also, once a dataset is published, the repository guarantees archival and long term access to that dataset with a DOI persistent identifier provided by the California Digital Library’s (CDL) `EZID service <http://ezid.cdlib.org/>`_ (DataCite member). In order to ensure long term accessibility of the dataset in the Harvard Dataverse, once a dataset is published it can not be unpublished and can only be deaccessioned under extreme circumstances, such as a legal requirement to destroy that dataset. However, a tombstone landing page with the basic citation metadata will always be accessible to the public if they use the persistent URL (Handle or DOI) provided in the citation for that dataset. Users will not be able to see any of the files or additional metadata that were previously available prior to deaccession.
+Due to the self-curation nature of some of the datasets in the Harvard Dataverse, owners or distributors of individual datasets have control over selection of materials, documentation, access policies and data user agreements of their datasets, therefore questions about finding and using data distributed by others in the Harvard Dataverse should in general be referred to individual dataset owners.
 
-We use your IP address and files you access to help diagnose problems with our server
-and to administer our Web site by identifying (1) which parts of our site are most heavily used,
-and (2) which portion of our audience comes from within the Harvard network. We also use this
-information to tailor site content to user needs and to generate aggregate statistical reports. At no
-time do we disclose site usage by individual users.
-
-With the exception of the data collected during downloads, which are made available
-only to the file owner, we do not share any personally identifiable information we gather or
-develop about our users to any third parties for any purpose unless required by law. Any reports
-we may share externally would use unidentifiable, aggregated data.
-
-Cookies
-----------------
-
-We use cookies to maintain a user’s identity between web sessions.
-
-Security
-------------------
-
-This site has security measures in place to protect the loss, misuse and alteration of the
-information under our control.
-
-Changes to this Privacy Policy
+Changes to this Preservation Policy
 -----------------------------------------
 
-Harvard Dataverse may revise this privacy policy at its sole discretion. Please check this page
-regularly for our current practices. If you have any questions about this privacy policy, the
+Harvard Dataverse may revise this preservation policy at its sole discretion. Please check this page
+regularly for our current practices. If you have any questions about this preservation policy, the
 practices of this site, or your dealings with this site, you can contact: support@dataverse.org.
 
 
 
-**This policy was last modified: 12/05/2014.**
+**This policy was last modified: 07/10/2015.**
