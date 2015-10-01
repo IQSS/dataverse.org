@@ -1,6 +1,6 @@
 .. _data-citation:
 
-Get Recognition: Data Citation
+Data Citation
 +++++++++++++++++++++++++++++++++++++++
 
 |image1|
