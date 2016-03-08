@@ -139,7 +139,7 @@ By posting User Uploads to your dataverse or other dataverses, or by allowing ot
 Licenses and Permissions to Harvard Dataverse
 *************************************************
 
-You grant to Harvard Dataverse all necessary permissions and required licenses to make the Content you submit or deposit available for archiving, preservation and access, within the Site and the Data Preservation Alliance for the Social Sciences (“Data-PASS”) through the Data-PASS terms of use (http://www.murray.harvard.edu/files/murray/datapass-murray.pdf). This includes, without restriction, permission to:
+You grant to Harvard Dataverse all necessary permissions and required licenses to make the Content you submit or deposit available for archiving, preservation and access, within the Site and the Data Preservation Alliance for the Social Sciences (“Data-PASS”) through the Murray Archive Data-PASS terms of use (http://murray.harvard.edu/application). This includes, without restriction, permission to:
 
 1. re-disseminate copies of the Content in a variety of distribution formats according to the standard terms of use of Harvard Dataverse;
 2. promote and advertise the Content in any publicity (in any form) for Data-PASS and  Harvard Dataverse;
