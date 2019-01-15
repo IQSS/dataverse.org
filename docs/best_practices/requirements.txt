@@ -1,2 +1,0 @@
-# match version used by Jenkins
-Sphinx==1.1.3
