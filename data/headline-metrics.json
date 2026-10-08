@@ -1,0 +1,67 @@
+{
+  "generated_utc": "2026-10-08T21:44:27+00:00",
+  "as_of": {
+    "citations": "2026-10-08",
+    "network_sweep": "2026-10-08",
+    "harvard_metric": "2026-10-08",
+    "metadata_slice": "doi:10.7910/DVN/LVVOER"
+  },
+  "metrics": {
+    "scholarlyCitations": 3962835,
+    "datasetsWithScholarlyCitations": 38988,
+    "datasetCitations": 15385,
+    "datasetsWithDatasetCitations": 11132,
+    "citationStudyDatasets": 102650,
+    "dataciteMatched": 102639,
+    "installations": "150+",
+    "networkDatasets": 600919,
+    "respondingInstallations": 122,
+    "harvardDatasets": 118085,
+    "networkFiles": 13411274,
+    "networkDownloads": 312846781,
+    "networkAccounts": 218897,
+    "respondingInstallationsAccounts": 87,
+    "networkUniqueViews": 32472322,
+    "networkUniqueDownloads": 3856916,
+    "installationsReportingUsage": 14,
+    "harvardViews": 126533697,
+    "harvardUniqueViews": 25960025,
+    "harvardUniqueViewsPeople": 16292190,
+    "harvardDownloads": 89429116,
+    "harvardUniqueDownloads": 3626111,
+    "harvardUniqueDownloadsPeople": 2895422
+  },
+  "knowledge_graph": {
+    "nodes": 215985,
+    "edges": 528003,
+    "components": 5061
+  },
+  "network_sweep": {
+    "registry_installations": 150,
+    "responding_datasets": 122,
+    "nonzero_datasets": 120,
+    "network_datasets": 600919,
+    "responding_accounts": 87,
+    "nonzero_accounts": 87,
+    "network_accounts": 218897,
+    "responding_downloads": 123,
+    "nonzero_downloads": 120,
+    "network_downloads": 312846781,
+    "responding_files": 122,
+    "nonzero_files": 119,
+    "network_files": 13411274,
+    "responding_viewsUnique": 93,
+    "nonzero_viewsUnique": 14,
+    "network_viewsUnique": 32472322,
+    "responding_downloadsUnique": 93,
+    "nonzero_downloadsUnique": 13,
+    "network_downloadsUnique": 3856916,
+    "responding_installations": 122
+  },
+  "sources": {
+    "citations": "kg_box_app daily citation refresh (DataCite, Crossref, OpenAlex, Semantic Scholar)",
+    "harvard_metric": "https://dataverse.harvard.edu/api/info/metrics/datasets",
+    "network": "sum of /api/info/metrics/{datasets,files,downloads,accounts} over the IQSS/dataverse-installations registry; accounts = registered user accounts, not visitors",
+    "usage": "Make Data Count /api/info/metrics/makeDataCount/* (COUNTER Code of Practice for Research Data): unique = unique sessions per dataset per month since MDC was enabled (Harvard mid-2020); Regular/People excludes machine traffic; network values are a floor because only ~14 installations report"
+  }
+}

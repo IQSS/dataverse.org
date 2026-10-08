@@ -1,0 +1,51 @@
+/* Use-case index and detail pages. Cards share the institution/journal card language. */
+.use-cases-body { padding: 48px 8vw 110px; max-width: 1200px; }
+.use-cases-intro { font-size: 18px; line-height: 1.6; max-width: 760px; margin: 0 0 40px; }
+.use-cases-body h2 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); margin: 40px 0 18px; }
+
+.use-case-hero { margin: 0; padding: 0 8vw; }
+.use-case-hero img { display: block; width: 100%; max-height: 420px; object-fit: cover; border: 1px solid #DCC9BD; border-radius: 18px; box-shadow: 3px 3px 0 #DEDEDE; }
+
+.use-case-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 6vw; padding: 48px 8vw 110px; }
+.use-case-prose { font-size: 17px; line-height: 1.65; max-width: 760px; }
+.use-case-prose h1 { font: 600 clamp(1.4rem, 2.4vw, 1.8rem)/1.3 inherit; font-family: inherit; letter-spacing: 0; margin: 0 0 20px; }
+.use-case-prose h2 { font-size: clamp(1.25rem, 2vw, 1.5rem); line-height: 1.3; margin: 44px 0 14px; }
+.use-case-prose h3 { font-size: 1.1rem; margin: 32px 0 10px; }
+.use-case-prose p { margin: 0 0 18px; }
+.use-case-prose img { max-width: 100%; border-radius: 10px; vertical-align: middle; }
+.use-case-prose img:not([height]) { height: auto; }
+.use-case-prose p > img + img { margin-left: 16px; }
+.use-case-prose blockquote { margin: 28px 0; padding: 18px 24px; border-left: 4px solid #C55B28; background: #FFF1E9; border-radius: 0 12px 12px 0; font-size: 18px; }
+.use-case-prose blockquote p:last-child { margin-bottom: 0; }
+.use-case-prose hr { border: 0; border-top: 1px solid #DCC9BD; margin: 36px 0; }
+.use-case-prose table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 15px; }
+.use-case-prose th, .use-case-prose td { padding: 10px 12px; border-bottom: 1px solid #DCC9BD; vertical-align: top; text-align: left; }
+.use-case-prose td img { width: 150px; max-width: 100%; height: auto; border-radius: 10px; }
+.use-case-prose a { color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; }
+.use-case-prose ul, .use-case-prose ol { padding-left: 1.4em; margin: 0 0 18px; }
+.use-case-prose li { margin-bottom: 8px; }
+.use-case-aside .use-case-citation { font-size: 13px; line-height: 1.5; color: #303030; margin-top: 18px; font-weight: 400; letter-spacing: 0; text-transform: none; }
+
+.use-case-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.use-case-grid li { min-width: 0; }
+.use-case-grid a { display: flex; flex-direction: column; gap: .7rem; height: 100%; padding: 0 0 1.4rem; border: 1px solid #DCC9BD; border-radius: 18px; background: #FFF1E9; color: #303030; box-shadow: 3px 3px 0 #DEDEDE; text-decoration: none; overflow: hidden; }
+.use-case-grid a:hover { border-color: #A87960; }
+.use-case-grid a:focus-visible { outline: 3px solid #A84A1D; outline-offset: 2px; }
+.use-case-image { display: block; aspect-ratio: 16 / 9; background: #fff; border-bottom: 1px solid #DCC9BD; }
+.use-case-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.use-case-image.contain { background: #fff; padding: 12%; box-sizing: border-box; }
+.use-case-image.contain img { object-fit: contain; }
+.use-case-kicker { font: 600 13px/1.5 var(--font-montserrat), Montserrat, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #A84A1D; padding: .4rem 1.4rem 0; }
+.use-case-grid strong { font-size: 1.15rem; line-height: 1.35; padding: 0 1.4rem; }
+.use-case-summary { font-size: .95rem; line-height: 1.55; padding: 0 1.4rem; }
+
+.use-case-banner { padding: 3rem var(--content-gutter) 0; }
+
+@media (max-width: 900px) {
+  .use-case-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .use-case-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .use-case-grid { grid-template-columns: 1fr; }
+  .use-case-prose td img { width: 90px; }
+}

@@ -22,6 +22,7 @@ const metricLinks = [
   { id: "network-datasets", label: "Network datasets", value: `${number(metrics.networkDatasets)}+` },
   { id: "dataset-citations", label: "Citations of the data itself", value: number(metrics.datasetCitations) },
   { id: "harvard-datasets", label: "Harvard datasets", value: number(metrics.harvardDatasets) },
+  { id: "usage", label: "Unique views by people", value: number(metrics.harvardUniqueViewsPeople) },
 ];
 
 function Bar({ label, value, max, muted = false }: { label: string; value: number; max: number; muted?: boolean }) {
@@ -43,7 +44,7 @@ export default function NumbersPage() {
         <p className="section-kicker">SOURCES &amp; METHODS</p>
         <h1>Behind the numbers</h1>
         <p>The scale of the network. The reach of its research. Here is what we count, how we count it, and what each number can—and cannot—tell us.</p>
-        <p className="numbers-context">These explanations accompany the figures displayed on the homepage, plus the count of citations made directly to dataset DOIs, which is kept separate from scholarly citations. They are not live counters. Network totals describe multiple installations; the citation analysis covers a defined set of Harvard Dataverse datasets.</p>
+        <p className="numbers-context">These explanations accompany the figures displayed on the homepage, plus the count of citations made directly to dataset DOIs, which is kept separate from scholarly citations. Usage figures cover Harvard Dataverse only and start in 2020. They are not live counters. Network totals describe multiple installations; the citation analysis covers a defined set of Harvard Dataverse datasets.</p>
       </header>
 
       <nav className="numbers-index" aria-label="Explore the headline numbers">{metricLinks.map(metric => <a key={metric.id} href={`#${metric.id}`}><b>{metric.value}</b><span>{metric.label}</span></a>)}</nav>
@@ -101,6 +102,28 @@ export default function NumbersPage() {
         <div className="number-overview"><div><p className="section-kicker">HARVARD DATAVERSE REPOSITORY</p><h2 id="harvard-title">Published datasets</h2><strong className="number-total">{number(metrics.harvardDatasets)}</strong><p>The Harvard Dataverse dataset metric recorded for this preview. It is a repository-wide holdings measure, not the size of the citation-analysis cohort.</p><div className="evidence-sources"><a href="https://dataverse.harvard.edu/api/info/metrics/datasets">Repository metric response</a><a href="https://guides.dataverse.org/en/latest/api/metrics.html">Metric definitions</a></div></div>
           <figure className="number-figure"><h3>Two different scopes</h3><Bar label="Published datasets shown on the homepage" value={metrics.harvardDatasets} max={metrics.harvardDatasets} /><Bar label="Dataset records in the citation analysis" value={metrics.citationStudyDatasets} max={metrics.harvardDatasets} muted /><figcaption>Different source scopes, not a growth comparison or a citation coverage percentage. Do not substitute one denominator for the other.</figcaption></figure></div>
         <div className="number-notes"><div><h3>Read the dataset metric</h3><p>The repository’s <code>/api/info/metrics/datasets</code> endpoint returns a <code>count</code>. The metric describes released datasets, not collections or files; unpublished and deaccessioned versions are excluded.</p><p>The source endpoint can change independently of this preview’s displayed value.</p></div><div><h3>Check the query scope</h3><p>Dataset metrics support local, harvested, or combined records through the <code>dataLocation</code> filter. The original source link has no explicit filter. We do not present the recorded total as a DOI-deduplicated count across repositories.</p></div></div>
+      </section>
+
+      <section className="number-section" id="usage" aria-labelledby="usage-title">
+        <div className="number-overview">
+          <div><p className="section-kicker">HARVARD DATAVERSE · USAGE SINCE 2020</p><h2 id="usage-title">Views and downloads</h2><strong className="number-total">{number(metrics.harvardUniqueViewsPeople)}</strong><p>Unique dataset views by people since mid-2020, when Harvard Dataverse began reporting usage under the Make Data Count standard. “Unique” means one count per session, per dataset, per month, so this is a count of visits, not of distinct people.</p></div>
+          <figure className="number-figure"><h3>Usage of Harvard Dataverse since 2020</h3>
+            <table className="usage-table">
+              <thead><tr><th scope="col">Measure</th><th scope="col">All traffic</th><th scope="col">Unique</th><th scope="col">Unique, by people</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Dataset views</th><td>{number(metrics.harvardViews)}</td><td>{number(metrics.harvardUniqueViews)}</td><td>{number(metrics.harvardUniqueViewsPeople)}</td></tr>
+                <tr><th scope="row">Downloads</th><td>{number(metrics.harvardDownloads)}</td><td>{number(metrics.harvardUniqueDownloads)}</td><td>{number(metrics.harvardUniqueDownloadsPeople)}</td></tr>
+              </tbody>
+            </table>
+            <figcaption>Counts refresh daily from the repository’s Make Data Count metrics. “All traffic” counts every event; “unique” counts one per session, dataset and month; “by people” excludes machine traffic such as crawlers and API harvesters.</figcaption>
+          </figure>
+        </div>
+        <Steps items={[
+          { title: "Record usage events", text: "Every dataset page view and file download on Harvard Dataverse is logged as an event under the COUNTER Code of Practice for Research Data, the standard behind Make Data Count." },
+          { title: "Collapse repeats into unique visits", text: "Repeated views or downloads of the same dataset within one session and month count once. The result is a count of visits to datasets, not a count of distinct people." },
+          { title: "Separate people from machines", text: "COUNTER classifies known crawlers, harvesters and API clients as machine traffic. The headline figures use the human share; the table shows both." },
+        ]} />
+        <div className="number-notes"><div><h3>Since 2020, Harvard only</h3><p>Make Data Count reporting started on Harvard Dataverse in mid-2020, so these totals cover only the years since. Only {metrics.installationsReportingUsage} of the network’s installations publish usage this way, so no comparable network total exists; the sum of what those installations report ({number(metrics.networkUniqueViews)} unique views) is a floor, not a census.</p></div><div><h3>Sources</h3><p>The repository’s <code>/api/info/metrics/makeDataCount/</code> endpoints for total, unique and “regular” (human) views and downloads. The all-time file-download counter, which predates 2020 and is not deduplicated, is reported separately by the metrics API.</p><div className="evidence-sources"><a href="https://makedatacount.org/">Make Data Count</a><a href="https://www.countermetrics.org/code-of-practice-for-research-data/">COUNTER Code of Practice for Research Data</a><a href="https://guides.dataverse.org/en/latest/admin/make-data-count.html">Dataverse Make Data Count guide</a></div></div></div>
       </section>
 
       <aside className="numbers-record"><h2>Read the figures with their scope</h2><p>Installation counts describe the community. Dataset counts describe repository holdings. Citation totals describe recorded relationships within a defined analysis. They answer different questions, and none is a complete measure of research value.</p><a href="/">Return to the Dataverse Project</a></aside>

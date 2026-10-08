@@ -11,6 +11,7 @@ export function ArchiveHeader() {
         <a className="people-button" href="https://people.dataverse.org/">People</a>
         <a href="/events">Community</a>
         <a href="/best-practices/data-citation">Best Practices</a>
+        <a href="/use-cases">Use Cases</a>
         <a href="/software-features">Software</a>
         <a href="/roadmap">Roadmap</a>
         <a href="/releases">Releases</a>

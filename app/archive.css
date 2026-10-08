@@ -523,3 +523,10 @@ h1, h2, h3, h4,
   .archive-image-grid { grid-template-columns: 1fr; }
   .archive-image-grid img { grid-column: 1; }
 }
+
+.archive-resources-more { margin-top: 6px; }
+.archive-resources-more summary { cursor: pointer; font: 600 13px/1.5 var(--font-montserrat), Montserrat, sans-serif; color: var(--dv-orange-ink); padding: 8px 0; }
+.archive-resources-more summary:focus-visible { outline: 2px solid #A84A1D; outline-offset: 2px; }
+.archive-map { margin: 0 0 32px; padding: 0 6vw; }
+.not-found .archive-prose { max-width: 620px; }
+.not-found .archive-prose { padding: 48px 8vw 96px; }

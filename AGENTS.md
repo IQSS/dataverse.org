@@ -63,6 +63,12 @@ need separate authorization.
   logo provenance in `data/*-logo-sources.md`. Any new logo needs a row there: original source
   URL, local file, and the relationship it identifies. Never recolour or redraw an official mark.
 - Installation map: `data/installation-map.json`, from the IQSS/dataverse-installations registry.
+- Use cases: `data/use-cases.ts` (titles, audiences, summaries, images, citations) plus the
+  Markdown bodies in `content/use-cases/<slug>.md` and images in `public/use-cases/<slug>/images/`,
+  copied from https://github.com/IQSS/dataverse-use-cases with image paths rewritten and HTML
+  size attributes mirrored as inline styles (Tailwind preflight forces `img { height: auto }`).
+  To add one: copy its folder the same way, add an entry to `data/use-cases.ts`, and set
+  `featured` on at most three for the homepage.
 - Tests: `tests/*.test.mjs` render pages through the built worker and assert on the HTML.
 
 ## Generated files: do not hand-edit

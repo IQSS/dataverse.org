@@ -54,7 +54,7 @@ export default defineConfig(async () => {
         enforce: "pre",
         async load(id) {
           const file = id.split("?")[0];
-          if (!file.endsWith("/content/community-calls.md")) return;
+          if (!/\/content\/.+\.md$/.test(file)) return;
           this.addWatchFile(file);
           return `export default ${JSON.stringify(await readFile(file, "utf8"))};`;
         },

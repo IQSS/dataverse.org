@@ -3,6 +3,7 @@ import { ArchiveShell } from "./SiteChrome";
 import CommunityConnections from "./CommunityConnections";
 import AboutContent from "./AboutContent";
 import InstitutionBanner from "./InstitutionBanner";
+import InstallationMap from "./InstallationMap";
 import AudienceContent from "./AudienceContent";
 import JournalBanner from "./JournalBanner";
 import InstitutionContext from "./InstitutionContext";
@@ -62,20 +63,35 @@ function externalSource(href: string) {
   }
 }
 
+const listItem = (line: string) => line.length <= 110 && !/[.!?]$/.test(line);
+
+/** Render imported prose: paragraphs, with bullet and bare-line lists restored. */
 function TextContent({ text, title }: { text: string; title?: string }) {
   const blocks = textBlocks(text, title);
-  return (
-    <div className="archive-prose">
-      {blocks.map((block, index) => {
-        const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
-        const isList = lines.length > 0 && lines.every((line) => /^[-•]/.test(line));
-        if (isList) {
-          return <ul key={index}>{lines.map((line) => <li key={line}>{line.replace(/^[-•]\s*/, "")}</li>)}</ul>;
-        }
-        return <p key={index}>{block}</p>;
-      })}
-    </div>
-  );
+  const nodes: React.ReactNode[] = [];
+  let run: string[] = [];
+  const flushRun = () => {
+    if (run.length >= 2) nodes.push(<ul key={nodes.length}>{run.map((line) => <li key={line}>{line}</li>)}</ul>);
+    else run.forEach((line) => nodes.push(<p key={nodes.length}>{line}</p>));
+    run = [];
+  };
+  for (const block of blocks) {
+    const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
+    if (lines.length === 1 && listItem(lines[0]) && !/:$/.test(lines[0])) { run.push(lines[0]); continue; }
+    flushRun();
+    if (lines.every((line) => /^[-•]/.test(line))) {
+      nodes.push(<ul key={nodes.length}>{lines.map((line) => <li key={line}>{line.replace(/^[-•]\s*/, "")}</li>)}</ul>);
+    } else if (lines.length >= 2 && lines.every(listItem)) {
+      nodes.push(<ul key={nodes.length}>{lines.map((line) => <li key={line}>{line}</li>)}</ul>);
+    } else if (lines.length >= 3 && /:$/.test(lines[0]) && lines.slice(1).every((line) => line.length <= 200)) {
+      nodes.push(<p key={nodes.length}>{lines[0]}</p>);
+      nodes.push(<ul key={nodes.length}>{lines.slice(1).map((line) => <li key={line}>{line}</li>)}</ul>);
+    } else {
+      nodes.push(<p key={nodes.length}>{block}</p>);
+    }
+  }
+  flushRun();
+  return <div className="archive-prose">{nodes}</div>;
 }
 
 function ResourceLinks({
@@ -85,14 +101,23 @@ function ResourceLinks({
 }) {
   const usable = links.filter((link) => link.href && link.text);
   if (!usable.length) return null;
+  const shown = usable.slice(0, 10);
+  const more = usable.slice(10);
+  const render = (link: { text: string; href: string }, index: number) => (
+    <a key={`${link.href}-${index}`} href={link.href}>
+      <span>{link.text}</span><b>↗</b>
+    </a>
+  );
   return (
     <aside className="archive-resources">
       <p>Links and files</p>
-      {usable.map((link, index) => (
-        <a key={`${link.href}-${index}`} href={link.href}>
-          <span>{link.text}</span><b>↗</b>
-        </a>
-      ))}
+      {shown.map(render)}
+      {more.length > 0 && (
+        <details className="archive-resources-more">
+          <summary>Show {more.length} more</summary>
+          {more.map((link, index) => render(link, index + shown.length))}
+        </details>
+      )}
     </aside>
   );
 }
@@ -270,7 +295,7 @@ export function ReportDetailPage({ item }: { item: ReportRecord }) {
 export function ProjectContentPage({ item }: { item: ProjectPage }) {
   const heading = item.localPath === "/journals" ? "Journals and Proceedings" : item.h1 || item.title.replace(/ \| The Dataverse Project$/, "");
   return (
-    <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : undefined} afterContent={item.localPath === "/institutions" ? <InstitutionContext /> : undefined}>
+    <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : item.localPath === "/installations" ? <div className="archive-map"><InstallationMap /></div> : undefined} afterContent={item.localPath === "/institutions" ? <InstitutionContext /> : undefined}>
       {item.images.length > 0 && (
         <div className="archive-image-grid page-images">
           {item.images.map((image) => <img key={image.src} src={image.src} alt={image.alt} />)}

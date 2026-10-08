@@ -4,6 +4,7 @@ type Link = { text: string; href: string };
 
 const headings = new Set(["The Project", "The Strategic Goals", "The Collaboration", "The History", "The Team", "Core Development Team", "Data Curation Team", "Dataverse Ambassador", "Past Dataverse Project Contributors", "The Name", "The Funding"]);
 const peopleHeadings = new Set(["The Team", "Core Development Team", "Data Curation Team", "Dataverse Ambassador", "Past Dataverse Project Contributors"]);
+const bulletHeadings = new Set(["The Strategic Goals"]);
 const shownHeading: Record<string, string> = { "The Team": "Project Leadership" };
 
 /** Preserve the imported wording while restoring headings and inline links; names under the people headings render as single-spaced lists. */
@@ -16,7 +17,7 @@ export default function AboutContent({ text, links }: { text: string; links: Lin
   let section = "";
   let people: string[] = [];
   const flush = () => {
-    if (people.length) blocks.push(<ul key={blocks.length} className="name-list">{people.map((line, i) => <li key={i}>{linked(line)}</li>)}</ul>);
+    if (people.length) blocks.push(<ul key={blocks.length} className={bulletHeadings.has(section) ? undefined : "name-list"}>{people.map((line, i) => <li key={i}>{linked(line)}</li>)}</ul>);
     people = [];
   };
   for (const line of text.replace(/^About\s*/, "").split(/\n/).map(line => line.trim()).filter(Boolean)) {
@@ -24,11 +25,11 @@ export default function AboutContent({ text, links }: { text: string; links: Lin
       flush();
       section = line;
       blocks.push(<h2 key={blocks.length} id={line === "The Team" ? "team" : undefined}>{shownHeading[line] ?? line}</h2>);
-    } else if (peopleHeadings.has(section) && !/[.!?]$/.test(line)) {
+    } else if ((peopleHeadings.has(section) || bulletHeadings.has(section)) && !/[.!?:]$/.test(line)) {
       people.push(line);
     } else {
       flush();
-      section = "";
+      if (!bulletHeadings.has(section)) section = "";
       blocks.push(<p key={blocks.length}>{linked(line)}</p>);
     }
   }

@@ -365,3 +365,12 @@ footer > div:last-child { flex-wrap: wrap; }
   .audience-banner-heading { align-items: flex-start; flex-direction: column; }
 }
 @media (max-width: 420px) { .institution-grid { grid-template-columns: 1fr; } }
+
+/* Usage cards: a quieter second row under the headline triptych, same grid and borders. */
+.verified-stats.usage-stats { grid-template-columns: 1fr 1fr 1fr; border-top: 0; }
+.verified-stats.usage-stats article { min-height: 0; padding: 22px 28px 24px; }
+.verified-stats.usage-stats strong { font-size: clamp(30px, 3.2vw, 52px); margin: 18px 0 10px; }
+.verified-stats.usage-stats p { font-size: 15px; }
+@media (max-width: 900px) { .verified-stats.usage-stats { grid-template-columns: 1fr; } }
+.verified-stats:has(+ .usage-stats) { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.verified-stats.usage-stats { border-top-left-radius: 0; border-top-right-radius: 0; }

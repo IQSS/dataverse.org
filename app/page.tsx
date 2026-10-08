@@ -1,6 +1,8 @@
 import InstallationMap from "./components/InstallationMap";
 import PartnerBanner from "./components/PartnerBanner";
 import GetInvolved from "./components/GetInvolved";
+import UseCaseBanner from "./components/UseCaseBanner";
+import "./use-cases/use-cases.css";
 import IntegrationsBanner from "./components/IntegrationsBanner";
 import InstitutionBanner from "./components/InstitutionBanner";
 import JournalBanner from "./components/JournalBanner";
@@ -10,7 +12,7 @@ export default function Home() {
   return <div>
     <header className="site-header">
       <a className="brand" href="/" aria-label="Dataverse Project home"><img className="dataverse-logo" src="/dataverse-project-logo.svg" alt="The Dataverse Project"/></a>
-      <nav aria-label="Main navigation"><a href="/about">About</a><a className="people-button" href="https://people.dataverse.org/">People</a><a href="/events">Community</a><a href="/best-practices/data-citation">Best Practices</a><a href="/software-features">Software</a><a href="/roadmap">Roadmap</a><a href="/releases">Releases</a><a href="/trusted-data-collaboration">Research Projects</a><a href="/contact">Contact</a><a href="https://guides.dataverse.org/en/6.10.1/user/">User Guide ↗</a></nav>
+      <nav aria-label="Main navigation"><a href="/about">About</a><a className="people-button" href="https://people.dataverse.org/">People</a><a href="/events">Community</a><a href="/best-practices/data-citation">Best Practices</a><a href="/use-cases">Use Cases</a><a href="/software-features">Software</a><a href="/roadmap">Roadmap</a><a href="/releases">Releases</a><a href="/trusted-data-collaboration">Research Projects</a><a href="/contact">Contact</a><a href="https://guides.dataverse.org/en/6.10.1/user/">User Guide ↗</a></nav>
       <a className="outline-button" href="https://dataverse.harvard.edu/">Explore Harvard Dataverse ↗</a>
     </header>
 
@@ -26,6 +28,12 @@ export default function Home() {
       <article><span>THE GLOBAL COMMUNITY</span><a className="metric-number-link" href="/numbers#installations" aria-label="How we count 150+ Dataverse installations"><strong>{metrics.installations}</strong></a><p>Dataverse installations around the world</p><a className="metric-method-link" href="/numbers#installations">How we count installations</a></article>
       <article className="stat-emphasis"><span>CITATIONS</span><a className="metric-number-link" href="/numbers#scholarly-citations" aria-label={`${number(metrics.scholarlyCitations)} scholarly citations — how we count`}><strong>{number(metrics.scholarlyCitations)}</strong></a><p>scholarly citations connected to Harvard Dataverse datasets</p><a className="metric-method-link" href="/numbers#scholarly-citations">How we count Scholarly Citations</a></article>
       <article><span>TOTAL DATASETS IN THE NETWORK</span><a className="metric-number-link" href="/numbers#network-datasets" aria-label={`${number(metrics.networkDatasets)}+ datasets across the network — how we count`}><strong>{number(metrics.networkDatasets)}+</strong></a><p>published datasets reported across the network</p><a className="metric-method-link" href="/numbers#network-datasets">How we count network datasets</a></article>
+    </section>
+
+    <section className="verified-stats usage-stats" aria-label="Harvard Dataverse usage since 2020">
+      <article><span>UNIQUE DATASET VIEWS · BY PEOPLE</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardUniqueViewsPeople)} unique dataset views by people — how we count`}><strong>{number(metrics.harvardUniqueViewsPeople)}</strong></a><p>{number(metrics.harvardUniqueViews)} including machine traffic, since 2020</p><a className="metric-method-link" href="/numbers#usage">How we count usage</a></article>
+      <article><span>UNIQUE DOWNLOADS · BY PEOPLE</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardUniqueDownloadsPeople)} unique downloads by people — how we count`}><strong>{number(metrics.harvardUniqueDownloadsPeople)}</strong></a><p>{number(metrics.harvardUniqueDownloads)} including machine traffic, since 2020</p><a className="metric-method-link" href="/numbers#usage">How we count usage</a></article>
+      <article><span>DATASET VIEWS · ALL</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardViews)} dataset views in total — how we count`}><strong>{number(metrics.harvardViews)}</strong></a><p>{number(metrics.harvardDownloads)} downloads in total, since 2020</p><a className="metric-method-link" href="/numbers#usage">How we count usage</a></article>
     </section>
 
     <section className="project-section" id="project">
@@ -62,6 +70,8 @@ export default function Home() {
         </div>
       </figure>
     </section>
+
+    <UseCaseBanner />
 
     <section className="collection-section" aria-labelledby="collection-heading">
       <div className="section-kicker">DATAVERSE COLLECTIONS</div>
