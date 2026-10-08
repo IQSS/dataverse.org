@@ -2,12 +2,14 @@ name: Deploy static site to GitHub Pages
 
 # Builds the vinext app, prerenders every route into a static folder, and publishes it with
 # GitHub Pages. Enable Pages once in the repository settings with source "GitHub Actions".
+# The daily metrics job pushes to the daily-metrics branch (main plus the numbers), so that
+# branch deploys too and the site refreshes every morning without a merge.
 # For a custom domain set the repository variable SITE_BASE_PATH to "/" (and add a CNAME file
 # under public/); without it the site is served at https://<owner>.github.io/<repo>/.
 
 on:
   push:
-    branches: [main]
+    branches: [main, daily-metrics]
   workflow_dispatch:
 
 permissions:
