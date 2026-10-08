@@ -5,6 +5,7 @@ import AboutContent from "./AboutContent";
 import InstitutionBanner from "./InstitutionBanner";
 import AudienceContent from "./AudienceContent";
 import JournalBanner from "./JournalBanner";
+import InstitutionContext from "./InstitutionContext";
 import {
   blogPosts,
   events,
@@ -103,6 +104,7 @@ function DetailLayout({
   children,
   links = [],
   beforeContent,
+  afterContent,
 }: {
   category: string;
   title: string;
@@ -110,6 +112,7 @@ function DetailLayout({
   children: React.ReactNode;
   links?: { text: string; href: string }[];
   beforeContent?: React.ReactNode;
+  afterContent?: React.ReactNode;
 }) {
   const deduped = links.filter(
     (link, index, all) => all.findIndex((candidate) => candidate.href === link.href) === index,
@@ -127,6 +130,7 @@ function DetailLayout({
           <div>{children}</div>
           <ResourceLinks links={deduped} />
         </div>
+        {afterContent}
       </article>
     </ArchiveShell>
   );
@@ -264,9 +268,9 @@ export function ReportDetailPage({ item }: { item: ReportRecord }) {
 }
 
 export function ProjectContentPage({ item }: { item: ProjectPage }) {
-  const heading = item.h1 || item.title.replace(/ \| The Dataverse Project$/, "");
+  const heading = item.localPath === "/journals" ? "Journals and Proceedings" : item.h1 || item.title.replace(/ \| The Dataverse Project$/, "");
   return (
-    <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : undefined}>
+    <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : undefined} afterContent={item.localPath === "/institutions" ? <InstitutionContext /> : undefined}>
       {item.images.length > 0 && (
         <div className="archive-image-grid page-images">
           {item.images.map((image) => <img key={image.src} src={image.src} alt={image.alt} />)}

@@ -38,12 +38,7 @@ export default function Home() {
       </div>
       <InstallationMap />
       <GetInvolved />
-      <div className="ecosystem-context">
-        <article><h3>Long-term institutional commitment</h3><p>Governments, universities, and research labs sustain the ecosystem through locally governed repositories, shared software, and long-term stewardship of research data.</p><a href="/institutions">Dataverse for institutions →</a></article>
-        <article><h3>NIH &amp; GREI</h3><p>The NIH-supported Generalist Repository Ecosystem Initiative brings together Dataverse, Dryad, Figshare, Mendeley Data, OSF, Vivli, and Zenodo to improve data sharing and reuse.</p><a href="https://datascience.nih.gov/data-ecosystem/exploring-a-generalist-repository-for-nih-funded-data">Meet the GREI repositories ↗</a></article>
-        <article><h3>Google Dataset Search</h3><p>Dataverse works with Google on structured metadata that helps researchers discover datasets across repositories.</p><a href="https://guides.dataverse.org/en/6.10.1/admin/discoverability.html">How discovery works ↗</a></article>
-      </div>
-      <aside className="resilience-note"><h3>Keeping research data available</h3><p>Preservation needs sustained funding, institutional responsibility, and plans for disruption. Data-rescue efforts and resilience initiatives show why.</p><div className="source-links"><a href="https://www.dfg.de/en/research-funding/funding-initiative/lis-data-resilience">DFG data resilience initiative ↗</a><a href="https://worlddatasystem.org/project/data-rescue-efforts-at-a-defunded-data-repository/">WDS data-rescue discussion ↗</a><a href="https://datascience.codata.org/articles/10.5334/dsj-2026-009">Lessons from a defunded repository ↗</a></div></aside>
+      <InstitutionBanner embedded />
     </section>
 
     <section className="harvard-section" id="research">
@@ -95,9 +90,8 @@ export default function Home() {
       <a href="/roadmap"><span>DEVELOPERS &amp; CONTRIBUTORS</span><b>Shape what comes next.</b><p>Follow the roadmap, explore release milestones, and contribute to shared software.</p><span className="path-arrow" aria-hidden="true">→</span></a>
     </div></section>
 
-    <IntegrationsBanner />
     <JournalBanner />
-    <InstitutionBanner />
+    <IntegrationsBanner />
     <PartnerBanner />
     </main>
     <footer><div className="brand footer-brand"><img className="iqss-logo" src="/iqss-logo.jpg" alt="IQSS"/><span><b>Dataverse</b><small>Open research, connected</small></span></div><p>An open-source project led by Harvard IQSS<br/>and built with a global community.</p><div><a href="/about">About</a><a href="/installations">Installations</a><a href="/blog">Blog</a><a href="/presentations">Presentations</a><a href="/publications">Publications</a><a href="/reports">Reports</a><a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Accessibility</a></div></footer>

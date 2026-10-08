@@ -39,5 +39,4 @@ yarn-error.log*
 /outputs/
 /work/
 /site-build.tar.gz
-*.tsbuildinfo
-/.sites-runtime/
+/site-static/

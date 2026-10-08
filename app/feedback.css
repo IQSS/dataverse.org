@@ -325,7 +325,12 @@ footer > div:last-child { flex-wrap: wrap; }
 .institution-grid a:hover { border-color: #A87960; }
 .institution-grid span { font-size: .875rem; line-height: 1.5; }
 .institution-grid strong { font-size: 1.2rem; line-height: 1.35; }
+.institution-logo-frame { display: flex; align-items: center; height: 56px; width: 100%; }
+.institution-logo-frame img { max-height: 100%; max-width: 100%; object-fit: contain; object-position: left center; }
 .audience-banner-inline { padding: 1.8rem var(--content-gutter) 2.8rem; border-top: none; }
+.institution-banner-embedded { padding: 2.5rem 0 0; margin-top: 2.5rem; }
+.institution-context { padding: 0 var(--content-gutter) 3rem; }
+.institution-context .ecosystem-context { margin-top: 0; }
 .audience-prose { max-width: none; }
 .audience-prose p, .audience-prose li { font-size: 1rem; line-height: 1.8; }
 .audience-prose ul { padding-left: 1.4rem; margin: 1.4rem 0; }
@@ -342,15 +347,17 @@ footer > div:last-child { flex-wrap: wrap; }
 .journal-banner .partner-logo-frame { height: 80px; }
 .journal-banner .partner-logo-frame img { max-height: 70px; max-width: 180px; }
 .journal-banner .partner-grid a { min-height: 160px; }
-.journal-logo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-.journal-logo-grid > a { display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; padding: 1.25rem; border: 1px solid #DCC9BD; border-radius: 18px; box-shadow: 3px 3px 0 #DEDEDE; color: #303030; text-decoration: none; }
+.journal-scroll { overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: thin; scrollbar-color: var(--dv-orange) var(--dv-orange-soft); padding: .5rem .5rem 1rem; margin: -.5rem; }
+.journal-scroll:focus-visible { outline: 3px solid #A84A1D; outline-offset: 4px; }
+.journal-logo-grid { display: grid; grid-auto-flow: column; grid-auto-columns: clamp(16rem, 28vw, 21rem); gap: 1rem; }
+.journal-logo-grid > a { display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; padding: 1.25rem; border: 1px solid #DCC9BD; border-radius: 18px; box-shadow: 3px 3px 0 #DEDEDE; color: #303030; text-decoration: none; scroll-snap-align: start; }
 .journal-logo-grid > a:hover { border-color: #A87960; }
 .journal-logo-frame { display: flex; align-items: center; width: 100%; height: 80px; }
 .journal-logo-frame img { width: 100%; height: 100%; object-fit: contain; }
 .journal-logo-grid strong { font-size: 1rem; line-height: 1.4; }
+.journal-logo-grid .journal-relationship { font-size: .875rem; line-height: 1.55; color: #303030; }
 .journal-logo-grid > a > span:last-child { color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; font-size: .875rem; margin-top: auto; }
 @media (max-width: 700px) {
-  .journal-logo-grid { grid-template-columns: 1fr; }
   .journal-logo-frame { max-width: 400px; }
   .institution-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .audience-banner-heading { align-items: flex-start; flex-direction: column; }

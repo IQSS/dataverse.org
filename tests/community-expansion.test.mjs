@@ -12,7 +12,11 @@ async function render(path) {
 test("homepage involvement, seven ecosystem satellites and integration assets remain connected", async () => {
   const home = await render("/");
   assert.ok(home.indexOf('class="ecosystem-map-panel"') < home.indexOf('id="get-involved"'));
-  assert.ok(home.indexOf('id="get-involved"') < home.indexOf('class="ecosystem-context"'));
+  assert.ok(home.indexOf('id="get-involved"') < home.indexOf('id="institutions"'));
+  assert.ok(home.indexOf('id="institutions"') < home.indexOf('id="research"'));
+  assert.equal((home.match(/id="institutions"/g) || []).length, 1);
+  assert.ok(!home.includes('class="ecosystem-context"'));
+  assert.ok(!home.includes('class="resilience-note"'));
   assert.ok(home.includes("How to Get Involved"));
   for (const label of ["Containerization", "Documentation", "Internationalization", "Large Data Support", "pyDataverse", "Sensitive Data"]) assert.ok(home.includes(`>${label}</a>`));
   assert.equal((home.match(/class="ecosystem-node node-/g) || []).length, 8);
@@ -52,10 +56,20 @@ test("migrated pages omit the captured Drupal menu; audience banners link to rea
   assert.ok(journal.includes("Set up a Journal Dataverse Collection with data curation"));
   const home = await render("/");
   for (const html of [home, journal]) {
+    assert.ok(html.includes("Journals and Proceedings"));
+    assert.ok(html.includes("NeurIPS"));
+    assert.ok(html.includes("Frontiers"));
+    assert.ok(html.includes('href="https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting"'));
+    assert.ok(html.includes("View a published example"));
+    assert.ok(html.includes("Authors publish supporting research data on Harvard Dataverse."));
     for (const alias of ["ajps", "pan", "qje"]) assert.ok(html.includes(`href="https://dataverse.harvard.edu/dataverse/${alias}"`));
-    for (const file of ["ajps.jpg", "political-analysis.jpg", "qje.png"]) assert.ok(html.includes(`/journals/${file}`));
+    for (const file of ["ajps.jpg", "political-analysis.jpg", "qje.png", "neurips.png", "frontiers.png"]) assert.ok(html.includes(`/journals/${file}`));
   }
-  assert.ok(home.indexOf('id="institutions"') < home.indexOf('id="partners"'));
+  assert.ok(home.indexOf('id="institutions"') < home.indexOf('id="journals"'));
+  assert.ok(home.indexOf('id="journals"') < home.indexOf('id="integrations"'));
+  assert.ok(home.indexOf('id="integrations"') < home.indexOf('id="partners"'));
+  assert.match(home, /class="journal-scroll" role="region" aria-label="Journals and proceedings — scroll to browse" tabindex="0"/);
   const institutions = await render("/institutions");
+  for (const heading of ["Long-term institutional commitment", "NIH &amp; GREI", "Google Dataset Search", "Keeping research data available"]) assert.ok(institutions.includes(heading));
   for (const label of ["Borealis", "Recherche Data Gouv", "NASA Jet Propulsion Laboratory", "Harvard University", "University of North Carolina"]) assert.ok(institutions.includes(label));
 });

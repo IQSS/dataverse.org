@@ -41,13 +41,15 @@ The feedback document's text was retrieved and reviewed. Its embedded screenshot
 - People is a visible top-navigation button linking to https://people.dataverse.org/. Danny Ebanks links to https://dannyebanks.com/ in About's team text and Links and files. Community links to the locally ported Dataverse TV page.
 - The centered ecosystem figure has seven surrounding cards: Harvard, installations, GDCC/community, software, researchers, integrations, and partners. Integrations links to the admin guide; Partners links to the partner strip.
 - The bottom integrations strip covers all named entries in the guide, plus the requested Google Data Commons roadmap collaboration. Use verified official artwork, neutral shadows, accessible labels, and local horizontal scrolling. Do not label planned/experimental capabilities as generally available or imply endorsement. Asset provenance and brand-review notes are in `data/integration-logo-sources.md`.
+- Journals and Proceedings sits immediately above Integrations on the homepage. Its five cards form one horizontal, keyboard- and touch-scrollable row; preserve their logos, wording, links, and distinctions between collections, hosting guidance, and author use.
 
 ## Accessibility target and release gate
 
 - Remove captured Drupal navigation from migrated page prose and resource links, preserving substantive text.
-- Journals has workflow cards and selected verified Harvard Dataverse collections with original logos, also on the homepage. Do not present publisher recommendations as hosted collections or imply an exhaustive list.
-- Institutions highlights Borealis, national/government repositories, a laboratory, and universities. Its homepage banner sits immediately above Partners. These are network examples, not funding or endorsement claims.
+- “Journals and Proceedings” has workflow cards and selected verified Harvard Dataverse collections with original logos, also on the homepage. NeurIPS is labelled as listing Harvard Dataverse as a preferred hosting platform for its Evaluations & Datasets track; Frontiers is labelled as author use, linked to a published example—not a publisher-wide recommendation or partnership. Do not imply an exhaustive list.
+- Institutions highlights Borealis, national/government repositories, a laboratory, and universities. Its homepage banner follows How to Get Involved, replacing the institutional support/data-resilience block. That block is preserved on the Institutions page. These are network examples, not funding or endorsement claims. Five of the six institution cards show the installation’s or institution’s own logo (sources in `data/institution-logo-sources.md`) inside the unchanged pale-orange card; images are decorative (`alt=""`) within links labelled by the visible institution name. The Colombian ministry publishes only a white-on-transparent logo, which fails on the pale panel, so its card stays text-only until a colour version is supplied; do not recolour official marks.
 - GitHub source handoff is a prototype branch, not a Hugo conversion or a change to production dataverse.org.
+- GitHub Pages (authorized 2026-10-08) serves a prerendered static export of the app (`scripts/export-static.mjs`, `.github/workflows/pages.yml`). Root-relative links are rewritten for the repository subpath at export time; set the repository variable `SITE_BASE_PATH` to `/` when a custom domain is attached. Production dataverse.org is unchanged.
 
 Harvard's published web target is WCAG 2.1 Level AA. Do not label this mockup compliant yet.
 

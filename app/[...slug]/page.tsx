@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
     "/publications": "Publications",
     "/events": "Community",
     "/reports": "Reports",
+    "/journals": "Journals and Proceedings",
   };
   const route = findRoute(path);
   const title = indexTitles[path] || route?.item.title || "Dataverse Project";
