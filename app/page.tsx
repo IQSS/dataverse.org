@@ -74,8 +74,6 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="harvard-metrics-bottom"><div><span>HARVARD DATAVERSE REPOSITORY</span><a className="metric-number-link" href="/numbers#harvard-datasets" aria-label={`${number(metrics.harvardDatasets)} Harvard Dataverse datasets — how we count`}><strong>{number(metrics.harvardDatasets)}</strong></a><p>published datasets</p><a className="metric-method-link" href="/numbers#harvard-datasets">How we count Harvard datasets</a></div></section>
-
     <section className="pathways" id="software"><div className="section-kicker">FOR YOUR COMMUNITY</div><h2>Dataverse is yours<br/><span className="accent">to use and shape.</span></h2><div className="path-grid community-values">
       <a href="/researchers"><span>RESEARCHERS &amp; LABS</span><b>Share data. Receive credit.</b><p>Publish citable data, organize a lab collection, and find data to reuse.</p><span className="path-arrow" aria-hidden="true">→</span></a>
       <a href="https://guides.dataverse.org/en/6.10.1/user/"><span>DATA STEWARDS</span><b>Curate with control.</b><p>Manage metadata, review submissions, and assign access and permissions.</p><span className="path-arrow" aria-hidden="true">→</span></a>

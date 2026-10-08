@@ -32,6 +32,7 @@ The feedback document's text was retrieved and reviewed. Its embedded screenshot
 - No knowledge-graph foregrounding, no live-date banners, and no public links to private roadmap spreadsheets.
 - Actual citation counts, honest methodology, linked headline figures, and all 150 installation links must remain intact.
 - Decision 2026-10-08 (Gary King, agreed by the owner): the DataCite dataset-DOI citation count (about 15,000) is no longer shown on the homepage, where it read as a small number beside the scholarly-citation total rather than as a different measure; the "Search beyond the record" block that existed to hold it was removed with it. It stays on the numbers page as "Citations of the data itself", because it is the only figure that counts citations of the data rather than of linked papers and the scholarly-citation methodology depends on keeping the two apart.
+- Decision 2026-10-08 (Gary King, agreed by the owner): the Harvard-only "published datasets" count (about 116,000) is also off the homepage; next to the 600k network total it invited the wrong comparison. It stays on the numbers page, where the two scopes are explained.
 - Compact horizontal partner strip, official logos, and all ten partners retained.
 - Grey shadows (#DEDEDE with neutral translucent shadows), not orange-tinted shadows. The central citations card is flush with its neighbors; round only the outer triptych corners.
 - Map heading is **Dataverse Network**. Every dot remains linked; retain the expandable text directory and skip-map link for overlapping locations.

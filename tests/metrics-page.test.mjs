@@ -18,18 +18,20 @@ const number = (value) => value.toLocaleString("en-US");
 test("headline links reach rendered, sourced explanations", async () => {
   const home = await render("/");
   const page = await render("/numbers");
-  // The data-DOI citation count is explained on the numbers page but, by decision, not shown on the homepage.
-  for (const id of ["installations", "scholarly-citations", "network-datasets", "harvard-datasets"]) {
+  // The data-DOI citation count and the Harvard-only dataset count are explained on the numbers page but, by decision, not shown on the homepage.
+  for (const id of ["installations", "scholarly-citations", "network-datasets"]) {
     assert.match(home, new RegExp(`href="/numbers#${id}"`));
   }
   for (const id of ["installations", "scholarly-citations", "network-datasets", "dataset-citations", "harvard-datasets"]) {
     assert.match(page, new RegExp(`id="${id}"`));
   }
-  assert.doesNotMatch(home, /href="\/numbers#dataset-citations"/);
-  for (const count of [metrics.installations, number(metrics.scholarlyCitations), number(metrics.networkDatasets), number(metrics.harvardDatasets)]) {
+  assert.doesNotMatch(home, /href="\/numbers#(dataset-citations|harvard-datasets)"/);
+  for (const count of [metrics.installations, number(metrics.scholarlyCitations), number(metrics.networkDatasets)]) {
     assert.ok(home.includes(count), count);
     assert.ok(page.includes(count), count);
   }
+  assert.ok(page.includes(number(metrics.harvardDatasets)));
+  assert.ok(!home.includes(`${number(metrics.harvardDatasets)}</strong>`));
   assert.ok(page.includes(number(metrics.datasetCitations)));
   assert.ok(!home.includes(`${number(metrics.datasetCitations)}</strong>`));
   assert.ok(!page.includes("4,950,890"));
