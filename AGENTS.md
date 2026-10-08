@@ -72,7 +72,11 @@ Dataverse knowledge-graph pipeline (`kg_box_app/scripts/export_site_metrics.py`,
 repository) and pushed to the `daily-metrics` branch, which also deploys. Keep the exported shape
 of `headlineMetrics` unchanged. Read `headline-metrics.json` (`as_of.citations`,
 `as_of.network_sweep`) to show an "as of" date next to the figures. Do not build a second
-metrics refresh.
+metrics refresh. Since 2026-10-08 the export also carries `networkFiles`, `networkDownloads`,
+`networkAccounts` and `respondingInstallationsAccounts`, summed over the installation registry the
+same way as `networkDatasets`. Accounts are registered user accounts (depositors and other
+sign-ups), not visitors or readers, and only about 86 of 150 installations report them; any copy
+that shows the figure must say so.
 
 ## Pull requests
 
