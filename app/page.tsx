@@ -17,7 +17,7 @@ export default function Home() {
     <main id="main-content" tabIndex={-1}>
     <section className="hero" id="top">
       <h1>Share data to<br/><span className="accent">Advance<br/>Research</span></h1>
-      <p className="hero-copy">Dataverse is an open-source software platform to share, preserve, cite, explore, and analyze research data.</p>
+      <p className="hero-copy">Dataverse is an open-source software project and a global community that institutions use to operate their own research data repositories, housing research data you can trust and use.</p>
       <div className="hero-actions"><a className="primary-button" href="#project">Discover the project <span aria-hidden="true">→</span></a><a className="text-link" href="https://guides.dataverse.org/en/latest/container/running/demo.html#quickstart">Run Dataverse <span aria-hidden="true">↗</span></a></div>
       <div className="hero-poster" role="group" aria-label="Dataverse project principles"><div className="hero-callout-heading"><b>Data for<br/>Research</b><img src="/dataverse-rings.svg" alt="" className="dataverse-rings"/></div><div className="hero-principles"><a href="https://guides.dataverse.org/en/latest/user/dataset-management.html">SHARE</a><a href="/book/preservation-plan">PRESERVE</a><a href="/best-practices/data-citation">CITE</a><a href="/installations">DISCOVER</a></div></div>
     </section>
