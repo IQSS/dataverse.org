@@ -214,6 +214,8 @@ footer > div:last-child { flex-wrap: wrap; }
 .site-header nav .people-button, .archive-header nav .people-button { padding: 8px 16px; border: 1px solid var(--dv-control-border); border-radius: 999px; background: var(--dv-orange-soft); color: var(--dv-orange-ink); }
 .about-prose h2 { font-size: 30px; line-height: 1.2; margin: 36px 0 18px; }
 .about-prose a { color: var(--dv-orange-ink); text-decoration: underline; text-underline-offset: 4px; }
+.about-prose .name-list { list-style: none; margin: 0 0 26px; padding: 0; }
+.about-prose .name-list li { line-height: 1.5; margin: 0; }
 @media (max-width: 700px) {
   .get-involved-card { padding: 24px; }
   .get-involved-header, .working-groups { grid-template-columns: 1fr; }

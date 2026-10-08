@@ -37,7 +37,9 @@ test("People, Danny's website and Dataverse TV are easy to reach", async () => {
   const tv = await render("/dataversetv");
   assert.ok(about.includes('class="people-button" href="https://people.dataverse.org/">People</a>'));
   assert.equal((about.match(/href="https:\/\/dannyebanks.com\/"/g) || []).length, 2);
-  assert.ok(about.includes('id="team">The Team</h2>'));
+  assert.ok(about.includes('id="team">Project Leadership</h2>'));
+  assert.ok(!about.includes(">The Team</h2>"));
+  assert.ok(/<ul class="name-list"><li><a href="http:\/\/gking.harvard.edu\/">Gary King<\/a>, Founder and Principal Investigator<\/li>/.test(about));
   assert.ok(about.includes('href="https://people.dataverse.org/">people.dataverse.org</a>'));
   assert.ok(community.includes('href="/dataversetv">Watch Dataverse TV</a>'));
   assert.ok(tv.includes('href="https://iqss.github.io/dataverse-tv/"'));
