@@ -27,13 +27,11 @@ npm run dev        # http://localhost:3000
      with the logo's source recorded in `data/*-logo-sources.md`
 3. Check it:
    ```sh
-   npm run build
-   node --test tests/*.test.mjs
+   npm test       # builds, then runs every test
    npm run lint
    ```
-   Two tests in `tests/rendered-html.test.mjs` expect a `codex-preview` meta tag that only the
-   Codex preview environment adds; they fail elsewhere and can be ignored. Everything else
-   should pass.
+   All tests should pass (two template tests about the Codex preview skeleton skip themselves
+   outside Codex).
 4. Open a pull request against `main` with a short description and, for visible changes, a
    screenshot. Merged pull requests deploy to GitHub Pages automatically.
 

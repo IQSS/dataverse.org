@@ -23,7 +23,7 @@ test("homepage involvement, seven ecosystem satellites and integration assets re
   assert.ok(home.includes('class="ecosystem-node node-partners" href="#partners"'));
   assert.ok(home.includes('class="ecosystem-node node-integrations" href="https://guides.dataverse.org/en/latest/admin/integrations.html"'));
   assert.ok(home.indexOf('id="integrations"') < home.indexOf('id="partners"'));
-  const assets = [...home.matchAll(/src="(\/integrations\/[^\"]+)"/g)].map(match => match[1]);
+  const assets = [...home.matchAll(/src="(\/integrations\/[^"]+)"/g)].map(match => match[1]);
   assert.equal(assets.length, 27);
   for (const asset of assets) assert.ok((await readFile(new URL(`../public${asset}`, import.meta.url))).length > 100, asset);
   assert.ok(home.includes("Roadmap collaboration"));

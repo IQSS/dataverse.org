@@ -24,7 +24,7 @@ Requires Node.js 22.13 or later.
 npm ci
 npm run dev
 npm run build
-node --test tests/*.test.mjs
+npm test              # build + all tests
 npm run export        # static copy in site-static/
 ```
 

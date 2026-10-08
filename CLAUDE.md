@@ -1,4 +1,4 @@
 @AGENTS.md
 
 Claude Code reads this file; the shared instructions for every agent are in `AGENTS.md` above.
-Run `npm ci && npm run build && node --test tests/*.test.mjs` before proposing a change.
+Run `npm ci && npm test && npm run lint` before proposing a change.

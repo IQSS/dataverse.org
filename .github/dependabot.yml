@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      build-toolchain:
+        patterns: ["vinext", "vite", "@vitejs/*", "@cloudflare/*", "wrangler", "react-server-dom-webpack"]
+      lint:
+        patterns: ["eslint*", "@eslint/*", "typescript-eslint", "globals"]
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

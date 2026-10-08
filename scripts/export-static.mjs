@@ -9,6 +9,7 @@
 //
 //   node scripts/export-static.mjs --out site-static --base /dataverse.org
 //   node scripts/export-static.mjs --out site-static --base /          # custom domain
+import "./node-cloudflare-shim.mjs"; // must run before the worker is imported
 import { cp, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, extname, join } from "node:path";
 import { pathToFileURL } from "node:url";

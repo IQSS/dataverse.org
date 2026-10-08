@@ -34,15 +34,21 @@ need separate authorization.
 - Node.js 22.13 or later. Install with `npm ci`; never commit `node_modules`, `dist`, or
   `site-static`.
 - `npm run dev` serves http://localhost:3000. `npm run build` must pass before a pull request.
-- Tests: `node --test tests/*.test.mjs`. Two tests in `tests/rendered-html.test.mjs` look for a
-  `codex-preview` meta tag that only the Codex preview environment injects; they fail everywhere
-  else and are not a regression. Everything else must pass.
+- Tests: `npm test` (builds, then runs every file in `tests/`) or `npm run test:only` after a
+  build. The tests load the built worker in Node through `scripts/node-cloudflare-shim.mjs`,
+  which stands in for the `cloudflare:` runtime modules; two template tests about the Codex
+  preview skeleton skip themselves outside Codex. All tests must pass.
 - Lint: `npm run lint`. Plain `<img>` tags are accepted for logos (same pattern as
-  `JournalBanner.tsx`).
+  `JournalBanner.tsx`); keyboard-scrollable containers with `role="region"` or `role="group"`
+  and an accessible name may carry `tabIndex={0}`.
 - Static export: `npm run export` writes `site-static/` for the site root; the Pages workflow
   passes `--base /dataverse.org` for the repository subpath. If you add a new way of referencing
   an asset or route, run the export with a base path and open it under that path to confirm the
   rewrite still covers it.
+- Dependencies are pinned to exact versions; Dependabot opens weekly update pull requests.
+  `npm audit` findings that remain are inside the vinext build toolchain (fast-glob/braces,
+  satori/@vercel/og) with no upstream fix; they never run on the published static site. Do not
+  downgrade vinext to clear them.
 - Keep changes small and in the existing style: raw `<a href>` links (no client-side router),
   CSS in `app/*.css` with the existing tokens, and content in `data/` or `content/` rather than
   in components.

@@ -28,7 +28,9 @@ async function render() {
   );
 }
 
-test("server-renders the starter loading skeleton", async () => {
+const codexOnly = { skip: !process.env.CODEX_SANDBOX && "only meaningful inside the Codex preview environment" };
+
+test("server-renders the starter loading skeleton", codexOnly, async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -47,7 +49,7 @@ test("server-renders the starter loading skeleton", async () => {
   assert.match(html, /role="status"/);
 });
 
-test("keeps the loading skeleton scoped and disposable", async () => {
+test("keeps the loading skeleton scoped and disposable", codexOnly, async () => {
   const [preview, css, page, layout, packageJson, files] = await Promise.all([
     readFile(new URL("SkeletonPreview.tsx", previewRoot), "utf8"),
     readFile(new URL("preview.css", previewRoot), "utf8"),
