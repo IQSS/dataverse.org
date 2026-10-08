@@ -74,11 +74,6 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="graph-story citation-story">
-      <div className="section-kicker">INCREASE YOUR RESEARCH IMPACT</div>
-      <div className="story-grid"><div><h2>Search beyond<br/><span className="accent">the record.</span></h2><p>Better discovery means recognizing how datasets are used—not only how they were described when deposited.</p><p>Dataset citations and scholarly citations can improve search and help researchers find consequential data.</p></div><div className="citation-ledger"><div className="ledger-note">CITATIONS FROM HARVARD DATAVERSE</div><article><span>DATASET CITATIONS</span><a className="metric-number-link" href="/numbers#dataset-citations" aria-label={`${number(metrics.datasetCitations)} Dataset Citations — how we count`}><strong>{number(metrics.datasetCitations)}</strong></a><a className="metric-method-link" href="/numbers#dataset-citations">How we count Dataset Citations</a></article></div></div>
-    </section>
-
     <section className="harvard-metrics-bottom"><div><span>HARVARD DATAVERSE REPOSITORY</span><a className="metric-number-link" href="/numbers#harvard-datasets" aria-label={`${number(metrics.harvardDatasets)} Harvard Dataverse datasets — how we count`}><strong>{number(metrics.harvardDatasets)}</strong></a><p>published datasets</p><a className="metric-method-link" href="/numbers#harvard-datasets">How we count Harvard datasets</a></div></section>
 
     <section className="pathways" id="software"><div className="section-kicker">FOR YOUR COMMUNITY</div><h2>Dataverse is yours<br/><span className="accent">to use and shape.</span></h2><div className="path-grid community-values">

@@ -20,7 +20,7 @@ const metricLinks = [
   { id: "installations", label: "Installations", value: metrics.installations },
   { id: "scholarly-citations", label: "Scholarly Citations", value: number(metrics.scholarlyCitations) },
   { id: "network-datasets", label: "Network datasets", value: `${number(metrics.networkDatasets)}+` },
-  { id: "dataset-citations", label: "Dataset Citations", value: number(metrics.datasetCitations) },
+  { id: "dataset-citations", label: "Citations of the data itself", value: number(metrics.datasetCitations) },
   { id: "harvard-datasets", label: "Harvard datasets", value: number(metrics.harvardDatasets) },
 ];
 
@@ -43,7 +43,7 @@ export default function NumbersPage() {
         <p className="section-kicker">SOURCES &amp; METHODS</p>
         <h1>Behind the numbers</h1>
         <p>The scale of the network. The reach of its research. Here is what we count, how we count it, and what each number can—and cannot—tell us.</p>
-        <p className="numbers-context">These explanations accompany the figures displayed on the homepage. They are not live counters. Network totals describe multiple installations; the citation analysis covers a defined set of Harvard Dataverse datasets.</p>
+        <p className="numbers-context">These explanations accompany the figures displayed on the homepage, plus the count of citations made directly to dataset DOIs, which is kept separate from scholarly citations. They are not live counters. Network totals describe multiple installations; the citation analysis covers a defined set of Harvard Dataverse datasets.</p>
       </header>
 
       <nav className="numbers-index" aria-label="Explore the headline numbers">{metricLinks.map(metric => <a key={metric.id} href={`#${metric.id}`}><b>{metric.value}</b><span>{metric.label}</span></a>)}</nav>
@@ -85,7 +85,7 @@ export default function NumbersPage() {
       </section>
 
       <section className="number-section" id="dataset-citations" aria-labelledby="dataset-title">
-        <div className="number-overview"><div><p className="section-kicker">HARVARD DATAVERSE · DATASET DOIs</p><h2 id="dataset-title">Dataset Citations</h2><strong className="number-total">{number(metrics.datasetCitations)}</strong><p>The sum of DataCite’s recorded citation counts for dataset DOIs in the Harvard Dataverse analysis. This measure is separate from citations received by linked publications.</p></div><figure className="number-figure"><h3>Dataset coverage in the analysis</h3>
+        <div className="number-overview"><div><p className="section-kicker">HARVARD DATAVERSE · DATASET DOIs</p><h2 id="dataset-title">Citations of the data itself</h2><strong className="number-total">{number(metrics.datasetCitations)}</strong><p>The sum of DataCite’s recorded citation counts for dataset DOIs in the Harvard Dataverse analysis. This measure is separate from citations received by linked publications.</p></div><figure className="number-figure"><h3>Dataset coverage in the analysis</h3>
           <Bar label="Datasets with a recorded Dataset Citation" value={metrics.datasetsWithDatasetCitations} max={metrics.citationStudyDatasets} />
           <Bar label="Datasets with no recorded Dataset Citation" value={metrics.citationStudyDatasets - metrics.datasetsWithDatasetCitations} max={metrics.citationStudyDatasets} muted />
           <figcaption>{number(metrics.datasetsWithDatasetCitations)} datasets account for {number(metrics.datasetCitations)} Dataset Citations. No recorded citation is not proof that a dataset has never been cited or used.</figcaption></figure></div>

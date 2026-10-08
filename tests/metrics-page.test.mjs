@@ -11,23 +11,33 @@ async function render(path) {
   return response.text();
 }
 
-test("headline links reach five rendered, sourced explanations", async () => {
+const metricsSource = await readFile(new URL("../data/headline-metrics.ts", import.meta.url), "utf8");
+const metrics = Object.fromEntries([...metricsSource.matchAll(/^\s*(\w+): ("?)([^",\n]+)\2,?$/gm)].map(([, key, quote, value]) => [key, quote ? value : Number(value)]));
+const number = (value) => value.toLocaleString("en-US");
+
+test("headline links reach rendered, sourced explanations", async () => {
   const home = await render("/");
   const page = await render("/numbers");
-  for (const id of ["installations", "scholarly-citations", "network-datasets", "dataset-citations", "harvard-datasets"]) {
+  // The data-DOI citation count is explained on the numbers page but, by decision, not shown on the homepage.
+  for (const id of ["installations", "scholarly-citations", "network-datasets", "harvard-datasets"]) {
     assert.match(home, new RegExp(`href="/numbers#${id}"`));
+  }
+  for (const id of ["installations", "scholarly-citations", "network-datasets", "dataset-citations", "harvard-datasets"]) {
     assert.match(page, new RegExp(`id="${id}"`));
   }
-  for (const count of ["150+", "3,832,052", "596,880", "15,072", "116,469"]) {
-    assert.ok(home.includes(count));
-    assert.ok(page.includes(count));
+  assert.doesNotMatch(home, /href="\/numbers#dataset-citations"/);
+  for (const count of [metrics.installations, number(metrics.scholarlyCitations), number(metrics.networkDatasets), number(metrics.harvardDatasets)]) {
+    assert.ok(home.includes(count), count);
+    assert.ok(page.includes(count), count);
   }
+  assert.ok(page.includes(number(metrics.datasetCitations)));
+  assert.ok(!home.includes(`${number(metrics.datasetCitations)}</strong>`));
   assert.ok(!page.includes("4,950,890"));
   assert.ok(!page.includes("1,118,838"));
   assert.ok(!page.includes("lower when counted by publication"));
   assert.ok(page.includes("From shared data to scholarly reach"));
-  assert.ok(page.includes("38,807"));
-  assert.ok(page.includes("91,598"));
+  assert.ok(page.includes(number(metrics.datasetsWithScholarlyCitations)));
+  assert.ok(page.includes(number(metrics.citationStudyDatasets - metrics.datasetsWithDatasetCitations)));
   assert.ok(page.includes("citing papers are not deduplicated"));
   assert.ok(page.includes("123 responding installations"));
   assert.ok(page.includes("support.datacite.org/docs/consuming-citations-and-references"));
