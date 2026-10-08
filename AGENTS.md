@@ -77,6 +77,13 @@ metrics refresh. Since 2026-10-08 the export also carries `networkFiles`, `netwo
 same way as `networkDatasets`. Accounts are registered user accounts (depositors and other
 sign-ups), not visitors or readers, and only about 86 of 150 installations report them; any copy
 that shows the figure must say so.
+Usage figures come from Make Data Count (`harvardViews`, `harvardUniqueViews`,
+`harvardUniqueViewsPeople`, `harvardDownloads`, `harvardUniqueDownloads`,
+`harvardUniqueDownloadsPeople`, plus `networkUniqueViews`, `networkUniqueDownloads` and
+`installationsReportingUsage`). "Unique" means unique sessions per dataset per month since MDC
+was enabled (Harvard: mid-2020), "People" excludes machine traffic, and the network values are a
+floor because only about 14 installations report usage. Copy that shows them must say "since
+2020" and must not call them unique people.
 
 ## Pull requests
 
