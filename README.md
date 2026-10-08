@@ -4,7 +4,17 @@ A working prototype for the open-source Dataverse Project, its installation netw
 
 ## Status
 
-This is the React/Vinext prototype, **not yet a Hugo site**. This source handoff does not change production dataverse.org or enable GitHub Pages. A future Hugo migration should preserve content, routes, links, and `DESIGN_REQUIREMENTS.md`. Do not publish private roadmap source spreadsheets.
+The site is published with GitHub Pages at https://iqss.github.io/dataverse.org/ from a
+prerendered static export of this React/Vinext app (`scripts/export-static.mjs`,
+`.github/workflows/pages.yml`); every push to `main` or `daily-metrics` redeploys it. It is
+**not a Hugo site** and does not change production dataverse.org. A future Hugo migration should
+preserve content, routes, links, and `DESIGN_REQUIREMENTS.md`. Do not publish private roadmap
+source spreadsheets.
+
+## Contributing
+
+See `CONTRIBUTING.md`. Coding agents (Codex, Claude Code, Copilot, Cursor) pick up the shared
+instructions in `AGENTS.md` automatically.
 
 ## Development
 
@@ -14,16 +24,17 @@ Requires Node.js 22.13 or later.
 npm ci
 npm run dev
 npm run build
-node --test tests/metrics-page.test.mjs tests/releases-page.test.mjs tests/design-requirements.test.mjs tests/community-expansion.test.mjs
+node --test tests/*.test.mjs
+npm run export        # static copy in site-static/
 ```
 
-The local preview runs at http://localhost:3000. `.openai/hosting.json` identifies the existing hosted preview and contains no credentials. Only its owner should publish changes to that Site. Do not commit dependencies or build output.
+The local preview runs at http://localhost:3000. The former ChatGPT-hosted preview has been deleted; `.openai/hosting.json` only records its old project id and contains no credentials. Do not commit dependencies, build output, or `site-static/`.
 
 ## Editing
 
 - Community calls: `content/community-calls.md` (hand-edited Markdown).
 - Migrated content: `data/archive.json`, rendered through `app/archive-data.ts`.
-- Statistics: `data/headline-metrics.ts` and `app/numbers/page.tsx`.
+- Statistics: `data/headline-metrics.ts` is generated daily (see `AGENTS.md`); the methodology copy is in `app/numbers/page.tsx`.
 - Installation map: `data/installation-map.json`.
 - Featured journals and institutions: `app/components/JournalBanner.tsx` and `InstitutionBanner.tsx`.
 - Layouts/styles: `app/`, including `feedback.css` and `midcentury.css`.

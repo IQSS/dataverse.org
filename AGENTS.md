@@ -1,17 +1,78 @@
-# Persistent website requirements
+# Instructions for coding agents and contributors
 
-Before changing this Site, read `DESIGN_REQUIREMENTS.md`. Preserve the confirmed review decisions there, including Dwayne's feedback, the owner's subsequent decisions, and the Harvard WCAG 2.1 AA accessibility target.
+This file is read by Codex, Claude Code (through `CLAUDE.md`), GitHub Copilot (through
+`.github/copilot-instructions.md`), Cursor, and similar tools. Humans: start with
+`CONTRIBUTING.md`, which covers the same ground in prose.
 
-Do not claim full accessibility conformance from a build, a contrast calculation, or automated checks alone. Record remaining gaps honestly. Keep decorative borders distinct from control boundaries and focus indicators. Do not undo these requirements during a Hugo migration.
+## What this repository is
 
-Do not publish private roadmap source spreadsheets. Preserve the existing Site's identity and audience. GitHub Pages publishing was authorized by the owner on 2026-10-08: `scripts/export-static.mjs` prerenders this same app into a static folder and `.github/workflows/pages.yml` deploys it on every push to main. It is not a Hugo conversion; the app source stays the single source of truth. A Hugo migration would still need separate authorization.
+The source of the Dataverse Project website at https://iqss.github.io/dataverse.org/ (a
+vinext/React app, server-rendered at build time and prerendered to static HTML for GitHub
+Pages). It describes the open-source Dataverse software, its installation network, and its
+community. It is not the Dataverse repository software itself (that is IQSS/dataverse) and it
+does not change production dataverse.org.
 
-## Headline numbers (owned by the kg_box_app pipeline, not by site edits)
+## Persistent website requirements
 
-`data/headline-metrics.ts` and `data/headline-metrics.json` are generated daily by
-`kg_box_app/scripts/export_site_metrics.py` (in Danny's KnowledgeGraph folder) and pushed to the
-`daily-metrics` branch of IQSS/dataverse.org. Do not hand-edit the values. Keep the exported shape
+Before changing anything visible, read `DESIGN_REQUIREMENTS.md`. Preserve the confirmed review
+decisions there, including Dwayne's feedback, the owner's subsequent decisions, and the Harvard
+WCAG 2.1 AA accessibility target.
+
+Do not claim full accessibility conformance from a build, a contrast calculation, or automated
+checks alone. Record remaining gaps honestly. Keep decorative borders distinct from control
+boundaries and focus indicators.
+
+Do not publish private roadmap source spreadsheets. Preserve the existing site's identity and
+audience. GitHub Pages publishing was authorized by the owner on 2026-10-08:
+`scripts/export-static.mjs` prerenders this same app into a static folder and
+`.github/workflows/pages.yml` deploys it on every push to `main` or `daily-metrics`. It is not a
+Hugo conversion; the app source stays the single source of truth. A Hugo migration would still
+need separate authorization.
+
+## Working in this repository
+
+- Node.js 22.13 or later. Install with `npm ci`; never commit `node_modules`, `dist`, or
+  `site-static`.
+- `npm run dev` serves http://localhost:3000. `npm run build` must pass before a pull request.
+- Tests: `node --test tests/*.test.mjs`. Two tests in `tests/rendered-html.test.mjs` look for a
+  `codex-preview` meta tag that only the Codex preview environment injects; they fail everywhere
+  else and are not a regression. Everything else must pass.
+- Lint: `npm run lint`. Plain `<img>` tags are accepted for logos (same pattern as
+  `JournalBanner.tsx`).
+- Static export: `npm run export` writes `site-static/` for the site root; the Pages workflow
+  passes `--base /dataverse.org` for the repository subpath. If you add a new way of referencing
+  an asset or route, run the export with a base path and open it under that path to confirm the
+  rewrite still covers it.
+- Keep changes small and in the existing style: raw `<a href>` links (no client-side router),
+  CSS in `app/*.css` with the existing tokens, and content in `data/` or `content/` rather than
+  in components.
+
+## Where things live
+
+- Homepage and pages: `app/page.tsx`, `app/numbers`, `app/releases`, `app/roadmap`,
+  `app/community-calls`; migrated pages render from `data/archive.json` through
+  `app/archive-data.ts` and `app/[...slug]/page.tsx`.
+- Community calls: `content/community-calls.md` (hand-edited Markdown).
+- Featured journals, institutions, integrations, partners: `app/components/*Banner.tsx`, with
+  logo provenance in `data/*-logo-sources.md`. Any new logo needs a row there: original source
+  URL, local file, and the relationship it identifies. Never recolour or redraw an official mark.
+- Installation map: `data/installation-map.json`, from the IQSS/dataverse-installations registry.
+- Tests: `tests/*.test.mjs` render pages through the built worker and assert on the HTML.
+
+## Generated files: do not hand-edit
+
+`data/headline-metrics.ts` and `data/headline-metrics.json` are produced daily by the Harvard
+Dataverse knowledge-graph pipeline (`kg_box_app/scripts/export_site_metrics.py`, outside this
+repository) and pushed to the `daily-metrics` branch, which also deploys. Keep the exported shape
 of `headlineMetrics` unchanged. Read `headline-metrics.json` (`as_of.citations`,
-`as_of.network_sweep`) to show an "as of" date next to the figures, and drop the "not live
-counters" wording once that lands. Merge or deploy from `daily-metrics`; do not build a second
+`as_of.network_sweep`) to show an "as of" date next to the figures. Do not build a second
 metrics refresh.
+
+## Pull requests
+
+- One topic per pull request, with a short description of what changed and why, and a
+  screenshot for anything visible.
+- Say which checks you ran. If you used an AI agent, say so in the description; that is
+  welcome, and the reviewer still reads the diff.
+- Do not change `DESIGN_REQUIREMENTS.md` decisions without the owner; add to it when a new
+  decision is made.
