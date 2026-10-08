@@ -1,0 +1,186 @@
+/* Shared surface styling only: preserve the established palette and layout grids. */
+:root {
+  --mcm-outline: 1px solid var(--dv-border);
+  --mcm-radius: 28px;
+  --mcm-shadow: 6px 6px 0 #dedede, 0 10px 24px rgb(37 37 37 / 9%);
+  --mcm-shadow-raised: 8px 10px 0 #dedede, 0 16px 28px rgb(37 37 37 / 12%);
+  --mcm-ease: cubic-bezier(.22, 1, .36, 1);
+}
+body.midcentury .hero-poster {
+  height: auto;
+  min-height: 0;
+  align-self: center;
+  padding: 28px;
+  gap: 28px;
+  border: 1px solid #e2b49c;
+  border-top: 5px solid var(--dv-orange);
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgb(37 37 37 / 9%);
+}
+body.midcentury .hero-callout-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px;
+  align-items: center;
+  gap: 14px;
+}
+body.midcentury .hero-poster .dataverse-rings {
+  width: 40px;
+  height: 64px;
+  object-fit: contain;
+}
+body.midcentury .hero-poster .hero-principles {
+  grid-template-columns: 1fr 1fr;
+}
+body.midcentury .hero-poster b {
+  margin: 0;
+  font-family: var(--font-questrial, Questrial), Arial, sans-serif;
+  font-size: clamp(26px, 2.8vw, 40px);
+  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: -.03em;
+}
+@media (max-width: 1100px) {
+  body.midcentury .hero-poster { padding: 20px; gap: 24px; }
+}
+@media (max-width: 700px) {
+  body.midcentury .hero-poster b { font-size: 32px; }
+}
+body.midcentury :is(.primary-button, .hero-actions .text-link, .mint-button, .outline-light, .outline-button, .archive-harvard, .roadmap-milestone-links a) {
+  border: var(--mcm-outline);
+  border-radius: 999px;
+  box-shadow: 3px 4px 0 #dedede, 0 4px 10px rgb(37 37 37 / 8%);
+  transition: background-color .2s, box-shadow .3s var(--mcm-ease), translate .3s var(--mcm-ease);
+}
+body.midcentury :is(.primary-button, .hero-actions .text-link, .mint-button, .outline-light, .outline-button, .archive-harvard, .roadmap-milestone-links a):hover {
+  box-shadow: 4px 6px 0 #dedede, 0 8px 16px rgb(37 37 37 / 10%);
+}
+body.midcentury :is(.site-header, .archive-header) { border-bottom: 2px solid var(--dv-orange); }
+body.midcentury :is(.site-header nav a, .archive-header nav a) {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+body.midcentury :is(.site-header nav a, .archive-header nav a):hover { text-decoration-line: underline; }
+
+/* Soft decorative frames; interactive controls retain a stronger, accessible edge. */
+body.midcentury :is(.verified-stats, .model-grid, .path-grid, .numbers-index) {
+  border: var(--mcm-outline);
+  border-radius: var(--mcm-radius);
+  box-shadow: var(--mcm-shadow);
+  overflow: visible;
+}
+body.midcentury :is(.verified-stats article, .model-grid article, .path-grid a, .numbers-index a) {
+  border-color: var(--dv-border);
+}
+body.midcentury .verified-stats .stat-emphasis { border-radius: 0; margin: 0; transform: none; }
+body.midcentury :is(.ecosystem-map-panel, .ecosystem-figure, .number-figure, .citation-ledger, .roadmap-timeline-scroll, .release-chart-scroll) {
+  border: var(--mcm-outline);
+  border-radius: var(--mcm-radius);
+  box-shadow: var(--mcm-shadow);
+}
+body.midcentury :is(.map-panel-heading, .ecosystem-figure figcaption) {
+  border-radius: 25px 25px 0 0;
+  background: var(--dv-orange);
+  color: #fff;
+  border-bottom: var(--mcm-outline);
+}
+body.midcentury .map-panel-heading a { color: #fff; }
+body.midcentury .number-figure > h3 {
+  margin: -30px -30px 28px;
+  padding: 18px 30px;
+  background: var(--dv-orange);
+  color: #fff;
+  border-radius: 25px 25px 0 0;
+  border-bottom: var(--mcm-outline);
+  font-size: 20px;
+  line-height: 1.35;
+}
+body.midcentury .ecosystem-figure .ecosystem-node {
+  border: var(--mcm-outline);
+  border-radius: 28px;
+  box-shadow: 4px 5px 0 #dedede;
+  transition: background-color .2s, box-shadow .25s var(--mcm-ease);
+}
+body.midcentury .ecosystem-figure .node-center {
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px var(--dv-orange-soft), 0 0 0 7px var(--dv-control-border);
+}
+body.midcentury .ecosystem-figure .ecosystem-node:not(.node-center):hover {
+  box-shadow: 6px 7px 0 #dedede;
+}
+body.midcentury .ecosystem-connections path { stroke-linecap: round; }
+body.midcentury .reach-path > div { border: var(--mcm-outline); border-radius: 22px; }
+body.midcentury :is(.evidence-bar-track, .evidence-bar-track > span) { border-radius: 999px; }
+body.midcentury .evidence-bar-track { outline: 1px solid var(--dv-control-border); overflow: hidden; }
+body.midcentury :is(.resilience-note, .release-source, .evidence-caveat) { border-radius: 0 22px 22px 0; }
+body.midcentury .model-icon { border-radius: 50%; outline: 2px solid currentColor; outline-offset: 5px; }
+body.midcentury .roadmap-timeline-scroll { overflow: auto; }
+body.midcentury .release-chart-scroll { background: #fff; }
+body.midcentury .release-year-details { border-color: var(--dv-border); }
+body.midcentury .release-year-details summary { transition: background-color .2s; }
+body.midcentury .release-year-details summary:hover { background: var(--dv-orange-soft); }
+body.midcentury .archive-card { border-radius: 22px; border-bottom: 2px solid var(--dv-border); }
+body.midcentury .archive-search input { border: var(--mcm-outline); border-radius: 999px; }
+body.midcentury .archive-nav { border-color: var(--dv-border); }
+body.midcentury .archive-nav a { border-radius: 999px; }
+body.midcentury .partner-logo-frame { border-radius: 22px; border: 1px solid var(--dv-border); box-shadow: 3px 4px 0 #dedede, 0 5px 12px rgb(37 37 37 / 8%); }
+body.midcentury .partner-grid { padding-top: 9px; padding-bottom: 22px; }
+body.midcentury .partner-grid a .partner-logo-frame { transition: box-shadow .3s var(--mcm-ease), translate .3s var(--mcm-ease); }
+body.midcentury .partner-grid a:is(:hover, :focus-visible) .partner-logo-frame { box-shadow: 4px 6px 0 #dedede, 0 8px 16px rgb(37 37 37 / 10%); }
+body.midcentury :is(.hero-poster, .number-figure, .ecosystem-map-panel, .citation-ledger) {
+  transition: box-shadow .4s var(--mcm-ease), translate .4s var(--mcm-ease);
+}
+body.midcentury :is(.model-grid article, .path-grid a, .numbers-index a) {
+  border-radius: 22px;
+  transition: box-shadow .3s var(--mcm-ease), background-color .3s;
+}
+body.midcentury :is(.model-grid article, .path-grid a, .numbers-index a):hover {
+  box-shadow: inset 0 0 0 2px var(--dv-orange);
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  body.midcentury :is(.hero-poster, .number-figure, .ecosystem-map-panel, .citation-ledger):hover { box-shadow: var(--mcm-shadow-raised); translate: 0 -3px; }
+  body.midcentury .hero-poster:hover { box-shadow: 0 12px 28px rgb(37 37 37 / 12%); }
+  body.midcentury :is(.primary-button, .hero-actions .text-link, .mint-button, .outline-button, .archive-harvard, .roadmap-milestone-links a):hover { translate: 0 -2px; }
+  body.midcentury .partner-grid a:hover .partner-logo-frame { translate: 0 -3px; }
+}
+body.midcentury :is(.verified-stats strong, .number-total, .citation-ledger strong, .harvard-metrics-bottom strong) { font-variant-numeric: tabular-nums; }
+body.midcentury :is(.primary-button, .hero-actions .text-link, .mint-button, .outline-light, .outline-button, .archive-harvard, .roadmap-milestone-links a, .archive-search input, .ecosystem-figure .ecosystem-node) {
+  border-color: var(--dv-control-border);
+}
+/* Keep the brand orange for accents; use its darker companion behind white text. */
+body.midcentury :is(.primary-button, .verified-stats .stat-emphasis, .map-panel-heading, .ecosystem-figure figcaption, .number-figure > h3, .ecosystem-figure .node-center, .archive-detail-meta) {
+  background-color: var(--dv-orange-ink);
+}
+body.midcentury :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--dv-orange-ink);
+  outline-offset: 4px;
+}
+body.midcentury .verified-stats .stat-emphasis a:focus-visible { outline-color: #fff; }
+body.midcentury .map-panel-heading a:focus-visible { outline-color: #fff; }
+body.midcentury :is(.model-grid article.featured, .mint-button) { background: var(--dv-orange-ink); }
+body.midcentury .brand small { color: #595959; font-size: 14px; line-height: 1.5; }
+body.midcentury .featured a:focus-visible { outline-color: #fff; }
+/* Seven satellite cards, with the project fixed at the geometric center. */
+body.midcentury .ecosystem-diagram { min-width: 600px; height: 760px; }
+body.midcentury .ecosystem-figure .ecosystem-node:not(.node-center) { width: 160px; height: 126px; padding: 12px; }
+body.midcentury .ecosystem-figure .node-harvard { left: 50%; top: 12%; }
+body.midcentury .ecosystem-figure .node-installations { left: 20%; top: 28%; }
+body.midcentury .ecosystem-figure .node-community { left: 80%; top: 28%; }
+body.midcentury .ecosystem-figure .node-software { left: 32%; top: 86%; }
+body.midcentury .ecosystem-figure .node-researchers { left: 68%; top: 86%; }
+body.midcentury .ecosystem-figure .node-integrations { left: 85%; top: 60%; }
+body.midcentury .ecosystem-figure .node-partners { left: 15%; top: 60%; }
+.skip-link {
+  position: fixed; top: 12px; left: 12px; z-index: 100;
+  padding: 12px 18px; background: #fff; color: var(--dv-orange-ink);
+  border: 2px solid var(--dv-control-border); border-radius: 8px;
+  font-size: 16px; font-weight: 600; transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; }
+@media (max-width: 600px) {
+  body.midcentury .number-figure > h3 { margin: -22px -18px 26px; padding: 16px 18px; }
+  :root { --mcm-shadow: 4px 4px 0 #dedede, 0 8px 16px rgb(37 37 37 / 8%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body.midcentury *, body.midcentury *::before, body.midcentury *::after { animation: none !important; transition: none !important; }
+}

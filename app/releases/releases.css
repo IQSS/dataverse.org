@@ -1,0 +1,61 @@
+.release-hero { padding: 56px var(--content-gutter) 36px; border-bottom: 1px solid #ddd; }
+.release-hero .section-kicker { color: #a84a1d; margin: 22px 0 12px; }
+.release-hero h1 { font-size: clamp(46px, 6vw, 80px); line-height: 1.05; letter-spacing: -.035em; margin: 0 0 18px; max-width: none; }
+.release-hero > p { font-size: 20px; margin: 0; }
+.release-intro { display: flex; align-items: center; gap: 36px; justify-content: space-between; margin-top: 30px; padding-top: 24px; border-top: 1px solid #e9e0da; }
+.release-intro p { max-width: 620px; margin: 0; line-height: 1.7; }
+.release-intro a { font-weight: 600; color: #a84a1d; max-width: 260px; line-height: 1.6; }
+.release-content { padding: 44px var(--content-gutter) 72px; }
+.release-chart { margin: 0; }
+.release-chart-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+.release-chart-heading h2, .release-directory h2 { font-size: clamp(26px, 3vw, 36px); line-height: 1.2; letter-spacing: -.02em; margin: 0 0 10px; }
+.release-chart-heading p, .release-directory-heading p { margin: 0; color: #555; font-size: 14px; line-height: 1.6; }
+.release-legend { display: flex; gap: 22px; flex-shrink: 0; }
+.release-legend span { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; }
+.release-legend i { width: 10px; height: 10px; border-radius: 50%; }
+.series-4 { --release-color: #a66c49; }
+.series-5 { --release-color: #c55b28; }
+.series-6 { --release-color: #333; }
+.release-legend i { background: var(--release-color); }
+.release-chart-scroll { overflow-x: auto; }
+.release-chart-svg { width: 100%; min-width: 850px; height: auto; display: block; }
+.release-chart-svg text { font-family: var(--font-montserrat), Montserrat, Arial, sans-serif; }
+.release-month-line { stroke: #eee; }
+.release-month, .release-count-label { font-size: 13px; fill: #555; }
+.release-year-label { font-size: 17px; font-weight: 600; fill: #333; }
+.release-year-line { stroke: #dfd4cc; }
+.release-count { font-size: 15px; fill: #555; }
+.release-hit-area { fill: transparent; }
+.release-dot { fill: var(--release-color); stroke: white; stroke-width: 1.5; }
+.release-point text { font-size: 12px; fill: #333; }
+.release-point:hover text, .release-point:focus text { fill: #a84a1d; text-decoration: underline; }
+.release-point:hover .release-dot, .release-point:focus .release-dot { stroke: #333; stroke-width: 2.5; }
+.release-chart figcaption { border-top: 1px solid #e9e0da; padding-top: 16px; font-size: 12px; line-height: 1.8; color: #666; max-width: 900px; }
+.release-directory { margin-top: 56px; }
+.release-directory-heading { margin-bottom: 24px; }
+.release-year-details { border-top: 1px solid #ddd; }
+.release-year-details:last-child { border-bottom: 1px solid #ddd; }
+.release-year-details summary { cursor: pointer; padding: 20px 8px; font-size: 22px; color: #333; }
+.release-year-details summary::marker { color: #a84a1d; font-size: 16px; }
+.release-year-details summary span:first-child { margin-left: 12px; }
+.release-year-details summary span:last-child { float: right; color: #666; font-size: 13px; padding-top: 6px; }
+.release-year-details ul { padding: 0 0 18px; margin: 0; list-style: none; }
+.release-year-details li a { display: grid; grid-template-columns: 1fr 1fr auto; gap: 24px; align-items: center; padding: 18px 24px; color: #333; font-size: 14px; text-decoration: none; }
+.release-year-details li:nth-child(odd) { background: #fff6f0; }
+.release-year-details li a:hover { background: #ffecdf; }
+.release-notes-link { color: #a84a1d; text-decoration: underline; text-underline-offset: 4px; }
+.release-source { margin-top: 48px; padding: 28px 32px; border-left: 3px solid #c55b28; background: #fff6f0; }
+.release-source h2 { font-size: 24px; margin: 0 0 14px; }
+.release-source p { max-width: 920px; font-size: 13px; line-height: 1.9; margin: 12px 0 0; }
+.release-source a { color: #a84a1d; text-underline-offset: 3px; }
+.release-content a:focus-visible, .release-hero a:focus-visible, .release-content summary:focus-visible, .release-chart-scroll:focus-visible { outline: 2px solid #a84a1d; outline-offset: 4px; }
+@media (max-width: 700px) {
+  .release-hero { padding-top: 36px; }
+  .release-intro, .release-chart-heading { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .release-intro a { max-width: none; }
+  .release-content { padding-top: 30px; }
+  .release-year-details li a { grid-template-columns: 1fr auto; gap: 10px 16px; padding: 18px 12px; }
+  .release-year-details time { grid-column: 1; font-size: 12px; }
+  .release-notes-link { grid-column: 2; grid-row: 1 / span 2; font-size: 12px; }
+  .release-source { padding: 22px; }
+}
