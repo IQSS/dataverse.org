@@ -8,7 +8,7 @@ const journals = [
 
 export default function JournalBanner({ compact = false }: { compact?: boolean }) {
   return <section className={`journal-banner ${compact ? "audience-banner-inline" : ""}`} id="journals" aria-labelledby="journals-heading">
-    <div className="audience-banner-heading"><div><h2 id="journals-heading">Journals and Proceedings</h2><p>Data collections, conference hosting, and author-deposited research data.</p></div>{!compact && <a href="/journals">Dataverse for journals and proceedings</a>}</div>
+    <div className="audience-banner-heading"><div><h2 id="journals-heading">Journal and proceedings spotlight</h2><p>A few examples of data collections, conference hosting, and author-deposited research data. Many more journals work with Dataverse.</p></div>{!compact && <a href="/journals">Dataverse for journals and proceedings</a>}</div>
     <div className="journal-scroll" role="region" aria-label="Journals and proceedings — scroll to browse" tabIndex={0}><div className="journal-logo-grid">{journals.map(journal => <a key={journal.name} href={journal.href}>
       <span className="journal-logo-frame"><img src={`/journals/${journal.logo}`} alt="" loading="lazy" /></span>
       <strong>{journal.name}</strong><span className="journal-relationship">{journal.relationship}</span><span>{journal.action}</span>

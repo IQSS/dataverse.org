@@ -13,7 +13,7 @@ const partners = [
 
 export default function PartnerBanner() {
   return <section className="partner-banner" id="partners" aria-labelledby="partners-heading">
-    <h2 id="partners-heading">Thanks to our Partners</h2>
+    <h2 id="partners-heading">Thanks for the Generous Support From</h2>
     <div className="partner-scroll" tabIndex={0} role="region" aria-label="Partner logos, scroll horizontally to see all partners">
     <ul className="partner-grid">
       {partners.map(partner => <li key={partner.name}>

@@ -57,8 +57,10 @@ test("migrated pages omit the captured Drupal menu; audience banners link to rea
   assert.ok(journal.includes("funders’ data sharing mandates"));
   assert.ok(journal.includes("Set up a Journal Dataverse Collection with data curation"));
   const home = await render("/");
+  assert.ok(home.includes("Journal and proceedings spotlight"));
+  assert.ok(home.includes("Institution spotlight"));
+  assert.ok(journal.includes("Journals and Proceedings"));
   for (const html of [home, journal]) {
-    assert.ok(html.includes("Journals and Proceedings"));
     assert.ok(html.includes("NeurIPS"));
     assert.ok(html.includes("Frontiers"));
     assert.ok(html.includes('href="https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting"'));
