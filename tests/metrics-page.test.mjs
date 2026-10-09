@@ -77,7 +77,7 @@ test("every installation dot links to its own repository", async () => {
 
 test("homepage thanks all eight partners with locally hosted logos", async () => {
   const home = await render("/");
-  assert.ok(home.includes("Thanks for the Generous Support From"));
+  assert.ok(home.includes("Thanks to the Generous Support From"));
   for (const name of ["Google", "firebrand.ai", "NSF", "NIH", "GREI", "GDCC", "Bertarelli Foundation", "Harvard FAS"]) {
     assert.ok(home.includes(`alt="${name}"`));
   }
