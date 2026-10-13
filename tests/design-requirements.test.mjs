@@ -67,7 +67,7 @@ test("community calls render from hand-editable Markdown without losing the meet
   assert.ok(home.includes("https://guides.dataverse.org/en/latest/container/running/demo.html#quickstart"));
   for (const label of ["SHARE", "PRESERVE", "CITE", "DISCOVER"]) assert.match(home, new RegExp(`<a href="[^"]+">${label}</a>`));
   const explore = await render("/explore");
-  assert.ok(explore.includes("<h3>Where the installations are</h3>"));
+  assert.ok(explore.includes("<h3>Installations Around the World</h3>"));
   assert.ok(explore.replaceAll("<!-- -->", "").includes("All 150 installations"));
   assert.ok(!explore.includes("naturalearthdata.com"));
 });
