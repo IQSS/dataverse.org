@@ -14,7 +14,8 @@ test("homepage keeps the reviewed order: principle, Harvard, community, spotligh
   const order = ['id="principle"', 'id="research"', 'id="community"', 'id="get-involved"', 'id="institutions"', 'id="use-cases"', 'id="journals"', 'id="technical"', 'id="integrations"', 'id="partners"'];
   for (let i = 1; i < order.length; i++) assert.ok(home.indexOf(order[i - 1]) < home.indexOf(order[i]), `${order[i - 1]} before ${order[i]}`);
   assert.equal((home.match(/id="institutions"/g) || []).length, 1);
-  for (const gone of ['class="ecosystem-context"', 'class="resilience-note"', 'class="ecosystem-node', 'class="ecosystem-map-panel"', 'class="people-button"', 'href="https://www.gdcc.io']) assert.ok(!home.includes(gone), gone);
+  for (const gone of ['class="ecosystem-context"', 'class="resilience-note"', 'class="ecosystem-node', 'class="people-button"', 'href="https://www.gdcc.io']) assert.ok(!home.includes(gone), gone);
+  assert.ok(home.indexOf('id="get-involved"') < home.indexOf('class="ecosystem-map-panel"') && home.indexOf('class="ecosystem-map-panel"') < home.indexOf('id="institutions"'));
   assert.ok(home.includes("How to Get Involved"));
   assert.ok(home.includes("Global Dataverse Community Consortium (GDCC)"));
   for (const label of ["Containerization", "Documentation", "Internationalization", "Large Data Support", "pyDataverse", "Sensitive Data"]) assert.ok(home.includes(`<li>${label}</li>`));

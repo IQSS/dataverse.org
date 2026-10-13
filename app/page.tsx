@@ -1,4 +1,5 @@
 import PartnerBanner from "./components/PartnerBanner";
+import InstallationMap from "./components/InstallationMap";
 import GetInvolved from "./components/GetInvolved";
 import UseCaseBanner from "./components/UseCaseBanner";
 import "./use-cases/use-cases.css";
@@ -61,6 +62,7 @@ export default function Home() {
       <div className="section-kicker">A GLOBAL COMMUNITY</div>
       <div className="section-grid"><h2>Built, run and improved by the people who use it.</h2><div className="section-intro"><p>Developers, data curators, librarians and researchers from the 150+ installations contribute code, documentation, translations and support. They meet every year at the Dataverse Community Meeting, talk monthly on community calls, and coordinate through the Global Dataverse Community Consortium (GDCC), the body through which installations share work on containers, documentation, large and sensitive data, and more.</p><p>The project is led from Harvard’s Institute for Quantitative Social Science, which built the first release in 2006 and still maintains the software with the community.</p><a className="metric-method-link" href="/about#team">Who leads it →</a></div></div>
       <GetInvolved />
+      <InstallationMap hideDirectory />
       <InstitutionBanner embedded />
     </section>
 
