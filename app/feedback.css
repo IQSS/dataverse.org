@@ -394,4 +394,16 @@ footer > div:last-child { flex-wrap: wrap; }
 .roadmap-lede { font-size: 18px; line-height: 1.6; max-width: 820px; margin: -12px 0 28px; }
 @media (max-width: 900px) { .harvard-facts, .technical-grid { grid-template-columns: 1fr; } .harvard-section { grid-template-columns: 1fr; } }
 .project-section .audience-banner-heading h2 { letter-spacing: -.01em; font-size: clamp(1.5rem, 2.8vw, 2rem); }
-.community-figure { margin: 40px auto 48px; max-width: 760px; }
+.community-figure { margin: 40px 0 48px; max-width: none; }
+/* Landscape layout for the ecosystem panel; outranks the midcentury theme's portrait positions. */
+body.midcentury .ecosystem-figure.community-figure .ecosystem-diagram, .community-figure .ecosystem-diagram { height: 460px; min-width: 900px; }
+.community-figure .ecosystem-scroll { overflow-y: hidden; }
+.community-figure .ecosystem-connections line { fill: none; stroke: var(--dv-orange); stroke-width: 2.5; stroke-linecap: round; }
+body.midcentury .ecosystem-figure.community-figure .node-center, .community-figure .node-center { width: 170px; height: 150px; }
+body.midcentury .ecosystem-figure.community-figure .node-harvard, .community-figure .node-harvard { left: 50%; top: 14%; }
+body.midcentury .ecosystem-figure.community-figure .node-installations, .community-figure .node-installations { left: 20%; top: 22%; }
+body.midcentury .ecosystem-figure.community-figure .node-community, .community-figure .node-community { left: 80%; top: 22%; }
+body.midcentury .ecosystem-figure.community-figure .node-partners, .community-figure .node-partners { left: 9%; top: 56%; }
+body.midcentury .ecosystem-figure.community-figure .node-integrations, .community-figure .node-integrations { left: 91%; top: 56%; }
+body.midcentury .ecosystem-figure.community-figure .node-software, .community-figure .node-software { left: 24%; top: 82%; }
+body.midcentury .ecosystem-figure.community-figure .node-researchers, .community-figure .node-researchers { left: 76%; top: 82%; }

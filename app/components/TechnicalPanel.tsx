@@ -10,7 +10,7 @@ const items = [
 /** The technical material, kept together at the bottom of the home page for those who want it. */
 export default function TechnicalPanel() {
   return <section className="technical-panel" id="technical" aria-labelledby="technical-heading">
-    <div className="audience-banner-heading"><div><h2 id="technical-heading">Technical Details</h2><p>Links marked ↗ leave this site for the guides or GitHub.</p></div></div>
+    <div className="audience-banner-heading"><div><h2 id="technical-heading">Technical Details</h2></div></div>
     <ul className="technical-grid">{items.map((item) => <li key={item.href}><a href={item.href}><strong>{item.title}{item.external && <span aria-hidden="true"> ↗</span>}</strong><span>{item.text}</span></a></li>)}</ul>
   </section>;
 }

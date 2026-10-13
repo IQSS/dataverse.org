@@ -32,7 +32,7 @@ export default function Home() {
     </section>
 
     <section className="verified-stats usage-stats" aria-label="Harvard Dataverse usage since 2020">
-      <article><span>UNIQUE VISITS</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardUniqueViewsPeople)} unique dataset views by people — source and details`}><strong>{number(metrics.harvardUniqueViewsPeople)}</strong></a><p>on Harvard Dataverse since 2020</p><a className="metric-method-link" href="/numbers#usage">Source / details</a></article>
+      <article><span>UNIQUE VISITORS</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardUniqueViewsPeople)} unique dataset views by people — source and details`}><strong>{number(metrics.harvardUniqueViewsPeople)}</strong></a><p>on Harvard Dataverse since 2020</p><a className="metric-method-link" href="/numbers#usage">Source / details</a></article>
       <article><span>UNIQUE DOWNLOADS · BY PEOPLE</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardUniqueDownloadsPeople)} unique downloads by people — source and details`}><strong>{number(metrics.harvardUniqueDownloadsPeople)}</strong></a><p>on Harvard Dataverse since 2020</p><a className="metric-method-link" href="/numbers#usage">Source / details</a></article>
       <article><span>DATASET VIEWS · ALL TRAFFIC</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardViews)} dataset views in total — source and details`}><strong>{number(metrics.harvardViews)}</strong></a><p>on Harvard Dataverse since 2020</p><a className="metric-method-link" href="/numbers#usage">Source / details</a></article>
     </section>
@@ -65,8 +65,8 @@ export default function Home() {
         <figcaption>Dataverse Project Ecosystem</figcaption>
         <div className="ecosystem-scroll" tabIndex={0} role="group" aria-label="Linked ecosystem diagram">
         <div className="ecosystem-diagram">
-        <svg className="ecosystem-connections" viewBox="0 0 600 760" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M300 380 L300 91.2 M300 380 L120 212.8 M300 380 L480 212.8 M300 380 L90 456 M300 380 L510 456 M300 380 L192 653.6 M300 380 L408 653.6" />
+        <svg className="ecosystem-connections" aria-hidden="true">
+          {[[50, 14], [20, 22], [80, 22], [9, 56], [91, 56], [24, 82], [76, 82]].map(([x, y]) => <line key={`${x}-${y}`} x1="50%" y1="50%" x2={`${x}%`} y2={`${y}%`} />)}
         </svg>
         <a className="ecosystem-node node-center" href="/about"><small>OPEN-SOURCE</small><strong>DATAVERSE<br/>PROJECT</strong></a>
         <a className="ecosystem-node node-harvard" href="#research"><strong>Harvard<br/>Dataverse</strong><span>Founding installation</span></a>
@@ -79,9 +79,9 @@ export default function Home() {
         </div>
         </div>
       </figure>
-      <GetInvolved />
       <InstallationMap hideDirectory />
       <InstitutionBanner embedded />
+      <GetInvolved />
     </section>
 
     <UseCaseBanner />
