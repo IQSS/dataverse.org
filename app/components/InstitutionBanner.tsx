@@ -9,7 +9,7 @@ const institutions: { name: string; label: string; href: string; logo?: string }
 
 export default function InstitutionBanner({ compact = false, embedded = false, explore = false }: { compact?: boolean; embedded?: boolean; explore?: boolean }) {
   return <section className={`institution-banner ${compact ? "audience-banner-inline" : ""} ${embedded ? "institution-banner-embedded" : ""}`} id="institutions" aria-labelledby="institutions-heading">
-    <div className="audience-banner-heading"><div><h2 id="institutions-heading">Institution spotlight</h2><p>Six of the 150+ institutions that run their own Dataverse: governments, research labs, universities, and national research communities. Each is a full member of the network, not a partner or a customer.</p></div><a href={explore ? "#explore-list-heading" : "/explore"}>{explore ? "All installations below" : "See all 150+ installations"}</a></div>
+    <div className="audience-banner-heading"><div><h2 id="institutions-heading">Institution spotlight</h2><p>Six of the 150+ installations. They are part of the 150.</p></div><a href={explore ? "#explore-list-heading" : "/explore"}>{explore ? "All installations below" : "See all 150+ installations"}</a></div>
     <ul className="institution-grid">{institutions.map(item => <li key={item.name}><a href={item.href}><span className="institution-logo-frame" aria-hidden="true">{item.logo && <img src={`/institutions/${item.logo}`} alt="" loading="lazy" />}</span><span>{item.label}</span><strong>{item.name}</strong></a></li>)}</ul>
   </section>;
 }

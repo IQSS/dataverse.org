@@ -19,13 +19,13 @@ export default function Home() {
     <main id="main-content" tabIndex={-1}>
     <section className="hero" id="top">
       <h1>Share data to<br/><span className="accent">Advance<br/>Research</span></h1>
-      <p className="hero-copy">Dataverse is a global community formed around open-source software and protocols for sharing, preserving, citing and reusing research data. More than 150 institutions run their own Dataverse repositories; Harvard Dataverse is the founding installation.</p>
+      <p className="hero-copy">Dataverse is a global community formed around the open source software and protocols. More than 150 institutions run their own Dataverse installations; Harvard Dataverse is the founding installation.</p>
       <div className="hero-actions"><a className="primary-button" href="/explore">Explore the Dataverse <span aria-hidden="true">→</span></a><a className="text-link" href="/use-cases">See it in use <span aria-hidden="true">→</span></a></div>
       <div className="hero-poster" role="group" aria-label="Dataverse project principles"><div className="hero-callout-heading"><b>Data for<br/>Research</b><img src="/dataverse-rings.svg" alt="" className="dataverse-rings"/></div><div className="hero-principles"><a href="https://guides.dataverse.org/en/latest/user/dataset-management.html">SHARE</a><a href="/book/preservation-plan">PRESERVE</a><a href="/best-practices/data-citation">CITE</a><a href="/explore">DISCOVER</a></div></div>
     </section>
 
     <section className="verified-stats" aria-label="Dataverse headline numbers">
-      <article><span>A PERMANENT COMMITMENT</span><a className="metric-number-link" href="/numbers#installations" aria-label="150+ institutions running Dataverse — source and details"><strong>{metrics.installations}</strong></a><p>institutions worldwide have made a permanent commitment to preserve open research data on their own Dataverse</p><a className="metric-method-link" href="/numbers#installations">Source / details</a></article>
+      <article><span>A PERMANENT COMMITMENT</span><a className="metric-number-link" href="/numbers#installations" aria-label="150+ institutions running Dataverse — source and details"><strong>{metrics.installations}</strong></a><p>global institutions made a permanent commitment to preserve open research data</p><a className="metric-method-link" href="/numbers#installations">Source / details</a></article>
       <article className="stat-emphasis"><span>CITATIONS</span><a className="metric-number-link" href="/numbers#scholarly-citations" aria-label={`${number(metrics.scholarlyCitations)} scholarly citations — source and details`}><strong>{number(metrics.scholarlyCitations)}</strong></a><p>scholarly citations connected to Harvard Dataverse datasets</p><a className="metric-method-link" href="/numbers#scholarly-citations">Source / details</a></article>
       <article><span>DATASETS ACROSS THE NETWORK</span><a className="metric-number-link" href="/numbers#network-datasets" aria-label={`${number(metrics.networkDatasets)}+ datasets across the network — source and details`}><strong>{number(metrics.networkDatasets)}+</strong></a><p>published datasets reported by the network’s repositories</p><a className="metric-method-link" href="/numbers#network-datasets">Source / details</a></article>
     </section>
@@ -38,11 +38,11 @@ export default function Home() {
 
     <section className="collection-section" id="principle" aria-labelledby="collection-heading">
       <div className="section-kicker">FOUNDING PRINCIPLE</div>
-      <h2 id="collection-heading">Branded as yours. Credit to the creator.</h2>
-      <p className="collection-intro">Dataverse was built on one idea: the credit for shared data belongs to the people and institutions who created it. Every dataset gets a formal citation naming its authors, and every collection keeps its own name, look and web address inside a shared repository. The principle is set out in the founding article, <a href="https://doi.org/10.1177/0049124107306660">King (2007), “An Introduction to the Dataverse Network as an Infrastructure for Data Sharing”</a>.</p>
+      <h2 id="collection-heading"><span className="accent">Data Branded as Yours</span></h2>
+      <p className="collection-intro">All credit goes to the data creator, author, and institution. That is the founding principle, set out in <a href="https://doi.org/10.1177/0049124107306660">King (2007), “An Introduction to the Dataverse Network as an Infrastructure for Data Sharing”</a>.</p>
       <div className="collection-grid">
         <article><h3>Your collection, your identity</h3><p>Your logo, colours and web address, with the collection embedded on your own site while the datasets stay citable and discoverable. <a href="https://gking.harvard.edu/dataverse/">Gary King’s dataverse</a> lives on his own website; <a href="https://entrepot.recherche.data.gouv.fr/">Recherche Data Gouv</a> serves all of French public research; <a href="https://dataverse.jpl.nasa.gov/">NASA JPL</a> and universities such as <a href="https://dataverse.unc.edu/">UNC</a> run theirs under their own names.</p></article>
-        <article><h3>Yours to use and shape</h3><p>Everyone builds it: the software is open source, the community sets the standards, and each installation decides its own policies, metadata and workflows. You customise it; it remains branded as yours.</p><a href="/use-cases">How institutions put it to work →</a></article>
+        <article><h3>Yours to use and shape</h3><p>Dataverse is yours to use and shape. Everyone will build it; you can customize it; it is branded as yours.</p><a href="/use-cases">How institutions put it to work →</a></article>
         <article><h3>Governance you control</h3><p>Assign contributor and curator roles, set metadata requirements, manage access and terms of use, and publish citable datasets and new versions under your own rules.</p><a href="/software">What the software provides →</a></article>
       </div>
     </section>
@@ -51,7 +51,7 @@ export default function Home() {
       <div className="harvard-copy"><div className="section-kicker light">THE FOUNDING REPOSITORY</div><h2>Open to Harvard.<br/>Open to <span className="accent">everyone.</span></h2><p>Harvard Dataverse is where the project began and remains one of the largest repositories of open research data in the world: researchers from any institution and any discipline can deposit, and every dataset is cited and preserved. It is one repository among the 150+, run on the same software as all the others.</p><div className="harvard-actions"><a className="mint-button" href="/explore">Explore the Dataverse <span aria-hidden="true">→</span></a><a className="metric-method-link light-link" href="https://support.dataverse.harvard.edu/about">Source: about Harvard Dataverse ↗</a></div></div>
       <div className="harvard-facts" role="group" aria-label="Harvard Dataverse in numbers">
         <div><b>{number(metrics.harvardDatasets)}</b><span>published datasets</span></div>
-        <div><b>{number(metrics.datasetsWithScholarlyCitations)}</b><span>datasets connected to cited publications</span></div>
+        <div><b>{number(metrics.scholarlyCitations)}</b><span>scholarly citations</span></div>
         <div><b>{number(metrics.harvardUniqueDownloadsPeople)}</b><span>unique downloads by people since 2020</span></div>
         <a className="metric-method-link" href="/numbers">Source / details</a>
       </div>
