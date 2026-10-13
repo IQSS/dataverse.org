@@ -31,7 +31,7 @@ export default function Home() {
     </section>
 
     <section className="verified-stats usage-stats" aria-label="Harvard Dataverse usage since 2020">
-      <article><span>UNIQUE DATASET VIEWS · BY PEOPLE</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardUniqueViewsPeople)} unique dataset views by people — source and details`}><strong>{number(metrics.harvardUniqueViewsPeople)}</strong></a><p>on Harvard Dataverse since 2020</p><a className="metric-method-link" href="/numbers#usage">Source / details</a></article>
+      <article><span>UNIQUE VISITS</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardUniqueViewsPeople)} unique dataset views by people — source and details`}><strong>{number(metrics.harvardUniqueViewsPeople)}</strong></a><p>on Harvard Dataverse since 2020</p><a className="metric-method-link" href="/numbers#usage">Source / details</a></article>
       <article><span>UNIQUE DOWNLOADS · BY PEOPLE</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardUniqueDownloadsPeople)} unique downloads by people — source and details`}><strong>{number(metrics.harvardUniqueDownloadsPeople)}</strong></a><p>on Harvard Dataverse since 2020</p><a className="metric-method-link" href="/numbers#usage">Source / details</a></article>
       <article><span>DATASET VIEWS · ALL TRAFFIC</span><a className="metric-number-link" href="/numbers#usage" aria-label={`${number(metrics.harvardViews)} dataset views in total — source and details`}><strong>{number(metrics.harvardViews)}</strong></a><p>on Harvard Dataverse since 2020</p><a className="metric-method-link" href="/numbers#usage">Source / details</a></article>
     </section>
