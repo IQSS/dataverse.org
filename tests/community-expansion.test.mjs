@@ -14,7 +14,9 @@ test("homepage keeps the reviewed order: principle, Harvard, community, spotligh
   const order = ['id="principle"', 'id="research"', 'id="community"', 'id="get-involved"', 'id="institutions"', 'id="use-cases"', 'id="journals"', 'id="technical"', 'id="integrations"', 'id="partners"'];
   for (let i = 1; i < order.length; i++) assert.ok(home.indexOf(order[i - 1]) < home.indexOf(order[i]), `${order[i - 1]} before ${order[i]}`);
   assert.equal((home.match(/id="institutions"/g) || []).length, 1);
-  for (const gone of ['class="ecosystem-context"', 'class="resilience-note"', 'class="ecosystem-node', 'class="people-button"', 'href="https://www.gdcc.io']) assert.ok(!home.includes(gone), gone);
+  for (const gone of ['class="ecosystem-context"', 'class="resilience-note"', 'class="people-button"', 'href="https://www.gdcc.io']) assert.ok(!home.includes(gone), gone);
+  assert.equal((home.match(/class="ecosystem-node node-/g) || []).length, 8);
+  assert.ok(!/class="ecosystem-node[^>]*href="https?:/.test(home));
   assert.ok(home.indexOf('id="get-involved"') < home.indexOf('class="ecosystem-map-panel"') && home.indexOf('class="ecosystem-map-panel"') < home.indexOf('id="institutions"'));
   assert.ok(home.includes("How to Get Involved"));
   assert.ok(home.includes("Global Dataverse Community Consortium (GDCC)"));

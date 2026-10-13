@@ -394,3 +394,4 @@ footer > div:last-child { flex-wrap: wrap; }
 .roadmap-lede { font-size: 18px; line-height: 1.6; max-width: 820px; margin: -12px 0 28px; }
 @media (max-width: 900px) { .harvard-facts, .technical-grid { grid-template-columns: 1fr; } .harvard-section { grid-template-columns: 1fr; } }
 .project-section .audience-banner-heading h2 { letter-spacing: -.01em; font-size: clamp(1.5rem, 2.8vw, 2rem); }
+.community-figure { margin: 40px auto 48px; max-width: 760px; }

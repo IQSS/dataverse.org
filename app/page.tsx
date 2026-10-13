@@ -22,7 +22,7 @@ export default function Home() {
       <h1>Share data to<br/><span className="accent">Advance<br/>Research</span></h1>
       <p className="hero-copy">Dataverse is a global community formed around the open source software and protocols. More than 150 institutions run their own Dataverse installations; Harvard Dataverse is the founding installation.</p>
       <div className="hero-actions"><a className="primary-button" href="/explore">Explore the Dataverse <span aria-hidden="true">→</span></a><a className="text-link" href="/use-cases">See it in use <span aria-hidden="true">→</span></a></div>
-      <div className="hero-poster" role="group" aria-label="Dataverse project principles"><div className="hero-callout-heading"><b>Data for<br/>Research</b><img src="/dataverse-rings.svg" alt="" className="dataverse-rings"/></div><div className="hero-principles"><a href="https://guides.dataverse.org/en/latest/user/dataset-management.html">SHARE</a><a href="/book/preservation-plan">PRESERVE</a><a href="/best-practices/data-citation">CITE</a><a href="/explore">DISCOVER</a></div></div>
+      <div className="hero-poster" role="group" aria-label="Dataverse project principles"><div className="hero-callout-heading"><b>Data for<br/>Research</b><img src="/dataverse-rings.svg" alt="" className="dataverse-rings"/></div><div className="hero-principles"><a href="#principle">SHARE</a><a href="/explore">PRESERVE</a><a href="/best-practices/data-citation">CITE</a><a href="/use-cases">DISCOVER</a></div></div>
     </section>
 
     <section className="verified-stats" aria-label="Dataverse headline numbers">
@@ -42,7 +42,7 @@ export default function Home() {
       <h2 id="collection-heading"><span className="accent">Data Branded as Yours</span></h2>
       <p className="collection-intro">All credit goes to the data creator, author, and institution. That is the founding principle, set out in <a href="https://doi.org/10.1177/0049124107306660">King (2007), “An Introduction to the Dataverse Network as an Infrastructure for Data Sharing”</a>.</p>
       <div className="collection-grid">
-        <article><h3>Your collection, your identity</h3><p>Your logo, colours and web address, with the collection embedded on your own site while the datasets stay citable and discoverable. <a href="https://gking.harvard.edu/dataverse/">Gary King’s dataverse</a> lives on his own website; <a href="https://entrepot.recherche.data.gouv.fr/">Recherche Data Gouv</a> serves all of French public research; <a href="https://dataverse.jpl.nasa.gov/">NASA JPL</a> and universities such as <a href="https://dataverse.unc.edu/">UNC</a> run theirs under their own names.</p></article>
+        <article><h3>Your collection, your identity</h3><p>Your logo, colours and web address, with the collection embedded on your own site.</p></article>
         <article><h3>Yours to use and shape</h3><p>Everyone builds it. You customize it. It is branded as yours.</p><a href="/use-cases">How institutions put it to work →</a></article>
         <article><h3>Governance you control</h3><p>Assign contributor and curator roles, set metadata requirements, manage access and terms of use, and publish citable datasets and new versions under your own rules.</p><a href="/software">What the software provides →</a></article>
       </div>
@@ -60,7 +60,25 @@ export default function Home() {
 
     <section className="project-section community-section" id="community">
       <div className="section-kicker">A GLOBAL COMMUNITY</div>
-      <div className="section-grid"><h2>Built, run and improved by the people who use it.</h2><div className="section-intro"><p>Developers, data curators, librarians and researchers from the 150+ installations contribute code, documentation, translations and support. They meet every year at the Dataverse Community Meeting, talk monthly on community calls, and coordinate through the Global Dataverse Community Consortium (GDCC), the body through which installations share work on containers, documentation, large and sensitive data, and more.</p><p>The project is led from Harvard’s Institute for Quantitative Social Science, which built the first release in 2006 and still maintains the software with the community.</p><a className="metric-method-link" href="/about#team">Who leads it →</a></div></div>
+      <div className="section-grid"><h2>Built, run and improved by the Dataverse Research Community.</h2><div className="section-intro"><p>Developers, data curators, librarians and researchers from the 150+ installations contribute code, documentation, translations and support. They meet every year at the Dataverse Community Meeting, talk monthly on community calls, and coordinate through the Global Dataverse Community Consortium (GDCC), the body through which installations share work on containers, documentation, large and sensitive data, and more.</p><p>The project is led from Harvard’s Institute for Quantitative Social Science, which built the first release in 2006 and still maintains the software with the community.</p><a className="metric-method-link" href="/about#team">Who leads it →</a></div></div>
+      <figure className="ecosystem-figure community-figure" aria-label="The connected Dataverse project ecosystem">
+        <figcaption>Dataverse Project Ecosystem</figcaption>
+        <div className="ecosystem-scroll" tabIndex={0} role="group" aria-label="Linked ecosystem diagram">
+        <div className="ecosystem-diagram">
+        <svg className="ecosystem-connections" viewBox="0 0 600 760" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M300 380 L300 91.2 M300 380 L120 212.8 M300 380 L480 212.8 M300 380 L90 456 M300 380 L510 456 M300 380 L192 653.6 M300 380 L408 653.6" />
+        </svg>
+        <a className="ecosystem-node node-center" href="/about"><small>OPEN-SOURCE</small><strong>DATAVERSE<br/>PROJECT</strong></a>
+        <a className="ecosystem-node node-harvard" href="#research"><strong>Harvard<br/>Dataverse</strong><span>Founding installation</span></a>
+        <a className="ecosystem-node node-installations" href="/explore"><strong>150+<br/>Installations</strong><span>Independent repositories →</span></a>
+        <a className="ecosystem-node node-community" href="/events"><strong>Global<br/>Community</strong><span>GDCC, meetings, calls →</span></a>
+        <a className="ecosystem-node node-software" href="/software"><strong>Software<br/>Project</strong><span>Technical details →</span></a>
+        <a className="ecosystem-node node-researchers" href="/use-cases"><strong>Researchers</strong><span>Use cases →</span></a>
+        <a className="ecosystem-node node-integrations" href="#integrations"><strong>Integrations</strong><span>Connected tools</span></a>
+        <a className="ecosystem-node node-partners" href="#partners"><strong>Support</strong><span>Funders and partners</span></a>
+        </div>
+        </div>
+      </figure>
       <GetInvolved />
       <InstallationMap hideDirectory />
       <InstitutionBanner embedded />
