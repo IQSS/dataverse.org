@@ -43,7 +43,7 @@ export default function Home() {
       <p className="collection-intro">All credit goes to the data creator, author, and institution. That is the founding principle, set out in <a href="https://doi.org/10.1177/0049124107306660">King (2007), “An Introduction to the Dataverse Network as an Infrastructure for Data Sharing”</a>.</p>
       <div className="collection-grid">
         <article><h3>Your collection, your identity</h3><p>Your logo, colours and web address, with the collection embedded on your own site while the datasets stay citable and discoverable. <a href="https://gking.harvard.edu/dataverse/">Gary King’s dataverse</a> lives on his own website; <a href="https://entrepot.recherche.data.gouv.fr/">Recherche Data Gouv</a> serves all of French public research; <a href="https://dataverse.jpl.nasa.gov/">NASA JPL</a> and universities such as <a href="https://dataverse.unc.edu/">UNC</a> run theirs under their own names.</p></article>
-        <article><h3>Yours to use and shape</h3><p>Dataverse is yours to use and shape. Everyone will build it; you can customize it; it is branded as yours.</p><a href="/use-cases">How institutions put it to work →</a></article>
+        <article><h3>Yours to use and shape</h3><p>Everyone builds it. You customize it. It is branded as yours.</p><a href="/use-cases">How institutions put it to work →</a></article>
         <article><h3>Governance you control</h3><p>Assign contributor and curator roles, set metadata requirements, manage access and terms of use, and publish citable datasets and new versions under your own rules.</p><a href="/software">What the software provides →</a></article>
       </div>
     </section>
