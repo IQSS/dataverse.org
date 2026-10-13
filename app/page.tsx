@@ -39,10 +39,10 @@ export default function Home() {
 
     <section className="collection-section" id="principle" aria-labelledby="collection-heading">
       <div className="section-kicker">FOUNDING PRINCIPLE</div>
-      <h2 id="collection-heading"><span className="accent">Data Branded as Yours</span></h2>
+      <h2 id="collection-heading"><span className="accent">Data Branded as <a className="accent-link" href="/branding">Yours</a></span></h2>
       <p className="collection-intro">All credit goes to the data creator, author, and institution. That is the founding principle, set out in <a href="https://doi.org/10.1177/0049124107306660">King (2007), “An Introduction to the Dataverse Network as an Infrastructure for Data Sharing”</a>.</p>
       <div className="collection-grid">
-        <article><h3>Your collection, your identity</h3><p>Your logo, colours and web address, with the collection embedded on your own site.</p></article>
+        <article><h3>Your collection, your identity</h3><p>Your logo, colours and web address, with the collection embedded on your own site.</p><a href="/branding">See a live example →</a></article>
         <article><h3>Yours to use and shape</h3><p>Everyone builds it. You customize it. It is branded as yours.</p><a href="/use-cases">How institutions put it to work →</a></article>
         <article><h3>Governance you control</h3><p>Assign contributor and curator roles, set metadata requirements, manage access and terms of use, and publish citable datasets and new versions under your own rules.</p><a href="/software">What the software provides →</a></article>
       </div>

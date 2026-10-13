@@ -407,3 +407,5 @@ body.midcentury .ecosystem-figure.community-figure .node-partners, .community-fi
 body.midcentury .ecosystem-figure.community-figure .node-integrations, .community-figure .node-integrations { left: 91%; top: 56%; }
 body.midcentury .ecosystem-figure.community-figure .node-software, .community-figure .node-software { left: 24%; top: 82%; }
 body.midcentury .ecosystem-figure.community-figure .node-researchers, .community-figure .node-researchers { left: 76%; top: 82%; }
+.collection-section h2 .accent-link { color: inherit; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 8px; }
+.collection-section h2 .accent-link:hover { text-decoration-color: #A84A1D; }
