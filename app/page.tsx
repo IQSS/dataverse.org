@@ -52,7 +52,7 @@ export default function Home() {
       <div className="harvard-copy"><div className="section-kicker light">THE FOUNDING REPOSITORY</div><h2>Open to Harvard.<br/>Open to <span className="accent">everyone.</span></h2><p>Harvard Dataverse is where the project began and remains one of the largest repositories of open research data in the world: researchers from any institution and any discipline can deposit, and every dataset is cited and preserved. It is one repository among the 150+, run on the same software as all the others.</p><div className="harvard-actions"><a className="mint-button" href="/explore">Explore the Dataverse <span aria-hidden="true">→</span></a><a className="metric-method-link light-link" href="https://support.dataverse.harvard.edu/about">Source: about Harvard Dataverse ↗</a></div></div>
       <div className="harvard-facts" role="group" aria-label="Harvard Dataverse in numbers">
         <div><b>{number(metrics.harvardDatasets)}</b><span>published datasets</span></div>
-        <div><b>{number(metrics.harvardAuthoredCitations)}</b><span>scholarly citations made by Harvard researchers to Harvard Dataverse datasets</span></div>
+        <div><b>{number(metrics.harvardDepositCitations)}</b><span>scholarly citations to data deposited by Harvard researchers</span></div>
         <div><b>{number(metrics.harvardUniqueDownloadsPeople)}</b><span>unique downloads by people since 2020</span></div>
         <a className="metric-method-link" href="/numbers">Source / details</a>
       </div>
