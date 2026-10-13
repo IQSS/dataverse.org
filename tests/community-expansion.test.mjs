@@ -9,20 +9,17 @@ async function render(path) {
   return response.text();
 }
 
-test("homepage involvement, seven ecosystem satellites and integration assets remain connected", async () => {
+test("homepage keeps the reviewed order: principle, Harvard, community, spotlight, use cases, journals, technical, partners", async () => {
   const home = await render("/");
-  assert.ok(home.indexOf('class="ecosystem-map-panel"') < home.indexOf('id="get-involved"'));
-  assert.ok(home.indexOf('id="get-involved"') < home.indexOf('id="institutions"'));
-  assert.ok(home.indexOf('id="institutions"') < home.indexOf('id="research"'));
+  const order = ['id="principle"', 'id="research"', 'id="community"', 'id="get-involved"', 'id="institutions"', 'id="use-cases"', 'id="journals"', 'id="technical"', 'id="integrations"', 'id="partners"'];
+  for (let i = 1; i < order.length; i++) assert.ok(home.indexOf(order[i - 1]) < home.indexOf(order[i]), `${order[i - 1]} before ${order[i]}`);
   assert.equal((home.match(/id="institutions"/g) || []).length, 1);
-  assert.ok(!home.includes('class="ecosystem-context"'));
-  assert.ok(!home.includes('class="resilience-note"'));
+  for (const gone of ['class="ecosystem-context"', 'class="resilience-note"', 'class="ecosystem-node', 'class="ecosystem-map-panel"', 'class="people-button"', 'href="https://www.gdcc.io']) assert.ok(!home.includes(gone), gone);
   assert.ok(home.includes("How to Get Involved"));
-  for (const label of ["Containerization", "Documentation", "Internationalization", "Large Data Support", "pyDataverse", "Sensitive Data"]) assert.ok(home.includes(`>${label}</a>`));
-  assert.equal((home.match(/class="ecosystem-node node-/g) || []).length, 8);
-  assert.ok(home.includes('class="ecosystem-node node-partners" href="#partners"'));
-  assert.ok(home.includes('class="ecosystem-node node-integrations" href="https://guides.dataverse.org/en/latest/admin/integrations.html"'));
-  assert.ok(home.indexOf('id="integrations"') < home.indexOf('id="partners"'));
+  assert.ok(home.includes("Global Dataverse Community Consortium (GDCC)"));
+  for (const label of ["Containerization", "Documentation", "Internationalization", "Large Data Support", "pyDataverse", "Sensitive Data"]) assert.ok(home.includes(`<li>${label}</li>`));
+  assert.ok(home.includes('href="/explore"'));
+  assert.ok(home.includes("King (2007)"));
   const assets = [...home.matchAll(/src="(\/integrations\/[^"]+)"/g)].map(match => match[1]);
   assert.equal(assets.length, 27);
   for (const asset of assets) assert.ok((await readFile(new URL(`../public${asset}`, import.meta.url))).length > 100, asset);
@@ -35,7 +32,7 @@ test("People, Danny's website and Dataverse TV are easy to reach", async () => {
   const about = await render("/about");
   const community = await render("/events");
   const tv = await render("/dataversetv");
-  assert.ok(about.includes('class="people-button" href="https://people.dataverse.org/">People</a>'));
+  assert.ok(about.includes('href="https://people.dataverse.org/">People</a>'));
   assert.equal((about.match(/href="https:\/\/dannyebanks.com\/"/g) || []).length, 2);
   assert.ok(about.includes('id="team">Project Leadership</h2>'));
   assert.ok(!about.includes(">The Team</h2>"));

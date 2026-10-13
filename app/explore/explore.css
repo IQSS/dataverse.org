@@ -1,0 +1,26 @@
+.explore-page .section-kicker { margin-bottom: 14px; }
+.explore-harvard { padding: 48px 8vw 8px; }
+.explore-harvard > div { max-width: 880px; }
+.explore-harvard h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 16px; }
+.explore-harvard p { font-size: 18px; line-height: 1.6; }
+.explore-harvard-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 28px 0; }
+.explore-harvard-facts div { padding: 18px 20px; border: 1px solid #DCC9BD; border-radius: 18px; background: #FFF1E9; box-shadow: 3px 3px 0 #DEDEDE; }
+.explore-harvard-facts b { display: block; font-size: clamp(26px, 3vw, 40px); letter-spacing: -.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.explore-harvard-facts span { font-size: 15px; line-height: 1.45; }
+.explore-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.explore-network { padding: 40px 8vw 0; max-width: 980px; }
+.explore-network h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin: 0 0 12px; }
+.explore-lede { font-size: 18px; line-height: 1.6; }
+.explore-map { padding: 0 8vw; }
+.explore-page .institution-banner { padding-left: 8vw; padding-right: 8vw; }
+.explore-list { padding: 24px 8vw 110px; }
+.explore-group { margin-top: 36px; }
+.explore-group h3 { font-size: 1.35rem; margin: 0 0 14px; }
+.explore-group h3 span { font-size: 1rem; font-weight: 500; color: #A84A1D; margin-left: 8px; }
+.explore-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.explore-grid strong { font-size: 1.1rem; }
+.explore-description { font-size: .9rem; line-height: 1.5; color: #303030; }
+.explore-source { margin-top: 40px; font-size: 14px; color: #303030; }
+@media (max-width: 900px) { .explore-harvard-facts, .explore-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .explore-harvard-facts, .explore-grid { grid-template-columns: 1fr; } }
+.explore-description { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }

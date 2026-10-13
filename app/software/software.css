@@ -1,0 +1,15 @@
+.software-body { padding: 48px 8vw 110px; max-width: 1200px; }
+.software-lede { font-size: 18px; line-height: 1.6; max-width: 820px; margin: 0 0 44px; }
+.software-lede a { color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; }
+.software-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.software-grid section { padding: 1.4rem 1.6rem 1.2rem; border: 1px solid #DCC9BD; border-radius: 18px; background: #FFF1E9; box-shadow: 3px 3px 0 #DEDEDE; }
+.software-grid h2 { font-size: 1.35rem; margin: 0 0 14px; }
+.software-grid dl { margin: 0; }
+.software-grid dl > div { padding: 10px 0; border-top: 1px solid #DCC9BD; }
+.software-grid dt { font: 600 14px/1.5 var(--font-montserrat), Montserrat, sans-serif; letter-spacing: .03em; text-transform: uppercase; color: #A84A1D; }
+.software-grid dd { margin: 4px 0 0; font-size: 15.5px; line-height: 1.55; }
+.software-links { margin-top: 44px; }
+.software-links h2 { font-size: 1.35rem; margin: 0 0 12px; }
+.software-links ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 24px; }
+.software-links a { color: #A84A1D; text-decoration: underline; text-underline-offset: 4px; font-size: 16px; }
+@media (max-width: 900px) { .software-grid, .software-links ul { grid-template-columns: 1fr; } }

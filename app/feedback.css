@@ -374,3 +374,23 @@ footer > div:last-child { flex-wrap: wrap; }
 @media (max-width: 900px) { .verified-stats.usage-stats { grid-template-columns: 1fr; } }
 .verified-stats:has(+ .usage-stats) { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 .verified-stats.usage-stats { border-top-left-radius: 0; border-top-right-radius: 0; }
+
+/* Home page restructure (owner review 2026-10-13) */
+.harvard-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.harvard-actions .light-link { color: inherit; }
+.harvard-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-content: start; }
+.harvard-facts div { padding: 20px 22px; border: 1px solid #DCC9BD; border-radius: 18px; background: #FFF1E9; box-shadow: 3px 3px 0 #DEDEDE; color: #303030; }
+.harvard-facts b { display: block; font-size: clamp(26px, 2.8vw, 40px); letter-spacing: -.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.harvard-facts span { font-size: 15px; line-height: 1.45; }
+.harvard-facts > a { grid-column: 1 / -1; justify-self: start; }
+.community-section .section-intro p { margin: 0 0 16px; }
+.technical-panel { padding: 56px var(--content-gutter) 8px; }
+.technical-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.technical-grid a { display: flex; flex-direction: column; gap: .5rem; height: 100%; padding: 1.3rem 1.4rem; border: 1px solid #DCC9BD; border-radius: 18px; background: #fff; color: #303030; box-shadow: 3px 3px 0 #DEDEDE; text-decoration: none; }
+.technical-grid a:hover { border-color: #A87960; }
+.technical-grid a:focus-visible { outline: 3px solid #A84A1D; outline-offset: 2px; }
+.technical-grid strong { font-size: 1.1rem; }
+.technical-grid span { font-size: .95rem; line-height: 1.5; }
+.roadmap-lede { font-size: 18px; line-height: 1.6; max-width: 820px; margin: -12px 0 28px; }
+@media (max-width: 900px) { .harvard-facts, .technical-grid { grid-template-columns: 1fr; } .harvard-section { grid-template-columns: 1fr; } }
+.project-section .audience-banner-heading h2 { letter-spacing: -.01em; font-size: clamp(1.5rem, 2.8vw, 2rem); }

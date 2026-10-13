@@ -1,9 +1,9 @@
 import map from "../../data/installation-map.json";
 
-export default function InstallationMap() {
+export default function InstallationMap({ hideDirectory = false }: { hideDirectory?: boolean }) {
   return <div className="ecosystem-map-panel">
-    <div className="map-panel-heading"><h3>Dataverse Network</h3><a href="https://iqss.github.io/dataverse-installations/" target="_blank" rel="noreferrer">Explore the interactive map ↗</a></div>
-    <a className="map-skip" href="#installation-directory">Go to the alphabetical repository list</a>
+    <div className="map-panel-heading"><h3>Where the installations are</h3><a href="/explore#explore-list-heading">Full list below</a></div>
+    <a className="map-skip" href={hideDirectory ? "#explore-list-heading" : "#installation-directory"}>Go to the repository list</a>
     <div className="installation-map-container">
       <svg className="installation-map" viewBox="0 0 1000 440" role="group" aria-labelledby="installation-map-title" aria-describedby="installation-map-description">
         <title id="installation-map-title">Dataverse installations around the world</title>
@@ -16,10 +16,10 @@ export default function InstallationMap() {
         </a>)}</g>
       </svg>
     </div>
-    <details className="map-directory" id="installation-directory">
+    {!hideDirectory && <details className="map-directory" id="installation-directory">
       <summary>Browse all {map.installations.length} repositories (in alphabetical order)</summary>
       <ul>{[...map.installations].sort((a, b) => a.name.localeCompare(b.name)).map(installation => <li key={installation.name}><a href={installation.url}>{installation.name}</a> — {installation.country}</li>)}</ul>
-    </details>
-    <p className="map-credit">Locations: <a href="https://github.com/IQSS/dataverse-installations">Dataverse community registry</a>. Geography: <a href="https://www.naturalearthdata.com/">Natural Earth</a>.</p>
+    </details>}
+    <p className="map-credit">Locations from the community registry of Dataverse installations.</p>
   </div>;
 }

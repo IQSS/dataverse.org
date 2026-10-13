@@ -51,18 +51,18 @@ export default function RoadmapPage() {
       <p>Priorities and ongoing work for July 2026–June 2027.</p>
     </section>
     <section className="roadmap-content" aria-label="Roadmap and release plans">
+      <section className="roadmap-themes" aria-labelledby="roadmap-priorities">
+        <h2 id="roadmap-priorities">The big picture for FY27</h2><p className="roadmap-lede">Six directions shape the year: making biomedical and Indigenous data easier to share responsibly, finishing the modern interface, using AI to improve metadata without giving up curation, running repository services for institutions that need them, and keeping the community and Harvard Dataverse healthy. The release timeline and technical milestones follow.</p>
+        <div className="roadmap-theme-grid">
+          {themes.map(theme => <article key={theme.title}><h3>{theme.title}</h3><p>{theme.description}</p></article>)}
+        </div>
+      </section>
       <figure className="roadmap-timeline">
         <div className="roadmap-timeline-scroll" tabIndex={0} role="group" aria-label="FY27 roadmap timeline; scroll horizontally on small screens">
           <img src="/fy27-roadmap-timeline.svg" width="1200" height="620" alt="FY27 roadmap, July 2026 through June 2027. Target software releases: Dataverse 6.12 on September 16, 2026; 6.13 on December 16, 2026; 6.14 on March 17, 2027; and 6.15 on June 16, 2027. Six ongoing work themes are described below; no theme is assigned to a specific release." />
         </div>
         <figcaption>Release targets may change. Initiative timing is not assigned to specific releases. <a href="/fy27-roadmap-timeline.svg" download="Dataverse-FY27-roadmap.svg">Download timeline image</a></figcaption>
       </figure>
-      <section className="roadmap-themes" aria-labelledby="roadmap-priorities">
-        <h2 id="roadmap-priorities">FY27 priorities and ongoing work</h2>
-        <div className="roadmap-theme-grid">
-          {themes.map(theme => <article key={theme.title}><h3>{theme.title}</h3><p>{theme.description}</p></article>)}
-        </div>
-      </section>
       <div className="release-heading"><h2>Technical release milestones</h2><p>Explore planned features, fixes, and progress for each release.</p></div>
       <nav className="roadmap-milestone-links" aria-label="Technical release milestones">
         {milestones.map(milestone => <a href={milestone.url} key={milestone.version}>Dataverse {milestone.version} ↗</a>)}

@@ -1,11 +1,4 @@
-const workingGroups = [
-  { name: "Containerization", href: "https://ct.gdcc.io/" },
-  { name: "Documentation", href: "https://www.gdcc.io/working-groups/documentation.html" },
-  { name: "Internationalization", href: "https://www.gdcc.io/working-groups/internationalization.html" },
-  { name: "Large Data Support", href: "https://www.gdcc.io/working-groups/large-data-support.html" },
-  { name: "pyDataverse", href: "https://py.gdcc.io/" },
-  { name: "Sensitive Data", href: "https://www.gdcc.io/working-groups/sensitive-data.html" },
-];
+const workingGroups = ["Containerization", "Documentation", "Internationalization", "Large Data Support", "pyDataverse", "Sensitive Data"];
 
 export default function GetInvolved() {
   return <section className="get-involved-card" id="get-involved" aria-labelledby="get-involved-heading">
@@ -19,9 +12,9 @@ export default function GetInvolved() {
       </nav>
     </div>
     <div className="working-groups">
-      <div><h4>GDCC working groups</h4><p>Everyone is welcome to join our groups. No fee (GDCC or otherwise) is required to join a group.</p></div>
-      <ul>{workingGroups.map(group => <li key={group.name}><a href={group.href}>{group.name}</a></li>)}</ul>
-      <a className="working-group-source" href="https://www.gdcc.io/working-groups.html">All working groups and past groups</a>
+      <div><h4>Working groups</h4><p>Run by the Global Dataverse Community Consortium (GDCC), the body through which installations coordinate. Anyone may join a group; no membership or fee is required.</p></div>
+      <ul>{workingGroups.map(group => <li key={group}>{group}</li>)}</ul>
+      <a className="working-group-source" href="/events">Community page: calls, meetings, and how to join</a>
     </div>
   </section>;
 }

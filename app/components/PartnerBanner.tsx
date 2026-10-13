@@ -4,7 +4,7 @@ const partners = [
   { name: "NSF", href: "https://www.nsf.gov/", logo: "nsf.png", className: "partner-nsf" },
   { name: "NIH", href: "https://www.nih.gov/", logo: "nih.png", className: "partner-nih" },
   { name: "GREI", href: "https://zenodo.org/communities/grei/", logo: "grei.png", className: "partner-grei" },
-  { name: "GDCC", href: "https://www.gdcc.io/", logo: "gdcc.png", className: "partner-gdcc" },
+  { name: "GDCC", href: "/events", logo: "gdcc.png", className: "partner-gdcc" },
   { name: "Bertarelli Foundation", href: "https://www.fondation-bertarelli.org/", logo: "bertarelli.png", className: "partner-bertarelli" },
   { name: "Harvard FAS", href: "https://www.fas.harvard.edu/", logo: "fas.png", className: "partner-on-dark" },
   { name: "Alfred P. Sloan Foundation", href: "https://sloan.org/", logo: "sloan.png", className: "partner-sloan" },

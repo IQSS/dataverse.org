@@ -61,7 +61,7 @@ test("installation figure covers each of the map's 150 entries once", async () =
 
 test("every installation dot links to its own repository", async () => {
   const map = JSON.parse(await readFile(new URL("../data/installation-map.json", import.meta.url), "utf8"));
-  const home = await render("/");
+  const home = await render("/explore");
   const links = [...home.matchAll(/<a\b[^>]*class="map-repository-link"[^>]*>/g)].map(match => match[0]);
   assert.equal(links.length, map.installations.length);
   for (const [index, installation] of map.installations.entries()) {

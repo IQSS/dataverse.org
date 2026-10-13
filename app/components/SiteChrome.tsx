@@ -8,19 +8,19 @@ export function ArchiveHeader() {
       </a>
       <nav aria-label="Main navigation">
         <a href="/about">About</a>
-        <a className="people-button" href="https://people.dataverse.org/">People</a>
+        <a href="https://people.dataverse.org/">People</a>
         <a href="/events">Community</a>
         <a href="/best-practices/data-citation">Best Practices</a>
         <a href="/use-cases">Use Cases</a>
-        <a href="/software-features">Software</a>
+        <a href="/software">Software</a>
         <a href="/roadmap">Roadmap</a>
         <a href="/releases">Releases</a>
-        <a href="/trusted-data-collaboration">Research Projects</a>
+        <a href="/research-projects">Research Projects</a>
         <a href="/contact">Contact</a>
         <a href="https://guides.dataverse.org/en/6.10.1/user/">User Guide ↗</a>
       </nav>
-      <a className="archive-harvard" href="https://dataverse.harvard.edu/">
-        Harvard Dataverse ↗
+      <a className="archive-harvard" href="/explore">
+        Explore the Dataverse
       </a>
     </header>
   );
@@ -34,8 +34,8 @@ export function ArchiveFooter() {
         <div><b>Dataverse</b><span>Open-source research data infrastructure</span></div>
       </div>
       <div className="archive-footer-links">
-        <a href="/installations">Installations</a>
-        <a href="/software-features">Software</a>
+        <a href="/explore">Explore</a>
+        <a href="/software">Software</a>
         <a href="/roadmap">Roadmap</a>
         <a href="/releases">Releases</a>
         <a href="/best-practices/data-citation">Best Practices</a>
