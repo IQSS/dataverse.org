@@ -29,6 +29,8 @@ body { background: #fff; font-size: 16px; line-height: 1.6; }
 .partner-sloan .partner-logo-frame { padding: 0; }
 .partner-sloan img { width: 110px; max-height: 60px; }
 .partner-grei img, .partner-gdcc img { width: 145px; }
+.partner-wide img { max-width: 160px; }
+.partner-seal img { max-height: 70px; }
 .partner-wordmark { background: var(--dv-orange-soft); border-radius: 18px; text-align: center; font: 700 13px/1.35 var(--font-montserrat), Montserrat, sans-serif; letter-spacing: .02em; color: #252525; }
 .partner-name { font-size: 14px; font-weight: 600; line-height: 1.5; text-align: center; }
 .partner-grid a:hover .partner-name { color: #a84a1d; text-decoration: underline; text-underline-offset: 4px; }
