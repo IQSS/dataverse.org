@@ -2,39 +2,81 @@
 
 import { useEffect, useRef } from "react";
 
-// One shared tooltip, moved by direct DOM writes (no React re-render), so it shows on the
-// first pointer event. The native <title> tooltip waits about a second and cannot be sped up.
+// One shared hover card, filled and moved by direct DOM writes (no React re-render), so it
+// appears on the first pointer event. Mouse: hover shows the card, clicking the dot opens the
+// repository. Touch: the first tap shows the card, a second tap (or the card's link) opens it.
 export default function MapTooltip() {
-  const tip = useRef<HTMLDivElement>(null);
+  const card = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = tip.current;
+    const el = card.current;
     const box = el?.parentElement;
     if (!el || !box) return;
-    const show = (event: Event) => {
-      const link = (event.target as Element).closest<SVGAElement>(".map-repository-link");
-      if (!link) return;
-      const dot = link.querySelector(".map-location-dot")!.getBoundingClientRect();
+    const [title, meta, desc, link] = ["strong", ".map-card-meta", ".map-card-desc", "a"].map((q) => el.querySelector(q)!) as [HTMLElement, HTMLElement, HTMLElement, HTMLAnchorElement];
+    let current: SVGAElement | null = null;
+    let hideTimer = 0;
+    let touch = false;
+
+    const dotOf = (event: Event) => (event.target as Element).closest<SVGAElement>(".map-repository-link");
+    const show = (dot: SVGAElement) => {
+      clearTimeout(hideTimer);
+      current = dot;
+      title.textContent = dot.dataset.name ?? "";
+      meta.textContent = dot.dataset.meta ?? "";
+      desc.textContent = dot.dataset.desc ?? "";
+      desc.hidden = !dot.dataset.desc;
+      link.href = dot.getAttribute("href") ?? link.href;
+      const r = dot.querySelector(".map-location-dot")!.getBoundingClientRect();
       const frame = box.getBoundingClientRect();
-      el.textContent = link.dataset.name ?? "";
-      el.style.left = `${dot.left + dot.width / 2 - frame.left}px`;
-      el.style.top = `${dot.top - frame.top}px`;
       el.hidden = false;
+      const half = el.offsetWidth / 2;
+      const x = Math.min(Math.max(r.left + r.width / 2 - frame.left, half + 8), frame.width - half - 8);
+      const below = r.top - frame.top < el.offsetHeight + 16;
+      el.style.left = `${x}px`;
+      el.style.top = `${below ? r.bottom - frame.top + 10 : r.top - frame.top - 10}px`;
+      el.classList.toggle("below", below);
     };
-    const hide = (event: Event) => {
-      if ((event.target as Element).closest(".map-repository-link")) el.hidden = true;
+    const hide = () => { el.hidden = true; current = null; };
+    const hideSoon = () => { clearTimeout(hideTimer); hideTimer = window.setTimeout(hide, 180); };
+
+    const onOver = (event: PointerEvent) => { if (event.pointerType !== "touch") { const dot = dotOf(event); if (dot) show(dot); } };
+    const onOut = (event: PointerEvent) => { if (dotOf(event)) hideSoon(); };
+    const onDown = (event: PointerEvent) => { touch = event.pointerType === "touch"; };
+    const onClick = (event: MouseEvent) => {
+      const dot = dotOf(event);
+      if (dot && touch && current !== dot) { event.preventDefault(); show(dot); }
     };
-    box.addEventListener("pointerover", show);
-    box.addEventListener("focusin", show);
-    box.addEventListener("pointerout", hide);
-    box.addEventListener("focusout", hide);
+    const onFocus = (event: FocusEvent) => { const dot = dotOf(event); if (dot) show(dot); };
+    const onKey = (event: KeyboardEvent) => { if (event.key === "Escape") hide(); };
+
+    box.addEventListener("pointerover", onOver);
+    box.addEventListener("pointerout", onOut);
+    box.addEventListener("pointerdown", onDown);
+    box.addEventListener("click", onClick);
+    box.addEventListener("focusin", onFocus);
+    box.addEventListener("focusout", hideSoon);
+    el.addEventListener("pointerenter", () => clearTimeout(hideTimer));
+    el.addEventListener("pointerleave", hideSoon);
+    document.addEventListener("keydown", onKey);
     return () => {
-      box.removeEventListener("pointerover", show);
-      box.removeEventListener("focusin", show);
-      box.removeEventListener("pointerout", hide);
-      box.removeEventListener("focusout", hide);
+      box.removeEventListener("pointerover", onOver);
+      box.removeEventListener("pointerout", onOut);
+      box.removeEventListener("pointerdown", onDown);
+      box.removeEventListener("click", onClick);
+      box.removeEventListener("focusin", onFocus);
+      box.removeEventListener("focusout", hideSoon);
+      document.removeEventListener("keydown", onKey);
     };
   }, []);
 
-  return <div ref={tip} className="map-tip" aria-hidden="true" hidden />;
+  // aria-hidden: each dot's accessible name already carries the name, country and year, and
+  // Enter on a dot opens the repository, so the card is a visual aid only.
+  return (
+    <div ref={card} className="map-card" aria-hidden="true" hidden>
+      <strong />
+      <span className="map-card-meta" />
+      <span className="map-card-desc" />
+      <a href="/explore#explore-list-heading" target="_blank" rel="noopener noreferrer" tabIndex={-1}>Visit repository ↗</a>
+    </div>
+  );
 }
