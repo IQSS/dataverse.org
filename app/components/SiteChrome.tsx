@@ -17,7 +17,7 @@ export function ArchiveHeader() {
         <a href="/releases">Releases</a>
         <a href="/research-projects">Research Projects</a>
         <a href="/contact">Contact</a>
-        <a href="https://guides.dataverse.org/en/6.10.1/user/">User Guide ↗</a>
+        <a href="https://guides.dataverse.org/en/6.10.1/user/">User Guide ↗</a><a href="/search">Search</a>
       </nav>
       <a className="archive-harvard" href="/explore">
         Explore the Dataverse

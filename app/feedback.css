@@ -417,3 +417,15 @@ body.midcentury .ecosystem-figure.community-figure .node-researchers, .community
 .archive-embed iframe { display: block; width: 100%; height: 900px; border: 1px solid #DCC9BD; border-radius: 12px; }
 .archive-embed p a { color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 700px) { .archive-embed iframe { height: 640px; } }
+
+.site-search form { display: grid; gap: 8px; margin: 8px 0 14px; }
+.site-search label { font: 600 13px/1.4 var(--font-montserrat), Montserrat, sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+.site-search input { width: 100%; max-width: 640px; padding: 12px 16px; font-size: 18px; border: 2px solid var(--dv-orange); border-radius: 12px; background: #fff; color: var(--ink); }
+.site-search input:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.site-search-status { margin: 0 0 18px; font-size: 15px; color: #444; }
+.site-search-results { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; max-width: 760px; }
+.site-search-results a { display: grid; gap: 4px; padding: 14px 18px; border: 1px solid #DCC9BD; border-radius: 14px; background: #fff; color: var(--ink); text-decoration: none; }
+.site-search-results a:is(:hover, :focus-visible) { border-color: var(--dv-orange); box-shadow: 3px 3px 0 #DEDEDE; }
+.site-search-results strong { font-size: 17px; }
+.site-search-kind { font: 600 12px/1.4 var(--font-montserrat), Montserrat, sans-serif; letter-spacing: .05em; text-transform: uppercase; color: #A84A1D; }
+.site-search-snippet { font-size: 14px; line-height: 1.5; color: #444; }

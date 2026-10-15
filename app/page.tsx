@@ -13,7 +13,7 @@ export default function Home() {
   return <div>
     <header className="site-header">
       <a className="brand" href="/" aria-label="Dataverse Project home"><img className="dataverse-logo" src="/dataverse-project-logo.svg" alt="The Dataverse Project"/></a>
-      <nav aria-label="Main navigation"><a href="/about">About</a><a href="https://people.dataverse.org/">People</a><a href="/events">Community</a><a href="/best-practices/data-citation">Best Practices</a><a href="/use-cases">Use Cases</a><a href="/software">Software</a><a href="/roadmap">Roadmap</a><a href="/releases">Releases</a><a href="/research-projects">Research Projects</a><a href="/contact">Contact</a><a href="https://guides.dataverse.org/en/6.10.1/user/">User Guide ↗</a></nav>
+      <nav aria-label="Main navigation"><a href="/about">About</a><a href="https://people.dataverse.org/">People</a><a href="/events">Community</a><a href="/best-practices/data-citation">Best Practices</a><a href="/use-cases">Use Cases</a><a href="/software">Software</a><a href="/roadmap">Roadmap</a><a href="/releases">Releases</a><a href="/research-projects">Research Projects</a><a href="/contact">Contact</a><a href="https://guides.dataverse.org/en/6.10.1/user/">User Guide ↗</a><a href="/search">Search</a></nav>
       <a className="outline-button" href="/explore">Explore the Dataverse</a>
     </header>
 
