@@ -24,9 +24,25 @@ export function cleanImportedText(text: string) {
   return stripMenuNoise(text.replaceAll(importedNavigation, ""));
 }
 
+const retiredLinks: Record<string, string> = {
+  "https://www.iq.harvard.edu/people/program/dataverse-project": "/about#team",
+};
+
+// The old site titled many references just "Link"; label them by host instead.
+function labelLink(link: { text: string; href: string }) {
+  const href = retiredLinks[link.href] ?? link.href;
+  if (link.text.trim().toLowerCase() !== "link") return { ...link, href };
+  try {
+    return { text: new URL(href).hostname.replace(/^www\./, ""), href };
+  } catch {
+    return { ...link, href };
+  }
+}
+
 export function cleanImportedLinks<T extends { text: string; links: { text: string; href: string }[] }>(item: T) {
-  if (!item.text.includes(importedNavigation)) return item.links;
+  const links = item.links.map(labelLink);
+  if (!item.text.includes(importedNavigation)) return links;
   // Only remove the captured leading menu, never matching links from the body.
-  const end = item.links.findIndex(link => link.text === "Dataverse Annual Report 2025");
-  return end < 0 ? item.links : item.links.slice(end + 1);
+  const end = links.findIndex(link => link.text === "Dataverse Annual Report 2025");
+  return end < 0 ? links : links.slice(end + 1);
 }

@@ -292,6 +292,16 @@ export function ReportDetailPage({ item }: { item: ReportRecord }) {
   );
 }
 
+function DataverseTv() {
+  return (
+    <div className="archive-embed">
+      <p>DataverseTV collects video from the Dataverse community. To add or edit videos, open <a href="https://github.com/IQSS/dataverse-tv">github.com/IQSS/dataverse-tv</a>.</p>
+      <iframe src="https://iqss.github.io/dataverse-tv/" title="DataverseTV" loading="lazy" />
+      <p><a href="https://iqss.github.io/dataverse-tv/">Open DataverseTV in its own page ↗</a></p>
+    </div>
+  );
+}
+
 export function ProjectContentPage({ item }: { item: ProjectPage }) {
   const heading = item.localPath === "/journals" ? "Journals and Proceedings" : item.h1 || item.title.replace(/ \| The Dataverse Project$/, "");
   return (
@@ -301,7 +311,7 @@ export function ProjectContentPage({ item }: { item: ProjectPage }) {
           {item.images.map((image) => <img key={image.src} src={image.src} alt={image.alt} />)}
         </div>
       )}
-      {item.localPath === "/about" ? <AboutContent text={item.text} links={item.links} /> : ["/journals", "/institutions"].includes(item.localPath) ? <AudienceContent item={item} /> : <TextContent text={item.text} title={heading} />}
+      {item.localPath === "/dataversetv" ? <DataverseTv /> : item.localPath === "/about" ? <AboutContent text={item.text} links={item.links} /> : ["/journals", "/institutions"].includes(item.localPath) ? <AudienceContent item={item} /> : <TextContent text={item.text} title={heading} />}
     </DetailLayout>
   );
 }

@@ -6,7 +6,7 @@ import "./use-cases.css";
 
 export const metadata: Metadata = {
   title: "Use cases | The Dataverse Project",
-  description: "Data-sharing stories and worked scenarios showing how researchers, institutions and funders use the Harvard Dataverse Repository.",
+  description: "Data-sharing stories and case studies showing how researchers, institutions and funders use the Harvard Dataverse Repository.",
 };
 
 export default function UseCasesPage() {

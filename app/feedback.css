@@ -189,8 +189,9 @@ footer > div:last-child { flex-wrap: wrap; }
 .map-land { fill: var(--dv-orange-soft); stroke: #dab49f; stroke-width: .65; }
 .map-locations { fill: var(--dv-orange); stroke: #fff; stroke-width: 1; }
 .map-repository-link { cursor: pointer; }
-.map-location-halo { fill: none; stroke: var(--ink); stroke-width: 1.5; opacity: 0; pointer-events: none; }
-.map-repository-link:is(:hover, :focus-visible) .map-location-dot { fill: #a84a1d; stroke: var(--ink); }
+.map-location-halo { fill: none; stroke: var(--dv-orange); stroke-width: 1.5; opacity: 0; pointer-events: all; }
+.map-repository-link, .map-location-dot, .map-location-halo { transition: none; }
+.map-repository-link:is(:hover, :focus-visible) .map-location-dot { fill: #f0a070; stroke: var(--dv-orange); stroke-width: 2; }
 .map-repository-link:is(:hover, :focus-visible) .map-location-halo { opacity: 1; }
 .map-credit { margin: 0; padding: 14px 24px; border-top: 1px solid #e2b49c; }
 .map-credit a { margin-left: 0; }
@@ -412,3 +413,7 @@ body.midcentury .ecosystem-figure.community-figure .node-software, .community-fi
 body.midcentury .ecosystem-figure.community-figure .node-researchers, .community-figure .node-researchers { left: 76%; top: 82%; }
 .collection-section h2 .accent-link { color: inherit; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 8px; }
 .collection-section h2 .accent-link:hover { text-decoration-color: #A84A1D; }
+
+.archive-embed iframe { display: block; width: 100%; height: 900px; border: 1px solid #DCC9BD; border-radius: 12px; }
+.archive-embed p a { color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 700px) { .archive-embed iframe { height: 640px; } }
