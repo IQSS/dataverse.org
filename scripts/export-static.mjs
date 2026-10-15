@@ -17,7 +17,11 @@ import { pathToFileURL } from "node:url";
 const args = Object.fromEntries(process.argv.slice(2).map((a, i, all) => a.startsWith("--") ? [a.slice(2), all[i + 1] !== undefined && !all[i + 1].startsWith("--") ? all[i + 1] : "true"] : []).filter(Boolean));
 const out = args.out || "site-static";
 const base = (args.base ?? process.env.SITE_BASE_PATH ?? "").replace(/\/+$/, ""); // "/" or "" means the site root
-const seeds = ["/", "/numbers", "/community-calls", "/releases", "/roadmap", "/404"];
+const archive = JSON.parse(await readFile(new URL("../data/archive.json", import.meta.url), "utf8"));
+const archivedPages = archive.pages.map((page) => new URL(page.url).pathname.replace(/\/+$/, "") || "/");
+const seeds = [...new Set(["/", "/numbers", "/community-calls", "/releases", "/roadmap", "/search", "/404", ...archivedPages])];
+// Old URLs that now live elsewhere: a static page that sends the browser on.
+const redirects = { "/software-features": "/software" };
 
 const workerUrl = pathToFileURL(join(process.cwd(), "dist/server/index.js"));
 workerUrl.searchParams.set("export", String(Date.now()));
@@ -37,7 +41,7 @@ const normalize = (href) => {
   return clean.length > 1 ? clean.replace(/\/+$/, "") : "/";
 };
 
-const queue = [...seeds];
+const queue = seeds.filter((path) => !(path in redirects));
 const seen = new Set(queue);
 const pages = new Map();
 const failures = [];
@@ -85,6 +89,13 @@ for (const [path, html] of pages) {
   const file = path === "/404" ? join(out, "404.html") : join(out, path === "/" ? "index.html" : `${path}/index.html`);
   await mkdir(dirname(file), { recursive: true });
   await writeFile(file, rewrite(html));
+}
+
+for (const [from, to] of Object.entries(redirects)) {
+  const target = `${base}${to}/`;
+  const file = join(out, `${from}/index.html`);
+  await mkdir(dirname(file), { recursive: true });
+  await writeFile(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Redirecting</title><meta http-equiv="refresh" content="0; url=${target}"><link rel="canonical" href="${target}"></head><body><p>This page moved to <a href="${target}">${to}</a>.</p></body></html>\n`);
 }
 
 if (base) {
