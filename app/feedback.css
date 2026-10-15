@@ -184,7 +184,7 @@ footer > div:last-child { flex-wrap: wrap; }
 .map-panel-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 20px 24px; background: var(--dv-orange-soft); border-bottom: 1px solid var(--dv-border); }
 .map-panel-heading h3 { margin: 0; font-size: 28px; font-weight: 600; line-height: 1.2; }
 .map-panel-heading a, .map-credit, .ecosystem-context a, .collection-grid a, .source-links a { font-size: 14px; }
-.installation-map-container { display: block; padding: 24px 16px; }
+.installation-map-container { display: block; position: relative; padding: 24px 16px; }
 .installation-map { display: block; width: 100%; height: auto; }
 .map-land { fill: var(--dv-orange-soft); stroke: #dab49f; stroke-width: .65; }
 .map-locations { fill: var(--dv-orange); stroke: #fff; stroke-width: 1; }
@@ -429,3 +429,4 @@ body.midcentury .ecosystem-figure.community-figure .node-researchers, .community
 .site-search-results strong { font-size: 17px; }
 .site-search-kind { font: 600 12px/1.4 var(--font-montserrat), Montserrat, sans-serif; letter-spacing: .05em; text-transform: uppercase; color: #A84A1D; }
 .site-search-snippet { font-size: 14px; line-height: 1.5; color: #444; }
+.map-tip { position: absolute; z-index: 2; pointer-events: none; transform: translate(-50%, calc(-100% - 10px)); padding: 6px 10px; border-radius: 8px; background: #252525; color: #fff; font: 600 13px/1.3 var(--font-montserrat), Montserrat, sans-serif; white-space: nowrap; }

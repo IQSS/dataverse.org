@@ -1,4 +1,5 @@
 import map from "../../data/installation-map.json";
+import MapTooltip from "./MapTooltip";
 
 export default function InstallationMap({ hideDirectory = false }: { hideDirectory?: boolean }) {
   return <div className="ecosystem-map-panel">
@@ -8,12 +9,12 @@ export default function InstallationMap({ hideDirectory = false }: { hideDirecto
         <title id="installation-map-title">Dataverse installations around the world</title>
         <desc id="installation-map-description">Locations of {map.installations.length} installations in the Dataverse community registry, across six continents. Select a dot to open its repository in a new tab. Use Tab to reach individual repositories where dots overlap.</desc>
         <g className="map-land" aria-hidden="true">{map.paths.map((path, index) => <path d={path} key={index}/>)}</g>
-        <g className="map-locations">{map.installations.map(installation => <a className="map-repository-link" key={installation.name} href={installation.url} target="_blank" rel="noopener noreferrer" aria-label={`${installation.name} — ${installation.country} (opens in a new tab)`}>
-          <title>{`${installation.name} — ${installation.country}`}</title>
+        <g className="map-locations">{map.installations.map(installation => <a className="map-repository-link" key={installation.name} href={installation.url} target="_blank" rel="noopener noreferrer" data-name={`${installation.name} — ${installation.country}`} aria-label={`${installation.name} — ${installation.country} (opens in a new tab)`}>
           <circle className="map-location-halo" cx={installation.point[0]} cy={installation.point[1]} r="7" aria-hidden="true"/>
           <circle className="map-location-dot" cx={installation.point[0]} cy={installation.point[1]} r="4"/>
         </a>)}</g>
       </svg>
+      <MapTooltip />
     </div>
     {!hideDirectory && <details className="map-directory" id="installation-directory">
       <summary>Browse all {map.installations.length} repositories (in alphabetical order)</summary>
