@@ -19,7 +19,7 @@ const sitePages: [string, string, string][] = [
   ["Use cases", "/use-cases", "Data-sharing stories and case studies from the Harvard Dataverse Repository."],
 ];
 
-const installationNames = (installations as { name: string; country?: string }[]).map((i) => `${i.name} ${i.country ?? ""}`).join(" ");
+const installationNames = ((installations as { installations?: { name: string; country?: string }[] }).installations ?? []).map((i) => `${i.name} ${i.country ?? ""}`).join(" ");
 
 export const searchEntries: SearchEntry[] = [
   ...sitePages.map(([title, path, snippet]) => ({ title, path, kind: "Site", snippet, text: path === "/explore" ? `${snippet} ${installationNames}` : snippet })),
