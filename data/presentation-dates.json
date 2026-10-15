@@ -1,0 +1,870 @@
+{
+ "dates": {
+  "/presentations/10-simple-rules-care-and-feeding-scientific-data": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/abrir-compartir-y-mejorar-los-datos-de-investigaci%C3%B3n-con-datacite": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/addressing-new-challenges-data-sharing-large-scale-data-and-sensitive": {
+   "date": "2015-12-09",
+   "location": "NISO webinar",
+   "snapshot": "20220624233515"
+  },
+  "/presentations/ai-and-dataverse-project-using-ai-benefit-research-data-community-members": {
+   "date": null,
+   "location": null,
+   "snapshot": "20251110131538"
+  },
+  "/presentations/applications-generative-ai-dataverse-and-research-projects": {
+   "date": "2024-05-01",
+   "location": "AI @ FAS Symposium at Harvard University",
+   "snapshot": "20240611230550"
+  },
+  "/presentations/australian-data-archive-ada-and-australian-national-university-anu-and": {
+   "date": "2023-06-13",
+   "location": "Open Repositories 2023, Stellenbosch University, South Africa",
+   "snapshot": "20241003125232"
+  },
+  "/presentations/bean-validation-practical-examples-real-world-java-ee-7-application": {
+   "date": "2014-09-29",
+   "location": "JavaOne Conference, San Francisco, CA",
+   "snapshot": "20170418214338"
+  },
+  "/presentations/bug-reports-and-change-requests": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/building-bridge-between-journal-articles-research-data": {
+   "date": "2014-02-26",
+   "location": "9th International Digital Curation Conference (IDCC), San Francisco, CA",
+   "snapshot": "20240427064007"
+  },
+  "/presentations/care-and-feeding-scientific-data": {
+   "date": "2014-09-24",
+   "location": "De Meervaart Conference Centre, Amsterdam, Netherlansds",
+   "snapshot": "20220624215723"
+  },
+  "/presentations/cimmyt-proyecto-dataverse": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/citation-data-citation-provenance-and-documentation": {
+   "date": "2017-02-21",
+   "location": "NSF SI2 Conference, Arlington, VA",
+   "snapshot": "20210922201858"
+  },
+  "/presentations/cloud-dataverse": {
+   "date": "2017-10-03",
+   "location": "MOC Workshop, Boston University",
+   "snapshot": "20190825134328"
+  },
+  "/presentations/cloud-dataverse-0": {
+   "date": "2016-12-06",
+   "location": "Massachusetts Open Cloud Workshop, Boston University",
+   "snapshot": "20210922213017"
+  },
+  "/presentations/cloud-dataverse-data-repository-platform-openstack-cloud": {
+   "date": "2017-05-08",
+   "location": "OpenStack Summit, Boston, MA",
+   "snapshot": "20200904191451"
+  },
+  "/presentations/collaboration-science-and-technology": {
+   "date": "2015-06-04",
+   "location": "Harvard IT Summit, Harvard University, Cambridge, MA",
+   "snapshot": "20210922201715"
+  },
+  "/presentations/community-data-repositories-working-library-university-harvard-dataverse": {
+   "date": "2016-04-06",
+   "location": "e-Science Symposium, UMASS Medical School, Worcester, MA",
+   "snapshot": "20220624224312"
+  },
+  "/presentations/community-data-repository-working-library-university-harvard-dataverse": {
+   "date": "2016-06-01",
+   "location": "IASSIST 2016 in Bergen, Norway",
+   "snapshot": "20170809121334"
+  },
+  "/presentations/connecting-data-repositories-research-life-cycle": {
+   "date": "2016-04-17",
+   "location": "FORCE 2016 Conference, Portland, OR",
+   "snapshot": "20160506063441"
+  },
+  "/presentations/continuum-publishers-data-repositories-models-support-seamless": {
+   "date": "2014-05-29",
+   "location": "SSP 2014, Boston, MA",
+   "snapshot": "20220624223203"
+  },
+  "/presentations/contributing-code-dataverse": {
+   "date": "2015-06-10",
+   "location": "Dataverse Community Meeting, Harvard University, Cambridge, MA 02138",
+   "snapshot": "20160413222219"
+  },
+  "/presentations/credit-data-sharing": {
+   "date": "2017-10-26",
+   "location": "FORCE2017, Berlin, Germany",
+   "snapshot": "20190825134400"
+  },
+  "/presentations/cross-institutional-collaboration-open-research-data-harvard-dataverse": {
+   "date": "2016-05-04",
+   "location": "Research Data Access & Preservation Summit, Atlanta, GA",
+   "snapshot": "20170809155446"
+  },
+  "/presentations/curating-big-data-reuse": {
+   "date": "2023-06-13",
+   "location": "Open Repositories 2023, Stellenbosch University, South Africa",
+   "snapshot": "20241004160254"
+  },
+  "/presentations/curating-data-links-astronomy": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/cyberinfrastructure-social-sciences": {
+   "date": "2012-10-15",
+   "location": "University of Washington, Seattle, WA",
+   "snapshot": "20240421153811"
+  },
+  "/presentations/data-acquisition-management-security-and-retention": {
+   "date": "2015-08-12",
+   "location": "Harvard FAS Responsible Conduct in Research",
+   "snapshot": "20210922195414"
+  },
+  "/presentations/data-citation-dataverse-network": {
+   "date": "2011-08-22",
+   "location": "Developing Data Attribution and Citation Practices and Standards An International Symposium and Workshop",
+   "snapshot": "20220808222307"
+  },
+  "/presentations/data-citation-dataverse-network-%C2%AE-and-contributor-identifiers": {
+   "date": "2011-09-13",
+   "location": "ORCID Participant Meeting, Summer 2011",
+   "snapshot": "20220808215748"
+  },
+  "/presentations/data-citation-implementation-dataverse": {
+   "date": "2016-02-03",
+   "location": "DCIP Workshop, Boston, MA",
+   "snapshot": "20220624221546"
+  },
+  "/presentations/data-citation-principles-and-practices": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/data-citation-principles-implementation": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/data-citation-roadmap-scholarly-data-repositories": {
+   "date": "2017-02-23",
+   "location": null,
+   "snapshot": "20220624233144"
+  },
+  "/presentations/data-explorer-20-analyse-and-reuse-data-your-repository": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/data-lifecycle": {
+   "date": "2017-01-17",
+   "location": null,
+   "snapshot": "20210922212938"
+  },
+  "/presentations/data-management-plan-dataverse-network": {
+   "date": "2011-08-17",
+   "location": "Lamont Library, Harvard University",
+   "snapshot": "20220624232712"
+  },
+  "/presentations/data-pass-archiving-social-science-data": {
+   "date": "2014-09-23",
+   "location": "De Meervaart Conference Centre, Amsterdam, Netherlansds",
+   "snapshot": "20220624231652"
+  },
+  "/presentations/data-publication-and-dissemination-structural-biology-data-grid": {
+   "date": "2015-10-20",
+   "location": "National Data Service Meeting, San Diego Supercomputer Center",
+   "snapshot": "20220624222255"
+  },
+  "/presentations/data-publication-and-dissemination-structural-biology-data-grid-0": {
+   "date": "2016-04-17",
+   "location": "FORCE 2016 Conference, Portland, OR",
+   "snapshot": "20220624224102"
+  },
+  "/presentations/data-publishing": {
+   "date": "2015-10-26",
+   "location": "Harvard Research Access and Innovation Symposium",
+   "snapshot": "20220624220415"
+  },
+  "/presentations/data-publishing-dataverse": {
+   "date": "2014-05-22",
+   "location": "DIG and DCIG Webinar, organized by ACRL",
+   "snapshot": "20220624223840"
+  },
+  "/presentations/data-publishing-while-preserving-data-privacy": {
+   "date": "2014-06-05",
+   "location": null,
+   "snapshot": "20220624220610"
+  },
+  "/presentations/data-publishing-workflows-dataverse": {
+   "date": "2015-03-11",
+   "location": "RDA 5th Plenary, San Diego, CA",
+   "snapshot": "20210922213609"
+  },
+  "/presentations/data-publishing-workflows-dataverse-0": {
+   "date": "2014-05-06",
+   "location": "MIT, Program of Information Sciences",
+   "snapshot": "20220624225955"
+  },
+  "/presentations/data-sharing-better-science-and-better-health": {
+   "date": "2017-09-06",
+   "location": "XVII Congreso SESPAS, Barcelona, Spain",
+   "snapshot": "20190825134223"
+  },
+  "/presentations/data-sharing-data-citation": {
+   "date": "2011-09-16",
+   "location": "Washington D.C.",
+   "snapshot": "20220808215905"
+  },
+  "/presentations/data-sharing-next-5-years": {
+   "date": "2015-09-15",
+   "location": "Northeastern Research Computing Charrette",
+   "snapshot": "20210922214118"
+  },
+  "/presentations/dataset-worth-1000-words": {
+   "date": "2016-01-14",
+   "location": "Lamont Library, Harvard University, Cambridge, MA",
+   "snapshot": "20160413230641"
+  },
+  "/presentations/dataverse-101-data-discovery-group": {
+   "date": "2014-05-08",
+   "location": "Countway Library, Harvard Medical School, Boston, MA",
+   "snapshot": "20220624232640"
+  },
+  "/presentations/dataverse-40-beyond": {
+   "date": "2014-08-20",
+   "location": "Ontario Council of University Libraries webinar",
+   "snapshot": "20220624222004"
+  },
+  "/presentations/dataverse-40-ux": {
+   "date": "2015-06-10",
+   "location": "Dataverse Community Meeting, Harvard University, Cambridge, MA 02138",
+   "snapshot": "20160414070518"
+  },
+  "/presentations/dataverse-apis": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-cloud-dataverse-and-datatags": {
+   "date": "2017-02-07",
+   "location": "Two Sigma",
+   "snapshot": "20210922212824"
+  },
+  "/presentations/dataverse-commons": {
+   "date": "2015-11-18",
+   "location": "The Future of The Commons: Data, Software and Beyond, Washington DC",
+   "snapshot": "20220624233424"
+  },
+  "/presentations/dataverse-community-future-work": {
+   "date": "2016-05-26",
+   "location": "Texas Conference on Digital Libraries, Austin, Texas",
+   "snapshot": "20170809161416"
+  },
+  "/presentations/dataverse-datatags-sharing-data-you-cant-share": {
+   "date": "2014-06-18",
+   "location": "IQSS, Harvard University",
+   "snapshot": "20220624225111"
+  },
+  "/presentations/dataverse-helping-researchers-publish-their-data-through-automation": {
+   "date": "2016-02-24",
+   "location": "11th IDCC Conference, Amsterdam, NL",
+   "snapshot": "20160414014309"
+  },
+  "/presentations/dataverse-hub-dataverse-marketplace-harnessing-creativity-power-dataverse": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-journals": {
+   "date": "2015-05-28",
+   "location": "37th Annual Society for Scholarly Publishing Meeting in Arlington, VA",
+   "snapshot": "20210922200955"
+  },
+  "/presentations/dataverse-mesh": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-moc": {
+   "date": "2015-11-19",
+   "location": null,
+   "snapshot": "20220624215406"
+  },
+  "/presentations/dataverse-network-and-pkp-project-encourage-data-sharing-citation": {
+   "date": "2013-05-30",
+   "location": "IASSIST 2013, Cologne, Germany",
+   "snapshot": "20240726131110"
+  },
+  "/presentations/dataverse-network-combining-preservation-scholarly-recognition": {
+   "date": "2010-06-12",
+   "location": "Richmond, WA",
+   "snapshot": "20190916083422"
+  },
+  "/presentations/dataverse-network-data-sharing-solution": {
+   "date": "2009-12-04",
+   "location": "London, UK",
+   "snapshot": "20190916090805"
+  },
+  "/presentations/dataverse-network-data-sharing-system": {
+   "date": "2008-12-12",
+   "location": "The Hague, Netherlands",
+   "snapshot": "20190916084453"
+  },
+  "/presentations/dataverse-network-making-research-data-more-accessible": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-network-open-source-application-sharing-discovering-and": {
+   "date": "2010-06-07",
+   "location": "Hanover, Germany",
+   "snapshot": "20190916085840"
+  },
+  "/presentations/dataverse-network-project": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-open-research-cloud-workshop": {
+   "date": "2017-05-11",
+   "location": "OpenStack Summit, Hynes Convention Center, Boston, MA",
+   "snapshot": "20220624214624"
+  },
+  "/presentations/dataverse-practical-example-data-archiving": {
+   "date": "2014-10-14",
+   "location": "Arlington, VA",
+   "snapshot": "20210922204809"
+  },
+  "/presentations/dataverse-project": {
+   "date": "2017-09-21",
+   "location": "RDA 10th Plenary, Montreal, Canada",
+   "snapshot": "20190825142101"
+  },
+  "/presentations/dataverse-project-also-home-life-sciences-data": {
+   "date": "2016-06-09",
+   "location": "bioCADDIE webinar series",
+   "snapshot": "20170418202759"
+  },
+  "/presentations/dataverse-project-data-sharing-better-science-dataverse-project": {
+   "date": "2017-09-12",
+   "location": "Max Planck Institute for Radioastronomy, Bonn, Germany",
+   "snapshot": "20190825133722"
+  },
+  "/presentations/dataverse-project-managing-and-sharing-your-research-data": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-project-managing-and-sharing-your-research-data-0": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-project-open-source-data-repository-and-data-sharing-community": {
+   "date": "2016-05-04",
+   "location": "Research Data Access & Preservation Summit, Atlanta, GA",
+   "snapshot": "20170809140335"
+  },
+  "/presentations/dataverse-project-open-source-data-repository-and-data-sharing-community-0": {
+   "date": "2016-05-25",
+   "location": "Texas Conference on Digital Libraries, Austin, Texas",
+   "snapshot": "20170809162836"
+  },
+  "/presentations/dataverse-project-training-barcelona-supercomputing-center": {
+   "date": "2024-09-13",
+   "location": "Webinar",
+   "snapshot": "20250429170941"
+  },
+  "/presentations/dataverse-project-ubuntunet-connect-2024": {
+   "date": "2024-11-01",
+   "location": "UbuntuNet-Connect2024, Dar es Salaam, Tanzania",
+   "snapshot": "20250429165531"
+  },
+  "/presentations/dataverse-re-architecture-project": {
+   "date": "2023-02-22",
+   "location": "Seoul National University",
+   "snapshot": "20251003005331"
+  },
+  "/presentations/dataverse-repository-framework-all": {
+   "date": "2015-06-05",
+   "location": "IASSIST 2015, Minneapolis, Minnesota",
+   "snapshot": "20160414050601"
+  },
+  "/presentations/dataverse-research-transparency-through-data-sharing": {
+   "date": "2014-06-04",
+   "location": null,
+   "snapshot": "20220624215645"
+  },
+  "/presentations/dataverse-software-new-features-and-future-plans": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-software-new-features-and-future-plans-0": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-usability-evaluation-findings-recommendations": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/dataverse-y-los-pids": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/declaration-data-citation-principles": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/demo-astronomy-dataverse-network": {
+   "date": "2011-10-24",
+   "location": "Cambridge, MA",
+   "snapshot": "20220808230557"
+  },
+  "/presentations/digital-trace-data-and-harvard-dataverse": {
+   "date": "2024-09-17",
+   "location": "The Science Summit (UNGA79), 9th Session of the United Nations General Assembly in New York City, USA",
+   "snapshot": "20250715164255"
+  },
+  "/presentations/discovering-publishing-data-dataverse": {
+   "date": "2015-09-17",
+   "location": "AMIGOS Open Source Virtual Conference",
+   "snapshot": "20160414021756"
+  },
+  "/presentations/distributed-metadata-and-data-dataverse": {
+   "date": "2024-04-05",
+   "location": "Distribits conference in D\u00fcsseldorf, Germany",
+   "snapshot": "20250720141254"
+  },
+  "/presentations/e-science-symposium-dataverse-story": {
+   "date": "2012-04-04",
+   "location": "Hoagland-Pincus Center Shrewsbury, MA",
+   "snapshot": "20220808215028"
+  },
+  "/presentations/enhancing-fair-ness-harvard-dataverse-variable-level-metadata-and": {
+   "date": "2024-10-28",
+   "location": "Computational Social Science Conference, Universitat Polit\u00e8cnica de Catalunya, Barcelona Spain",
+   "snapshot": "20250429171411"
+  },
+  "/presentations/establishing-means-providing-suitable-representation-indigenous-knowledge": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/evolution-dataverse-community-panel": {
+   "date": "2024-05-30",
+   "location": "IASSIST & CARTO 2024, Halifax, Nova Scotia, Canada",
+   "snapshot": "20240612012026"
+  },
+  "/presentations/expanding-dataverse": {
+   "date": "2015-01-21",
+   "location": "Lamont Library, Harvard University",
+   "snapshot": "20210922195832"
+  },
+  "/presentations/fair-data-management-and-fair-data-sharing": {
+   "date": "2017-02-03",
+   "location": "Harvard Univeristy",
+   "snapshot": "20210922205333"
+  },
+  "/presentations/fair-data-management-and-fair-data-sharing-0": {
+   "date": "2017-02-03",
+   "location": "Harvard Univeristy",
+   "snapshot": "20210922201336"
+  },
+  "/presentations/finding-data-sharing-solution-dataverse": {
+   "date": "2016-09-21",
+   "location": "COASP 2016 in Arlington, Virginia",
+   "snapshot": "20170112224233"
+  },
+  "/presentations/harvard-data-commons-leveraging-coar-notify-create-interoperability": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/helping-journals-upgrade-data-publications-reusable-research": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/how-run-successful-open-source-java-ee-project": {
+   "date": "2017-10-03",
+   "location": "JavaOne 2017",
+   "snapshot": "20190825144250"
+  },
+  "/presentations/importance-apis-rdm": {
+   "date": "2015-10-27",
+   "location": "DLF Forum, Vancouver, BC, Canada",
+   "snapshot": "20160414050405"
+  },
+  "/presentations/incorporating-data-access-journal-workflow": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/increasing-openness-and-connections-throughout-scientific-workflow": {
+   "date": "2015-06-03",
+   "location": "IASSIST Data Conference, June 2-5, 2015, Minneapolis, MN",
+   "snapshot": "20210922212135"
+  },
+  "/presentations/integrated-data-publishing-workflow": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/integrating-automated-data-deposit-journal-publishing-workflow": {
+   "date": "2014-12-04",
+   "location": "Lamont Library, Harvard University",
+   "snapshot": "20210922212019"
+  },
+  "/presentations/integrating-data-citation-provenance": {
+   "date": "2015-02-17",
+   "location": "Washington, D.C.",
+   "snapshot": "20210922203334"
+  },
+  "/presentations/intermediate-curation-dataverse-platform": {
+   "date": "2023-12-04",
+   "location": "Webinar",
+   "snapshot": "20240328090641"
+  },
+  "/presentations/introducing-astronomy-dataverse-theastrodataorg": {
+   "date": "2012-02-02",
+   "location": "Harvard-Smithsonian Center for Astrophysics, Cambridge, MA",
+   "snapshot": "20220808221325"
+  },
+  "/presentations/introducing-expanding-dataverse": {
+   "date": "2015-04-27",
+   "location": "Texas Conference on Digital Libraries, Austin, TX",
+   "snapshot": "20210922203746"
+  },
+  "/presentations/introduction-data-citation-principles": {
+   "date": "2015-01-12",
+   "location": "Oxford University",
+   "snapshot": "20210922203500"
+  },
+  "/presentations/introduction-data-handling-dataverse-platform": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/introduction-data-management-and-fair-data": {
+   "date": "2023-09-20",
+   "location": "Webinar",
+   "snapshot": "20250723103137"
+  },
+  "/presentations/introduction-dataverse-apis": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/introduction-dataverse-community-meeting-2017": {
+   "date": "2017-06-14",
+   "location": "Dataverse Community Meeting 2017 at Harvard University",
+   "snapshot": "20190825142845"
+  },
+  "/presentations/introduction-metadata-dataverse-repositories-installation-administrators": {
+   "date": "2025-04-15",
+   "location": "Webinar",
+   "snapshot": "20250715164255"
+  },
+  "/presentations/introduction-metadata-dataverse-repositories-researchers-and-support": {
+   "date": "2023-11-15",
+   "location": null,
+   "snapshot": "20240328124811"
+  },
+  "/presentations/introduction-using-harvard-dataverse-repository-fair-and-nih-dmp-harvard": {
+   "date": "2025-01-15",
+   "location": "Webinar",
+   "snapshot": "20250715164255"
+  },
+  "/presentations/introduction-using-harvard-dataverse-repository-nih-dmp-harvard-dataverse": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/joint-declaration-data-citation-principles-implementation-and-compliance": {
+   "date": "2014-04-23",
+   "location": "NISO Virtual Conference",
+   "snapshot": "20220624215937"
+  },
+  "/presentations/judiciary-numbers-seminar": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/large-data-support-harvard-dataverse": {
+   "date": "2025-03-26",
+   "location": "Webinar",
+   "snapshot": "20250715164255"
+  },
+  "/presentations/lean-beans-are-made-command-pattern-vs-mvc": {
+   "date": "2014-09-30",
+   "location": "JavaOne Conference, San Francisco, CA",
+   "snapshot": "20220624224029"
+  },
+  "/presentations/liber-webinar-data-citation-roadmap": {
+   "date": "2017-05-15",
+   "location": "LIBER Webinar",
+   "snapshot": "20220624214127"
+  },
+  "/presentations/linking-data-publications-through-citation-and-virtual-archives": {
+   "date": "2011-06-07",
+   "location": "Society For Scholarly Publishers Meeting",
+   "snapshot": "20190916084227"
+  },
+  "/presentations/linking-ojs-and-dataverse": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/managing-exploring-and-sharing-data-dataverse": {
+   "date": "2019-08-05",
+   "location": "FSCI 2019, UCLA, Los Angeles, California, United States",
+   "snapshot": "20191017203720"
+  },
+  "/presentations/measuring-impact-digital-repositories": {
+   "date": "2017-03-01",
+   "location": "NSF, Arlington, VA",
+   "snapshot": "20220624220102"
+  },
+  "/presentations/metadata-model-dataverse-project-helping-more-data-become-discoverable": {
+   "date": "2016-06-02",
+   "location": "IASSIST 2016 in Bergen, Norway",
+   "snapshot": "20170130063058"
+  },
+  "/presentations/modularity-and-interoperability-generalist-data-repositories": {
+   "date": "2023-06-13",
+   "location": "Open Repositories 2023, Stellenbosch University, South Africa",
+   "snapshot": "20241001114815"
+  },
+  "/presentations/moving-towards-integrated-transparent-journal-publishing-workflow": {
+   "date": "2014-09-18",
+   "location": "Institute for Social Research (ISR), Univ of Michigan, Ann Arbor, MI",
+   "snapshot": "20220624232822"
+  },
+  "/presentations/netsl-ilibrary-digital-futures-libraries-data-management-plan-dataverse": {
+   "date": "2012-05-03",
+   "location": "College of Holy Cross, Hogan Campus Center, Worcester, MA",
+   "snapshot": "20220808231700"
+  },
+  "/presentations/new-dataverse": {
+   "date": "2015-06-17",
+   "location": "Harvard-Purdue Data Management Symposium at Harvard University",
+   "snapshot": "20210922200158"
+  },
+  "/presentations/ojs-dataverse-integrated-transparent-publishing-workflows": {
+   "date": "2014-10-03",
+   "location": "Simon Fraser University, Burnaby, BC, Canada",
+   "snapshot": "20220624223051"
+  },
+  "/presentations/ojs-dataverse-publishing-workflows": {
+   "date": "2014-07-28",
+   "location": "joint Force11 DCIG & RDA Workflows WG virtual meeting",
+   "snapshot": "20220624231434"
+  },
+  "/presentations/open-journal-systems-and-dataverse-collaboration-1-year-later-and": {
+   "date": "2014-04-11",
+   "location": "NETSL Annual Spring Conference, College of the Holy Cross, Worcester, MA",
+   "snapshot": "20220624223649"
+  },
+  "/presentations/open-monolith-keeping-your-codebase-and-your-headaches-small": {
+   "date": "2017-10-02",
+   "location": "JavaOne 2017, San Francisco",
+   "snapshot": "20190323045115"
+  },
+  "/presentations/our-guidelines-data-publishing": {
+   "date": "2014-03-26",
+   "location": "RDA 3rd Plenary, Dublin, Ireland",
+   "snapshot": "20220624231902"
+  },
+  "/presentations/our-guidelines-data-publishing-0": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/permissions-dataverse-supported-repository": {
+   "date": "2025-03-13",
+   "location": "Webinar",
+   "snapshot": "20250715164255"
+  },
+  "/presentations/persistent-identifiers-and-metadata-workshop-dataverse-network": {
+   "date": "2012-05-08",
+   "location": "Berlin, Germany",
+   "snapshot": "20220808231928"
+  },
+  "/presentations/persistent-ids-throughout-dataverse": {
+   "date": "2016-11-10",
+   "location": "PIDapalooza in Reykiavik, Iceland",
+   "snapshot": "20170809115011"
+  },
+  "/presentations/practical-implementation-research-data-policies-solutions-dataverse": {
+   "date": "2017-06-02",
+   "location": "The 39th Annual Meeting of the Society for Scholarly Publishing",
+   "snapshot": "20190724071714"
+  },
+  "/presentations/principles-data-citation": {
+   "date": "2011-08-24",
+   "location": "DataCite Summer meeting",
+   "snapshot": "20220808231539"
+  },
+  "/presentations/principles-data-sharing-and-what-means-generalist-repositories": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/promoting-transparency-social-science-research": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/publishing-dataverse": {
+   "date": "2014-10-30",
+   "location": "NDSA NE Regional Meeting, Amherst, MA",
+   "snapshot": "20210922203030"
+  },
+  "/presentations/qualitative-data-sharing-workshop": {
+   "date": "2017-02-27",
+   "location": null,
+   "snapshot": "20220624221816"
+  },
+  "/presentations/research-data-management-harvard": {
+   "date": "2017-05-23",
+   "location": "IASSIST, University of Kansa, Lawrence, Kansas",
+   "snapshot": "20190724064747"
+  },
+  "/presentations/research-data-management-implementation-utilizing-dataverse": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/research-data-sharing-dataverse-library": {
+   "date": "2012-05-31",
+   "location": "Harvard IT Summit, 2012 at Harvard University, Cambridge, MA",
+   "snapshot": "20220808214730"
+  },
+  "/presentations/research-data-transition-organization-challenges-and-emerging": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/research-software-and-dataverse": {
+   "date": "2019-02-06",
+   "location": "Open Science Days 2019, Berlin, Germany",
+   "snapshot": "20190323045152"
+  },
+  "/presentations/safearchive-policy-based-archival-replication": {
+   "date": "2011-04-06",
+   "location": "CNI Spring Meeting 2011",
+   "snapshot": "20190916083518"
+  },
+  "/presentations/sharing-data-dataverse": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/sharing-dataverse": {
+   "date": "2014-10-24",
+   "location": "2nd National Data Service Consortium Workshop, Rockville, MD",
+   "snapshot": "20210922211902"
+  },
+  "/presentations/sharing-sensitive-data-confidence-datatags-system": {
+   "date": "2015-12-14",
+   "location": "Harvard University",
+   "snapshot": "20220624220648"
+  },
+  "/presentations/sharing-your-data-dataverse": {
+   "date": "2015-10-26",
+   "location": "DLF Forum, Vancouver, BC, Canada",
+   "snapshot": "20160414015116"
+  },
+  "/presentations/supporting-data-access-and-management-dataverse": {
+   "date": "2011-06-27",
+   "location": "LIBER, Barcelona, Spain",
+   "snapshot": "20190916085939"
+  },
+  "/presentations/tools-and-best-practices-quantitative-research": {
+   "date": "2017-09-08",
+   "location": "Barcelona, Spain",
+   "snapshot": "20190825133916"
+  },
+  "/presentations/tools-confidently-plan-manage-and-share-research-data-harvard": {
+   "date": "2025-02-13",
+   "location": "Harvard Library Love Data Week 2025",
+   "snapshot": "20250715164255"
+  },
+  "/presentations/towards-common-deposit-api-dataverse-example": {
+   "date": "2015-06-09",
+   "location": "Dataverse Community Meeting Pre-Meeting Workshop, Harvard University, Cambridge, MA 02138",
+   "snapshot": "20160414070530"
+  },
+  "/presentations/transforming-digital-collection-data-collection": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/update-data-publishing-dataverse": {
+   "date": "2014-08-25",
+   "location": "DataCite Annual Conference, Nancy, France",
+   "snapshot": "20220624221929"
+  },
+  "/presentations/update-dataverse": {
+   "date": "2014-05-28",
+   "location": "2014 Dryad & Dataverse Community Meeting at IQSS",
+   "snapshot": "20220624233434"
+  },
+  "/presentations/use-experience-dataverse-supported-repository": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/presentations/versioning-and-provenance-dataverse": {
+   "date": "2017-04-07",
+   "location": "RDA 9th Plenary, Barcelona",
+   "snapshot": "20220624232116"
+  },
+  "/presentations/you-are-not-your-user-dispelling-usability-myths-harvards-dataverse": {
+   "date": "2015-10-29",
+   "location": "JavaOne, San Francisco, California",
+   "snapshot": "20160414005223"
+  },
+  "/publication/configure-your-dataverse-repository-register-datacite-dois": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/publication/dataverse-project-global-dataverse-community-consortium-fair-open-source-platform-and": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/publication/dataverse-reloaded-improving-data-sharing-through-design": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  },
+  "/publication/improving-metadata-workflow-data-repository-ai-generated-metadata-recommendations": {
+   "date": null,
+   "location": null,
+   "snapshot": null
+  }
+ },
+ "source": "Internet Archive copies of dataverse.org presentation pages"
+}

@@ -1,4 +1,5 @@
 import archiveJson from "../data/archive.json";
+import presentationDates from "../data/presentation-dates.json";
 import { cleanImportedText, cleanImportedLinks } from "./archive-cleanup";
 
 export type LinkItem = { text: string; href: string };
@@ -21,6 +22,9 @@ export type CitationRecord = {
   sourcePage: number;
   sourceIndex: number;
   localPath: string;
+  /** ISO date and venue, backfilled from Internet Archive copies (presentations only). */
+  date?: string;
+  location?: string;
 };
 export type EventRecord = {
   title: string;
@@ -100,10 +104,32 @@ export const blogPosts: BlogPost[] = raw.blogPosts.map((item) => ({
   localPath: pathFromDataverseUrl(item.href),
 }));
 
-export const presentations: CitationRecord[] = raw.presentations.map((item, index) => ({
-  ...item,
-  localPath: citationPath(item, "presentations", index),
-}));
+const datesByPath = (presentationDates as { dates: Record<string, { date: string | null; location: string | null }> }).dates;
+
+function datedPresentation(href: string) {
+  let path = "";
+  try {
+    path = new URL(href).pathname.replace(/\/+$/, "");
+  } catch {
+    return {};
+  }
+  const found = datesByPath[path] ?? datesByPath[encodeURI(decodeURI(path))];
+  return { date: found?.date ?? undefined, location: found?.location ?? undefined };
+}
+
+// Newest first; within a year, dated talks come before the ones only known by year.
+export const presentations: CitationRecord[] = raw.presentations
+  .map((item, index) => ({
+    ...item,
+    ...datedPresentation(item.href),
+    localPath: citationPath(item, "presentations", index),
+  }))
+  .sort((a, b) => (b.date ?? `${b.year}-00-00`).localeCompare(a.date ?? `${a.year}-00-00`));
+
+export function formatPresentationDate(record: Pick<CitationRecord, "date" | "year">) {
+  if (!record.date) return record.year;
+  return new Date(`${record.date}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+}
 
 export const publications: CitationRecord[] = raw.publications.map((item, index) => ({
   ...item,

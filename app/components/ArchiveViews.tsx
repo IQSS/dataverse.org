@@ -7,7 +7,7 @@ import InstallationMap from "./InstallationMap";
 import AudienceContent from "./AudienceContent";
 import JournalBanner from "./JournalBanner";
 import InstitutionContext from "./InstitutionContext";
-import {
+import { formatPresentationDate,
   blogPosts,
   events,
   presentations,
@@ -190,7 +190,7 @@ export function CitationIndexPage({ kind }: { kind: "presentations" | "publicati
   const items: ArchiveIndexItem[] = records.map((record) => ({
     title: record.title,
     href: record.localPath,
-    meta: record.year,
+    meta: kind === "presentations" ? [formatPresentationDate(record), record.location].filter(Boolean).join(" · ") : record.year,
     summary: record.citation,
     sourceHref: externalSource(record.href),
   }));
@@ -269,7 +269,7 @@ export function CitationDetailPage({
   kind: "Presentation" | "Publication";
 }) {
   return (
-    <DetailLayout category={kind} title={item.title} meta={item.year} links={item.resources}>
+    <DetailLayout category={kind} title={item.title} meta={[formatPresentationDate(item), item.location].filter(Boolean).join(" · ")} links={item.resources}>
       <p className="citation-full">{item.citation}</p>
       {item.abstract && <section className="abstract-block"><h2>Abstract</h2><p>{item.abstract}</p></section>}
     </DetailLayout>
