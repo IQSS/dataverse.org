@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { ArchiveShell } from "./components/SiteChrome";
 
-export const metadata: Metadata = { title: "Page not found | The Dataverse Project" };
+export const metadata: Metadata = { title: "Page Not Found | The Dataverse Project" };
 
 export default function NotFound() {
   return <ArchiveShell>
     <article className="archive-detail not-found">
-      <header className="archive-detail-head"><p>Dataverse Project</p><h1>Page not found</h1></header>
+      <header className="archive-detail-head"><p>Dataverse Project</p><h1>Page Not Found</h1></header>
       <div className="archive-prose">
         <p>The address may have changed when the site moved. Try one of these instead.</p>
         <ul>

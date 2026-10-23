@@ -37,7 +37,7 @@ test("headline links reach rendered, sourced explanations", async () => {
   assert.ok(!page.includes("4,950,890"));
   assert.ok(!page.includes("1,118,838"));
   assert.ok(!page.includes("lower when counted by publication"));
-  assert.ok(page.includes("From shared data to scholarly reach"));
+  assert.ok(page.includes("From Shared Data to Scholarly Reach"));
   assert.ok(page.includes(number(metrics.datasetsWithScholarlyCitations)));
   assert.ok(page.includes(number(metrics.citationStudyDatasets - metrics.datasetsWithDatasetCitations)));
   assert.ok(page.includes("citing papers are not deduplicated"));

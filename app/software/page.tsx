@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    title: "What it is",
+    title: "Dataverse Software",
     items: [
       ["Purpose", "A web application for publishing, preserving, citing, exploring and analysing research data. Each installation hosts collections (called Dataverse collections), each collection holds datasets, and each dataset holds files, metadata and a version history."],
       ["License", "Apache License 2.0. Source, issues and releases are on GitHub under IQSS/dataverse; development happens in the open with a quarterly release cadence."],
@@ -27,7 +27,7 @@ const sections = [
     ],
   },
   {
-    title: "Metadata and standards",
+    title: "Metadata and Standards",
     items: [
       ["Metadata blocks", "Citation, geospatial, social science, astronomy, life sciences, journal and custom blocks; installations add fields and controlled vocabularies without code changes."],
       ["Standards", "DDI, Dublin Core, DataCite, schema.org JSON-LD and Croissant for datasets; OAI-PMH for harvesting between installations and with other repositories; OAI-ORE and BagIt for archival export."],
@@ -36,7 +36,7 @@ const sections = [
     ],
   },
   {
-    title: "Data and files",
+    title: "Data and Files",
     items: [
       ["Tabular data", "Ingest of CSV, Excel, SPSS, Stata, R and SAS files into a preservation format with variable-level metadata (DDI) and a universal numerical fingerprint (UNF)."],
       ["Large data", "Direct upload to S3, Globus transfer, multi-file zip handling, and remote file references for datasets too large to copy; used in production for multi-terabyte datasets."],
@@ -45,7 +45,7 @@ const sections = [
     ],
   },
   {
-    title: "Access, identity and governance",
+    title: "Access, Identity and Governance",
     items: [
       ["Authentication", "Built-in accounts, Shibboleth/SAML federations, OpenID Connect (including ORCID, GitHub and institutional providers), and API tokens."],
       ["Roles and permissions", "Fine-grained roles on collections, datasets and files; guestbooks, terms of use, embargoes, restricted files with access requests, and anonymised review links for peer review."],
@@ -54,7 +54,7 @@ const sections = [
     ],
   },
   {
-    title: "Interfaces and integrations",
+    title: "Interfaces and Integrations",
     items: [
       ["APIs", "A native REST API for everything the interface can do, plus SWORD, Search, Metrics and Data Access APIs; client libraries such as pyDataverse (Python), dataverse-client-r (R) and Java."],
       ["Integrations", "Connections to tools researchers already use: Jupyter and Binder, RSpace, Open Science Framework, DataLad, Globus, Archivematica, Whole Tale, Amnesia, and journal systems such as OJS. See the integrations strip on the home page."],
@@ -64,19 +64,19 @@ const sections = [
 ];
 
 const links = [
-  { label: "Run it in five minutes (container quickstart)", href: "https://guides.dataverse.org/en/latest/container/running/demo.html#quickstart" },
-  { label: "Try the demo site", href: "https://demo.dataverse.org/" },
-  { label: "Installation guide", href: "https://guides.dataverse.org/en/latest/installation/" },
-  { label: "API guide", href: "https://guides.dataverse.org/en/latest/api/" },
-  { label: "Developer guide", href: "https://guides.dataverse.org/en/latest/developers/" },
-  { label: "Admin feature list", href: "https://guides.dataverse.org/en/latest/admin/features.html" },
+  { label: "Run It in Five Minutes (Container Quickstart)", href: "https://guides.dataverse.org/en/latest/container/running/demo.html#quickstart" },
+  { label: "Try the Demo Site", href: "https://demo.dataverse.org/" },
+  { label: "Installation Guide", href: "https://guides.dataverse.org/en/latest/installation/" },
+  { label: "API Guide", href: "https://guides.dataverse.org/en/latest/api/" },
+  { label: "Developer Guide", href: "https://guides.dataverse.org/en/latest/developers/" },
+  { label: "Admin Feature List", href: "https://guides.dataverse.org/en/latest/admin/features.html" },
   { label: "Source on GitHub", href: "https://github.com/IQSS/dataverse" },
 ];
 
 export default function SoftwarePage() {
   return <ArchiveShell>
     <article className="archive-detail software-page">
-      <header className="archive-detail-head"><p>Dataverse Project</p><h1>The software</h1></header>
+      <header className="archive-detail-head"><p>Dataverse Project</p><h1>The Software</h1></header>
       <div className="software-body">
         <p className="software-lede">The technical detail behind the project, for people who run repositories, write integrations, or want to know what they are adopting. Everything here is open source and documented in the <a href="https://guides.dataverse.org/">Dataverse Guides</a>, which remain the reference; this page is the map. <a href="/releases">Releases</a> and the <a href="/roadmap">roadmap</a> show what is shipping and what comes next.</p>
         <div className="software-grid">
@@ -86,7 +86,7 @@ export default function SoftwarePage() {
           </section>)}
         </div>
         <section className="software-links" aria-labelledby="software-links-heading">
-          <h2 id="software-links-heading">Get your hands on it</h2>
+          <h2 id="software-links-heading">Get Your Hands on It</h2>
           <ul>{links.map((link) => <li key={link.href}><a href={link.href}>{link.label} <span aria-hidden="true">↗</span></a></li>)}</ul>
         </section>
       </div>

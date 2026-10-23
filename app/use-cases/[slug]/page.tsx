@@ -24,7 +24,7 @@ export default async function UseCasePage({ params }: Props) {
   return <ArchiveShell>
     <article className="archive-detail use-case-detail">
       <header className="archive-detail-head">
-        <p><a href="/use-cases">Use cases</a> · {item.audience} · {item.kind}</p>
+        <p><a href="/use-cases">Use Cases</a> · {item.audience} · {item.kind}</p>
         <h1>{item.title}</h1>
       </header>
       <figure className="use-case-hero"><img src={item.image} alt={item.imageAlt} /></figure>
@@ -33,10 +33,10 @@ export default async function UseCasePage({ params }: Props) {
           <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{item.body}</Markdown>
         </div>
         <aside className="archive-resources use-case-aside">
-          <p>About this use case</p>
-          <a href={item.doi}><span>Cite it on Zenodo</span><b>↗</b></a>
+          <p>About This Use Case</p>
+          <a href={item.doi}><span>Cite It on Zenodo</span><b>↗</b></a>
           <a href={`${useCaseRepo}/${item.slug}`}><span>Source on GitHub</span><b>↗</b></a>
-          <a href="/use-cases"><span>All use cases</span><b>→</b></a>
+          <a href="/use-cases"><span>All Use Cases</span><b>→</b></a>
           <p className="use-case-citation">{item.citation} {item.doi}</p>
         </aside>
       </div>

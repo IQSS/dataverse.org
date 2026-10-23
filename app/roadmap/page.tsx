@@ -17,27 +17,27 @@ const milestones = [
 // These themes combine priorities and continuing work, not release commitments.
 const themes = [
   {
-    title: "Biomedical data sharing",
+    title: "Biomedical Data Sharing",
     description: "Continue NIH GREI collaboration on data sharing and discovery, and NIH CAFE work on biomedical metadata, geospatial support, and data curation.",
   },
   {
-    title: "Indigenous data support",
+    title: "Indigenous Data Support",
     description: "Develop technical infrastructure, governance, and policies to support Indigenous data in Dataverse installations, including Harvard Dataverse.",
   },
   {
-    title: "Usability and collections",
+    title: "Usability and Collections",
     description: "Advance the modern Dataverse interface toward feature completeness, improve Dataverse Collections, and address curation and user-support pain points at Harvard Dataverse.",
   },
   {
-    title: "Metadata, AI, and discovery",
+    title: "Metadata, AI, and Discovery",
     description: "Work with DataCite on AI-assisted curation, extract variable-level metadata, and develop responsible AI practices. Continue Google Data Commons collaboration and Croissant support, and complete remaining Google Trusted Data work.",
   },
   {
-    title: "Repository and curation services",
+    title: "Repository and Curation Services",
     description: "Support large datasets, data acquisition, and paid curation at Harvard Dataverse. Help the MORU Tropical Health Network deploy and operate its own repository, including metadata customization, migration, and staff training.",
   },
   {
-    title: "Community and performance",
+    title: "Community and Performance",
     description: "Continue outreach, webinars, and the Dataverse Community Meeting. Improve Harvard Dataverse performance, including shared software improvements that can benefit other installations.",
   },
 ];
@@ -52,7 +52,7 @@ export default function RoadmapPage() {
     </section>
     <section className="roadmap-content" aria-label="Roadmap and release plans">
       <section className="roadmap-themes" aria-labelledby="roadmap-priorities">
-        <h2 id="roadmap-priorities">The big picture for FY27</h2><p className="roadmap-lede">Six directions shape the year: making biomedical and Indigenous data easier to share responsibly, finishing the modern interface, using AI to improve metadata without giving up curation, running repository services for institutions that need them, and keeping the community and Harvard Dataverse healthy. The release timeline and technical milestones follow.</p>
+        <h2 id="roadmap-priorities">The Big Picture for FY27</h2><p className="roadmap-lede">Six directions shape the year: making biomedical and Indigenous data easier to share responsibly, finishing the modern interface, using AI to improve metadata without giving up curation, running repository services for institutions that need them, and keeping the community and Harvard Dataverse healthy. The release timeline and technical milestones follow.</p>
         <div className="roadmap-theme-grid">
           {themes.map(theme => <article key={theme.title}><h3>{theme.title}</h3><p>{theme.description}</p></article>)}
         </div>
@@ -63,7 +63,7 @@ export default function RoadmapPage() {
         </div>
         <figcaption>Release targets may change. Initiative timing is not assigned to specific releases. <a href="/fy27-roadmap-timeline.svg" download="Dataverse-FY27-roadmap.svg">Download timeline image</a></figcaption>
       </figure>
-      <div className="release-heading"><h2>Technical release milestones</h2><p>Explore planned features, fixes, and progress for each release.</p></div>
+      <div className="release-heading"><h2>Technical Release Milestones</h2><p>Explore planned features, fixes, and progress for each release.</p></div>
       <nav className="roadmap-milestone-links" aria-label="Technical release milestones">
         {milestones.map(milestone => <a href={milestone.url} key={milestone.version}>Dataverse {milestone.version} ↗</a>)}
       </nav>

@@ -34,7 +34,7 @@ export const useCases: UseCase[] = [
   {
     slug: "cafe_grei",
     repository: { href: "https://dataverse.harvard.edu/dataverse/CAFE", label: "CAFE collection" },
-    title: "A data-sharing community for health and extreme weather",
+    title: "A Data-Sharing Community for Health and Extreme Weather",
     audience: "Research teams",
     kind: "Data sharing story",
     summary: "CAFE RCC, the NIH-funded Research Coordinating Center at Boston University and Harvard Chan, built a 48-collection data-sharing environment on Harvard Dataverse with the Dataverse team.",
@@ -62,7 +62,7 @@ export const useCases: UseCase[] = [
   {
     slug: "hdv_large_data",
     repository: { href: "https://doi.org/10.7910/DVN/PCZYL4", label: "DrivAerNet++ dataset" },
-    title: "Sharing big data",
+    title: "Sharing Big Data",
     audience: "Researchers",
     kind: "Case study",
     summary: "How DrivAerNet++, 16 terabytes of automotive simulation data from MIT and TUM, is stored on tape and downloaded through Globus from Harvard Dataverse.",
@@ -77,7 +77,7 @@ export const useCases: UseCase[] = [
   {
     slug: "hdv_nih_data_sharing",
     repository: { href: "https://doi.org/10.7910/DVN/FPO4HB", label: "HemOnc ontology dataset" },
-    title: "Meeting an NIH data management and sharing plan",
+    title: "Meeting an NIH Data Management and Sharing Plan",
     audience: "Researchers",
     kind: "Case study",
     summary: "An NIH-funded researcher deposits project data so that it satisfies the data management and sharing plan and the conditions of the grant.",
@@ -91,7 +91,7 @@ export const useCases: UseCase[] = [
   {
     slug: "hdv_data_seeking",
     repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
-    title: "Finding data to reuse",
+    title: "Finding Data to Reuse",
     audience: "Researchers",
     kind: "Case study",
     summary: "A researcher searches a generalist repository to validate findings, reuse data and build on work within a discipline.",
@@ -105,7 +105,7 @@ export const useCases: UseCase[] = [
   {
     slug: "hdv_institutional_repository",
     repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
-    title: "Harvard Dataverse as an institutional data repository",
+    title: "Harvard Dataverse as an Institutional Data Repository",
     audience: "Institutions",
     kind: "Case study",
     summary: "An institution gives its researchers a place to deposit and share outputs, reports on aggregate usage, and connects the repository to other systems through APIs.",
@@ -119,7 +119,7 @@ export const useCases: UseCase[] = [
   {
     slug: "hdv_dataset_reporting",
     repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
-    title: "Reporting on an institution's datasets",
+    title: "Reporting on an Institution's Datasets",
     audience: "Institutions",
     kind: "Case study",
     summary: "An administrator tracks every dataset from the institution in Harvard Dataverse to confirm that researchers meet their data-sharing commitments.",
@@ -133,7 +133,7 @@ export const useCases: UseCase[] = [
   {
     slug: "hdv_nih_funded_datasets",
     repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
-    title: "Tracking NIH-funded datasets",
+    title: "Tracking NIH-Funded Datasets",
     audience: "Funders",
     kind: "Case study",
     summary: "A funder finds the datasets it supported, reports on policy compliance and follows how the data is used.",

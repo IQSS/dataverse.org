@@ -30,13 +30,13 @@ export default function ExplorePage() {
             <div><b>{number(metrics.scholarlyCitations)}</b><span>scholarly citations connected to its datasets</span></div>
             <div><b>{number(metrics.harvardUniqueViewsPeople)}</b><span>unique dataset views by people since 2020</span></div>
           </div>
-          <div className="explore-actions"><a className="primary-button" href="https://dataverse.harvard.edu/">Go to Harvard Dataverse <span aria-hidden="true">↗</span></a><a className="metric-method-link" href="/numbers">Source / details</a></div>
+          <div className="explore-actions"><a className="primary-button" href="https://dataverse.harvard.edu/">Go to Harvard Dataverse <span aria-hidden="true">↗</span></a><a className="metric-method-link" href="/numbers">Source / Details</a></div>
         </div>
       </section>
 
       <section className="explore-network" aria-labelledby="explore-network-heading">
         <p className="section-kicker">THE NETWORK</p>
-        <h2 id="explore-network-heading">{registry.installations.length} installations, three ways</h2>
+        <h2 id="explore-network-heading">{registry.installations.length} Installations, Three Ways</h2>
         <p className="explore-lede">Every repository below runs the same open-source software and protocols, is governed by its own institution, and is listed in the community registry. First the map, then a spotlight on a few, then all of them.</p>
       </section>
 
@@ -45,7 +45,7 @@ export default function ExplorePage() {
       <InstitutionBanner embedded explore />
 
       <section className="explore-list" aria-labelledby="explore-list-heading">
-        <div className="audience-banner-heading"><div><h2 id="explore-list-heading">All {registry.installations.length} installations</h2><p>Grouped by continent, each with its own purpose in its own words. Every link goes to the repository itself.</p></div></div>
+        <div className="audience-banner-heading"><div><h2 id="explore-list-heading">All {registry.installations.length} Installations</h2><p>Grouped by continent, each with its own purpose in its own words. Every link goes to the repository itself.</p></div></div>
         {[...byContinent, ...(other.length ? [{ continent: "Elsewhere", items: other }] : [])].map((group) => <div key={group.continent} className="explore-group">
           <h3>{group.continent} <span>{group.items.length}</span></h3>
           <ul className="institution-grid explore-grid">{group.items.map((item) => <li key={item.url}><a href={item.url}><span>{item.country}{item.launch_year ? ` · since ${item.launch_year}` : ""}</span><strong>{item.name}</strong>{item.description && <span className="explore-description">{item.description}</span>}</a></li>)}</ul>

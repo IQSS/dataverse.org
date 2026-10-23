@@ -1,14 +1,14 @@
 export default function CommunityConnections() {
   return <section className="community-connections" aria-labelledby="community-connections-heading">
-    <h2 id="community-connections-heading">Dataverse Project community</h2>
+    <h2 id="community-connections-heading">Dataverse Project Community</h2>
     <div className="community-connection-grid">
       <article>
-        <h3>Community calls</h3>
+        <h3>Community Calls</h3>
         <p>On the first Tuesday of the month, the Dataverse Project hosts a Zoom call to discuss upcoming releases, contributions from the community, and other topics. All are welcome to attend!</p>
         <a href="/community-calls">Calls, notes and recordings <span aria-hidden="true">→</span></a>
       </article>
       <article>
-        <h3>Zulip chat</h3>
+        <h3>Zulip Chat</h3>
         <p>Join the Dataverse community on Zulip.</p>
         <a href="https://dataverse.zulipchat.com/">Open Dataverse chat <span aria-hidden="true">↗</span></a>
       </article>

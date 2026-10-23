@@ -68,6 +68,6 @@ test("community calls render from hand-editable Markdown without losing the meet
   for (const label of ["SHARE", "PRESERVE", "CITE", "DISCOVER"]) assert.match(home, new RegExp(`<a href="[^"]+">${label}</a>`));
   const explore = await render("/explore");
   assert.ok(explore.includes("<h3>Installations Around the World</h3>"));
-  assert.ok(explore.replaceAll("<!-- -->", "").includes("All 150 installations"));
+  assert.ok(explore.replaceAll("<!-- -->", "").includes("All 150 Installations"));
   assert.ok(!explore.includes("naturalearthdata.com"));
 });

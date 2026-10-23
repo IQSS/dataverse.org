@@ -64,7 +64,7 @@ test("migrated pages omit the captured Drupal menu; audience banners link to rea
     assert.ok(html.includes("NeurIPS"));
     assert.ok(html.includes("Frontiers"));
     assert.ok(html.includes('href="https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting"'));
-    assert.ok(html.includes("View a published example"));
+    assert.ok(html.includes("View a Published Example"));
     assert.ok(html.includes("Authors publish supporting research data on Harvard Dataverse."));
     for (const alias of ["ajps", "pan", "qje"]) assert.ok(html.includes(`href="https://dataverse.harvard.edu/dataverse/${alias}"`));
     for (const file of ["ajps.jpg", "political-analysis.jpg", "qje.png", "neurips.png", "frontiers.png"]) assert.ok(html.includes(`/journals/${file}`));
@@ -74,6 +74,6 @@ test("migrated pages omit the captured Drupal menu; audience banners link to rea
   assert.ok(home.indexOf('id="integrations"') < home.indexOf('id="partners"'));
   assert.match(home, /class="journal-scroll" role="region" aria-label="Journals and proceedings — scroll to browse" tabindex="0"/);
   const institutions = await render("/institutions");
-  for (const heading of ["Long-term institutional commitment", "NIH &amp; GREI", "Google Dataset Search", "Keeping research data available"]) assert.ok(institutions.includes(heading));
+  for (const heading of ["Long-Term Institutional Commitment", "NIH &amp; GREI", "Google Dataset Search", "Keeping Research Data Available"]) assert.ok(institutions.includes(heading));
   for (const label of ["Borealis", "Recherche Data Gouv", "NASA Jet Propulsion Laboratory", "DataverseNO", "University of North Carolina"]) assert.ok(institutions.includes(label));
 });

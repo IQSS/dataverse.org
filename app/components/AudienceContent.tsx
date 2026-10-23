@@ -34,7 +34,7 @@ export default function AudienceContent({ item }: { item: ProjectPage }) {
       const contact = content.indexOf("Contact the Dataverse Project Team");
       return <section className="journal-workflow" key={heading}>
         <h2>{heading}</h2>{paragraphs(contact < 0 ? content : content.slice(0, contact))}
-        {i === 0 && <a className="audience-guide-link" href="https://guides.dataverse.org/en/latest/user/dataverse-management.html">How to set up your Journal’s Dataverse Collection</a>}
+        {i === 0 && <a className="audience-guide-link" href="https://guides.dataverse.org/en/latest/user/dataverse-management.html">How to Set Up Your Journal’s Dataverse Collection</a>}
       </section>;
     })}</div>}
     {chunks.length > 1 && <aside className="audience-contact"><h2>Contact the Dataverse Project Team</h2>{paragraphs(body.slice(body.lastIndexOf("Contact the Dataverse Project Team") + "Contact the Dataverse Project Team".length))}</aside>}

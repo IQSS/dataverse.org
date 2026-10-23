@@ -18,7 +18,7 @@ test("journal spotlight includes APSR and keeps Frontiers last; /journals lists 
   assert.ok(spot.includes('href="https://dataverse.harvard.edu/dataverse/the_review"'));
   const page = await render("/journals");
   assert.equal(page.status, 200);
-  assert.ok(page.html.replace(/<!-- -->/g, "").includes("All 160 journal collections on Harvard Dataverse"));
+  assert.ok(page.html.replace(/<!-- -->/g, "").includes("All 160 Journal Collections on Harvard Dataverse"));
   const start = page.html.indexOf('class="journal-collections"');
   const list = page.html.slice(start, page.html.indexOf("</section>", start));
   assert.ok(!/@[a-z0-9-]+\.(org|edu|com)/i.test(list), "no contact emails in the journal list");

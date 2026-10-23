@@ -34,7 +34,7 @@ const integrations: { name: string; anchor?: string; href?: string; logo?: strin
 
 export default function IntegrationsBanner() {
   return <section className="partner-banner integrations-banner" id="integrations" aria-labelledby="integrations-heading">
-    <div className="integration-heading"><h2 id="integrations-heading">Integrations</h2><a href={guide}>Explore the integrations guide</a></div>
+    <div className="integration-heading"><h2 id="integrations-heading">Integrations</h2><a href={guide}>Explore the Integrations Guide</a></div>
     <div className="partner-scroll" tabIndex={0} role="region" aria-label="Integrations, scroll horizontally to see all tools">
       <ul className="partner-grid integration-grid">
         {integrations.map(integration => <li key={integration.name}>

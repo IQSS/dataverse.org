@@ -1,10 +1,10 @@
 const journals = [
-  { name: "American Journal of Political Science", logo: "ajps.jpg", href: "https://dataverse.harvard.edu/dataverse/ajps", relationship: "Journal collection on Harvard Dataverse", action: "View data collection" },
-  { name: "American Political Science Review", logo: "apsr-cover.jpg", href: "https://dataverse.harvard.edu/dataverse/the_review", relationship: "Journal collection on Harvard Dataverse", action: "View data collection" },
-  { name: "Political Analysis", logo: "political-analysis.jpg", href: "https://dataverse.harvard.edu/dataverse/pan", relationship: "Journal collection on Harvard Dataverse", action: "View data collection" },
-  { name: "The Quarterly Journal of Economics", logo: "qje.png", href: "https://dataverse.harvard.edu/dataverse/qje", relationship: "Journal collection on Harvard Dataverse", action: "View data collection" },
-  { name: "NeurIPS", logo: "neurips.png", href: "https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting", relationship: "Harvard Dataverse is a preferred hosting platform for the Evaluations & Datasets track.", action: "Read hosting guidelines" },
-  { name: "Frontiers", logo: "frontiers.png", href: "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1405369/full", relationship: "Authors publish supporting research data on Harvard Dataverse.", action: "View a published example" },
+  { name: "American Journal of Political Science", logo: "ajps.jpg", href: "https://dataverse.harvard.edu/dataverse/ajps", relationship: "Journal collection on Harvard Dataverse", action: "View Data Collection" },
+  { name: "American Political Science Review", logo: "apsr-cover.jpg", href: "https://dataverse.harvard.edu/dataverse/the_review", relationship: "Journal collection on Harvard Dataverse", action: "View Data Collection" },
+  { name: "Political Analysis", logo: "political-analysis.jpg", href: "https://dataverse.harvard.edu/dataverse/pan", relationship: "Journal collection on Harvard Dataverse", action: "View Data Collection" },
+  { name: "The Quarterly Journal of Economics", logo: "qje.png", href: "https://dataverse.harvard.edu/dataverse/qje", relationship: "Journal collection on Harvard Dataverse", action: "View Data Collection" },
+  { name: "NeurIPS", logo: "neurips.png", href: "https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting", relationship: "Harvard Dataverse is a preferred hosting platform for the Evaluations & Datasets track.", action: "Read Hosting Guidelines" },
+  { name: "Frontiers", logo: "frontiers.png", href: "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1405369/full", relationship: "Authors publish supporting research data on Harvard Dataverse.", action: "View a Published Example" },
 ];
 
 export default function JournalBanner({ compact = false }: { compact?: boolean }) {

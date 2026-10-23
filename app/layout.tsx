@@ -18,16 +18,16 @@ const questrial = Questrial({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL ?? "https://iqss.github.io/dataverse.org/"),
-  title: "Dataverse Project — Open research, connected",
+  title: "Dataverse Project — Open Research, Connected",
   description: "The open-source infrastructure connecting research data across a global community.",
   openGraph: {
-    title: "Dataverse Project — Open research, connected",
+    title: "Dataverse Project — Open Research, Connected",
     description: "One open-source project. A world of research data repositories.",
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dataverse Project — Open research, connected",
+    title: "Dataverse Project — Open Research, Connected",
     description: "One open-source project. A world of research data repositories.",
     images: ["/og.png"],
   },

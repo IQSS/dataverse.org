@@ -4,7 +4,7 @@ import releases from "../../data/releases.json";
 import "./releases.css";
 
 export const metadata: Metadata = {
-  title: "Release timeline | The Dataverse Project",
+  title: "Release Timeline | The Dataverse Project",
   description: "Explore Dataverse software releases from 2015 to 2026, with dates and links to release notes.",
 };
 
@@ -19,7 +19,7 @@ const inYear = (year: number) => releases.filter(r => r.date.startsWith(String(y
 function ReleaseChart() {
   return <figure className="release-chart" aria-labelledby="release-chart-title">
     <div className="release-chart-heading">
-      <div><h2 id="release-chart-title">Every release, year by year</h2><p>Each point is a release. Select a version for its release notes.</p></div>
+      <div><h2 id="release-chart-title">Every Release, Year by Year</h2><p>Each point is a release. Select a version for its release notes.</p></div>
       <div className="release-legend" role="group" aria-label="Version series">{[4, 5, 6].map(series => <span key={series}><i className={`series-${series}`} aria-hidden="true" />{series}.x</span>)}</div>
     </div>
     <div className="release-chart-scroll" tabIndex={0} role="group" aria-label="Release timeline, 2015 through 2026. Scroll horizontally on small screens. Full dates are listed below.">
@@ -65,20 +65,20 @@ export default function ReleasesPage() {
     <section className="release-hero">
       <a className="roadmap-back" href="/">Dataverse Project</a>
       <div className="section-kicker">SOFTWARE</div>
-      <h1>Release timeline</h1>
+      <h1>Release Timeline</h1>
       <p>Dataverse software releases from 2015 to 2026.</p>
       <div className="release-intro"><p>Dataverse plans to release quarterly, with additional hotfix releases when critical bugs need attention.</p><a href="/roadmap">See what’s ahead in the roadmap <span aria-hidden="true">→</span></a></div>
     </section>
     <section className="release-content" aria-label="Dataverse release history">
       <ReleaseChart />
       <section className="release-directory" aria-labelledby="release-directory-title">
-        <div className="release-directory-heading"><h2 id="release-directory-title">Dates &amp; release notes</h2><p>Browse the full history by year.</p></div>
+        <div className="release-directory-heading"><h2 id="release-directory-title">Dates &amp; Release Notes</h2><p>Browse the full history by year.</p></div>
         {[...years].reverse().map(year => <details className="release-year-details" key={year} open={year === 2026}>
           <summary><span>{year}</span><span>{inYear(year).length} releases</span></summary>
-          <ul>{[...inYear(year)].reverse().map(release => <li key={release.tag}><a href={releaseUrl(release.tag)}><strong>Dataverse {label(release.tag)}</strong><time dateTime={release.date}>{dateLabel(release.date)}</time><span className="release-notes-link">Release notes ↗</span></a></li>)}</ul>
+          <ul>{[...inYear(year)].reverse().map(release => <li key={release.tag}><a href={releaseUrl(release.tag)}><strong>Dataverse {label(release.tag)}</strong><time dateTime={release.date}>{dateLabel(release.date)}</time><span className="release-notes-link">Release Notes ↗</span></a></li>)}</ul>
         </details>)}
       </section>
-      <aside className="release-source" aria-label="Timeline sources"><h2>About this timeline</h2><p>Adapted from the release-history data shared by Philip Durbin in the <a href={source}>Dataverse Users Community</a>. All 79 versions and their source dates are preserved. The source uses Git-tag history; GitHub release notes can be published later.</p><p>For release planning, see the <a href="https://guides.dataverse.org/en/6.12/developers/making-releases.html#introduction">release process</a> and <a href="https://github.com/IQSS/dataverse/milestones">technical milestones</a>. Always review a version’s release notes before upgrading.</p></aside>
+      <aside className="release-source" aria-label="Timeline sources"><h2>About This Timeline</h2><p>Adapted from the release-history data shared by Philip Durbin in the <a href={source}>Dataverse Users Community</a>. All 79 versions and their source dates are preserved. The source uses Git-tag history; GitHub release notes can be published later.</p><p>For release planning, see the <a href="https://guides.dataverse.org/en/6.12/developers/making-releases.html#introduction">release process</a> and <a href="https://github.com/IQSS/dataverse/milestones">technical milestones</a>. Always review a version’s release notes before upgrading.</p></aside>
     </section>
   </ArchiveShell>;
 }

@@ -17,7 +17,7 @@ export function UseCaseCard({ item, toRepository = false }: { item: (typeof useC
 export default function UseCaseBanner() {
   const featured = [...useCases.filter((item) => item.featured), ...useCases.filter((item) => !item.featured)];
   return <section className="use-case-banner" id="use-cases" aria-labelledby="use-cases-heading">
-    <div className="audience-banner-heading"><div><h2 id="use-cases-heading">Dataverse in Practice</h2><p>Data-sharing stories and case studies from the Harvard Dataverse Repository, published by the Dataverse team.</p></div><a href="/use-cases">All {useCases.length} use cases</a></div>
+    <div className="audience-banner-heading"><div><h2 id="use-cases-heading">Dataverse in Practice</h2><p>Data-sharing stories and case studies from the Harvard Dataverse Repository, published by the Dataverse team.</p></div><a href="/use-cases">All {useCases.length} Use Cases</a></div>
     <ul className="use-case-grid use-case-grid-compact">{featured.map((item) => <UseCaseCard key={item.slug} item={item} toRepository />)}</ul>
   </section>;
 }
