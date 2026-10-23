@@ -19,9 +19,9 @@ export default function Home() {
 
     <main id="main-content" tabIndex={-1}>
     <section className="hero" id="top">
-      <h1>Share data to<br/><span className="accent">Advance<br/>Research</span></h1>
+      <h1>Share Data to<br/><span className="accent">Advance<br/>Research</span></h1>
       <p className="hero-copy">Dataverse is a global community formed around the open source software and protocols. More than 150 institutions run their own Dataverse installations; Harvard Dataverse is the founding installation.</p>
-      <div className="hero-actions"><a className="primary-button" href="/explore">Explore the Dataverse <span aria-hidden="true">→</span></a><a className="text-link" href="/use-cases">See it in use <span aria-hidden="true">→</span></a></div>
+      <div className="hero-actions"><a className="primary-button" href="/explore">Explore the Dataverse <span aria-hidden="true">→</span></a><a className="text-link" href="/use-cases">See It in Use <span aria-hidden="true">→</span></a></div>
       <div className="hero-poster" role="group" aria-label="Dataverse project principles"><div className="hero-callout-heading"><b>Data for<br/>Research</b><img src="/dataverse-rings.svg" alt="" className="dataverse-rings"/></div><div className="hero-principles"><a href="#principle">SHARE</a><a href="/explore">PRESERVE</a><a href="/best-practices/data-citation">CITE</a><a href="/use-cases">DISCOVER</a></div></div>
     </section>
 
@@ -42,14 +42,14 @@ export default function Home() {
       <h2 id="collection-heading"><span className="accent">Data Branded as <a className="accent-link" href="/branding">Yours <span aria-hidden="true">→</span></a></span></h2>
       <p className="collection-intro">All credit goes to the data creator, author, and institution. That is the Dataverse’s founding principle, set out in <a href="https://doi.org/10.1177/0049124107306660">King (2007), “An Introduction to the Dataverse Network as an Infrastructure for Data Sharing”</a>.</p>
       <div className="collection-grid">
-        <article><h3>Your collection, your identity</h3><p>Your logo, colours and web address, with the collection embedded on your own site.</p><a href="/branding">See a live example →</a></article>
-        <article><h3>Yours to use and shape</h3><p>Everyone builds it. You customize it. It is branded as yours.</p><a href="/use-cases">How institutions put it to work →</a></article>
-        <article><h3>Governance you control</h3><p>Assign contributor and curator roles, set metadata requirements, manage access and terms of use, and publish citable datasets and new versions under your own rules.</p><a href="/software">What the software provides →</a></article>
+        <article><h3>Your Collection, Your Identity</h3><p>Your logo, colours and web address, with the collection embedded on your own site.</p><a href="/branding">See a live example →</a></article>
+        <article><h3>Yours to Use and Shape</h3><p>Everyone builds it. You customize it. It is branded as yours.</p><a href="/use-cases">How institutions put it to work →</a></article>
+        <article><h3>Governance You Control</h3><p>Assign contributor and curator roles, set metadata requirements, manage access and terms of use, and publish citable datasets and new versions under your own rules.</p><a href="/software">What the software provides →</a></article>
       </div>
     </section>
 
     <section className="harvard-section" id="research">
-      <div className="harvard-copy"><div className="section-kicker light">THE FOUNDING REPOSITORY</div><h2>Open to Harvard.<br/>Open to <span className="accent">everyone.</span></h2><p>Harvard Dataverse is where the project began and remains one of the largest repositories of open research data in the world: researchers from any institution and any discipline can deposit, and every dataset is cited and preserved. It is one repository among the 150+, run on the same software as all the others.</p><div className="harvard-actions"><a className="mint-button" href="https://dataverse.harvard.edu/">Explore the Dataverse <span aria-hidden="true">→</span></a><a className="metric-method-link light-link" href="https://support.dataverse.harvard.edu/about">Source: about Harvard Dataverse ↗</a></div></div>
+      <div className="harvard-copy"><div className="section-kicker light">THE FOUNDING REPOSITORY</div><h2>Open to Harvard.<br/>Open to <span className="accent">Everyone.</span></h2><p>Harvard Dataverse is where the project began and remains one of the largest repositories of open research data in the world: researchers from any institution and any discipline can deposit, and every dataset is cited and preserved. It is one repository among the 150+, run on the same software as all the others.</p><div className="harvard-actions"><a className="mint-button" href="https://dataverse.harvard.edu/">Explore the Dataverse <span aria-hidden="true">→</span></a><a className="metric-method-link light-link" href="https://support.dataverse.harvard.edu/about">Source: about Harvard Dataverse ↗</a></div></div>
       <div className="harvard-facts" role="group" aria-label="Harvard Dataverse in numbers">
         <div><b>{number(metrics.harvardDatasets)}</b><span>published datasets</span></div>
         <div><b>{number(metrics.harvardDepositCitations)}</b><span>scholarly citations to data deposited by Harvard researchers</span></div>
@@ -60,7 +60,7 @@ export default function Home() {
 
     <section className="project-section community-section" id="community">
       <div className="section-kicker">A GLOBAL COMMUNITY</div>
-      <div className="section-grid"><h2>Built, run and improved by the Dataverse Research Community.</h2><div className="section-intro"><p>Developers, data curators, librarians and researchers from the 150+ installations contribute code, documentation, translations and support. They meet every year at the Dataverse Community Meeting, talk monthly on community calls, and coordinate through the Global Dataverse Community Consortium (GDCC), the body through which installations share work on containers, documentation, large and sensitive data, and more.</p><p>The project is led from Harvard’s Institute for Quantitative Social Science, which built the first release in 2006 and still maintains the software with the community.</p><a className="metric-method-link" href="/about#team">Who leads it →</a></div></div>
+      <div className="section-grid"><h2>Built, Run and Improved by the Dataverse Research Community.</h2><div className="section-intro"><p>Developers, data curators, librarians and researchers from the 150+ installations contribute code, documentation, translations and support. They meet every year at the Dataverse Community Meeting, talk monthly on community calls, and coordinate through the Global Dataverse Community Consortium (GDCC), the body through which installations share work on containers, documentation, large and sensitive data, and more.</p><p>The project is led from Harvard’s Institute for Quantitative Social Science, which built the first release in 2006 and still maintains the software with the community.</p><a className="metric-method-link" href="/about#team">Who leads it →</a></div></div>
       <figure className="ecosystem-figure community-figure" aria-label="The connected Dataverse project ecosystem">
         <figcaption>Dataverse Project Ecosystem</figcaption>
         <div className="ecosystem-scroll" tabIndex={0} role="group" aria-label="Linked ecosystem diagram">

@@ -12,7 +12,7 @@ async function render(path) {
 test("use cases are listed, linked from the homepage, and render with their images", async () => {
   const home = (await render("/")).html;
   assert.ok(home.includes('href="/use-cases"'));
-  assert.ok(home.includes("Dataverse in practice"));
+  assert.ok(home.includes("Dataverse in Practice"));
 
   const index = await render("/use-cases");
   assert.equal(index.status, 200);

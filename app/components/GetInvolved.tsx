@@ -12,7 +12,7 @@ export default function GetInvolved() {
       </nav>
     </div>
     <div className="working-groups">
-      <div><h4>Working groups</h4><p>Run by the Global Dataverse Community Consortium (GDCC), the body through which installations coordinate. Anyone may join a group; no membership or fee is required.</p></div>
+      <div><h4>Working Groups</h4><p>Run by the Global Dataverse Community Consortium (GDCC), the body through which installations coordinate. Anyone may join a group; no membership or fee is required.</p></div>
       <ul>{workingGroups.map(group => <li key={group}>{group}</li>)}</ul>
       <a className="working-group-source" href="/events">Community page: calls, meetings, and how to join</a>
     </div>
