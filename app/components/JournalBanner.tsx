@@ -1,5 +1,6 @@
 const journals = [
   { name: "American Journal of Political Science", logo: "ajps.jpg", href: "https://dataverse.harvard.edu/dataverse/ajps", relationship: "Journal collection on Harvard Dataverse", action: "View data collection" },
+  { name: "American Political Science Review", logo: "apsr-cover.jpg", href: "https://dataverse.harvard.edu/dataverse/the_review", relationship: "Journal collection on Harvard Dataverse", action: "View data collection" },
   { name: "Political Analysis", logo: "political-analysis.jpg", href: "https://dataverse.harvard.edu/dataverse/pan", relationship: "Journal collection on Harvard Dataverse", action: "View data collection" },
   { name: "The Quarterly Journal of Economics", logo: "qje.png", href: "https://dataverse.harvard.edu/dataverse/qje", relationship: "Journal collection on Harvard Dataverse", action: "View data collection" },
   { name: "NeurIPS", logo: "neurips.png", href: "https://neurips.cc/Conferences/2026/EvaluationsDatasetsHosting", relationship: "Harvard Dataverse is a preferred hosting platform for the Evaluations & Datasets track.", action: "Read hosting guidelines" },

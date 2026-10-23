@@ -6,6 +6,7 @@ import InstitutionBanner from "./InstitutionBanner";
 import InstallationMap from "./InstallationMap";
 import AudienceContent from "./AudienceContent";
 import JournalBanner from "./JournalBanner";
+import JournalCollections from "./JournalCollections";
 import InstitutionContext from "./InstitutionContext";
 import { formatPresentationDate,
   blogPosts,
@@ -305,7 +306,7 @@ function DataverseTv() {
 export function ProjectContentPage({ item }: { item: ProjectPage }) {
   const heading = item.localPath === "/journals" ? "Journals and Proceedings" : item.h1 || item.title.replace(/ \| The Dataverse Project$/, "");
   return (
-    <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : item.localPath === "/installations" ? <div className="archive-map"><InstallationMap /></div> : undefined} afterContent={item.localPath === "/institutions" ? <InstitutionContext /> : undefined}>
+    <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : item.localPath === "/installations" ? <div className="archive-map"><InstallationMap /></div> : undefined} afterContent={item.localPath === "/institutions" ? <InstitutionContext /> : item.localPath === "/journals" ? <JournalCollections /> : undefined}>
       {item.images.length > 0 && (
         <div className="archive-image-grid page-images">
           {item.images.map((image) => <img key={image.src} src={image.src} alt={image.alt} />)}

@@ -7,6 +7,7 @@ Verified 2026-10-08. Harvard Dataverse's `/api/dataverses/{alias}` confirms all 
 | American Journal of Political Science | https://dataverse.harvard.edu/dataverse/ajps | https://dataverse.harvard.edu/logos/1419/AJPS_print_JPEG_DV_v2.jpg | public/journals/ajps.jpg |
 | Political Analysis | https://dataverse.harvard.edu/dataverse/pan | https://dataverse.harvard.edu/logos/258/Political%20Analysis.jpg | public/journals/political-analysis.jpg |
 | The Quarterly Journal of Economics | https://dataverse.harvard.edu/dataverse/qje | https://dataverse.harvard.edu/logos/2784219/QJE-logo.png | public/journals/qje.png |
+| American Political Science Review | https://dataverse.harvard.edu/dataverse/the_review (type JOURNALS, released; API checked 2026-10-23) | Journal cover from Cambridge Core, https://static.cambridge.org/covers/PSR_0_0_0/american_political%20science%20review.jpg (180×240). The collection banner (logos/2867131/Dataverse_V4.png) sits behind Harvard Dataverse's bot challenge and was not fetched. | public/journals/apsr-cover.jpg |
 
 Preserve full original banners, aspect ratios, and colors. No separate reuse license was established; institutional publication should include trademark review. Logos identify the collections, not a new endorsement. Visible journal names supply each link's accessible label; images are decorative within those labelled links.
 
@@ -29,3 +30,7 @@ All examples link directly to their repositories and are selected from the Datav
 - Colombia Ministry of Cultures, Arts and Knowledge: https://investigacionartes.mincultura.gov.co/
 - Harvard: https://dataverse.harvard.edu/
 - UNC: https://dataverse.unc.edu/
+
+## Full list of journal collections
+
+`data/journal-collections.json` lists the 160 published collections of type Journal on Harvard Dataverse, from the Harvard Dataverse team's list updated 2026-10-22 (supplied by Danny Ebanks). Contact emails in that list were deliberately left out. Names drop a trailing "Dataverse"; links are `https://dataverse.harvard.edu/dataverse/<alias>`.

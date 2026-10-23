@@ -1,0 +1,805 @@
+{
+ "source": "Harvard Dataverse list of published collections of type Journal, as of 2026-10-22 (contact emails omitted)",
+ "journals": [
+  {
+   "name": "AAS Journals",
+   "url": "https://dataverse.harvard.edu/dataverse/aas",
+   "since": "2015"
+  },
+  {
+   "name": "American Journal of Health Economics",
+   "url": "https://dataverse.harvard.edu/dataverse/AJHE_journal",
+   "since": "2024"
+  },
+  {
+   "name": "American Journal of Political Science (AJPS)",
+   "url": "https://dataverse.harvard.edu/dataverse/ajps",
+   "since": "2012"
+  },
+  {
+   "name": "American Journal of Sociology Collection",
+   "url": "https://dataverse.harvard.edu/dataverse/AJS",
+   "since": "2023"
+  },
+  {
+   "name": "American Marketing Association",
+   "url": "https://dataverse.harvard.edu/dataverse/amajournals",
+   "since": "2023"
+  },
+  {
+   "name": "American Political Science Review",
+   "url": "https://dataverse.harvard.edu/dataverse/the_review",
+   "since": "2016"
+  },
+  {
+   "name": "Annals of Applied Statistics",
+   "url": "https://dataverse.harvard.edu/dataverse/AOAS",
+   "since": "2007"
+  },
+  {
+   "name": "Annals of Clinical Nutrition and Metabolism",
+   "url": "https://dataverse.harvard.edu/dataverse/ACNM",
+   "since": "2025"
+  },
+  {
+   "name": "Arab Media Renewal Journal Collection",
+   "url": "https://dataverse.harvard.edu/dataverse/AMRJ",
+   "since": "2026"
+  },
+  {
+   "name": "Asyafina Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/asyafinajournal",
+   "since": "2022"
+  },
+  {
+   "name": "Boston College Law Review",
+   "url": "https://dataverse.harvard.edu/dataverse/bclr",
+   "since": "2025"
+  },
+  {
+   "name": "Boston University Law Review",
+   "url": "https://dataverse.harvard.edu/dataverse/BostonUniversityLawReview",
+   "since": "2023"
+  },
+  {
+   "name": "Brazilian Political Science Review",
+   "url": "https://dataverse.harvard.edu/dataverse/bpsr",
+   "since": "2018"
+  },
+  {
+   "name": "British Journal of Political Science",
+   "url": "https://dataverse.harvard.edu/dataverse/BJPolS",
+   "since": "2015"
+  },
+  {
+   "name": "Cambridge Elements",
+   "url": "https://dataverse.harvard.edu/dataverse/elements",
+   "since": "2022"
+  },
+  {
+   "name": "Canadian Journal of Political Science/Revue canadienne de science politique",
+   "url": "https://dataverse.harvard.edu/dataverse/cjp",
+   "since": "2020"
+  },
+  {
+   "name": "CHINA ECONOMIC REVIEW",
+   "url": "https://dataverse.harvard.edu/dataverse/cer",
+   "since": "2025"
+  },
+  {
+   "name": "Citizen Science: Theory and Practice",
+   "url": "https://dataverse.harvard.edu/dataverse/cstp",
+   "since": "2016"
+  },
+  {
+   "name": "Comparative Political Studies",
+   "url": "https://dataverse.harvard.edu/dataverse/cps",
+   "since": "2020"
+  },
+  {
+   "name": "Criminology Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/criminology",
+   "since": "2023"
+  },
+  {
+   "name": "Cultural Analytics",
+   "url": "https://dataverse.harvard.edu/dataverse/culturalanalytics",
+   "since": "2016"
+  },
+  {
+   "name": "Cybergeo",
+   "url": "https://dataverse.harvard.edu/dataverse/cybergeo",
+   "since": "2021"
+  },
+  {
+   "name": "Data in Brief (DiB)",
+   "url": "https://dataverse.harvard.edu/dataverse/dib",
+   "since": "2014"
+  },
+  {
+   "name": "Defence Science Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/dsj",
+   "since": "2016"
+  },
+  {
+   "name": "Economic Development and Cultural Change",
+   "url": "https://dataverse.harvard.edu/dataverse/EDCC",
+   "since": "2018"
+  },
+  {
+   "name": "Economics: The Open-Access, Open-Assessment E-Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/economics",
+   "since": "2009"
+  },
+  {
+   "name": "EMJ",
+   "url": "https://dataverse.harvard.edu/dataverse/emj",
+   "since": "2025"
+  },
+  {
+   "name": "Environmental & Resource Economics",
+   "url": "https://dataverse.harvard.edu/dataverse/envresecon",
+   "since": "2025"
+  },
+  {
+   "name": "EUROKD Journals",
+   "url": "https://dataverse.harvard.edu/dataverse/EUROKD",
+   "since": "2026"
+  },
+  {
+   "name": "European Journal of Humanistic Studies and Social Dynamics",
+   "url": "https://dataverse.harvard.edu/dataverse/94151226-0aba-46a3-864b-4571c223033f",
+   "since": "2026"
+  },
+  {
+   "name": "European Journal of Political Research",
+   "url": "https://dataverse.harvard.edu/dataverse/Europeanjournalofpoliticalresearch",
+   "since": "2026"
+  },
+  {
+   "name": "Executive Agreements Database",
+   "url": "https://dataverse.harvard.edu/dataverse/executiveagreements",
+   "since": "2020"
+  },
+  {
+   "name": "F1000Research",
+   "url": "https://dataverse.harvard.edu/dataverse/f1000research",
+   "since": "2014"
+  },
+  {
+   "name": "Financial Management",
+   "url": "https://dataverse.harvard.edu/dataverse/FMA",
+   "since": "2023"
+  },
+  {
+   "name": "Foreign Policy Analysis",
+   "url": "https://dataverse.harvard.edu/dataverse/FPA",
+   "since": "2010"
+  },
+  {
+   "name": "GEMILANG: Jurnal Manajemen dan Strategi Bisnis",
+   "url": "https://dataverse.harvard.edu/dataverse/gemilang",
+   "since": "2021"
+  },
+  {
+   "name": "Global Journal of Modern Research and Emerging Trends",
+   "url": "https://dataverse.harvard.edu/dataverse/gjmret",
+   "since": "2025"
+  },
+  {
+   "name": "GSJ",
+   "url": "https://dataverse.harvard.edu/dataverse/gsj-harvard-dataverse",
+   "since": "2026"
+  },
+  {
+   "name": "Harvard Data Science Review",
+   "url": "https://dataverse.harvard.edu/dataverse/HDSR",
+   "since": "2022"
+  },
+  {
+   "name": "Harvard Journal of Law & Technology",
+   "url": "https://dataverse.harvard.edu/dataverse/jolt",
+   "since": "2025"
+  },
+  {
+   "name": "Harvard Law Review",
+   "url": "https://dataverse.harvard.edu/dataverse/HLR",
+   "since": "2020"
+  },
+  {
+   "name": "Health Psychology Bulletin",
+   "url": "https://dataverse.harvard.edu/dataverse/health-psychology-bulletin",
+   "since": "2017"
+  },
+  {
+   "name": "Humanities & Social Sciences Communications",
+   "url": "https://dataverse.harvard.edu/dataverse/hsscomms",
+   "since": "2015"
+  },
+  {
+   "name": "International Interactions",
+   "url": "https://dataverse.harvard.edu/dataverse/interact",
+   "since": "2007"
+  },
+  {
+   "name": "International Interactions (II): Empirical and Theoretical Research in International Relations",
+   "url": "https://dataverse.harvard.edu/dataverse/internationalinteractions",
+   "since": "2009"
+  },
+  {
+   "name": "International Journal of Asian Education",
+   "url": "https://dataverse.harvard.edu/dataverse/ijae",
+   "since": "2020"
+  },
+  {
+   "name": "International Journal of Cyber Forensics and Advanced Threat Investigations",
+   "url": "https://dataverse.harvard.edu/dataverse/IJCFATI",
+   "since": "2021"
+  },
+  {
+   "name": "International Maronite Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/imj",
+   "since": "2026"
+  },
+  {
+   "name": "International Organization (IO) Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/IOJ",
+   "since": "2019"
+  },
+  {
+   "name": "International Security",
+   "url": "https://dataverse.harvard.edu/dataverse/isec",
+   "since": "2015"
+  },
+  {
+   "name": "International Studies Quarterly",
+   "url": "https://dataverse.harvard.edu/dataverse/isq",
+   "since": "2007"
+  },
+  {
+   "name": "Intestinal Research",
+   "url": "https://dataverse.harvard.edu/dataverse/irjournal",
+   "since": "2022"
+  },
+  {
+   "name": "Italian Political Science Review (IPSR/RISP)",
+   "url": "https://dataverse.harvard.edu/dataverse/ipsr-risp",
+   "since": "2014"
+  },
+  {
+   "name": "Japanese Journal of Political Science",
+   "url": "https://dataverse.harvard.edu/dataverse/JJPS",
+   "since": "2018"
+  },
+  {
+   "name": "JASA",
+   "url": "https://dataverse.harvard.edu/dataverse/jasa",
+   "since": "2018"
+  },
+  {
+   "name": "Jeehp",
+   "url": "https://dataverse.harvard.edu/dataverse/jeehp",
+   "since": "2017"
+  },
+  {
+   "name": "JFQA",
+   "url": "https://dataverse.harvard.edu/dataverse/jfqa",
+   "since": "2024"
+  },
+  {
+   "name": "JLA",
+   "url": "https://dataverse.harvard.edu/dataverse/jla",
+   "since": "2024"
+  },
+  {
+   "name": "Journal for Cultural & Religious Theory",
+   "url": "https://dataverse.harvard.edu/dataverse/jcrt",
+   "since": "2026"
+  },
+  {
+   "name": "Journal of Advanced Laboratory Research in Biology",
+   "url": "https://dataverse.harvard.edu/dataverse/jalrb",
+   "since": "2018"
+  },
+  {
+   "name": "Journal of Contemporary Administration (RAC)",
+   "url": "https://dataverse.harvard.edu/dataverse/rac",
+   "since": "2019"
+  },
+  {
+   "name": "Journal of Data Science",
+   "url": "https://dataverse.harvard.edu/dataverse/jdsdataverse",
+   "since": "2026"
+  },
+  {
+   "name": "Journal of Economics and Management Strategy",
+   "url": "https://dataverse.harvard.edu/dataverse/jems",
+   "since": "2016"
+  },
+  {
+   "name": "Journal of Experimental Political Science",
+   "url": "https://dataverse.harvard.edu/dataverse/xps",
+   "since": "2017"
+  },
+  {
+   "name": "Journal of Historical Political Economy",
+   "url": "https://dataverse.harvard.edu/dataverse/jhpe",
+   "since": "2021"
+  },
+  {
+   "name": "Journal of Horticultural Sciences",
+   "url": "https://dataverse.harvard.edu/dataverse/jhs",
+   "since": "2023"
+  },
+  {
+   "name": "Journal of Human Rights (JHR)",
+   "url": "https://dataverse.harvard.edu/dataverse/jhr",
+   "since": "2014"
+  },
+  {
+   "name": "Journal of Information Technology & Politics",
+   "url": "https://dataverse.harvard.edu/dataverse/jitp",
+   "since": "2009"
+  },
+  {
+   "name": "Journal of Interactive Marketing",
+   "url": "https://dataverse.harvard.edu/dataverse/jnm",
+   "since": "2025"
+  },
+  {
+   "name": "Journal of International Marketing",
+   "url": "https://dataverse.harvard.edu/dataverse/jim",
+   "since": "2025"
+  },
+  {
+   "name": "Journal of Labor Economics",
+   "url": "https://dataverse.harvard.edu/dataverse/JOLE",
+   "since": "2024"
+  },
+  {
+   "name": "Journal of Law and Courts",
+   "url": "https://dataverse.harvard.edu/dataverse/jlc",
+   "since": "2015"
+  },
+  {
+   "name": "Journal of Librarianship and Scholarly Communication",
+   "url": "https://dataverse.harvard.edu/dataverse/jlsc",
+   "since": "2015"
+  },
+  {
+   "name": "Journal of Marketing",
+   "url": "https://dataverse.harvard.edu/dataverse/jom",
+   "since": "2023"
+  },
+  {
+   "name": "Journal of Marketing Research",
+   "url": "https://dataverse.harvard.edu/dataverse/jmr",
+   "since": "2023"
+  },
+  {
+   "name": "Journal of Open Archaeology Data (JOAD)",
+   "url": "https://dataverse.harvard.edu/dataverse/joad",
+   "since": "2013"
+  },
+  {
+   "name": "Journal of Open Humanities Data",
+   "url": "https://dataverse.harvard.edu/dataverse/johd",
+   "since": "2015"
+  },
+  {
+   "name": "Journal of Open Psychology Data (JOPD)",
+   "url": "https://dataverse.harvard.edu/dataverse/jopd",
+   "since": "2013"
+  },
+  {
+   "name": "Journal of Policy Analysis and Management",
+   "url": "https://dataverse.harvard.edu/dataverse/jpam",
+   "since": "2024"
+  },
+  {
+   "name": "Journal of Political Economy",
+   "url": "https://dataverse.harvard.edu/dataverse/JPE",
+   "since": "2021"
+  },
+  {
+   "name": "Journal of Political Economy Macroeconomics",
+   "url": "https://dataverse.harvard.edu/dataverse/JPE_Macroeconomics",
+   "since": "2022"
+  },
+  {
+   "name": "Journal of Political Economy Microeconomics",
+   "url": "https://dataverse.harvard.edu/dataverse/JPE_Microeconomics",
+   "since": "2022"
+  },
+  {
+   "name": "Journal of Political Institutions and Political Economy",
+   "url": "https://dataverse.harvard.edu/dataverse/jpipe",
+   "since": "2020"
+  },
+  {
+   "name": "Journal of Public Policy",
+   "url": "https://dataverse.harvard.edu/dataverse/JPublicPolicy",
+   "since": "2015"
+  },
+  {
+   "name": "Journal of Public Policy & Marketing",
+   "url": "https://dataverse.harvard.edu/dataverse/jppm",
+   "since": "2025"
+  },
+  {
+   "name": "Journal of Risk and Insurance",
+   "url": "https://dataverse.harvard.edu/dataverse/jri",
+   "since": "2022"
+  },
+  {
+   "name": "Journal of Slavery and Data Preservation",
+   "url": "https://dataverse.harvard.edu/dataverse/jsdp",
+   "since": "2020"
+  },
+  {
+   "name": "Journal of Sustainable Urban Mobility",
+   "url": "https://dataverse.harvard.edu/dataverse/josum",
+   "since": "2021"
+  },
+  {
+   "name": "Journal of the Association of Environmental and Resource Economists",
+   "url": "https://dataverse.harvard.edu/dataverse/JAERE",
+   "since": "2018"
+  },
+  {
+   "name": "Journal of the Korean Medical Association JI",
+   "url": "https://dataverse.harvard.edu/dataverse/jkma",
+   "since": "2025"
+  },
+  {
+   "name": "Journal of World-Systems Research",
+   "url": "https://dataverse.harvard.edu/dataverse/jwsr",
+   "since": "2021"
+  },
+  {
+   "name": "JREG Volume 40",
+   "url": "https://dataverse.harvard.edu/dataverse/YaleJREG_Vol40",
+   "since": "2023"
+  },
+  {
+   "name": "JREG Volume 41",
+   "url": "https://dataverse.harvard.edu/dataverse/JREG_Vol41",
+   "since": "2023"
+  },
+  {
+   "name": "JREG Volume 43",
+   "url": "https://dataverse.harvard.edu/dataverse/JREG_Vol43",
+   "since": "2026"
+  },
+  {
+   "name": "JWSR",
+   "url": "https://dataverse.harvard.edu/dataverse/PittJWSR",
+   "since": "2015"
+  },
+  {
+   "name": "Latin American Politics and Society",
+   "url": "https://dataverse.harvard.edu/dataverse/LAPS",
+   "since": "2015"
+  },
+  {
+   "name": "Law and Courts Newsletter",
+   "url": "https://dataverse.harvard.edu/dataverse/lcnapsa",
+   "since": "2021"
+  },
+  {
+   "name": "Legislative Studies Quarterly",
+   "url": "https://dataverse.harvard.edu/dataverse/lsq",
+   "since": "2018"
+  },
+  {
+   "name": "LIBER Quarterly",
+   "url": "https://dataverse.harvard.edu/dataverse/LQ",
+   "since": "2016"
+  },
+  {
+   "name": "Libyan Journal of Medical and Applied Sciences",
+   "url": "https://dataverse.harvard.edu/dataverse/ljmas",
+   "since": "2026"
+  },
+  {
+   "name": "Michigan Law Review (MLR)",
+   "url": "https://dataverse.harvard.edu/dataverse/mlr",
+   "since": "2023"
+  },
+  {
+   "name": "Microbiological Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/microbiological-journal",
+   "since": "2026"
+  },
+  {
+   "name": "Multidisciplinary Scientific Journal Knowledge Core",
+   "url": "https://dataverse.harvard.edu/dataverse/nucleodoconhecimento",
+   "since": "2024"
+  },
+  {
+   "name": "National Tax Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/ntj",
+   "since": "2022"
+  },
+  {
+   "name": "Negotiation & Conflict Management Research (NCMR)",
+   "url": "https://dataverse.harvard.edu/dataverse/NCMR",
+   "since": "2021"
+  },
+  {
+   "name": "Negotiation Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/NegotiationJournal",
+   "since": "2020"
+  },
+  {
+   "name": "NYU Law Review",
+   "url": "https://dataverse.harvard.edu/dataverse/nyulawreview",
+   "since": "2009"
+  },
+  {
+   "name": "ODjAR",
+   "url": "https://dataverse.harvard.edu/dataverse/ODjAR",
+   "since": "2015"
+  },
+  {
+   "name": "Open Health Data",
+   "url": "https://dataverse.harvard.edu/dataverse/openhealthdata",
+   "since": "2013"
+  },
+  {
+   "name": "Open Mind",
+   "url": "https://dataverse.harvard.edu/dataverse/opmi",
+   "since": "2016"
+  },
+  {
+   "name": "Open Quaternary",
+   "url": "https://dataverse.harvard.edu/dataverse/openquaternary",
+   "since": "2014"
+  },
+  {
+   "name": "OpenFOAM Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/ofj",
+   "since": "2021"
+  },
+  {
+   "name": "PAR",
+   "url": "https://dataverse.harvard.edu/dataverse/PAR",
+   "since": "2019"
+  },
+  {
+   "name": "Perspectives on Politics",
+   "url": "https://dataverse.harvard.edu/dataverse/perspectives",
+   "since": "2017"
+  },
+  {
+   "name": "Political Analysis",
+   "url": "https://dataverse.harvard.edu/dataverse/pan",
+   "since": "2008"
+  },
+  {
+   "name": "Political Behavior",
+   "url": "https://dataverse.harvard.edu/dataverse/polbehavior",
+   "since": "2014"
+  },
+  {
+   "name": "Political Science Research and Methods (PSRM)",
+   "url": "https://dataverse.harvard.edu/dataverse/PSRM",
+   "since": "2013"
+  },
+  {
+   "name": "Politics & Gender",
+   "url": "https://dataverse.harvard.edu/dataverse/politicsandgender",
+   "since": "2019"
+  },
+  {
+   "name": "PS: Political Science & Politics",
+   "url": "https://dataverse.harvard.edu/dataverse/ps",
+   "since": "2019"
+  },
+  {
+   "name": "Public Administration",
+   "url": "https://dataverse.harvard.edu/dataverse/pa",
+   "since": "2020"
+  },
+  {
+   "name": "Public Finance Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/pf",
+   "since": "2023"
+  },
+  {
+   "name": "Public Opinion Quarterly",
+   "url": "https://dataverse.harvard.edu/dataverse/poq",
+   "since": "2024"
+  },
+  {
+   "name": "Research & Politics",
+   "url": "https://dataverse.harvard.edu/dataverse/researchandpolitics",
+   "since": "2013"
+  },
+  {
+   "name": "Research and Science Today 1(21)/2021",
+   "url": "https://dataverse.harvard.edu/dataverse/rst",
+   "since": "2021"
+  },
+  {
+   "name": "Review of Asset Pricing Studies",
+   "url": "https://dataverse.harvard.edu/dataverse/raps",
+   "since": "2021"
+  },
+  {
+   "name": "Review of Corporate Finance Studies",
+   "url": "https://dataverse.harvard.edu/dataverse/rcfs",
+   "since": "2020"
+  },
+  {
+   "name": "Review of Economics and Statistics",
+   "url": "https://dataverse.harvard.edu/dataverse/restat",
+   "since": "2010"
+  },
+  {
+   "name": "Review of Financial Studies",
+   "url": "https://dataverse.harvard.edu/dataverse/rfs",
+   "since": "2020"
+  },
+  {
+   "name": "Revista Brasileira de Ciência Política",
+   "url": "https://dataverse.harvard.edu/dataverse/rbcp",
+   "since": "2020"
+  },
+  {
+   "name": "Revista Brasileira de Gestao de Negocios RBGN",
+   "url": "https://dataverse.harvard.edu/dataverse/RBGN",
+   "since": "2022"
+  },
+  {
+   "name": "Revista Brasileira de Política Internacional",
+   "url": "https://dataverse.harvard.edu/dataverse/rbpi",
+   "since": "2020"
+  },
+  {
+   "name": "Revista Científica LAPETI: Estudos Interdisciplinares",
+   "url": "https://dataverse.harvard.edu/dataverse/revista-lapeti",
+   "since": "2026"
+  },
+  {
+   "name": "Revista DADOS",
+   "url": "https://dataverse.harvard.edu/dataverse/revistadados",
+   "since": "2020"
+  },
+  {
+   "name": "Science Editing",
+   "url": "https://dataverse.harvard.edu/dataverse/se",
+   "since": "2019"
+  },
+  {
+   "name": "Security Studies",
+   "url": "https://dataverse.harvard.edu/dataverse/securitystudies",
+   "since": "2020"
+  },
+  {
+   "name": "Semantics & Pragmatics",
+   "url": "https://dataverse.harvard.edu/dataverse/semprag",
+   "since": "2018"
+  },
+  {
+   "name": "SOCRATES",
+   "url": "https://dataverse.harvard.edu/dataverse/SOCRATESJOURNAL",
+   "since": "2017"
+  },
+  {
+   "name": "State Politics and Policy Quarterly",
+   "url": "https://dataverse.harvard.edu/dataverse/sppq",
+   "since": "2024"
+  },
+  {
+   "name": "Technology Science",
+   "url": "https://dataverse.harvard.edu/dataverse/technology_science",
+   "since": "2015"
+  },
+  {
+   "name": "Terra Politica Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/terrapolitica",
+   "since": "2024"
+  },
+  {
+   "name": "The Chinese Journal of International Politics",
+   "url": "https://dataverse.harvard.edu/dataverse/cjip",
+   "since": "2018"
+  },
+  {
+   "name": "The Ewha Medical Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/ewhamedjournal",
+   "since": "2024"
+  },
+  {
+   "name": "The George Washington Law Review",
+   "url": "https://dataverse.harvard.edu/dataverse/gwlr",
+   "since": "2025"
+  },
+  {
+   "name": "The Journal of Behavioral Public Administration",
+   "url": "https://dataverse.harvard.edu/dataverse/JBPA",
+   "since": "2018"
+  },
+  {
+   "name": "The Journal of Clinical Endocrinology and Metabolism",
+   "url": "https://dataverse.harvard.edu/dataverse/2022-09-15 00:00:00",
+   "since": "2022"
+  },
+  {
+   "name": "The Journal of Politics",
+   "url": "https://dataverse.harvard.edu/dataverse/jop",
+   "since": "2015"
+  },
+  {
+   "name": "The Political Methodologist",
+   "url": "https://dataverse.harvard.edu/dataverse/tpmnewsletter",
+   "since": "2016"
+  },
+  {
+   "name": "The Quarterly Journal of Economics",
+   "url": "https://dataverse.harvard.edu/dataverse/qje",
+   "since": "2016"
+  },
+  {
+   "name": "Uluslararası İlişkiler-International Relations",
+   "url": "https://dataverse.harvard.edu/dataverse/uidergisi",
+   "since": "2019"
+  },
+  {
+   "name": "University of Zawia Journal of Natural Sciences",
+   "url": "https://dataverse.harvard.edu/dataverse/UZJNS",
+   "since": "2026"
+  },
+  {
+   "name": "University of Zawia Journal of Natural Sciences",
+   "url": "https://dataverse.harvard.edu/dataverse/vol1_no1_2024_univ_zawia_j_nat_sci",
+   "since": "2026"
+  },
+  {
+   "name": "University of Zawia Journal of Natural Sciences",
+   "url": "https://dataverse.harvard.edu/dataverse/issue_1_2024",
+   "since": "2026"
+  },
+  {
+   "name": "urbe . Brazilian Journal of Urban Management",
+   "url": "https://dataverse.harvard.edu/dataverse/urbe",
+   "since": "2020"
+  },
+  {
+   "name": "Utrecht Law Review",
+   "url": "https://dataverse.harvard.edu/dataverse/ulr",
+   "since": "2017"
+  },
+  {
+   "name": "Virginia Law Review",
+   "url": "https://dataverse.harvard.edu/dataverse/vlr",
+   "since": "2010"
+  },
+  {
+   "name": "World Journal of Men's Health",
+   "url": "https://dataverse.harvard.edu/dataverse/wjmh",
+   "since": "2018"
+  },
+  {
+   "name": "World Politics",
+   "url": "https://dataverse.harvard.edu/dataverse/world-politics",
+   "since": "2016"
+  },
+  {
+   "name": "World Trade Review",
+   "url": "https://dataverse.harvard.edu/dataverse/wtr",
+   "since": "2022"
+  },
+  {
+   "name": "Yale Journal on Regulation",
+   "url": "https://dataverse.harvard.edu/dataverse/YaleJREG",
+   "since": "2022"
+  },
+  {
+   "name": "Yale Law Journal",
+   "url": "https://dataverse.harvard.edu/dataverse/ylj",
+   "since": "2020"
+  }
+ ]
+}

@@ -359,7 +359,7 @@ footer > div:last-child { flex-wrap: wrap; }
 .journal-logo-grid > a { display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; padding: 1.25rem; border: 1px solid #DCC9BD; border-radius: 18px; box-shadow: 3px 3px 0 #DEDEDE; color: #303030; text-decoration: none; scroll-snap-align: start; }
 .journal-logo-grid > a:hover { border-color: #A87960; }
 .journal-logo-frame { display: flex; align-items: center; width: 100%; height: 80px; }
-.journal-logo-frame img { width: 100%; height: 100%; object-fit: contain; }
+.journal-logo-frame img { width: 100%; height: 100%; object-fit: contain; object-position: left center; }
 .journal-logo-grid strong { font-size: 1rem; line-height: 1.4; }
 .journal-logo-grid .journal-relationship { font-size: .875rem; line-height: 1.55; color: #303030; }
 .journal-logo-grid > a > span:last-child { color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; font-size: .875rem; margin-top: auto; }
@@ -436,3 +436,9 @@ body.midcentury .ecosystem-figure.community-figure .node-researchers, .community
 .map-card-meta { font: 600 12px/1.4 var(--font-montserrat), Montserrat, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #A84A1D; }
 .map-card-desc { color: #444; }
 .map-card a { margin-top: 4px; color: #A84A1D; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.journal-collections { margin-top: 40px; }
+.journal-collections h2 { font-size: 1.5rem; margin: 0 0 16px; }
+.journal-collections ul { list-style: none; padding: 0; margin: 0; columns: 3 240px; column-gap: 32px; }
+.journal-collections li { break-inside: avoid; padding: 5px 0; font-size: 15px; line-height: 1.4; }
+.journal-collections a { color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; }
+.journal-collections li span { color: #555; font-size: 13px; white-space: nowrap; }
