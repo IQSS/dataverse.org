@@ -3,7 +3,7 @@ const institutions: { name: string; label: string; href: string; logo?: string }
   { name: "Recherche Data Gouv", label: "France · National research infrastructure", href: "https://entrepot.recherche.data.gouv.fr/", logo: "recherche-data-gouv.svg" },
   { name: "Ministry of Cultures, Arts and Knowledge", label: "Colombia · Government", href: "https://investigacionartes.mincultura.gov.co/" },
   { name: "NASA Jet Propulsion Laboratory", label: "United States · Research laboratory", href: "https://dataverse.jpl.nasa.gov/", logo: "jpl.png" },
-  { name: "Harvard University", label: "United States · University", href: "https://dataverse.harvard.edu/", logo: "harvard.png" },
+  { name: "DataverseNO", label: "Norway · National repository", href: "https://dataverse.no/", logo: "dataverseno.svg" },
   { name: "University of North Carolina", label: "United States · University", href: "https://dataverse.unc.edu/", logo: "unc-dataverse.png" },
 ];
 

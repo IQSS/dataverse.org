@@ -75,5 +75,5 @@ test("migrated pages omit the captured Drupal menu; audience banners link to rea
   assert.match(home, /class="journal-scroll" role="region" aria-label="Journals and proceedings — scroll to browse" tabindex="0"/);
   const institutions = await render("/institutions");
   for (const heading of ["Long-term institutional commitment", "NIH &amp; GREI", "Google Dataset Search", "Keeping research data available"]) assert.ok(institutions.includes(heading));
-  for (const label of ["Borealis", "Recherche Data Gouv", "NASA Jet Propulsion Laboratory", "Harvard University", "University of North Carolina"]) assert.ok(institutions.includes(label));
+  for (const label of ["Borealis", "Recherche Data Gouv", "NASA Jet Propulsion Laboratory", "DataverseNO", "University of North Carolina"]) assert.ok(institutions.includes(label));
 });
