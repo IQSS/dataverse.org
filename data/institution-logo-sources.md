@@ -14,3 +14,9 @@ Verified 2026-10-08. Logos identify the installations and institutions featured 
 The Borealis homepage mark (`assets/img/homepage-logo.png`) is white on transparent and `assets/img/logo.png` is the retired "Scholars Portal Dataverse" wordmark; neither is used. The JPL Open Repository navbar mark (`/logos/navbar/JOR_logo_beta.png`, 544×68 with a "beta" tag) is too wide to read at card size, so the laboratory's own header lockup is used.
 
 The Australian Data Archive (dataverse.ada.edu.au) was considered for this card but serves a bot challenge, so its logo was not fetched.
+
+## Dataverse in Practice feature cards
+
+| Organization | Original | Local file | Relationship |
+| --- | --- | --- | --- |
+| Local Contexts | https://localcontexts.org/ (site banner, supplied by Danny Ebanks 2026-10-23) | public/use-cases/local_contexts/local-contexts.jpg | Dataverse integrates with the Local Contexts Hub (https://localcontextshub.org/) to show Traditional Knowledge and Biocultural Labels and Notices |

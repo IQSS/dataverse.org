@@ -33,6 +33,7 @@ test("the Indigenous data card links to the Local Contexts guide and both archiv
   const home = (await render("/")).html.replaceAll("<!-- -->", "");
   assert.ok(home.includes("Indigenous Data With Local Contexts Labels and Notices"));
   assert.ok(home.includes('href="https://guides.dataverse.org/en/latest/installation/localcontexts.html"'));
+  assert.ok(home.includes('src="/use-cases/local_contexts/local-contexts.jpg"'));
   for (const slug of ["australian-data-archive-ada-and-australian-national-university-anu-and", "establishing-means-providing-suitable-representation-indigenous-knowledge"]) {
     assert.ok(home.includes(`href="/presentations/${slug}"`));
     assert.equal((await render(`/presentations/${slug}`)).status, 200);

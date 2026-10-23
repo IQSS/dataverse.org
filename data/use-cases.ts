@@ -156,6 +156,7 @@ export const practiceFeatures = [
     title: "Indigenous Data With Local Contexts Labels and Notices",
     audience: "Research teams",
     kind: "Feature",
+    image: "/use-cases/local_contexts/local-contexts.jpg",
     summary: "Dataverse connects to the Local Contexts Hub, so a dataset page can display the Traditional Knowledge and Biocultural Labels and Notices that an Indigenous community has applied to its data.",
     link: { href: "https://guides.dataverse.org/en/latest/installation/localcontexts.html", label: "Local Contexts guide" },
     talks: [
