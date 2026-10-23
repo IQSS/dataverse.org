@@ -77,6 +77,7 @@ main::before { display: none; }
 .hero-principles a { font-size: 14px; font-weight: 600; letter-spacing: .05em; border-bottom: 1px solid var(--dv-control-border); padding: 8px 0; color: var(--dv-orange-ink); text-decoration: underline; text-underline-offset: 4px; }
 .hero-poster b { font: 600 clamp(38px, 4.3vw, 68px)/1 var(--font-questrial), Questrial, sans-serif; letter-spacing: -.04em; color: var(--dv-orange-ink); overflow-wrap: normal; }
 .primary-button, .hero-actions .text-link, .mint-button, .outline-light, .outline-button, .archive-harvard {
+  display: inline-flex; gap: .5em; /* flex centres text and arrow on one line (Dwayne, 2026-10-23) */
   align-items: center; justify-content: center; min-height: 48px; border: 1px solid var(--dv-orange);
   padding: 12px 18px; font-size: 14px; line-height: 1.5; font-weight: 650;
   text-decoration: none; transition: background-color .15s ease, color .15s ease;
