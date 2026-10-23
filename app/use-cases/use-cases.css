@@ -64,3 +64,11 @@
 .use-case-grid-compact .use-case-image { aspect-ratio: auto; height: 130px; overflow: hidden; border-radius: 14px 14px 0 0; }
 .use-case-grid-compact .use-case-image img { width: 100%; height: 100% !important; object-fit: cover; }
 .use-case-grid-compact .use-case-image.contain img { object-fit: contain; padding: 10px; }
+/* Feature card: same look as a use-case card, but a block holding several links */
+.use-case-feature { display: flex; flex-direction: column; gap: .45rem; padding-bottom: 1rem; border: 1px solid #DCC9BD; border-radius: 14px; background: #FFF1E9; color: #303030; box-shadow: 3px 3px 0 #DEDEDE; overflow: hidden; }
+.use-case-feature .use-case-image { background: #F3D9C9; }
+.use-case-talks { padding: 0 1rem; font-size: 13px; }
+.use-case-talks a { color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; }
+.use-case-grid .use-case-feature a { display: inline; height: auto; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; overflow: visible; color: #A84A1D; text-decoration: underline; text-underline-offset: 3px; }
+.use-case-grid .use-case-feature a.use-case-repository { display: block; padding: 0 1rem; }
+.use-case-feature > * { flex-shrink: 0; }

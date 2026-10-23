@@ -148,3 +148,19 @@ export const useCases: UseCase[] = [
 
 export const useCaseRepo = repo;
 export const findUseCase = (slug: string) => useCases.find((item) => item.slug === slug);
+
+/** Homepage "Dataverse in Practice" cards that are not published use cases: no Zenodo write-up,
+ *  so they link out to the guide and to the archived talks instead of a story page. */
+export const practiceFeatures = [
+  {
+    title: "Indigenous Data With Local Contexts Labels and Notices",
+    audience: "Research teams",
+    kind: "Feature",
+    summary: "Dataverse connects to the Local Contexts Hub, so a dataset page can display the Traditional Knowledge and Biocultural Labels and Notices that an Indigenous community has applied to its data.",
+    link: { href: "https://guides.dataverse.org/en/latest/installation/localcontexts.html", label: "Local Contexts guide" },
+    talks: [
+      { href: "/presentations/australian-data-archive-ada-and-australian-national-university-anu-and", label: "OR 2023" },
+      { href: "/presentations/establishing-means-providing-suitable-representation-indigenous-knowledge", label: "IASSIST 2023" },
+    ],
+  },
+];
