@@ -23,6 +23,8 @@ export type UseCase = {
   citation: string;
   doi: string;
   featured?: boolean;
+  /** Where the homepage card links: the collection or dataset the story is about (Harvard Dataverse itself for general scenarios). */
+  repository: { href: string; label: string };
   body: string;
 };
 
@@ -31,6 +33,7 @@ const repo = "https://github.com/IQSS/dataverse-use-cases/tree/main/use_cases";
 export const useCases: UseCase[] = [
   {
     slug: "cafe_grei",
+    repository: { href: "https://dataverse.harvard.edu/dataverse/CAFE", label: "CAFE collection" },
     title: "A data-sharing community for health and extreme weather",
     audience: "Research teams",
     kind: "Data sharing story",
@@ -44,6 +47,7 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "gsp_grei",
+    repository: { href: "https://doi.org/10.7910/DVN/25833", label: "GSP dataset" },
     title: "Sharing the Brain Genomics Superstruct Project",
     audience: "Researchers",
     kind: "Data sharing story",
@@ -57,6 +61,7 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "hdv_large_data",
+    repository: { href: "https://doi.org/10.7910/DVN/PCZYL4", label: "DrivAerNet++ dataset" },
     title: "Sharing big data",
     audience: "Researchers",
     kind: "Worked scenario",
@@ -71,6 +76,7 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "hdv_nih_data_sharing",
+    repository: { href: "https://doi.org/10.7910/DVN/FPO4HB", label: "HemOnc ontology dataset" },
     title: "Meeting an NIH data management and sharing plan",
     audience: "Researchers",
     kind: "Worked scenario",
@@ -84,6 +90,7 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "hdv_data_seeking",
+    repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
     title: "Finding data to reuse",
     audience: "Researchers",
     kind: "Worked scenario",
@@ -97,6 +104,7 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "hdv_institutional_repository",
+    repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
     title: "Harvard Dataverse as an institutional data repository",
     audience: "Institutions",
     kind: "Worked scenario",
@@ -110,6 +118,7 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "hdv_dataset_reporting",
+    repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
     title: "Reporting on an institution's datasets",
     audience: "Institutions",
     kind: "Worked scenario",
@@ -123,6 +132,7 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "hdv_nih_funded_datasets",
+    repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
     title: "Tracking NIH-funded datasets",
     audience: "Funders",
     kind: "Worked scenario",
