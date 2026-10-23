@@ -14,7 +14,7 @@ export type UseCase = {
   slug: string;
   title: string;
   audience: "Researchers" | "Institutions" | "Funders" | "Research teams";
-  kind: "Data sharing story" | "Worked scenario";
+  kind: "Data sharing story" | "Case study";
   summary: string;
   image: string;
   imageAlt: string;
@@ -64,7 +64,7 @@ export const useCases: UseCase[] = [
     repository: { href: "https://doi.org/10.7910/DVN/PCZYL4", label: "DrivAerNet++ dataset" },
     title: "Sharing big data",
     audience: "Researchers",
-    kind: "Worked scenario",
+    kind: "Case study",
     summary: "How DrivAerNet++, 16 terabytes of automotive simulation data from MIT and TUM, is stored on tape and downloaded through Globus from Harvard Dataverse.",
     image: "/use-cases/hdv_large_data/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
@@ -79,7 +79,7 @@ export const useCases: UseCase[] = [
     repository: { href: "https://doi.org/10.7910/DVN/FPO4HB", label: "HemOnc ontology dataset" },
     title: "Meeting an NIH data management and sharing plan",
     audience: "Researchers",
-    kind: "Worked scenario",
+    kind: "Case study",
     summary: "An NIH-funded researcher deposits project data so that it satisfies the data management and sharing plan and the conditions of the grant.",
     image: "/use-cases/hdv_nih_data_sharing/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
@@ -93,7 +93,7 @@ export const useCases: UseCase[] = [
     repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
     title: "Finding data to reuse",
     audience: "Researchers",
-    kind: "Worked scenario",
+    kind: "Case study",
     summary: "A researcher searches a generalist repository to validate findings, reuse data and build on work within a discipline.",
     image: "/use-cases/hdv_data_seeking/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
@@ -107,7 +107,7 @@ export const useCases: UseCase[] = [
     repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
     title: "Harvard Dataverse as an institutional data repository",
     audience: "Institutions",
-    kind: "Worked scenario",
+    kind: "Case study",
     summary: "An institution gives its researchers a place to deposit and share outputs, reports on aggregate usage, and connects the repository to other systems through APIs.",
     image: "/use-cases/hdv_institutional_repository/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
@@ -121,7 +121,7 @@ export const useCases: UseCase[] = [
     repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
     title: "Reporting on an institution's datasets",
     audience: "Institutions",
-    kind: "Worked scenario",
+    kind: "Case study",
     summary: "An administrator tracks every dataset from the institution in Harvard Dataverse to confirm that researchers meet their data-sharing commitments.",
     image: "/use-cases/hdv_dataset_reporting/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
@@ -135,7 +135,7 @@ export const useCases: UseCase[] = [
     repository: { href: "https://dataverse.harvard.edu/", label: "Harvard Dataverse" },
     title: "Tracking NIH-funded datasets",
     audience: "Funders",
-    kind: "Worked scenario",
+    kind: "Case study",
     summary: "A funder finds the datasets it supported, reports on policy compliance and follows how the data is used.",
     image: "/use-cases/hdv_nih_funded_datasets/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
