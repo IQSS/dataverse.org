@@ -24,12 +24,12 @@ function FeatureCard({ item }: { item: (typeof practiceFeatures)[number] }) {
   </li>;
 }
 
-/** Every use case as a compact card on the homepage, featured first; each card opens the repository the
+/** Every use case as a compact card in a horizontal slider on the homepage, featured first; each card opens the repository the
  *  story is about, and the stories themselves live at /use-cases. */
 export default function UseCaseBanner() {
   const featured = [...useCases.filter((item) => item.featured), ...useCases.filter((item) => !item.featured)];
   return <section className="use-case-banner" id="use-cases" aria-labelledby="use-cases-heading">
     <div className="audience-banner-heading"><div><h2 id="use-cases-heading">Dataverse in Practice</h2><p>Data-sharing stories and case studies from the Harvard Dataverse Repository, published by the Dataverse team.</p></div><a href="/use-cases">All {useCases.length} Use Cases</a></div>
-    <ul className="use-case-grid use-case-grid-compact">{featured.map((item) => <UseCaseCard key={item.slug} item={item} toRepository />)}{practiceFeatures.map((item) => <FeatureCard key={item.title} item={item} />)}</ul>
+    <div className="journal-scroll" role="region" aria-label="Dataverse in practice — scroll to browse" tabIndex={0}><ul className="use-case-grid use-case-grid-compact">{featured.map((item) => <UseCaseCard key={item.slug} item={item} toRepository />)}{practiceFeatures.map((item) => <FeatureCard key={item.title} item={item} />)}</ul></div>
   </section>;
 }
