@@ -1,8 +1,22 @@
 import map from "../../data/installation-map.json";
 import registry from "../../data/installations.json";
+import counts from "../../data/installation-metrics.json";
 import MapTooltip from "./MapTooltip";
 
 const details = new Map(registry.installations.map((item) => [item.url.replace(/\/+$/, ""), item]));
+
+const metrics = counts.installations as Record<string, { datasets?: number; files?: number; downloads?: number }>;
+const compact = new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 });
+const full = new Intl.NumberFormat("en-US");
+
+// Datasets, files and downloads as the installation's own metrics API last reported them (refreshed daily).
+function stats(url: string) {
+  const u = new URL(url);
+  const m = metrics[(u.host + u.pathname).replace(/\/+$/, "")] ?? metrics[u.host];
+  if (!m) return "";
+  const n = (v: number) => (v >= 100000 ? compact.format(v) : full.format(v));
+  return [m.datasets != null && `${n(m.datasets)} datasets`, m.files != null && `${n(m.files)} files`, m.downloads != null && `${n(m.downloads)} downloads`].filter(Boolean).join(" · ");
+}
 
 // First sentence, or the first 200 characters, so the hover card stays short.
 function blurb(text = "") {
@@ -18,7 +32,7 @@ export default function InstallationMap({ hideDirectory = false }: { hideDirecto
         <title id="installation-map-title">Dataverse installations around the world</title>
         <desc id="installation-map-description">Locations of {map.installations.length} installations in the Dataverse community registry, across six continents. Select a dot to open its repository in a new tab. Use Tab to reach individual repositories where dots overlap.</desc>
         <g className="map-land" aria-hidden="true">{map.paths.map((path, index) => <path d={path} key={index}/>)}</g>
-        <g className="map-locations">{map.installations.map(installation => { const info = details.get(installation.url.replace(/\/+$/, "")); return <a className="map-repository-link" key={installation.name} href={installation.url} target="_blank" rel="noopener noreferrer" data-name={installation.name} data-meta={`${installation.country}${info?.launch_year ? ` · since ${info.launch_year}` : ""}`} data-desc={blurb(info?.description)} aria-label={`${installation.name} — ${installation.country}${info?.launch_year ? `, since ${info.launch_year}` : ""} (opens in a new tab)`}>
+        <g className="map-locations">{map.installations.map(installation => { const info = details.get(installation.url.replace(/\/+$/, "")); return <a className="map-repository-link" key={installation.name} href={installation.url} target="_blank" rel="noopener noreferrer" data-name={installation.name} data-meta={`${installation.country}${info?.launch_year ? ` · since ${info.launch_year}` : ""}`} data-desc={blurb(info?.description)} data-stats={stats(installation.url)} aria-label={`${installation.name} — ${installation.country}${info?.launch_year ? `, since ${info.launch_year}` : ""} (opens in a new tab)`}>
           <circle className="map-location-halo" cx={installation.point[0]} cy={installation.point[1]} r="7" aria-hidden="true"/>
           <circle className="map-location-dot" cx={installation.point[0]} cy={installation.point[1]} r="4"/>
         </a>; })}</g>

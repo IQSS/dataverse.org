@@ -12,7 +12,7 @@ export default function MapTooltip() {
     const el = card.current;
     const box = el?.parentElement;
     if (!el || !box) return;
-    const [title, meta, desc, link] = ["strong", ".map-card-meta", ".map-card-desc", "a"].map((q) => el.querySelector(q)!) as [HTMLElement, HTMLElement, HTMLElement, HTMLAnchorElement];
+    const [title, meta, stat, desc, link] = ["strong", ".map-card-meta", ".map-card-stats", ".map-card-desc", "a"].map((q) => el.querySelector(q)!) as [HTMLElement, HTMLElement, HTMLElement, HTMLElement, HTMLAnchorElement];
     let current: SVGAElement | null = null;
     let hideTimer = 0;
     let touch = false;
@@ -23,6 +23,8 @@ export default function MapTooltip() {
       current = dot;
       title.textContent = dot.dataset.name ?? "";
       meta.textContent = dot.dataset.meta ?? "";
+      stat.textContent = dot.dataset.stats ?? "";
+      stat.hidden = !dot.dataset.stats;
       desc.textContent = dot.dataset.desc ?? "";
       desc.hidden = !dot.dataset.desc;
       link.href = dot.getAttribute("href") ?? link.href;
@@ -75,6 +77,7 @@ export default function MapTooltip() {
     <div ref={card} className="map-card" aria-hidden="true" hidden>
       <strong />
       <span className="map-card-meta" />
+      <span className="map-card-stats" />
       <span className="map-card-desc" />
       <a href="/explore#explore-list-heading" target="_blank" rel="noopener noreferrer" tabIndex={-1}>Visit repository ↗</a>
     </div>

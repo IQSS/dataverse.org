@@ -434,6 +434,8 @@ body.midcentury .ecosystem-figure.community-figure .node-researchers, .community
 .map-card.below { transform: translate(-50%, 0); }
 .map-card strong { font: 700 15px/1.3 var(--font-montserrat), Montserrat, sans-serif; }
 .map-card-meta { font: 600 12px/1.4 var(--font-montserrat), Montserrat, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #A84A1D; }
+.map-card-stats { font-weight: 600; color: var(--ink); }
+.map-card-stats[hidden] { display: none; }
 .map-card-desc { color: #444; }
 .map-card a { margin-top: 4px; color: #A84A1D; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .journal-collections { margin-top: 40px; }
