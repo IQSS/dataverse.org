@@ -192,6 +192,8 @@ footer > div:last-child { flex-wrap: wrap; }
 .map-repository-link { cursor: pointer; }
 .map-location-halo { fill: none; stroke: var(--dv-orange); stroke-width: 1.5; opacity: 0; pointer-events: all; }
 .map-repository-link, .map-location-dot, .map-location-halo { transition: none; }
+/* Set on the dot itself: a visited link does not pass the inherited orange down, so clicked dots turned black */
+.map-location-dot, .map-repository-link:visited .map-location-dot { fill: var(--dv-orange); }
 .map-repository-link:is(:hover, :focus-visible) .map-location-dot { fill: #f0a070; stroke: var(--dv-orange); stroke-width: 2; }
 .map-repository-link:is(:hover, :focus-visible) .map-location-halo { opacity: 1; }
 .map-credit { margin: 0; padding: 14px 24px; border-top: 1px solid #e2b49c; }
