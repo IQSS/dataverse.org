@@ -1,324 +1,324 @@
 {
- "as_of": "2026-10-23",
+ "as_of": "2026-10-24",
  "source": "Each installation's /api/info/metrics endpoints, swept daily by the Harvard Dataverse knowledge-graph pipeline",
  "installations": {
   "agh.rodbuk.pl": {
-   "datasets": 424,
-   "downloads": 11822,
-   "files": 15119,
-   "date": "2026-10-22"
+   "datasets": 428,
+   "downloads": 15746,
+   "files": 15289,
+   "date": "2026-10-24"
   },
   "akf.rodbuk.pl": {
-   "datasets": 46,
-   "downloads": 666,
-   "files": 235,
-   "date": "2026-10-22"
+   "datasets": 48,
+   "downloads": 722,
+   "files": 239,
+   "date": "2026-10-24"
   },
   "arcadados.fiocruz.br": {
    "datasets": 789,
    "downloads": 1148865,
    "files": 195057,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "archaeology.datastations.nl": {
-   "datasets": 176449,
+   "datasets": 176512,
    "downloads": 11626585,
-   "files": 5383608,
-   "date": "2026-10-22"
+   "files": 5387986,
+   "date": "2026-10-24"
   },
   "archivdv.soc.cas.cz": {
    "datasets": 1287,
-   "downloads": 70800,
+   "downloads": 73478,
    "files": 8895,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "bonndata.uni-bonn.de": {
-   "datasets": 384,
-   "downloads": 795442,
-   "files": 27718,
-   "date": "2026-10-22"
+   "datasets": 385,
+   "downloads": 797347,
+   "files": 27720,
+   "date": "2026-10-23"
   },
   "borealisdata.ca": {
-   "datasets": 24682,
+   "datasets": 24714,
    "downloads": 35419158,
-   "files": 625063,
-   "date": "2026-10-22"
+   "files": 626575,
+   "date": "2026-10-24"
   },
   "cedapdados.ufrgs.br": {
    "datasets": 4,
-   "downloads": 52,
+   "downloads": 54,
    "files": 6,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dados.ipb.pt": {
    "datasets": 7,
-   "downloads": 2888,
+   "downloads": 2938,
    "files": 3072,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "danebadawcze.uw.edu.pl": {
-   "datasets": 662,
-   "downloads": 19856,
-   "files": 9913,
-   "date": "2026-10-22"
+   "datasets": 668,
+   "downloads": 21510,
+   "files": 9934,
+   "date": "2026-10-24"
   },
   "dare.uol.de": {
    "datasets": 78,
-   "downloads": 51547,
+   "downloads": 54085,
    "files": 14177,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "darus.uni-stuttgart.de": {
-   "datasets": 2519,
-   "downloads": 6501193,
-   "files": 194575,
-   "date": "2026-10-22"
+   "datasets": 2525,
+   "downloads": 6791884,
+   "files": 195160,
+   "date": "2026-10-24"
   },
   "data.aussda.at": {
    "datasets": 1623,
-   "downloads": 254940,
-   "files": 4814,
-   "date": "2026-10-15"
+   "downloads": 257230,
+   "files": 4821,
+   "date": "2026-10-24"
   },
   "data.brin.go.id": {
    "datasets": 5436,
    "downloads": 947892,
    "files": 131657,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "data.cimmyt.org": {
    "datasets": 1160,
-   "downloads": 610194,
-   "files": 12504,
-   "date": "2026-10-22"
+   "downloads": 616439,
+   "files": 12506,
+   "date": "2026-10-24"
   },
   "data.cipotato.org": {
-   "datasets": 974,
-   "downloads": 106948,
-   "files": 6491,
-   "date": "2026-10-22"
+   "datasets": 976,
+   "downloads": 108238,
+   "files": 6496,
+   "date": "2026-10-24"
   },
   "data.crossda.hr": {
    "datasets": 40,
-   "downloads": 30737,
+   "downloads": 30951,
    "files": 282,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "data.fdz.ioer.de": {
    "datasets": 41,
    "downloads": 10321,
    "files": 1706,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "data.fz-juelich.de": {
-   "datasets": 643,
-   "downloads": 326149,
-   "files": 27078,
-   "date": "2026-10-22"
+   "datasets": 649,
+   "downloads": 339731,
+   "files": 27104,
+   "date": "2026-10-24"
   },
   "data.goettingen-research-online.de": {
-   "datasets": 2627,
-   "downloads": 3066880,
-   "files": 87994,
-   "date": "2026-10-22"
+   "datasets": 2634,
+   "downloads": 3121020,
+   "files": 88274,
+   "date": "2026-10-24"
   },
   "data.mel.cgiar.org": {
    "datasets": 622,
-   "downloads": 55038,
+   "downloads": 55693,
    "files": 4200,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "data.qdr.syr.edu": {
    "datasets": 238,
    "downloads": 1142651,
    "files": 33091,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "data.sciencespo.fr": {
-   "datasets": 572,
-   "downloads": 143286,
-   "files": 7824,
-   "date": "2026-10-22"
+   "datasets": 578,
+   "downloads": 144691,
+   "files": 7914,
+   "date": "2026-10-24"
   },
   "data.tu-dortmund.de": {
-   "datasets": 236,
-   "downloads": 215721,
-   "files": 22141,
-   "date": "2026-10-22"
+   "datasets": 239,
+   "downloads": 224148,
+   "files": 22522,
+   "date": "2026-10-24"
   },
   "data.worldagroforestry.org": {
    "datasets": 649,
-   "downloads": 94676,
+   "downloads": 95237,
    "files": 4002,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "datadoi.ee": {
    "datasets": 463,
-   "downloads": 364721,
+   "downloads": 369308,
    "files": 3262,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "datahub.polen.fccn.pt": {
    "datasets": 50,
    "downloads": 61114,
    "files": 5945,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "datahub.tec.mx": {
    "datasets": 43,
-   "downloads": 8964,
+   "downloads": 9216,
    "files": 386,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataportal.ing.pan.pl": {
-   "datasets": 43,
-   "downloads": 8760,
-   "files": 1358,
-   "date": "2026-10-22"
+   "datasets": 44,
+   "downloads": 8765,
+   "files": 1368,
+   "date": "2026-10-24"
   },
   "datarepository.unive.it": {
-   "datasets": 45,
-   "downloads": 4360,
-   "files": 1456,
-   "date": "2026-10-22"
+   "datasets": 46,
+   "downloads": 4364,
+   "files": 1468,
+   "date": "2026-10-24"
   },
   "datasets.lib.berkeley.edu": {
    "datasets": 254,
-   "downloads": 34306,
+   "downloads": 37338,
    "files": 45301,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "datasets.up.edu.pe": {
    "datasets": 37,
-   "downloads": 1289,
+   "downloads": 1296,
    "files": 126,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataspace.ust.hk": {
-   "datasets": 152,
-   "downloads": 34987,
-   "files": 1460,
-   "date": "2026-10-22"
+   "datasets": 153,
+   "downloads": 35666,
+   "files": 1467,
+   "date": "2026-10-24"
   },
   "datav.udec.cl": {
    "datasets": 17,
-   "downloads": 1497,
+   "downloads": 1510,
    "files": 62,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.adp.fdv.uni-lj.si": {
    "datasets": 364,
-   "downloads": 16448,
+   "downloads": 17098,
    "files": 1493,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.arcc.uwyo.edu": {
    "datasets": 333,
    "downloads": 49390,
    "files": 1738,
-   "date": "2026-10-22"
+   "date": "2026-10-23"
   },
   "dataverse.asu.edu": {
    "datasets": 96,
    "downloads": 108578,
    "files": 16021,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.bhp.org.bw": {
    "datasets": 0,
    "downloads": 0,
    "files": 0,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.bsc.es": {
    "datasets": 108,
-   "downloads": 74101,
+   "downloads": 75172,
    "files": 8229,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.cbpf.br": {
    "datasets": 6,
-   "downloads": 77,
+   "downloads": 78,
    "files": 17,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.cidacs.org": {
-   "datasets": 240,
-   "downloads": 7831,
-   "files": 422,
-   "date": "2026-10-22"
+   "datasets": 299,
+   "downloads": 8040,
+   "files": 659,
+   "date": "2026-10-24"
   },
   "dataverse.cirad.fr": {
-   "datasets": 1006,
-   "downloads": 151393,
-   "files": 12450,
-   "date": "2026-10-22"
+   "datasets": 1009,
+   "downloads": 159302,
+   "files": 12477,
+   "date": "2026-10-24"
   },
   "dataverse.csuc.cat": {
-   "datasets": 2476,
-   "downloads": 7272746,
-   "files": 266922,
-   "date": "2026-10-22"
+   "datasets": 2479,
+   "downloads": 7348143,
+   "files": 266948,
+   "date": "2026-10-24"
   },
   "dataverse.dartmouth.edu": {
    "datasets": 100,
-   "downloads": 69767,
+   "downloads": 72118,
    "files": 4118,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.deic.dk": {
    "datasets": 13,
-   "downloads": 17194,
+   "downloads": 18465,
    "files": 460,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.fgv.br": {
-   "datasets": 62,
-   "downloads": 49866,
+   "datasets": 66,
+   "downloads": 49938,
    "files": 684,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.fiu.edu": {
    "datasets": 125,
-   "downloads": 46774,
+   "downloads": 46860,
    "files": 9989,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.harvard.edu": {
-   "datasets": 118896,
-   "downloads": 183293835,
-   "files": 3459978,
-   "date": "2026-10-22"
+   "datasets": 119138,
+   "downloads": 184130936,
+   "files": 3463457,
+   "date": "2026-10-24"
   },
   "dataverse.icrisat.org": {
    "datasets": 453,
-   "downloads": 82214,
+   "downloads": 82446,
    "files": 3272,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.ideal.ufpb.br": {
-   "datasets": 61,
-   "downloads": 12913,
-   "files": 254,
-   "date": "2026-10-22"
+   "datasets": 66,
+   "downloads": 12978,
+   "files": 274,
+   "date": "2026-10-24"
   },
   "dataverse.iit.it": {
    "datasets": 54,
-   "downloads": 420344,
+   "downloads": 434053,
    "files": 20065,
-   "date": "2026-10-21"
+   "date": "2026-10-24"
   },
   "dataverse.ipgp.fr": {
    "datasets": 90,
-   "downloads": 106872,
+   "downloads": 108762,
    "files": 3053,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.ird.fr": {
-   "datasets": 489,
-   "downloads": 184766,
-   "files": 8594,
-   "date": "2026-10-22"
+   "datasets": 493,
+   "downloads": 187268,
+   "files": 8632,
+   "date": "2026-10-24"
   },
   "dataverse.iza.org": {
    "datasets": 122,
@@ -327,148 +327,148 @@
    "date": "2026-10-21"
   },
   "dataverse.jpl.nasa.gov": {
-   "datasets": 48339,
-   "downloads": 660072,
-   "files": 48986,
-   "date": "2026-10-22"
+   "datasets": 48359,
+   "downloads": 663603,
+   "files": 49007,
+   "date": "2026-10-24"
   },
   "dataverse.lib.nycu.edu.tw": {
    "datasets": 293,
-   "downloads": 35006,
+   "downloads": 36026,
    "files": 6876,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.lib.unb.ca": {
    "datasets": 123,
-   "downloads": 48837,
+   "downloads": 49023,
    "files": 1389,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.lib.virginia.edu": {
    "datasets": 532,
    "downloads": 1586578,
    "files": 53838,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.nl": {
-   "datasets": 9715,
+   "datasets": 9733,
    "downloads": 28331325,
-   "files": 357212,
-   "date": "2026-10-22"
+   "files": 357389,
+   "date": "2026-10-24"
   },
   "dataverse.no": {
-   "datasets": 2305,
-   "downloads": 2728676,
-   "files": 148112,
-   "date": "2026-10-22"
+   "datasets": 2311,
+   "downloads": 2824635,
+   "files": 148354,
+   "date": "2026-10-24"
   },
   "dataverse.openforestdata.pl": {
    "datasets": 79787,
    "downloads": 928207,
    "files": 26480,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.orc.gmu.edu": {
    "datasets": 78,
    "downloads": 263193,
    "files": 3972,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.pushdom.ru": {
    "datasets": 48,
-   "downloads": 63334,
+   "downloads": 64207,
    "files": 888,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.rhi.hi.is": {
    "datasets": 45,
-   "downloads": 18513,
+   "downloads": 18535,
    "files": 264,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.rsu.lv": {
-   "datasets": 185,
-   "downloads": 10873,
-   "files": 1635,
-   "date": "2026-10-22"
+   "datasets": 186,
+   "downloads": 11162,
+   "files": 1649,
+   "date": "2026-10-24"
   },
   "dataverse.tec.ac.cr": {
    "datasets": 57,
-   "downloads": 1908,
+   "downloads": 2006,
    "files": 361,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.ucla.edu": {
-   "datasets": 397,
+   "datasets": 410,
    "downloads": 266168,
    "files": 28657,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.uclouvain.be": {
-   "datasets": 226,
-   "downloads": 6731846,
-   "files": 28136,
-   "date": "2026-10-22"
+   "datasets": 232,
+   "downloads": 6770517,
+   "files": 28139,
+   "date": "2026-10-24"
   },
   "dataverse.udel.edu": {
-   "datasets": 11,
-   "downloads": 8946,
+   "datasets": 26,
+   "downloads": 8965,
    "files": 1750,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.uliege.be": {
-   "datasets": 60,
-   "downloads": 851501,
-   "files": 13604,
-   "date": "2026-10-22"
+   "datasets": 64,
+   "downloads": 853003,
+   "files": 13620,
+   "date": "2026-10-24"
   },
   "dataverse.unimi.it": {
    "datasets": 727,
    "downloads": 859972,
    "files": 150296,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.unr.edu.ar": {
    "datasets": 68,
-   "downloads": 9201,
+   "downloads": 10076,
    "files": 1446,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.vtti.vt.edu": {
    "datasets": 214,
    "downloads": 44257,
    "files": 1649,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.whoi.edu": {
    "datasets": 39,
-   "downloads": 52209,
+   "downloads": 52788,
    "files": 6325,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dataverse.yale.edu": {
-   "datasets": 321,
-   "downloads": 104232,
-   "files": 30585,
-   "date": "2026-10-22"
+   "datasets": 325,
+   "downloads": 108507,
+   "files": 30589,
+   "date": "2026-10-24"
   },
   "datos.pucp.edu.pe": {
    "datasets": 833,
    "downloads": 98670,
    "files": 41856,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "datos.uchile.cl": {
    "datasets": 184,
-   "downloads": 191448,
+   "downloads": 193013,
    "files": 5143,
-   "date": "2026-10-22"
+   "date": "2026-10-23"
   },
   "datos.unlp.edu.ar": {
    "datasets": 25,
-   "downloads": 5486,
+   "downloads": 5531,
    "files": 930,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "datos.usach.cl": {
    "datasets": 31,
@@ -480,109 +480,109 @@
    "datasets": 1,
    "downloads": 72,
    "files": 1,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "datospararesiliencia.cl": {
    "datasets": 113,
-   "downloads": 110101,
+   "downloads": 111276,
    "files": 15258,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "dmportal.biodata.pt": {
-   "datasets": 41,
-   "downloads": 4968,
+   "datasets": 46,
+   "downloads": 4992,
    "files": 224,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "domusdados.unifesp.br": {
-   "datasets": 121,
-   "downloads": 7680,
-   "files": 636,
-   "date": "2026-10-22"
+   "datasets": 127,
+   "downloads": 7857,
+   "files": 648,
+   "date": "2026-10-24"
   },
   "dv.dataverse.lv": {
-   "datasets": 84,
-   "downloads": 6221,
-   "files": 709,
-   "date": "2026-10-22"
+   "datasets": 85,
+   "downloads": 6372,
+   "files": 715,
+   "date": "2026-10-24"
   },
   "edatos.consorciomadrono.es": {
-   "datasets": 1927,
-   "downloads": 537894,
-   "files": 27043,
-   "date": "2026-10-22"
+   "datasets": 1936,
+   "downloads": 565147,
+   "files": 27359,
+   "date": "2026-10-24"
   },
   "edmond.mpdl.mpg.de": {
-   "datasets": 1905,
-   "downloads": 2809583,
-   "files": 222423,
-   "date": "2026-10-22"
+   "datasets": 1914,
+   "downloads": 3228518,
+   "files": 222528,
+   "date": "2026-10-24"
   },
   "entrepot.recherche.data.gouv.fr": {
-   "datasets": 7167,
-   "downloads": 7010120,
-   "files": 172846,
-   "date": "2026-10-22"
+   "datasets": 7173,
+   "downloads": 7136500,
+   "files": 172881,
+   "date": "2026-10-24"
   },
   "health-study-hub.de": {
-   "datasets": 56241,
-   "downloads": 5418,
-   "files": 732,
-   "date": "2026-10-22"
+   "datasets": 56243,
+   "downloads": 5536,
+   "files": 734,
+   "date": "2026-10-24"
   },
   "heidata.uni-heidelberg.de": {
-   "datasets": 800,
-   "downloads": 1718534,
-   "files": 15413,
-   "date": "2026-10-22"
+   "datasets": 802,
+   "downloads": 2508596,
+   "files": 15430,
+   "date": "2026-10-24"
   },
   "ifj.rodbuk.pl": {
    "datasets": 104,
-   "downloads": 1589,
+   "downloads": 2546,
    "files": 495,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "indata.cedia.edu.ec": {
    "datasets": 3,
-   "downloads": 161,
+   "downloads": 196,
    "files": 13,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "infraverse.zih.tu-dresden.de": {
-   "datasets": 24,
+   "datasets": 25,
    "downloads": 424679,
-   "files": 18386,
-   "date": "2026-10-22"
+   "files": 18396,
+   "date": "2026-10-24"
   },
   "investigacionartes.mincultura.gov.co": {
    "datasets": 126,
-   "downloads": 5548,
+   "downloads": 5821,
    "files": 1892,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "issda.ucd.ie": {
-   "datasets": 223,
-   "downloads": 26897,
-   "files": 1341,
-   "date": "2026-10-22"
+   "datasets": 225,
+   "downloads": 27664,
+   "files": 1353,
+   "date": "2026-10-24"
   },
   "lida.dataverse.lt": {
    "datasets": 644,
-   "downloads": 74367,
-   "files": 2897,
-   "date": "2026-10-22"
+   "downloads": 74747,
+   "files": 2900,
+   "date": "2026-10-24"
   },
   "lifesciences.datastations.nl": {
-   "datasets": 1110,
-   "downloads": 673308,
-   "files": 59422,
-   "date": "2026-10-22"
+   "datasets": 1112,
+   "downloads": 693416,
+   "files": 59519,
+   "date": "2026-10-24"
   },
   "lore.list.lu": {
    "datasets": 6428,
-   "downloads": 165,
+   "downloads": 177,
    "files": 39,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "opendata.cesa.edu.co": {
    "datasets": 11,
@@ -591,154 +591,154 @@
    "date": "2026-10-21"
   },
   "opendata.nas.gov.ua": {
-   "datasets": 79,
-   "downloads": 79389,
-   "files": 1446,
-   "date": "2026-10-22"
+   "datasets": 81,
+   "downloads": 80396,
+   "files": 1459,
+   "date": "2026-10-24"
   },
   "osnadata.ub.uni-osnabrueck.de": {
    "datasets": 80,
-   "downloads": 116209,
+   "downloads": 116390,
    "files": 4706,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "papyrus-datos.co": {
    "datasets": 244,
-   "downloads": 11230,
-   "files": 879,
-   "date": "2026-10-22"
+   "downloads": 11324,
+   "files": 880,
+   "date": "2026-10-24"
   },
   "phys-techsciences.datastations.nl": {
-   "datasets": 898,
-   "downloads": 2792384,
-   "files": 234303,
-   "date": "2026-10-22"
+   "datasets": 907,
+   "downloads": 2896898,
+   "files": 234451,
+   "date": "2026-10-24"
   },
   "pk.rodbuk.pl": {
    "datasets": 55,
-   "downloads": 1073,
+   "downloads": 1193,
    "files": 201,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "planetary-data-portal.org": {
    "datasets": 157,
-   "downloads": 36555,
+   "downloads": 37126,
    "files": 2160,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "portal.odissei.nl": {
    "datasets": 10547,
    "downloads": 0,
    "files": 0,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "rdr.kuleuven.be": {
-   "datasets": 872,
-   "downloads": 2623333,
-   "files": 202628,
-   "date": "2026-10-22"
+   "datasets": 881,
+   "downloads": 2766019,
+   "files": 203234,
+   "date": "2026-10-24"
   },
   "redata.anii.org.uy": {
    "datasets": 92,
-   "downloads": 98202,
+   "downloads": 99634,
    "files": 2070,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "repo.researchdata.hu": {
-   "datasets": 256,
-   "downloads": 514800,
-   "files": 46254,
-   "date": "2026-10-22"
+   "datasets": 257,
+   "downloads": 516112,
+   "files": 46294,
+   "date": "2026-10-24"
   },
   "repod.icm.edu.pl": {
-   "datasets": 4482,
-   "downloads": 477905,
-   "files": 64449,
-   "date": "2026-10-22"
+   "datasets": 4504,
+   "downloads": 494573,
+   "files": 64581,
+   "date": "2026-10-24"
   },
   "repositorio.soildata.mapbiomas.org": {
-   "datasets": 302,
-   "downloads": 11154,
-   "files": 107,
-   "date": "2026-10-22"
+   "datasets": 307,
+   "downloads": 11279,
+   "files": 117,
+   "date": "2026-10-24"
   },
   "repositoriopesquisas.ibict.br": {
    "datasets": 182,
    "downloads": 2265,
    "files": 485,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "researchdata.cuhk.edu.hk": {
-   "datasets": 313,
-   "downloads": 84616,
-   "files": 23396,
-   "date": "2026-10-22"
+   "datasets": 314,
+   "downloads": 86073,
+   "files": 23397,
+   "date": "2026-10-24"
   },
   "researchdata.lib.polyu.edu.hk": {
    "datasets": 27,
    "downloads": 49803,
    "files": 341,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "researchdata.nie.edu.sg": {
    "datasets": 349,
-   "downloads": 4051,
+   "downloads": 4064,
    "files": 6158,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "researchdata.ntu.edu.sg": {
-   "datasets": 2124,
-   "downloads": 1291378,
-   "files": 90998,
-   "date": "2026-10-20"
+   "datasets": 2127,
+   "downloads": 1309762,
+   "files": 91024,
+   "date": "2026-10-24"
   },
   "rodbuk.pl": {
    "datasets": 0,
    "downloads": 0,
    "files": 0,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "sano.rodbuk.pl": {
    "datasets": 3,
-   "downloads": 1952,
+   "downloads": 1959,
    "files": 2205,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "ssh.datastations.nl": {
-   "datasets": 8162,
+   "datasets": 8167,
    "downloads": 3929578,
-   "files": 500703,
-   "date": "2026-10-22"
+   "files": 500713,
+   "date": "2026-10-24"
   },
   "uek.rodbuk.pl": {
    "datasets": 44,
-   "downloads": 864,
+   "downloads": 895,
    "files": 120,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "uj.rodbuk.pl": {
-   "datasets": 986,
-   "downloads": 18623,
-   "files": 21951,
-   "date": "2026-10-22"
+   "datasets": 987,
+   "downloads": 20172,
+   "files": 21954,
+   "date": "2026-10-24"
   },
   "uken.rodbuk.pl": {
    "datasets": 11,
-   "downloads": 939,
+   "downloads": 944,
    "files": 195,
-   "date": "2026-10-22"
+   "date": "2026-10-24"
   },
   "uwr.rodbuk.pl": {
-   "datasets": 173,
-   "downloads": 2666,
-   "files": 908,
-   "date": "2026-10-22"
+   "datasets": 175,
+   "downloads": 2892,
+   "files": 912,
+   "date": "2026-10-24"
   },
   "www.sodha.be": {
    "datasets": 166,
    "downloads": 71485,
    "files": 3103,
-   "date": "2026-10-21"
+   "date": "2026-10-24"
   }
  }
 }
