@@ -36,7 +36,7 @@ jobs:
         env:
           SITE_BASE_PATH: ${{ vars.SITE_BASE_PATH }}
         run: node scripts/export-static.mjs --out site-static --base "${SITE_BASE_PATH:-/${GITHUB_REPOSITORY#*/}}"
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site-static
 
