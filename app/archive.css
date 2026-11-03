@@ -332,7 +332,7 @@ h1, h2, h3, h4,
   display: grid;
   grid-template-columns: minmax(0, 1fr) 330px;
   gap: 8vw;
-  padding: 65px 8vw 110px;
+  padding: 65px var(--content-gutter) 110px;
   align-items: start;
 }
 
@@ -512,7 +512,7 @@ h1, h2, h3, h4,
   .archive-arrow { display: none; }
   .archive-detail-head { padding: 60px 6vw 45px; background: #fff; border-right: 18px solid var(--dv-orange-soft); }
   .archive-detail-head h1 { letter-spacing: -2px; }
-  .archive-detail-grid { padding: 45px 6vw 80px; }
+  .archive-detail-grid { padding: 45px var(--content-gutter) 80px; }
   .archive-resources { position: static; margin-top: 35px; }
   .archive-footer-links { justify-content: flex-start; }
 }
@@ -529,4 +529,4 @@ h1, h2, h3, h4,
 .archive-resources-more summary:focus-visible { outline: 2px solid #A84A1D; outline-offset: 2px; }
 .archive-map { margin: 0 0 32px; padding: 0 6vw; }
 .not-found .archive-prose { max-width: 620px; }
-.not-found .archive-prose { padding: 48px 8vw 96px; }
+.not-found .archive-prose { padding: 48px var(--content-gutter) 96px; }
