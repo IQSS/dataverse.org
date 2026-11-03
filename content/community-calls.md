@@ -8,6 +8,8 @@ Community calls are listed in the Dataverse community [Google Calendar](https://
 
 ## Upcoming calls
 
+- December 1, 2026, 10am Eastern ([see in your timezone](https://time.is/compare/10am_1_Dec_2026_in_Boston)): Julien Cufi on JSON schemas for metadata blocks ([agenda/notes](https://docs.google.com/document/d/1H0qGR_xtUvNjfO62pfXkOhM8GO7hZAMNJjJHF8lAcAc/edit?usp=sharing))
+
 See the [Dataverse community calendar](https://calendar.google.com/calendar/embed?src=c_udn4tonm401kgjjre4jl4ja0cs%40group.calendar.google.com&ctz=America%2FNew_York) for the current schedule.
 
 ## Join a call
@@ -17,6 +19,12 @@ See the [Dataverse community calendar](https://calendar.google.com/calendar/embe
 ## Notes and recordings
 
 For recordings, please see [DataverseTV](/dataversetv).
+
+- [December 1, 2026 Notes](https://docs.google.com/document/d/1H0qGR_xtUvNjfO62pfXkOhM8GO7hZAMNJjJHF8lAcAc/edit?usp=sharing) Julien Cufi on JSON schemas for metadata blocks
+
+- [November 3, 2026 Notes](https://docs.google.com/document/d/10zoWnVDAEzYsVgvZeDQjScFpjAai5hc5Hb0Npylzcj0/edit?usp=sharing) Andrea Tentner on the [HEAL data packaging tool](https://norc-heal.github.io/heal-data-pkg-tool-docs/) to prepare Dataverse-ready deposits - JSON schemas for file and variable-level metadata
+
+- [October 6, 2026 Notes](https://docs.google.com/document/d/1YkShXWr--mrgzs6QOcBO26qzwFar_Q0b6ssURFCB65s/edit?usp=sharing) Pascal Heus on a Dataverse metadata harvester and Slava Tykhonov on Semantic Croissant AI infrastructure
 
 - [September 1, 2026 Notes](https://docs.google.com/document/d/1TCKOHYWmx8jr9i1YFPZ_91AE622HdlMo7AmU6rB-cUU/edit?usp=sharing) URGE (Universal Readme file GEnerator) and the Borealis README Generator
 
