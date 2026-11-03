@@ -34,7 +34,7 @@ For recordings, please see [DataverseTV](/dataversetv).
 
 - [June 2, 2026 Notes](https://docs.google.com/document/d/1MDSsKjNWQA0PqqEEWPiR7yihH41E6mCRzmdxWcEB_iw/edit?usp=sharing) Demo from Eryk Kulikowski of mounting a dataset as a local file system and stories from the [2026 Dataverse Community Meeting](https://dcm2026.com/) in Barcelona
 
-- [April 7, 2027 Notes](https://docs.google.com/document/d/15EJCjT3s13YusxfALFZba8BqLVFD99oVv854TDgMVxI/edit?usp=sharing) Features from recent releases
+- [April 7, 2026 Notes](https://docs.google.com/document/d/15EJCjT3s13YusxfALFZba8BqLVFD99oVv854TDgMVxI/edit?usp=sharing) Features from recent releases
 
 - [March 3, 2026 Notes](https://docs.google.com/document/d/1v5npHc0_VwKA6Yjk4dtuXVWBPp-AWaLQo6-GmfRtgu4/edit?usp=sharing) Ceilyn Boyd and Philipp Conzett on the [Birdaro Training Program](https://www.birdaro.org/2025/07/01/the-birdaro-training-program/) and ongoing work on a community playbook for the Dataverse community
 
