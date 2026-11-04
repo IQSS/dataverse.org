@@ -25,7 +25,9 @@ boundaries and focus indicators.
 Do not publish private roadmap source spreadsheets. Preserve the existing site's identity and
 audience. GitHub Pages publishing was authorized by the owner on 2026-10-08:
 `scripts/export-static.mjs` prerenders this same app into a static folder and
-`.github/workflows/pages.yml` deploys it on every push to `main` or `daily-metrics`. It is not a
+`.github/workflows/pages.yml` deploys it from `daily-metrics` only, which the daily metrics job
+rebuilds each morning as `main` plus the latest numbers. A push to `main` goes live with the next
+rebuild. It is not a
 Hugo conversion; the app source stays the single source of truth. A Hugo migration would still
 need separate authorization.
 
@@ -75,7 +77,7 @@ need separate authorization.
 
 `data/headline-metrics.ts` and `data/headline-metrics.json` are produced daily by the Harvard
 Dataverse knowledge-graph pipeline (`kg_box_app/scripts/export_site_metrics.py`, outside this
-repository) and pushed to the `daily-metrics` branch, which also deploys. Keep the exported shape
+repository) and pushed to the `daily-metrics` branch, which is the deploy branch. Keep the exported shape
 of `headlineMetrics` unchanged. Read `headline-metrics.json` (`as_of.citations`,
 `as_of.network_sweep`) to show an "as of" date next to the figures. Do not build a second
 metrics refresh. Since 2026-10-08 the export also carries `networkFiles`, `networkDownloads`,
