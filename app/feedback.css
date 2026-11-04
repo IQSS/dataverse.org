@@ -265,6 +265,8 @@ footer > div:last-child { flex-wrap: wrap; }
 .collection-section { padding: 72px var(--content-gutter); border-bottom: 1px solid var(--dv-border); background: #fff; }
 .collection-section h2 { font-size: clamp(36px, 4.5vw, 64px); font-weight: 600; line-height: 1.08; letter-spacing: -.04em; margin: 0 0 24px; }
 .collection-intro { max-width: 780px; font-size: 18px; line-height: 1.65; }
+.collection-intro a { color: var(--dv-orange-ink); text-decoration: underline; text-underline-offset: 4px; }
+.collection-intro a:hover { text-decoration-thickness: 2px; }
 .collection-grid article { padding-top: 24px; border-top: 1px solid var(--dv-orange); }
 .community-values { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .community-values a { min-width: 0; min-height: 300px; padding: 28px; }
