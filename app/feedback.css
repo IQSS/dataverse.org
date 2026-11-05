@@ -244,6 +244,13 @@ footer > div:last-child { flex-wrap: wrap; }
 .community-connection-grid h3 { font-size: 26px; line-height: 1.2; margin: 0 0 12px; }
 .community-connection-grid p { font-size: 16px; line-height: 1.7; margin: 0 0 24px; }
 .community-connection-grid a { margin-top: auto; font-weight: 600; color: var(--dv-orange-ink); text-decoration: underline; text-underline-offset: 4px; }
+.zulip-latest { padding: 0 var(--content-gutter) 40px; }
+.zulip-latest h2 { font-size: 32px; line-height: 1.2; margin: 0 0 24px; }
+.zulip-topic-list { list-style: none; margin: 0 0 20px; padding: 0; border: 1px solid var(--dv-border); border-radius: 22px; background: #fff; overflow: hidden; }
+.zulip-topic-list li { display: flex; flex-direction: column; gap: 4px; padding: 16px 24px; border-top: 1px solid var(--dv-border); }
+.zulip-topic-list li:first-child { border-top: 0; }
+.zulip-topic-list a, .zulip-latest-more { font-weight: 600; color: var(--dv-orange-ink); text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.zulip-topic-meta { font-size: 14px; color: #595959; }
 .community-meetings { padding-top: 40px; }
 .community-meetings > h2 { margin-inline: var(--content-gutter); }
 .community-calls-page { padding: 48px var(--content-gutter) 80px; }
