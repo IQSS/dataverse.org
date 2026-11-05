@@ -24,13 +24,25 @@ function blurb(text = "") {
   return first ?? (text.length > 200 ? `${text.slice(0, 197).trimEnd()}…` : text);
 }
 
+// Text alternative for the map: where the dots are, from the same data that draws them.
+function mapSummary() {
+  const byContinent = new Map<string, number>();
+  for (const { url } of map.installations) {
+    const continent = details.get(url.replace(/\/+$/, ""))?.continent;
+    if (continent) byContinent.set(continent, (byContinent.get(continent) ?? 0) + 1);
+  }
+  const regions = [...byContinent].sort((a, b) => b[1] - a[1]).map(([continent, n]) => `${n} in ${continent}`).join(", ");
+  const countries = new Set(map.installations.map((item) => item.country)).size;
+  return `World map showing the locations of ${map.installations.length} Dataverse installations in ${countries} countries: ${regions}. Each location is a dot that links to its repository and opens in a new tab. Where dots overlap, use Tab to reach each repository.`;
+}
+
 export default function InstallationMap({ hideDirectory = false }: { hideDirectory?: boolean }) {
   return <div className="ecosystem-map-panel">
     <div className="map-panel-heading"><h3>Installations Around the World</h3><a href="/explore#explore-list-heading">Full list of installations</a></div>
+    <p className="sr-only" id="installation-map-description">{mapSummary()}</p>
     <div className="installation-map-container">
       <svg className="installation-map" viewBox="0 0 1000 440" role="group" aria-labelledby="installation-map-title" aria-describedby="installation-map-description">
         <title id="installation-map-title">Dataverse installations around the world</title>
-        <desc id="installation-map-description">Locations of {map.installations.length} installations in the Dataverse community registry, across six continents. Select a dot to open its repository in a new tab. Use Tab to reach individual repositories where dots overlap.</desc>
         <g className="map-land" aria-hidden="true">{map.paths.map((path, index) => <path d={path} key={index}/>)}</g>
         <g className="map-locations">{map.installations.map(installation => { const info = details.get(installation.url.replace(/\/+$/, "")); return <a className="map-repository-link" key={installation.name} href={installation.url} target="_blank" rel="noopener noreferrer" data-name={installation.name} data-meta={`${installation.country}${info?.launch_year ? ` · since ${info.launch_year}` : ""}`} data-desc={blurb(info?.description)} data-stats={stats(installation.url)} aria-label={`${installation.name} — ${installation.country}${info?.launch_year ? `, since ${info.launch_year}` : ""} (opens in a new tab)`}>
           <circle className="map-location-halo" cx={installation.point[0]} cy={installation.point[1]} r="7" aria-hidden="true"/>

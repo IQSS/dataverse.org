@@ -61,21 +61,24 @@ export default function Home() {
     <section className="project-section community-section" id="community">
       <div className="section-kicker">A GLOBAL COMMUNITY</div>
       <div className="section-grid"><h2>Built, Run and Improved by the Dataverse Research Community.</h2><div className="section-intro"><p>Developers, data curators, librarians and researchers from the 150+ installations contribute code, documentation, translations and support. They meet every year at the Dataverse Community Meeting, talk monthly on community calls, and coordinate through the Global Dataverse Community Consortium (GDCC), the body through which installations share work on containers, documentation, large and sensitive data, and more.</p><p>The project is led from Harvard’s Institute for Quantitative Social Science, which built the first release in 2006 and still maintains the software with the community.</p><a className="metric-method-link" href="/about#team">Who leads it →</a></div></div>
-      <figure className="ecosystem-figure community-figure" aria-label="The connected Dataverse project ecosystem">
+      <figure className="ecosystem-figure community-figure" aria-describedby="ecosystem-description">
         <figcaption>Dataverse Project Ecosystem</figcaption>
-        <div className="ecosystem-scroll" tabIndex={0} role="group" aria-label="Linked ecosystem diagram">
+        <p className="sr-only" id="ecosystem-description">The open-source Dataverse Project sits at the center of this diagram, with a line joining it to each of seven parts of the ecosystem: Harvard Dataverse, the founding installation; more than 150 independent installations; the global community; the software project; researchers; integrations; and support from funders and partners. Each box is a link.</p>
+        <div className="ecosystem-scroll" tabIndex={0} role="group" aria-label="Dataverse Project ecosystem diagram, with links">
         <div className="ecosystem-diagram">
         <svg className="ecosystem-connections" aria-hidden="true">
           {[[50, 14], [20, 22], [80, 22], [9, 56], [91, 56], [24, 82], [76, 82]].map(([x, y]) => <line key={`${x}-${y}`} x1="50%" y1="50%" x2={`${x}%`} y2={`${y}%`} />)}
         </svg>
-        <a className="ecosystem-node node-center" href="/about"><small>OPEN-SOURCE</small><strong>DATAVERSE<br/>PROJECT</strong></a>
-        <a className="ecosystem-node node-harvard" href="#research"><strong>Harvard<br/>Dataverse</strong><span>Founding installation</span></a>
-        <a className="ecosystem-node node-installations" href="/explore"><strong>150+<br/>Installations</strong><span>Independent repositories →</span></a>
-        <a className="ecosystem-node node-community" href="/events"><strong>Global<br/>Community</strong><span>GDCC, meetings, calls →</span></a>
-        <a className="ecosystem-node node-software" href="/software"><strong>Software<br/>Project</strong><span>Technical details →</span></a>
-        <a className="ecosystem-node node-researchers" href="/use-cases"><strong>Researchers</strong><span>Use cases →</span></a>
-        <a className="ecosystem-node node-integrations" href="#integrations"><strong>Integrations</strong><span>Connected tools</span></a>
-        <a className="ecosystem-node node-partners" href="#partners"><strong>Support</strong><span>Funders and partners</span></a>
+        <a className="ecosystem-node node-center" href="/about" aria-label="Open-source Dataverse Project: go to the About page"><small>OPEN-SOURCE</small><strong>DATAVERSE<br/>PROJECT</strong></a>
+        <ul aria-label="Connected to the Dataverse Project">
+          <li><a className="ecosystem-node node-harvard" href="#research" aria-label="Harvard Dataverse, founding installation: go to the Harvard Dataverse section on this page"><strong>Harvard<br/>Dataverse</strong><span>Founding installation</span></a></li>
+          <li><a className="ecosystem-node node-installations" href="/explore" aria-label="150+ Installations, independent repositories: go to the Explore page"><strong>150+<br/>Installations</strong><span>Independent repositories →</span></a></li>
+          <li><a className="ecosystem-node node-community" href="/events" aria-label="Global Community, GDCC, meetings, calls: go to the Community page"><strong>Global<br/>Community</strong><span>GDCC, meetings, calls →</span></a></li>
+          <li><a className="ecosystem-node node-software" href="/software" aria-label="Software Project, technical details: go to the Software page"><strong>Software<br/>Project</strong><span>Technical details →</span></a></li>
+          <li><a className="ecosystem-node node-researchers" href="/use-cases" aria-label="Researchers, use cases: go to the Use Cases page"><strong>Researchers</strong><span>Use cases →</span></a></li>
+          <li><a className="ecosystem-node node-integrations" href="#integrations" aria-label="Integrations, connected tools: go to the Integrations section on this page"><strong>Integrations</strong><span>Connected tools</span></a></li>
+          <li><a className="ecosystem-node node-partners" href="#partners" aria-label="Support, funders and partners: go to the partners section on this page"><strong>Support</strong><span>Funders and partners</span></a></li>
+        </ul>
         </div>
         </div>
       </figure>

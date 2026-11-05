@@ -19,7 +19,7 @@ export type UseCase = {
   image: string;
   imageAlt: string;
   /** Card thumbnail when the hero image carries baked-in text; "contain" shows a logo on white. */
-  card?: { src: string; fit: "cover" | "contain" };
+  card?: { src: string; fit: "cover" | "contain"; alt: string };
   citation: string;
   doi: string;
   featured?: boolean;
@@ -68,7 +68,7 @@ export const useCases: UseCase[] = [
     summary: "How DrivAerNet++, 16 terabytes of automotive simulation data from MIT and TUM, is stored on tape and downloaded through Globus from Harvard Dataverse.",
     image: "/use-cases/hdv_large_data/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
-    card: { src: "/use-cases/hdv_large_data/images/drivaernet-files-tab.jpg", fit: "cover" },
+    card: { src: "/use-cases/hdv_large_data/images/drivaernet-files-tab.jpg", fit: "cover", alt: "Files tab of a DrivAerNet++ dataset on Harvard Dataverse, listing zip archives" },
     citation: "Gautier, J., Durand, G., Boyd, C., & Barbosa, S. (2025). Use Cases, Harvard Dataverse Repository. Zenodo.",
     doi: "https://doi.org/10.5281/zenodo.14782026",
     featured: true,
@@ -83,7 +83,7 @@ export const useCases: UseCase[] = [
     summary: "An NIH-funded researcher deposits project data so that it satisfies the data management and sharing plan and the conditions of the grant.",
     image: "/use-cases/hdv_nih_data_sharing/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
-    card: { src: "/use-cases/hdv_nih_data_sharing/images/grei-logo.jpg", fit: "contain" },
+    card: { src: "/use-cases/hdv_nih_data_sharing/images/grei-logo.jpg", fit: "contain", alt: "Generalist Repository Ecosystem Initiative (GREI) logo" },
     citation: "Gautier, J., Durand, G., Boyd, C., & Barbosa, S. (2025). Use Cases, Harvard Dataverse Repository. Zenodo.",
     doi: "https://doi.org/10.5281/zenodo.14782026",
     body: nihDataSharing,
@@ -97,7 +97,7 @@ export const useCases: UseCase[] = [
     summary: "A researcher searches a generalist repository to validate findings, reuse data and build on work within a discipline.",
     image: "/use-cases/hdv_data_seeking/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
-    card: { src: "/use-cases/hdv_data_seeking/images/grei-logo.jpg", fit: "contain" },
+    card: { src: "/use-cases/hdv_data_seeking/images/grei-logo.jpg", fit: "contain", alt: "Generalist Repository Ecosystem Initiative (GREI) logo" },
     citation: "Gautier, J., Durand, G., Boyd, C., & Barbosa, S. (2025). Use Cases, Harvard Dataverse Repository. Zenodo.",
     doi: "https://doi.org/10.5281/zenodo.14782026",
     body: dataSeeking,
@@ -111,7 +111,7 @@ export const useCases: UseCase[] = [
     summary: "An institution gives its researchers a place to deposit and share outputs, reports on aggregate usage, and connects the repository to other systems through APIs.",
     image: "/use-cases/hdv_institutional_repository/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
-    card: { src: "/use-cases/hdv_institutional_repository/images/grei-logo.jpg", fit: "contain" },
+    card: { src: "/use-cases/hdv_institutional_repository/images/grei-logo.jpg", fit: "contain", alt: "Generalist Repository Ecosystem Initiative (GREI) logo" },
     citation: "Gautier, J., Durand, G., Boyd, C., & Barbosa, S. (2025). Use Cases, Harvard Dataverse Repository. Zenodo.",
     doi: "https://doi.org/10.5281/zenodo.14782026",
     body: institutionalRepository,
@@ -125,7 +125,7 @@ export const useCases: UseCase[] = [
     summary: "An administrator tracks every dataset from the institution in Harvard Dataverse to confirm that researchers meet their data-sharing commitments.",
     image: "/use-cases/hdv_dataset_reporting/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
-    card: { src: "/use-cases/hdv_dataset_reporting/images/grei-logo.jpg", fit: "contain" },
+    card: { src: "/use-cases/hdv_dataset_reporting/images/grei-logo.jpg", fit: "contain", alt: "Generalist Repository Ecosystem Initiative (GREI) logo" },
     citation: "Gautier, J., Durand, G., Boyd, C., & Barbosa, S. (2025). Use Cases, Harvard Dataverse Repository. Zenodo.",
     doi: "https://doi.org/10.5281/zenodo.14782026",
     body: datasetReporting,
@@ -139,7 +139,7 @@ export const useCases: UseCase[] = [
     summary: "A funder finds the datasets it supported, reports on policy compliance and follows how the data is used.",
     image: "/use-cases/hdv_nih_funded_datasets/images/header-banner.jpg",
     imageAlt: "Microscopy image from the NIH Image Gallery",
-    card: { src: "/use-cases/hdv_nih_funded_datasets/images/grei-logo.jpg", fit: "contain" },
+    card: { src: "/use-cases/hdv_nih_funded_datasets/images/grei-logo.jpg", fit: "contain", alt: "Generalist Repository Ecosystem Initiative (GREI) logo" },
     citation: "Gautier, J., Durand, G., Boyd, C., & Barbosa, S. (2025). Use Cases, Harvard Dataverse Repository. Zenodo.",
     doi: "https://doi.org/10.5281/zenodo.14782026",
     body: nihFundedDatasets,
@@ -157,6 +157,7 @@ export const practiceFeatures = [
     audience: "Research teams",
     kind: "Feature",
     image: "/use-cases/local_contexts/local-contexts.jpg",
+    imageAlt: "Local Contexts logo",
     summary: "Dataverse connects to the Local Contexts Hub, so a dataset page can display the Traditional Knowledge and Biocultural Labels and Notices that an Indigenous community has applied to its data.",
     link: { href: "https://guides.dataverse.org/en/latest/installation/localcontexts.html", label: "Local Contexts guide" },
     talks: [

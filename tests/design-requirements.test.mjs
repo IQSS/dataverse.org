@@ -71,3 +71,24 @@ test("community calls render from hand-editable Markdown without losing the meet
   assert.ok(explore.replaceAll("<!-- -->", "").includes("All 150 Installations"));
   assert.ok(!explore.includes("naturalearthdata.com"));
 });
+
+test("homepage map, ecosystem diagram and use-case thumbnails have text alternatives", async () => {
+  const response = await worker.fetch(new Request("http://localhost/", { headers: { accept: "text/html" } }), {
+    ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) },
+  }, { waitUntil() {}, passThroughOnException() {} });
+  const home = (await response.text()).replace(/<!-- -->/g, "");
+
+  assert.match(home, /class="sr-only" id="installation-map-description">World map showing the locations of \d+ Dataverse installations in \d+ countries: \d+ in Europe/);
+  assert.ok(home.includes('aria-describedby="installation-map-description"'));
+
+  assert.ok(home.includes('aria-describedby="ecosystem-description"') && home.includes('id="ecosystem-description"'));
+  assert.ok(home.includes('aria-label="Connected to the Dataverse Project"'));
+  const nodes = home.match(/<a class="ecosystem-node [^>]*>/g);
+  assert.equal(nodes.length, 8);
+  for (const node of nodes) assert.match(node, /aria-label="[^"]+: go to the /);
+
+  const banner = home.slice(home.indexOf('id="use-cases"'), home.indexOf("</section>", home.indexOf('id="use-cases"')));
+  const images = banner.match(/<span class="use-case-image[^>]*><img [^>]*>/g);
+  assert.ok(images.length >= 9);
+  for (const image of images) assert.match(image, /alt="[^"]+"/);
+});
