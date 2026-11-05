@@ -61,6 +61,11 @@ need separate authorization.
   `app/community-calls`; migrated pages render from `data/archive.json` through
   `app/archive-data.ts` and `app/[...slug]/page.tsx`.
 - Community calls: `content/community-calls.md` (hand-edited Markdown).
+- Latest Zulip topics (Community page, `app/components/ZulipLatest.tsx` with the logic in
+  `app/zulip-topics.mjs`): fetched in the visitor's browser from the hourly public archive at
+  https://gdcc.github.io/zulip-archive (CORS open, no API key; Zulip's own API needs a login and
+  its anonymous endpoint has no CORS). Nothing is fetched at build time; the section stays
+  hidden until the list arrives. Links go to Zulip itself, anchored `/with/<newest message id>`.
 - Featured journals, institutions, integrations, partners: `app/components/*Banner.tsx`, with
   logo provenance in `data/*-logo-sources.md`. Any new logo needs a row there: original source
   URL, local file, and the relationship it identifies. Never recolour or redraw an official mark.

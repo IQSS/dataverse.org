@@ -1,6 +1,7 @@
 import ArchiveIndex, { type ArchiveIndexItem } from "./ArchiveIndex";
 import { ArchiveShell } from "./SiteChrome";
 import CommunityConnections from "./CommunityConnections";
+import ZulipLatest from "./ZulipLatest";
 import AboutContent from "./AboutContent";
 import InstitutionBanner from "./InstitutionBanner";
 import InstallationMap from "./InstallationMap";
@@ -218,6 +219,7 @@ export function EventIndexPage() {
         description="Community calls, conversations, and annual Dataverse Community Meetings."
       />
       <CommunityConnections />
+      <ZulipLatest />
       <section className="community-meetings" aria-labelledby="community-meetings-heading">
       <h2 id="community-meetings-heading">Community Meetings</h2>
       <ArchiveIndex items={items} noun="events" />
