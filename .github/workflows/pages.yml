@@ -33,7 +33,7 @@ jobs:
         run: |
           git fetch --depth=1 origin daily-metrics
           git checkout FETCH_HEAD -- data/headline-metrics.json data/headline-metrics.ts data/installation-metrics.json
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
