@@ -26,6 +26,7 @@ export function cleanImportedText(text: string) {
 
 const retiredLinks: Record<string, string> = {
   "https://www.iq.harvard.edu/people/program/dataverse-project": "/about#team",
+  "https://www.iq.harvard.edu/roadmap-dataverse-project": "/roadmap",
 };
 
 // The old site titled many references just "Link"; label them by host instead.

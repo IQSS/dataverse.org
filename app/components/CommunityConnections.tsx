@@ -22,6 +22,11 @@ export default function CommunityConnections() {
         <p>Video content from the Dataverse community.</p>
         <a href="/dataversetv">Watch Dataverse TV</a>
       </article>
+      <article>
+        <h3>Dataverse Contributors</h3>
+        <p>A directory of the people who contribute to the Dataverse Project.</p>
+        <a href="https://people.dataverse.org/">Browse the contributors <span aria-hidden="true">↗</span></a>
+      </article>
     </div>
   </section>;
 }

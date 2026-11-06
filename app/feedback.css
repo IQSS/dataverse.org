@@ -53,6 +53,8 @@ main::before { display: none; }
 .site-header nav a, .archive-header nav a, .archive-header nav a:nth-child(n) {
   display: inline-block; font-size: 14px; font-weight: 600; white-space: nowrap;
 }
+.site-header nav a.nav-search, .archive-header nav a.nav-search { display: inline-flex; align-items: center; padding: 2px; }
+.site-header nav a.nav-search:hover, .archive-header nav a.nav-search:hover { color: var(--dv-orange-ink); }
 .site-header .outline-button, .archive-harvard { display: inline-flex; font-size: 14px; }
 @media (max-width: 1600px) {
   .site-header nav, .archive-header nav { order: 3; width: 100%; }
