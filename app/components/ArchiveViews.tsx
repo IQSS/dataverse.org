@@ -1,3 +1,4 @@
+import Markdown from "react-markdown";
 import ArchiveIndex, { type ArchiveIndexItem } from "./ArchiveIndex";
 import { ArchiveShell } from "./SiteChrome";
 import CommunityConnections from "./CommunityConnections";
@@ -9,6 +10,7 @@ import AudienceContent from "./AudienceContent";
 import JournalBanner from "./JournalBanner";
 import JournalCollections from "./JournalCollections";
 import InstitutionContext from "./InstitutionContext";
+import dataCitation from "../../content/best-practices/data-citation.md";
 import { formatPresentationDate,
   blogPosts,
   events,
@@ -98,8 +100,10 @@ function TextContent({ text, title }: { text: string; title?: string }) {
 
 function ResourceLinks({
   links,
+  label = "Links and files",
 }: {
   links: { text: string; href: string }[];
+  label?: string;
 }) {
   const usable = links.filter((link) => link.href && link.text);
   if (!usable.length) return null;
@@ -112,7 +116,7 @@ function ResourceLinks({
   );
   return (
     <aside className="archive-resources">
-      <p>Links and files</p>
+      <p>{label}</p>
       {shown.map(render)}
       {more.length > 0 && (
         <details className="archive-resources-more">
@@ -130,6 +134,7 @@ function DetailLayout({
   meta,
   children,
   links = [],
+  linksLabel,
   beforeContent,
   afterContent,
 }: {
@@ -138,6 +143,7 @@ function DetailLayout({
   meta?: string;
   children: React.ReactNode;
   links?: { text: string; href: string }[];
+  linksLabel?: string;
   beforeContent?: React.ReactNode;
   afterContent?: React.ReactNode;
 }) {
@@ -155,7 +161,7 @@ function DetailLayout({
         {beforeContent}
         <div className="archive-detail-grid">
           <div>{children}</div>
-          <ResourceLinks links={deduped} />
+          <ResourceLinks links={deduped} label={linksLabel} />
         </div>
         {afterContent}
       </article>
@@ -305,7 +311,29 @@ function DataverseTv() {
   );
 }
 
+const bestPractices = [
+  { text: "Academic Credit", href: "/best-practices/academic-credit" },
+  { text: "Data Citation", href: "/best-practices/data-citation" },
+  { text: "Dataverse Community Norms", href: "/best-practices/dataverse-community-norms" },
+  { text: "Data Management", href: "/best-practices/data-management" },
+  { text: "Replication Dataset Guidelines", href: "/best-practices/replication-dataset" },
+];
+
+/** Migrated pages rewritten by hand in content/*.md. The Markdown replaces the imported text,
+ *  images and link list, so its links sit in the prose where they belong. */
+const rewrittenPages: Record<string, { category: string; body: string; links: { text: string; href: string }[]; linksLabel: string }> = {
+  "/best-practices/data-citation": { category: "Best Practices", body: dataCitation, links: bestPractices.filter((link) => link.href !== "/best-practices/data-citation"), linksLabel: "Other best practices" },
+};
+
 export function ProjectContentPage({ item }: { item: ProjectPage }) {
+  const rewritten = rewrittenPages[item.localPath];
+  if (rewritten) {
+    return (
+      <DetailLayout category={rewritten.category} title={item.h1} links={rewritten.links} linksLabel={rewritten.linksLabel}>
+        <div className="archive-prose markdown-prose"><Markdown skipHtml>{rewritten.body}</Markdown></div>
+      </DetailLayout>
+    );
+  }
   const heading = item.localPath === "/journals" ? "Journals and Proceedings" : item.h1 || item.title.replace(/ \| The Dataverse Project$/, "");
   return (
     <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : item.localPath === "/installations" ? <div className="archive-map"><InstallationMap /></div> : undefined} afterContent={item.localPath === "/institutions" ? <InstitutionContext /> : item.localPath === "/journals" ? <JournalCollections /> : undefined}>
