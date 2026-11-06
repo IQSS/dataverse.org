@@ -31,11 +31,12 @@ test("homepage keeps the reviewed order: principle, Harvard, community, spotligh
   assert.ok(home.includes("In development"));
 });
 
-test("People, Danny's website and Dataverse TV are easy to reach", async () => {
+test("Dataverse Contributors, Danny's website and Dataverse TV are easy to reach", async () => {
   const about = await render("/about");
   const community = await render("/events");
   const tv = await render("/dataversetv");
-  assert.ok(about.includes('href="https://people.dataverse.org/">People</a>'));
+  assert.ok(!about.includes('href="https://people.dataverse.org/">People</a>'), "People left the top navigation on 2026-11-06");
+  assert.ok(/<h3>Dataverse Contributors<\/h3>[\s\S]*?href="https:\/\/people\.dataverse\.org\/"/.test(community));
   assert.equal((about.match(/href="https:\/\/dannyebanks.com\/"/g) || []).length, 2);
   assert.ok(about.includes('id="team">Project Leadership</h2>'));
   assert.ok(!about.includes(">The Team</h2>"));
