@@ -33,7 +33,8 @@ npm run dev        # http://localhost:3000
    All tests should pass (two template tests about the Codex preview skeleton skip themselves
    outside Codex).
 4. Open a pull request against `main` with a short description and, for visible changes, a
-   screenshot. Merged pull requests deploy to GitHub Pages automatically.
+   screenshot. Merged pull requests and direct pushes to `main` go live in a couple of minutes if
+   the tests pass; otherwise the site stays as it was and the failure shows in the Actions tab.
 
 ## Design and accessibility
 
@@ -48,7 +49,8 @@ recoloured or redrawn.
 
 The figures on the homepage and the numbers page are generated once a day by the Harvard
 Dataverse knowledge-graph pipeline and pushed to the `daily-metrics` branch as
-`data/headline-metrics.ts` and `data/headline-metrics.json`. Do not edit them by hand; if a
+`data/headline-metrics.ts` and `data/headline-metrics.json`, where every deploy reads them. Do not
+edit them or push to that branch by hand; if a
 number looks wrong, open an issue describing which one and what you expected.
 
 ## Working with AI coding agents

@@ -6,7 +6,7 @@ A working prototype for the open-source Dataverse Project, its installation netw
 
 The site is published with GitHub Pages at https://iqss.github.io/dataverse.org/ from a
 prerendered static export of this React/Vinext app (`scripts/export-static.mjs`,
-`.github/workflows/pages.yml`); it deploys from the `daily-metrics` branch, rebuilt each morning as `main` plus the latest numbers. It is
+`.github/workflows/pages.yml`); a push to `main` goes live in a couple of minutes if the tests pass. It is
 **not a Hugo site** and does not change production dataverse.org. A future Hugo migration should
 preserve content, routes, links, and `DESIGN_REQUIREMENTS.md`. Do not publish private roadmap
 source spreadsheets.

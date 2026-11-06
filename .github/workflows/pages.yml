@@ -2,14 +2,15 @@ name: Deploy static site to GitHub Pages
 
 # Builds the vinext app, prerenders every route into a static folder, and publishes it with
 # GitHub Pages. Enable Pages once in the repository settings with source "GitHub Actions".
-# daily-metrics is the only deploy branch. The daily metrics job rebuilds it each morning as main
-# plus the latest numbers, so a push to main goes live with the next rebuild.
+# A push to main goes live in a couple of minutes if the tests pass. Every deploy builds main's code
+# with the numbers from daily-metrics, which only the daily metrics job writes, so nobody merges or
+# pushes to that branch by hand.
 # For a custom domain set the repository variable SITE_BASE_PATH to "/" (and add a CNAME file
 # under public/); without it the site is served at https://<owner>.github.io/<repo>/.
 
 on:
   push:
-    branches: [daily-metrics]
+    branches: [main, daily-metrics]
   workflow_dispatch:
 
 permissions:
@@ -26,12 +27,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Use the latest numbers
+        run: |
+          git fetch --depth=1 origin daily-metrics
+          git checkout FETCH_HEAD -- data/headline-metrics.json data/headline-metrics.ts data/installation-metrics.json
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
+      - run: npm test
       - name: Prerender static site
         env:
           SITE_BASE_PATH: ${{ vars.SITE_BASE_PATH }}
