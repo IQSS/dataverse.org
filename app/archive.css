@@ -366,7 +366,10 @@ h1, h2, h3, h4,
 /* Pages rewritten by hand in Markdown (content/best-practices/*.md). */
 .markdown-prose h2 { font-size: 30px; line-height: 1.25; margin: 48px 0 20px; padding-top: 24px; border-top: 1px solid var(--dv-border); }
 .markdown-prose h3 { font-size: 22px; line-height: 1.3; margin: 36px 0 14px; }
-.markdown-prose ol { margin: 0 0 30px; padding-left: 26px; }
+.markdown-prose ol { margin: 0 0 30px; padding-left: 26px; list-style: decimal; }
+.markdown-prose ul { list-style: disc; }
+/* The site resets em and i to upright; journal and book titles need italics here. */
+.markdown-prose em { font-style: italic; }
 .markdown-prose li { margin-bottom: 10px; }
 .markdown-prose blockquote { margin: 0 0 18px; padding: 18px 22px; border-left: 4px solid var(--dv-orange); background: var(--dv-orange-soft); overflow-wrap: anywhere; }
 .markdown-prose blockquote p { margin: 0; }
