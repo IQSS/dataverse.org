@@ -3,7 +3,7 @@
   "capturedAt": "2026-08-24",
   "counts": {
     "blogPosts": 95,
-    "presentations": 173,
+    "presentations": 174,
     "publications": 45,
     "events": 14,
     "reports": 1,
@@ -4370,6 +4370,19 @@
     }
   ],
   "presentations": [
+    {
+      "abstract": "Presentation by Sonia Barbosa",
+      "citation": "Barbosa S. Journal Collections & Review Workflows on Harvard Dataverse. 2026.",
+      "href": "https://dataverse.org/presentations/journal-collections-review-workflows-harvard-dataverse",
+      "resources": [
+        {
+          "href": "https://dataverse.org/sites/g/files/omnuum9946/files/2026-09/Journal%20Collections%20%26%20Review%20Workflows%20on%20Harvard%20Dataverse.pdf",
+          "text": "Journal Collections & Review Workflows on Harvard Dataverse (PDF slides)"
+        }
+      ],
+      "title": "Journal Collections & Review Workflows on Harvard Dataverse",
+      "year": "2026"
+    },
     {
       "abstract": "Presentation by Bob TreacyThe Dataverse is an open source Java EE application for preserving, sharing, and replicating research data in accordance with the FAIR (Findable, Accessible, Interoperable and Reusable) data principles. Rich metadata and...",
       "citation": "Treacy B. Improving Metadata Workflow in a Data Repository With AI-Generated Metadata Recommendations. 2026.",

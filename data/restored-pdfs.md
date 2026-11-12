@@ -8,9 +8,9 @@ paths under `public/`, so the links in `data/archive.json` work as they are.
 
 The package's other files were not copied: the old theme's CSS, JavaScript, PHP and image
 derivatives; about 100 logos, icons and photos the new site does not use; and these documents that
-no page links to:
+no page links to (Sonia Barbosa's 2026 talk, `2026-09/Journal Collections & Review Workflows on Harvard Dataverse.pdf`, was
+added to Presentations on 2026-11-12):
 
-- `2026-09/Journal Collections & Review Workflows on Harvard Dataverse.pdf`
 - `dataverseorg/files/dataverse_in_china-v1.0.pptx.pdf`
 - `dataverseorg/files/g5wittenbergmarion.pdf`
 - `dataverseorg/files/gdccdataciteclientapplication.pdf`
