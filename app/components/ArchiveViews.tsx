@@ -325,6 +325,13 @@ const rewrittenPages: Record<string, { category: string; body: string; links: { 
   "/best-practices/data-citation": { category: "Best Practices", body: dataCitation, links: bestPractices.filter((link) => link.href !== "/best-practices/data-citation"), linksLabel: "Other best practices" },
 };
 
+// The old site's About menu listed these; the top navigation has no submenus, so About links to them.
+const aboutSubnav = (
+  <nav className="about-subnav" aria-label="More about the project">
+    <a href="/presentations">Presentations</a><a href="/publications">Publications</a><a href="/blog">Blog</a><a href="/numbers">Numbers</a>
+  </nav>
+);
+
 export function ProjectContentPage({ item }: { item: ProjectPage }) {
   const rewritten = rewrittenPages[item.localPath];
   if (rewritten) {
@@ -336,7 +343,7 @@ export function ProjectContentPage({ item }: { item: ProjectPage }) {
   }
   const heading = item.localPath === "/journals" ? "Journals and Proceedings" : item.h1 || item.title.replace(/ \| The Dataverse Project$/, "");
   return (
-    <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : item.localPath === "/installations" ? <div className="archive-map"><InstallationMap /></div> : undefined} afterContent={item.localPath === "/institutions" ? <InstitutionContext /> : item.localPath === "/journals" ? <JournalCollections /> : undefined}>
+    <DetailLayout category="Dataverse Project" title={heading} links={item.links} beforeContent={item.localPath === "/institutions" ? <InstitutionBanner compact /> : item.localPath === "/journals" ? <JournalBanner compact /> : item.localPath === "/installations" ? <div className="archive-map"><InstallationMap /></div> : item.localPath === "/about" ? aboutSubnav : undefined} afterContent={item.localPath === "/institutions" ? <InstitutionContext /> : item.localPath === "/journals" ? <JournalCollections /> : undefined}>
       {item.images.length > 0 && (
         <div className="archive-image-grid page-images">
           {item.images.map((image) => <img key={image.src} src={image.src} alt={image.alt} />)}

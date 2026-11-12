@@ -92,3 +92,15 @@ test("homepage map, ecosystem diagram and use-case thumbnails have text alternat
   assert.ok(images.length >= 9);
   for (const image of images) assert.match(image, /alt="[^"]+"/);
 });
+
+test("About links to the old About menu's pages and its long links list scrolls", async () => {
+  const response = await worker.fetch(new Request("http://localhost/about", { headers: { accept: "text/html" } }), {
+    ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) },
+  }, { waitUntil() {}, passThroughOnException() {} });
+  const html = await response.text();
+  for (const path of ["/presentations", "/publications", "/blog", "/numbers"]) {
+    assert.ok(new RegExp(`<nav class="about-subnav"[^]*?href="${path}"[^]*?</nav>`).test(html), path);
+  }
+  const css = await read("app/archive.css");
+  assert.match(css, /\.archive-resources \{[^}]*max-height:[^}]*overflow-y: auto/);
+});

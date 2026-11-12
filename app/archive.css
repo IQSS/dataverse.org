@@ -401,6 +401,9 @@ h1, h2, h3, h4,
 .archive-resources {
   position: sticky;
   top: 125px;
+  max-height: calc(100vh - 145px); /* a long expanded list scrolls inside the sticky column */
+  overflow-y: auto;
+  overscroll-behavior: contain;
   border-top: 8px solid var(--dv-orange);
 }
 
@@ -526,7 +529,7 @@ h1, h2, h3, h4,
   .archive-detail-head { padding: 60px 6vw 45px; background: #fff; border-right: 18px solid var(--dv-orange-soft); }
   .archive-detail-head h1 { letter-spacing: -2px; }
   .archive-detail-grid { padding: 45px var(--content-gutter) 80px; }
-  .archive-resources { position: static; margin-top: 35px; }
+  .archive-resources { position: static; margin-top: 35px; max-height: none; overflow: visible; }
   .archive-footer-links { justify-content: flex-start; }
 }
 
@@ -541,5 +544,7 @@ h1, h2, h3, h4,
 .archive-resources-more summary { cursor: pointer; font: 600 13px/1.5 var(--font-montserrat), Montserrat, sans-serif; color: var(--dv-orange-ink); padding: 8px 0; }
 .archive-resources-more summary:focus-visible { outline: 2px solid #A84A1D; outline-offset: 2px; }
 .archive-map { margin: 0 0 32px; padding: 0 6vw; }
+.about-subnav { display: flex; flex-wrap: wrap; gap: 8px 28px; padding: 22px var(--content-gutter); border-bottom: 1px solid var(--dv-line); }
+.about-subnav a { color: var(--dv-orange-ink); font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .not-found .archive-prose { max-width: 620px; }
 .not-found .archive-prose { padding: 48px var(--content-gutter) 96px; }
