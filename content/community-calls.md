@@ -20,7 +20,7 @@ See the [Dataverse community calendar](https://calendar.google.com/calendar/embe
 
 For recordings, please see [DataverseTV](/dataversetv).
 
-- [December 1, 2026 Notes](https://docs.google.com/document/d/1H0qGR_xtUvNjfO62pfXkOhM8GO7hZAMNJjJHF8lAcAc/edit?usp=sharing) Julien Cufi on JSON schemas for metadata blocks
+- [December 1, 2026 Notes](https://docs.google.com/document/d/1H0qGR_xtUvNjfO62pfXkOhM8GO7hZAMNJjJHF8lAcAc/edit?usp=sharing) Katlina Toth on Certify: Software for Replication Certification and Julien Cufi on JSON schemas for metadata blocks
 
 - [November 3, 2026 Notes](https://docs.google.com/document/d/10zoWnVDAEzYsVgvZeDQjScFpjAai5hc5Hb0Npylzcj0/edit?usp=sharing) Andrea Tentner on the [HEAL data packaging tool](https://norc-heal.github.io/heal-data-pkg-tool-docs/) to prepare Dataverse-ready deposits - JSON schemas for file and variable-level metadata
 
