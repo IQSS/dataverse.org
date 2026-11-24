@@ -8,7 +8,7 @@ Community calls are listed in the Dataverse community [Google Calendar](https://
 
 ## Upcoming calls
 
-- December 1, 2026, 10am Eastern ([see in your timezone](https://time.is/compare/10am_1_Dec_2026_in_Boston)): Katlina Toth on [Certify: Software for Replication Certification](https://dataverse.zulipchat.com/#narrow/channel/375707-community/topic/Certify.20Replication.20Software.20Version.200.20is.20Live/near/637557644) ([agenda/notes](https://docs.google.com/document/d/1H0qGR_xtUvNjfO62pfXkOhM8GO7hZAMNJjJHF8lAcAc/edit?usp=sharing))
+- December 1, 2026, 10am Eastern ([see in your timezone](https://time.is/compare/10am_1_Dec_2026_in_Boston)): Katalina Toth on [Certify: Software for Replication Certification](https://dataverse.zulipchat.com/#narrow/channel/375707-community/topic/Certify.20Replication.20Software.20Version.200.20is.20Live/near/637557644) ([agenda/notes](https://docs.google.com/document/d/1H0qGR_xtUvNjfO62pfXkOhM8GO7hZAMNJjJHF8lAcAc/edit?usp=sharing))
 
 See the [Dataverse community calendar](https://calendar.google.com/calendar/embed?src=c_udn4tonm401kgjjre4jl4ja0cs%40group.calendar.google.com&ctz=America%2FNew_York) for the current schedule.
 
@@ -20,7 +20,7 @@ See the [Dataverse community calendar](https://calendar.google.com/calendar/embe
 
 For recordings, please see [DataverseTV](/dataversetv).
 
-- [December 1, 2026 Notes](https://docs.google.com/document/d/1H0qGR_xtUvNjfO62pfXkOhM8GO7hZAMNJjJHF8lAcAc/edit?usp=sharing) Katlina Toth on Certify: Software for Replication Certification
+- [December 1, 2026 Notes](https://docs.google.com/document/d/1H0qGR_xtUvNjfO62pfXkOhM8GO7hZAMNJjJHF8lAcAc/edit?usp=sharing) Katalina Toth on Certify: Software for Replication Certification
 
 - [November 3, 2026 Notes](https://docs.google.com/document/d/10zoWnVDAEzYsVgvZeDQjScFpjAai5hc5Hb0Npylzcj0/edit?usp=sharing) Andrea Tentner on the [HEAL data packaging tool](https://norc-heal.github.io/heal-data-pkg-tool-docs/) to prepare Dataverse-ready deposits - JSON schemas for file and variable-level metadata
 
